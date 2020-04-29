@@ -1,0 +1,570 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+html,body,input,select,button{font-size:100%;}
+body.body{background: #036;margin: 0 0 0 10px;padding: 0px;font-size:12pt}
+a:link,a:visited,a:hover,a:active{color: #036;}
+.clear{clear:both;float:none;}
+.hr{border: 1px solid #cccccc;clear:both;margin:8px 0;}
+.hr hr{display:none;}
+#content .superclear {float:none;clear:both;width:1px;height:1px;overflow:hidden;visibility:hidden;padding:0px;margin:0 0 0 0;}
+#mainContent{width:766px;position:relative;float:left;background:#fff;}
+#content{background:#fff;color:#000;font-size:.69em;margin:0 0 0px 0;padding:0 12px 0;border-top:solid 1px #fff;}
+#content li{line-height:1.2em;}
+#content img{border: 0;}
+#content form{margin:0;padding:0;}
+#content ul {margin:2px;padding:15px;}
+#content p, #content div, #content ul, #content ol, #content dl, #content li, #content dd, #content dt, #content span, 
+#content a, #content table, #content td{font-size:1.0em;line-height:1.2em;}
+#content h1 {margin:0;padding:0;font-size:1.45em;line-height:1.45em;font-weight:bold;}
+#content h2, #content h3, #content h4, #content h5, #content h6{margin:0;padding:0;font-size:1em;line-height:1em;font-weight:bold;}
+#content h2{font-size:1.2em;}
+#content ul {margin:0;padding:0;list-style:none;}
+#content li {margin:0;padding:0;line-height:1.2em;}
+#content .photoDeal {float:left;margin:6px 12px 6px 0;}
+#content .photoDeal img {float:left;margin:0 6px 0 0;border:0px solid #333;}
+#content .photoDeal p {margin:8px 0 0 0;}
+#content .hr hr{display:none;}
+#content .offerhead{color:#CA7147;font-size: 1.2em;margin:0 0 4px 0;}
+#content .imgLeft{text-align:left;vertical-align:top;}
+#content .defhead{font-size: 1.1em;padding:0 0 4px 0;}
+#content ul.linklist {margin:1px 6px 0 -6px;padding:0 5px 0 0;list-style: none;}
+#content ul.linklist li {background: url(images/spacer.png) no-repeat left top;color:#292A3E;padding:1px 0 1px 16px;margin:0;}
+#content ul.vlist{float:left;list-style-type:none;margin:2px 0 0;vertical-align:middle;}
+#content ul.vlist li{float:left;line-height:1.2em;padding:5px 15px 7px;width:50px;}
+#content ul.hlist{float:left;list-style-type:none;margin:2px 0 0;vertical-align:middle;}
+#content ul.hlist li{float:left;line-height:1.2em;padding:5px 15px 7px;width:50px;}
+#content .collist{float:left;}
+#content .collist li{margin:10px 11px;width:52px;}
+#content .morelink{clear:both;font-size:0.9em;margin:0;text-align:right;}
+#content .icolL{float:left;margin:0 0 12px 0;}
+#content .icolR{float:right;margin:0 0 12px 0;}
+#content .icolSpan{margin:0 0 12px;}
+#content .headrt{font-weight:normal;float:right;display:inline;}
+#searchTools{float:left;width:275px;} 
+#offers{float:right;width:455px;}
+#superpromoloader{display:none;}
+#superPromo{margin:0 0 12px;overflow:hidden;padding:0;width:455px;}
+#content .contentR1, #content .contentR2{padding: 6px 6px 10px 6px;margin-bottom: 12px;}
+#merch{clear:left;margin:0 0 0px;width:auto;}
+#deals{color:#313142;float:left;margin:0 0 12px;width:317px;}
+#deals td {line-height:1.2em;}
+#deals td a {font-weight:600;color:#313142;}
+#tools {color:#000;float:right;margin:0 0 12px;width:125px;}
+#content #tools img{margin:0 0 12px 0;}
+#content.fcb_home #tools img#mastercard{margin:0 0 0 0;}
+#content.fcb_home #tools {margin:0 0 0px;}
+#features {margin:0 0 0px 0px;padding:0;color:#30420B;}
+#smallPromo {float:left;width:125px;background:#ffffff;color:#313142;}
+#ideas {float:right;width:139px; background:#CED6B5;padding:8px 0px 6px 0px;}
+#ideas li{padding:0px 0px 2px 8px;}
+#ideas h2 {margin:0px 0 4px 8px;}
+#ideas a{color:#30420B;}
+#ideas ul.linklist{margin-left:2px;}
+#ideas .price{font-weight:bold;font-size:1em;}
+#ideas ul{margin-left:8px;}
+
+#personal ul, #personal li, #personal dl,#personal dd,#personal dt {margin:0;padding:0;list-style:none;line-height:1em;}
+#content.home #personal h2{padding-bottom:.69em;font-size:1em;}
+#content.home #personal p{margin:0px 0px 6px 5px;}
+#content.home #personal{background:#CED6B5;color:#30420B;}
+
+#content.home #farewatcher {float:right;width:139px;height:162px;background:#CED6B5;padding:0px;margin-bottom:12px;min-height:162px;}
+#content.home #farewatcher h2 {font-size:11px;font-weight:bold;margin:0px 0px 7px 8px;padding-top:5px}
+#content.home #farewatcher h2 a{font-size:.89em;float:right;padding-right:2px;}
+#content.home #farewatcher dl{padding:0px 0px 0px 8px;list-style:none;line-height:1em;margin:0px 0px 3px 0px;}
+#content.home #farewatcher p{padding:0px 0px 2px 8px;line-height:1em;margin:0px;}
+#content.home #farewatcher a{color:#30420B;}
+#content.home #farewatcher .price{font-weight:bold;font-size:1em;}
+#content.home #farewatcher #callout{padding:3px 20px 6px 6px;line-height:1em;background:#EFF1EC;margin:0px 6px 0px 6px;}
+
+#content.home #center {background:url(862.gif );height:115px;padding-bottom:0px;margin-bottom:12px;}
+
+#content.home ul.vlist{float:left;list-style-type:none;margin:0px 0 0;vertical-align:middle;}
+#content.home ul.vlist li{float:left;line-height:1.2em;padding:0px 13px 9px 0px;width:104px;text-align:center;}
+#content.home ul.vlist li.last{padding-right:0px}
+#content.home ul.vlist li a.destText{display:block;width:104px;text-align:center;padding-top:2px}
+
+#content.home ul.row{padding:0px 0px 0px 0px;float:none;color:#666;text-align:center;}
+#content.home ul.row li{display:inline;padding-right:8px;}
+#content.home ul.row a{color:#666;}
+
+/** #content.home #ideas ul {font-size:11px;}**/
+/** #content.home #ideas h2 {font-size:11px;font-weight:bold;padding-bottom:.69em;}**/
+/** #content.home #ideas ul.linklist li {background: url(images/spacer.png) no-repeat left top;color:#292A3E;padding:1px 0 1px 16px;margin:0;}**/
+/** #content.home #ideas li{padding:0px 0px 4px 8px;}**/
+/** #content.home #ideas {float:right;width:139px;background:#CED6B5; margin-bottom:0px; padding-bottom: 12px;}**/
+/** #content.home #ideas dl{padding:0px 0px 2px 8px;list-style:none;line-height:1em;}**/
+
+#personal{padding-bottom:8px;margin-bottom:12px;}
+#content.home #personalWrapper{background:#CED6B5;color:#30420B;height: 104px;padding-bottom:0px;}
+#personal a{color:#30420B;padding:0px;}
+#personal h2 a{font-size:.89em;padding-right:5px;float:right;}
+#personal dd{padding:0px;}
+#reservations{margin:8px 0px 0px 6px;float:left;width:115px;}
+#content.home #mastercard{margin:7px 0 0 0;}
+#personal h2 #normal{font-size:.89em;padding-right:5px;float:right;}
+#welcome{float:left;width:60%;border-right:1px solid #ACAC98;margin:8px 0px 0px 0px;padding:0px 0px 0px 8px;list-style-type:square;}
+#welcome_mem{float:left;width:139px;margin:8px 0px 0px 0px;padding:0px 0px 0px 8px ;}
+#content.home #deals{ background:#C0C0DB; padding-bottom:5px;}
+#content.home #deals ul{padding-left:0px;list-style:inside disc;}
+#content.home #deals a{color:#313142;}
+#content.home #merch h2{font-size:.95em;padding:7px 0px 0px 8px;}
+#content.home #deals li{padding:3px 0px 0px 8px;}
+#content.home #deals{margin:0px;}
+#content.hotels #features{background:#CED6B5;color: #30420B;padding:8px 8px 8px 18px;margin-bottom: 12px;}
+#content.hotels #merch{margin:12px 0 0;color: #333333;}
+#content.hotels #merch a{color: #333333;}
+#content.hotels #tools{margin:0;}
+#content.hotels #deals h2{clear:both;margin:0 15px 0 0;font-size: 1.2em;}
+#content.hotels #features a{color:#313142;}
+#content.hotels #features .vlist li{float:left;list-style-type:none;margin:2px 0 0;vertical-align:middle;}
+#content.hotels .contentR1{background: #FFD674;color: #30420B;}
+#content.hotels .contentR2{background: #C0C0DB;color: #343641;}
+#content.hotels .contentR2 h3, #content.hotels  .contentR1 h3{margin: 0 0 4px 0;}
+#content.vacations #features{background:#FFFFFF;color:#493B26;}
+#content.vacations #features #vacfeattop{background:#FFD674;color:#493B26;padding:10px;height: 225px; margin-bottom: 5px; padding-bottom: 5px; overflow:visible;}
+#content.vacations #features #vacfeatbot{padding:8px 8px 0;background:#FFFFFF;margin-bottom: 12px;}
+#content.vacations #destinations{border:1px solid #cccccc;color:#292A3E;margin:0 0 6px;overflow:visible;padding:6px 6px 0; height:auto;}
+#content.vacations #features #vacfeattop h2{padding:6px 0;font-size: 1.2em;}
+#content.vacations #features #vacfeattop a, #content.vacations #features #vacfeattop li{color: #493B26;}
+#content.vacations #tools #vactools{background:#CED6B5;color: #30420B;padding: 6px 6px;margin:0px 0px 12px 0px;}
+#content.vacations #tools #vactools a{color: #30420B;}
+#content.vacations #vactourstext{float:right;width:200px;padding-bottom:0px;}
+#content.vacations #vactoursimgs{float:left;width:51px;padding-bottom:0px;}
+#content.vacations #tools .vacbutton{margin:6px 2px;}
+#content.vacations .vlist a{color: #292A3E;}
+#content.vacations #vacfeatbot .linklist a{color: #292A3E;}
+#content.vacations #deals{color:333333;float:left;margin:0 0 12px;width:317px;}
+#content.vacations #deals td {line-height:1.2em;}
+#content.vacations #deals td a {font-weight:600;color:333333;}
+#content.vacations ul.vlist{float:left;list-style-type:none;margin:2px 0px 0px 8px;vertical-align:middle;}
+#content.vacations ul.vlist li.last{padding-right:0px}
+#content.cars .icolL{width:138px;}
+#content.cars .icolL div{background:#FFD674;color:#493B26;padding:8px;margin:0px;}
+#content.cars .icolL div h3{margin:0 0 6px;padding:0;}
+#content.cars .icolL div p{margin:0 0 4px;padding:0;}
+#content.cars .icolL img{margin: 0 0 7px 0;}
+#content.cars .icolL a, #content.cars .icolL h3{color: #493B26;}
+#content.cars #features .icolSpan li a{color: #333333;}
+#content.cars #features h2{font-size:1.2em;margin:0 0 6px;}
+#content.cars #features a{color:#562204;}
+#content.cars #features div.photoDeal p{line-height:1.2em;vertical-align:top;border:1px solid blue;}
+#content.cars #tools #cartooltop{background:#CED6B5;color: #30420B;line-height:1.5em;margin:0 0 12px 0;padding: 6px 0px 6px 6px;}
+#content.cars #tools #cartooltop h2{margin:4px 0 6px;font-size: 1.2em;}
+#content.cars #tools #cartooltop a{color: #30420B;}
+#content.cars #deals a{color: #000000;}
+#content.cars #deals ul li img{margin:3px 12px 3px 0;vertical-align:middle;}
+#content.cars #deals h2 a{font-size:.69em;padding-right:5px;float:right;color:#333333;}
+#content.cars #center {background-image:url(862.gif );display:block;clear:both;width:455px;margin-bottom:5px;}
+#content.cars #center ul{display:block;list-style-type:none;margin:0px;padding:0px;}
+#content.cars #center ul li {width:108px;display:block;float:left;padding:0px 7px 3px 0px;margin:0px;text-align:center;}
+#content.cars #center ul li a{display:block;padding-bottom:1px}
+#content.cars #center ul.row{color:#666;padding-top:3px}
+#content.cars #center ul.vlist li.last{padding-right:0px}
+
+#content.cruises #features{background:#c0c0db;color: #30420B;height:201px;padding:8px;margin-bottom:12px;}
+#content.cruises #features ul{margin:6px 0;padding: 8px;}
+#content.cruises #features p{vertical-align:bottom;}
+#content.cruises #features a{color: #30420B;}
+#content.cruises #features h3 a{font-size:.89em;padding-right:5px;float:right;color: #30420B;}
+#content.cruises #features .hr{border: 1px solid #aaaaaa;}
+#content.cruises #cruiseSearch{float:left;width: 124px;}
+#content.cruises #cruiseDest{float:right;width:130px;}
+#content.cruises #cruiseTips{background: #C0C0DB;color: #343641;margin:0 0 0px;padding:6px;float:right;width:136;height:71px;}
+#content.cruises #features .photoDeal {margin-right:2px;padding-right:6px;width: 260px;}
+#content.cruises #features .photoDeal p {margin-top:3px;}
+#content.cruises #tools #cruiseTools{background:#ced6b5;color:#30420b;margin:0 0 12px 0;padding:6px;}
+#content.cruises #tools #cruiseTools a{color: #30420B;}
+#content.cruises #tools{margin:0;}
+#content.cruises #cruiseTips h3{margin:0px 0px 4px 0px;}
+#content.cruises #deals{color:auto;float:none;margin:0;width:317px;}
+#favoffers h2.offerhead{display:inline;}
+#favoffers span{float:right;}
+#favoffers ul{font-weight:700;margin-top:12px;}
+#favoffers li{margin-bottom:10px;}
+#favoffers img{height:25px;margin-right:8px;width:90px;vertical-align:middle;}
+#content.cruises #deals a{color:#333333;}
+
+
+#content.cruises #destinations{float:left;height:auto;padding:8px;zoom:1;}
+#content.cruises #destinations .offerhead{color:#CA7147;font-size: 1.2em;margin:0 0 4px 0;padding:0px;vertical-align:middle;}
+#content.cruises .vlist{padding-left:19px;}
+#content.cruises .vlist li{float:left;margin-bottom:4px;padding:0;width:70px;}
+
+#content.cruises #CRspecialRate{margin:15px 0 0 5px;}
+#content.cruises .fspecRates{padding:10px}
+#content.cruises .srelement{margin-bottom:10px;}
+#content.cruises .prevLabel_left{display:block;float:left;width:130px;}
+#content.cruises .prevLabel_right{display:block;clear:right;}
+
+#destinations h2{color:#ca7147;padding-bottom:8px;}
+#content.vacations #top_content img {display:block;}
+#content.vacations #top_text {width:334px;float:right;}
+#content.vacations #top_text h2 {font-size:1.4em;color:#576997;margin: 8px 0 0 0;}
+#content.vacations #top_text p {font-size:1em;color:#444;margin:8px 0 20px 0;line-height:1.4em;}
+#content.vacations #bottom_content {margin: 12px 0 0 0;background:#FFFFFF;}
+#content.vacations #bottom_content #deliver {background:#EECC88;color:#56441F;padding:12px;width:534px;background-image:url(images/spacer.png);background-position:bottom right;background-repeat:no-repeat;}
+#deliver_container {margin-top:12px;width:531;}
+#content.vacations #bottom_content #deliver p{margin:0 0 12px 0;line-height:1.4em;}
+#content.vacations #bottom_content #deliver h4{text-decoration:underline;line-height:1.4em;}
+#content.vacations #bottom_content #deliver sup{line-height:.2em;text-decoration:none;}
+#content.vacations #bottom_content #deliver img{margin:0 0 12px 0;}
+#deliver_text {width:375px;margin:0 0 0 132px;}
+#deliver_img {width:132px;float:left;}
+#roaming_gnome {float:right;margin:-277px -2px 0 0;padding:0;border:0;z-index:5;}
+#content.vacations #moreaboutus {width:172px;float:right;padding:10px 0;color:#493B26;background:#EFA57B;}
+#content.vacations #moreaboutus a {color:#493b26;}
+#content.vacations #moreaboutus ul{margin:8px 0 0 8px;padding:0;list-style-type:disc;}
+#content.vacations #moreaboutus li{padding:0px 14px 2px 0px;margin-left: 14px;list-style-type:disc;}
+#content.vacations #moreaboutus h3 {font-weight:900;font-size:1em;padding:0 0 0 8px}
+#content.vacations #vacdeals{background:#C0C0DB;float:right;width:455px;height:110px;margin-left:10px;margin-top:0px;margin-bottom:12px;padding-top:0px;}
+#content.vacations #vacdealstext{float: right; width: 317px; margin-top: 12px;}
+#content.vacations #vacdealsimg{float: left; margin: 12px 0px 0px 5px; padding-left: 2px;}
+#content.vacations #destinations .offerhead{color:#CA7147;font-size: 1.2em;margin:0 0 4px 0;padding: 0px;vertical-align:middle;}
+#destinations{height:130;border:1px solid #cccccc;color:#292A3E;margin:0 0 12px;overflow:visible;padding:6px 0 0;width:auto;white-space: nowrap;}
+#destinations .offerhead{color:#CA7147;font-size: 1.2em;margin:0 0 4px 0;padding: 4px;vertical-align:middle;}  
+#destinations .morelink{clear:both;font-size:0.9em;margin:2px;text-align:right;vertical-align:bottom; margin-bottom:8px;}
+#content #jsf_header {height:36px;padding:12px 12px 0 0px;margin:0 0 12px 0;}
+#content.jsf h2 span {font-size:1.5em;color:#FFF;filter: progid:DXImageTransform.Microsoft.dropShadow(Color=725A34,offX=2,offY=2,positive=true);display:block;}
+#content.jsf #top_destinations {width:429px;float:right;background-color:#fff;border:1px solid #cecece;padding:0 12px;margin:0 0 12px 0;}
+#content.jsf #top_destinations h2 {color:#30420B;margin:8px 0 8px 0;}
+#content.jsf #top_destinations ul.vlist li{width:140px;padding:5px 3px 8px 0;text-align:center;font-size:1.2em;font-weight:900;color:#30420B;background:#FFF;}
+#content.jsf #cities {margin:0 0 12px 0;float:left;background-color:#CED6B5;width:740px;}
+#content.jsf #cities h2 {padding:12px 12px 0 12px;}
+#content.jsf .cities_list {width:140px;padding:0 0 8px 0;float:left;}
+#content.jsf #cities .cities_list ul.vlist {padding: 0 0 0 12px;}
+#content.jsf #cities .cities_list ul.vlist li{text-align:left;line-height:1.3em;font-size:1em;color:#30420B;padding:0;width:135px;}
+#content.air #fareWatcher{height:5.5em;padding:0px 0px 0px 0px ;margin:8px 8px 0px 0px;width:158px;}
+#content.air #smallPromo {margin: 0 12px 0 0;background:#fff;}
+#content.air #ideas{width:196px;color:#30420B;padding-bottom: 11px;}
+#content.air #ideas h2{font-size:1.2em;color:#30420B;}
+#content.air #personal{margin-bottom: 0;padding-bottom: 0;}
+#content.air #searchTools{width:334px;}
+#content.air #offers, #content.air #superPromo{width:396px;}
+#content.air #offers a{color: 333333;}
+#content.air #fareWatcher dt{font-weight:600;padding-bottom:3px;line-height:1.2em;}
+#content.air #fareWatcher dd{padding-left:12px;}
+#content.air #deals{width:259px;}
+#content.air #fareWatcher{width:259px;padding-bottom:8px;}
+#content.air #fareWatcher h2 a, #departArrive h2 a{font-size:.75em;float:right;}
+#content.air .price {font-size:1.2em;}
+#flightDeals { width:259px;height: 130px;}
+#flightDeals p{padding:0 0 8px 0;margin:0;}
+#flightDeals li{padding: 1px 0;}
+#content.air .offerhead{padding-bottom:3px;}
+#content.air #packageDeals {padding-top:4px;}
+#content.air #packageDeals li{padding-bottom:4px;}
+#content.air .offerhead a{font-size:.75em;}
+#departArrive{width:259px;padding-bottom: 0px;margin-bottom: 12px;}
+#departArrive select{border:1px solid #adadad;margin-right:3px;}
+#departArrive input{width:60px;border:1px solid #adadad;margin-right:3px;}
+#content.air .contentR1{background: #CED6B5;color: #30420B;}
+#content.air #tools iframe {margin-bottom: 12px;}
+#content.air #tools #airtools{background:#FFD674;color: #493B26;padding: 10px 6px;margin:0px 0px 0px 0px;}
+#content.air #tools #airtools a{color: #493B26;}
+#content a.button{margin:0;padding:0;border:2px solid;color:#fff;text-decoration:none;font-weight:bold;text-align:center;line-height:1em;background: url(images/spacer.png) #A66C3F repeat-x bottom;display:inline-block;padding:.4em .4em;border-color:#C7AF92 #6A4E2D #6A4E2D #C7AF92;}
+#content a.button_blu{margin:0;padding:0;border:2px solid;color:#fff;text-decoration:none;font-weight:bold;text-align:center;line-height:1em;background: url(images/spacer.png) #5D6987 repeat-x bottom;display:inline-block;padding:.1em .4em;border-color:#7C839A #566383 #566383 #7C839A;}
+#content a.button_brn{margin:0;padding:0;border:2px solid;color:#fff;text-decoration:none;font-weight:bold;text-align:center;line-height:1em;background: url(images/spacer.png) #5D6987 repeat-x bottom;display:inline-block;padding:.1em .4em;border-color:#C7AF92 #6A4E2D #6A4E2D #C7AF92;}
+#content a.button_grn{margin:0;padding:0;border:2px solid;color:#fff;text-decoration:none;font-weight:bold;text-align:center;line-height:1em;background: url(images/spacer.png) #717E58 repeat-x bottom;display:inline-block;padding:.1em .4em;border-color:#88966B #687553 #687553 #88966B;}
+#content a.button_ylw{margin:0;padding:0;border:2px solid;color:#fff;text-decoration:none;font-weight:bold;text-align:center;line-height:1em;background: url(images/spacer.png) #A66C3F repeat-x bottom;display:inline-block;padding:.1em .4em;border-color:#AA9B69 #9C803B #9C803B #AA9B69;}
+#content a.button span{color:#fff;display:inline-block;height:1em;text-shadow:2px 2px #7E4725;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);cursor:pointer;cursor:hand;}
+#content a.button_blu span{color:#fff;display:inline-block;height:1em;text-shadow:2px 2px #7E4725;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);cursor:pointer;cursor:hand;}
+#content a.button_brn span{color:#fff;display:inline-block;height:1em;text-shadow:2px 2px #7E4725;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);cursor:pointer;cursor:hand;}
+#content a.button_grn span{color:#fff;display:inline-block;height:1em;text-shadow:2px 2px #7E4725;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);cursor:pointer;cursor:hand;}
+#content a.button_ylw span{color:#fff;display:inline-block;height:1em;text-shadow:2px 2px #7E4725;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);cursor:pointer;cursor:hand;}
+#departArrive button {color:#fff;font-weight:600;border-color:#C7AF92 #6A4E2D #6A4E2D #C7AF92;background: #A66C3F;text-shadow:2px 2px #7E4725;padding:0.36em 0;}
+#departArrive button{padding:.18em 0 0 0;}
+#departArrive button span {cursor:pointer;cursor:hand;height:1.2em;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);}
+#cb{margin:0 0 12px 0;padding:0px 0px 1px 0px;background:#F6A472;color:#000;width:275px;position:relative}
+#content.air #cb, #content.air #iframeCal, #content.air #cb div.cbhr{width:334px;}
+#cb li{line-height:1.2em;}
+#cb ul{margin:0;padding:0;list-style:none;}
+#content.home #cb{padding:0;}
+#cb h1{text-align:center;padding:2px 0px 1px 0px;margin:0px 0px 1px 0px;background:#C27C4F;font-size:1em;}
+#cb h1 span{color:#fff;font-size:1.2em;height:1.5em;line-height:1.5em;filter: progid:DXImageTransform.Microsoft.dropShadow(Color=725A34,offX=2,offY=2,positive=true);}
+#cb .cbrowLeft{background:#F6A472;clear:both;float:left;padding:2px 0px 2px 8px;}
+#cb #puOption{width:150px}
+#cb #doLink{float:right;padding:2px;width:100px;}
+#cb .includeAirportLoc{float:right;height:25px;margin-top:7px;margin-right:10px;width:95px;}
+#cb .includeAirportLoc input{float:left;margin-right:0px;margin-bottom:5px;padding-right:2px;vertical-align:middle;}
+#cb .includeAirportLoc label{display:block;margin-left:18px;padding-left:3px;}
+#content.air h3{padding:0px;margin:0px;font-size:1em;font-weight:900;}
+#cbNav{font-size:11px;width:275px;float:left;background:#DE8C5A;margin-bottom:2px;}
+#content.air #cbNav{width:334px;}
+#cbNav ul{height:2.2em;}
+#cbNav li{display:inline;}
+#cbNav a{font-weight:900;padding:4px 0 0 4px;text-decoration:none;color:#fff;height:1.2em;text-shadow:2px 2px #333333;filter: progid:DXImageTransform.Microsoft.dropShadow( Color=333333,offX=1,offY=1,positive=true);}
+#cbNav span{display:block;float:left;height:2.2em;padding:0 3px;padding:0 5px 0 2px;}
+#cbNav span.cbNavon, #content.vacations #cbNav span{background:#F6A472;}
+#cbNav span.cbNavon a, #content.vacations #cbNav a{color:#634531;filter: none;text-shadow:none;}
+#iframeCal{z-index:2;position:absolute;width:275px;height:136px;visibility:hidden}
+#cbNav form{margin:0;padding-top:2px;}
+#content.vacations #cbNav{background:#F6A472;}
+#content.vacations #cbNav{height:4.2em;}
+#content.vacations #cbNav li{width:120px;float:left}
+#content.vacations li.cbNavwide,#content.vacations li.cbNavwide span{width:139px;}
+#cb div.cbhr{border-top:1px solid #C68663;border-bottom:1px solid #F7BE94;clear:both;margin:3px 0;clear:both;overflow:hidden;width:275px;}
+#cb #cb_formHO div.cbhr{margin:1px 0px;}
+#cb div.cbhr hr{display:none;}
+#cbForms .superclear{float:none;clear:both;width:1px;height:1px;overflow:hidden;visibility:hidden;padding-top:0;margin-top:0px;}
+#cbForms {position:relative:zoom:1}
+#cb select{border:1px solid #ccc;}
+#cb span.label{display:block;padding-bottom:2px;}
+#cb .cbrow{background:#F6A472;clear:both;padding:2px 0px 2px 8px;float:none;} 
+#cb .cbrowon{background:#ffc;}
+/*#content.air #cb .cbrow{width:326px;} */
+/*added float none; */
+#cb .cbelement{display:inline;float:none;}
+#cb .cbROoption{margin:0 8px 4em 20px;float:left;}
+#cb .cbCity{width:132px;float:left;padding-bottom:4px;}
+#cb .cbCity input{width:124px;}
+#cb .cbHOCity{width:148px;float:left;padding-bottom:4px;}
+#cb .cbHOCity input{width:140px;}
+#content.air #cb .cbCity{width:161px;float:left;padding-bottom:4px;}
+#content.air #cb .cbCity input{width:153px;}
+#content.air #cb #cb_formFMD div.cbCity{width:56px;}
+#content.air #cb #cb_formFMD .cbCity input{width:55px;}
+#cb_formFRT #cbFRTbff{display:none;}
+#cb .cbFMDtime{width:75px;}
+.cbSpecificAir{float:left;}
+.cbSpecificAir li{padding:0px 0px 1px 0px;}
+.cbSpecificAir li.specificair{display:none;text-align:right;padding-bottom:2px;}
+#cb .aircos{width:17em;float:left;}
+#cb .cbState{width:132px;float:left;}
+#content.cars #cb .cbState{width:95px;}
+#cb .cbzip input{width:43px;}
+#cb span.rowlabel{display:inline-block;float:left;width:4em;position:relative}
+#cb div.rowlabel{display:inline-block;float:left;width:4em;padding-top:6px;vertical-align:bottom}
+#cb .checkin{width:132px;float:left;}
+#cb .cboptions{padding-top:0px;}
+#cb .cboptions li a{color:#394A21;}
+/*#cb .cboptions{width:267px;}
+#content.air #cb .cboptions{width:326px;} */
+#cb .horz li, #cb .cbhlist li{display:inline;}
+#cb .cbcarco{float:left;width:155px;}
+#cb .cbcartype, #cb .cbcrulength{float:left;width:111px;}
+#cb .cbcrudest{float:left;width:150px;position:relative}
+#cb .cbrowbot{margin-bottom:4px;}
+#cb .cbBffSel{float:left;width:6em;}
+#cb .cbcrmonth{float:left;margin-right:8px;position:relative;width:100px;}
+#cb .cbCal{margin-top:0px;cursor:pointer;cursor:hand;vertical-align:bottom;padding-right:0px;padding-left:2px}
+#cb .cbPass{float:left;position:relative}
+#cb #cb_formair .cbPass{width:7em;}
+#cb .cbChild{float:left;width:4.5em;margin-bottom:4px;}
+#cbForms button, #cbForms a.button{float:right;cursor:pointer;cursor:hand;text-decoration:none;white-space:normal;color:#fff;font-weight:600;border-width:2px;border-style:solid;border-color:#C7AF92 #6A4E2D #6A4E2D #C7AF92;background: url(images/spacer.png) #A66C3F repeat-x bottom;text-shadow:2px 2px #7E4725;padding:.2em 0 .1em 0;margin:0;width:9em;display:block;}
+#cbForms button div {padding:0;margin:0;cursor:pointer;cursor:hand;line-height:1em;height:2.2em;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);text-shadow:2px 2px #7E4725;}
+#cbForms button.single{padding-top:.7em;}
+#cbForms button.single div, #cbForms a.button div{cursor:pointer;cursor:hand;height:1.7em;FILTER: dropShadow( Color=623F24,offX=1,offY=1,positive=true);text-shadow:2px 2px #7E4725;}
+#cbForms .cbSubmit{font-size:11px;clear:both;text-align:center;color:#956C42;margin:0px 8px 0px 0px;width:267px;padding:3px 0px 0px 0px;vertical-align:middle;}
+#content.cruises #cb button{margin-right:8px;display:inline}
+#content.air .cbSubmit{background:#F3C097;width:334px;margin:0 0 4px 0;}
+#content.air #cb button{margin-right:6px;margin-bottom:2px;}
+#cbForms #cbSubmitText{font-weight:900;font-size:1.3em;padding:.45em 10px 0px 11px;float:left;color:#956C42;} 
+/*#cbForms #cbSubmitText{font-weight:900;font-size:1.3em;padding:.45em 13px 0px 13px;float:right;} */
+#cb .cbSubmitMessaging{display:inline;text-align:left;margin-left:6px;font-weight:600;font-size:11px}
+#cb .cbSubmitMessaging p{padding:0 0 0 4px;margin:0;text-align:left;}
+#cbForms .cbSubmitMessaging input{float:left;}
+#cbForms .cbpromo{text-align:center;padding-top:8px;padding-bottom:4px;margin-left:auto;margin-right:auto;}
+#cb form.fix {margin:0px;}
+#cbForms a{color:#000;}
+#content.home .cbmoreoptions{position:absolute;top:285px;}
+#cb .cbrooms{width:267px;position:relative;}
+#cb .cbrooms li{width:32%;float:left;}
+#cb .cbrooms input{position:absolute;}
+#cb .cbrooms div{padding-left:23px;padding-top:3px}
+#cb .cbrooms li a{color:#000;}
+#cb .cbrooms li.cbdisabled a{color:#A56139}
+
+#HO_addairrow{width:50%;float:left;margin-left:8px;margin-top:3px;color:#000;text-align:left;}
+/* air */
+#content.home #cbForms{height:262px;position:relative;}
+/* \*/
+#content.home #cbForms{height:auto;}
+#content.home #cbForms{min-height:262px;height:expression("262px");}
+/* */
+#cb #cbForms .multichildroom{background:#F7BE94;margin-bottom:3px;}
+#content.home .cbmoreoptions{position:absolute;top:288px;background:transparent}
+#cb_typeselectmsgtxt{padding:3px 4px 1px 6px;}
+#cb_typeselectmsgtxt a{color:#000;}
+#cb_typeselect{margin:0px 4px;border:1px solid #DE8C5A;border-bottom-width:0px;}
+#cb_typeselect ul{height:20px;background:#DE8C5A;clear:both;float:none;}
+#cb_typeselect li{display:inline-block;float:left;height:20px;padding-right:2px;}
+#content.home #cb_typeselect li{font-size:10px;}
+#cb_typeselect li input{font-size:12px;}
+#content.air #cb_typeselect ul li{width:32%}
+#content.air #cb_typeselect ul>li{min-width:32%;width:auto}
+#content.home span.cb_typeselectlabel {vertical-align:middle;height:18px;}
+/* \*/
+#content.home li>span.cb_typeselectlabel {vertical-align:text-top;line-height:10px}
+/*  */
+#cb_typeselect li.typeselected{background:#F6A472;}
+#cb_typeselect li.typeselected a{color:#634531;}
+#cb_air_ed{margin-left:3px;}
+#cb_air_nba{padding-bottom:0px;}
+.rowlabel{margin-top:4px;}
+#air_fromrowed.cbrow,#air_fromrowfd.cbrow{margin:0px 4px;border-style:solid;border-color:#DE8C5A;border-width:0px 1px;height:25px;padding:2px 0px 0px 6px}
+#air_torowed.cbrow,#air_torowfd.cbrow{margin:0px 4px;border:1px solid #DE8C5A;border-top-width:0px;height:20px;padding:2px 0px 5px 6px}
+#cbForms .superclear{margin-top:-1px;}
+#cbflexNote{position:absolute;width:140px;left:130px;top:0px;}
+#FMD_fromcal1 .cbCity,#FMD_fromcal2 .cbCity,#FMD_fromcal3 .cbCity,#FMD_fromcal4 .cbCity{position:relative}
+.cb_txtdate{width:65px;}
+.cb_split{width:132px;float:left;}
+#plusMinusDates,#flexibleDates,#cbairchildages{display:none;}
+#cb_multi,#datedf,#daterf,#air_torowfd,#air_fromrowfd{display:none;}
+#openDates,#FO_torowopenDates,#FO_fromrowopenDates,#FO_fromrowflexibleDates,#FO_torowflexibleDates,#nearbymsg,#exactDatesCSA{display:none;}
+#iframeCal{z-index:2;position:absolute;width:140px !important;height:280px;visibility:hidden;background:transparent;top:0px;}
+.cbrow{postion:relative;}
+#cb .cbhelp{color:#394A21;float:right;padding-right:10px;display:block}
+#content.air #cb #cb_multi .cbCity{width:85px;float:left;padding-bottom:4px;}
+#content.air #cb #cb_multi .cbCity input{width:80px;float:none;}
+#content.home #cbForms .cbSubmit{padding-top:0px;}
+.cbmultiCity{width:38%;float:left;padding-bottom:4px;}
+.cbmultiCity input{width:90%;}
+#content.air #cb .cbCity{width:161px;float:left;padding-bottom:4px;}
+#content.air #cb .cbCity input{width:153px;}
+#cb .cbFMDtime{width:75px;}
+.cbSpecificAir{float:left;}
+.cbSpecificAir li{padding:0px 0px 1px 0px;}
+.cbSpecificAir li.specificair{display:none;text-align:right;padding-bottom:2px;}
+#cb .aircos{width:17em;float:left;}
+#content.air #cb_formFMD .cbcalrow{width:334px;margin-left:0px;}
+#content.air #cb_formFMD div.cbCity{width:120px;}
+#content.air #cb_formFMD .cbCity input{width:110px;}
+#cb .cb_adopt{width:35%;float:left;;position:relative}
+#cb .cbairline{width:50%;float:left;position:relative}
+#cbSubmitAirHP{font-size:11px;text-align:center;color:#956C42;background:#F6A472;clear:both;width:259px;margin-right:8px;margin-bottom:4px;margin-left:8px;vertical-align:middle;}
+#cbSubmitAirHP.twobutton button{float:left;}
+#cbSubmitAirHP.onebutton button{float:right;}
+#cbSubmitAirHP.onebutton button.noc{float:left;}
+#cb_airminors{display:none;}
+.cbflightlabel{margin-left:8px;clear:both;float:none;}
+button .foright{float:right;}
+button .foleft{float:left;}
+button#submitFH{display:none;}
+#content.air .cbPass{position:relative;}
+#cbHOstate .label{line-height:1.3em;}
+#cbHOstate[id=cbHOstate] .label{line-height:1.2em;}/* need for IE6 when input next to select list */
+.roomrow{padding-bottom:2px;}
+.multiroom{display:none;}
+#cb .cbPass{width:3.7em;}
+#cb form{behavior:url(images/spacer.png);}
+/* /cb */
+#cb_e{z-index:3;width:275px;position:absolute;top:1px;display:none;}
+#content.air #cb_e{width:334px;}
+#cb_econtent{background:#F9F0AA;padding:5px 5px 5px 33px;border:1px solid #FF9900;font-weight:900;}
+#cb_econtent img{position:absolute;top:3px;left:5px;}
+#cb_enote{font-weight:300;}
+#cb_eclose{float:right;}
+#cb_eclose a{font-size:.89em;font-weight:300;text-decoration:none;color:#000;}
+#cb_eclose a:hover{text-decoration:underline;}
+#cbForms .cb_efield{background:#F9F0AA;}
+#HO_aircity {visibility:hidden}
+#HO_addair{float:left;margin-top:-3px;}
+#HO_grpmsg{margin-top:2.8em;margin-bottom:0px;float:right;position:relative;width:165px;display:none;}
+.roomsnum{position:absolute;left:0px;top:1.2em;}
+.HO_roomlabel{margin-top:-5px;}
+
+#cb_formHO .cbPass .HO_roomlabel,#cb_formHO #HO_calfrom,#cb_formFH #FH_room1
+.rowlabel{position:relative;}
+
+/* xmlhttp style */
+.cb_updating{background:#F9F0AA}
+/** Added 1/04/06 for AARP and Gnome store logos**/
+.home #smallPromo iframe{margin-bottom:12px;}
+#content.home #ideas{margin-bottom:8px;}
+.home #ideas .hfix{background:#ced6b5;height:142px;min-height:142px;}
+.home #ideas> .hfix{height:auto;}
+.home #deals{margin-bottom:0px;}
+.home #deals .hfix{background-color:#c0c0db;height:192px;min-height:192px;}
+.home #deals> .hfix{height:auto;}
+.home #merch{margin:0;}
+.home #tools{margin-bottom:8px;}
+.home #tools iframe{margin-bottom:5px;}
+#content.home #tools .hr{margin:5px 0 6px;}
+#content.home #tools #mastercard{margin:0;}
+#content.home #tools #aarpimg{margin:0;}
+#content.home #ideas{padding-bottom:4px;padding-bottom:expression("6px");}
+#content.home #deals li{padding-right:4px;}
+
+/*added 7/27/06 for cruise fd redesign*/
+#cb_formCR button.single{margin-bottom:3px;}
+.pricegty,.merchad{margin-bottom:12px;}
+#explore{background:#ced6b5;color:#30420b;margin-bottom:12px;padding:10px 10px 2px;}
+#explore h2{margin:0 0 10px 0;}
+#explore select{bottom:10px;margin-right:8px;position:relative;width:18em;}
+#explore input.submit{margin-bottom:6px;height:19px;width:37px;}
+.msgbar{background:#ffd674;color:#493b26;margin-bottom:12px;padding:6px;}
+.msgbar h3{margin-bottom:3;}
+#cruisemerch{float:right;margin-bottom:8px;width:125px;}
+
+/*cannonball 1_5 styles */
+#cbNav1_5{width:275px;font-size:11px;background:repeat-x;margin-bottom:2px;height:86px;overflow:hidden;}
+#cbNavList{width:290px;}
+#cbNav1_5 li{display:inline}
+#cbNav1_5 form{margin:0;padding-top:0px;}
+#cbNav1_5 ul.cbSubNav {float:left;width:132px;}
+#cbNav1_5 ul.cbSubNav li{float:left;width:132px;margin:0px;padding:0px}
+.cbSubNavRow {width:275px;display:none;}
+.cbSubNavRow li{font-weight:bold;color:#394A21}
+#cbNav1_5 li .cbSubNavRow{position:absolute;}
+#cbNav1_5 li.cbNavon{background:#F6A472;}
+#cbNav1_5 li.cbNavon .cbSubNavRow{display:block;position:absolute;left:0px;top:28px;background:#F6A472;height:58px;}
+#cbNav1_5 .cbSubNav span{display:inline;float:none;height:auto;padding:0px;text-align:left;}
+.cbformnav{display:none;}
+#cbNav1_5 .cbSubNavRow a.cbSubNavPromo{padding:0px;margin:0px;filter:none;height:auto}
+a.cbSubNavPromo img{border:0px;float:right;margin-top:4px;margin-right:6px;}
+.cbnavtab input{position:absolute;top:0px;left:0px;visibility:hidden;}
+.cbnavtab{display:block;text-align:center;float:left;background:transparent}
+#cbNav1_5 .cbnavtab a{font-size:14px;border-bottom:1px solid #FFC09A;display:block;border-right:1px solid #FFC09A;font-weight:900;text-decoration:none;color:#fff;line-height:26px;height:26px;}
+#cbNav1_5 li.cbNavon .cbnavtab{background:#F6A472;}
+#cbNav1_5 li.cbNavon .cbnavtab a{color:#394A21;filter: none;text-shadow:none;border-bottom-color:#F6A472}
+#cb .cbform{background:#F6A472;}
+#content.home .cbform{position:absolute;top:0px;width:275px;visibility:hidden;display:none}
+#content.home .cbformon{position:relative;visibility:visible;display:block}
+.cbsubmitoptions{width:100px;float:right}
+.cbmoreoptionssubmit{position:relative;width:263px;margin:0px 6px;}
+#air_moreoptions.cbmoreoptionssubmit .cboptions{position:absolute;top:0px;width:110px;}
+#air_moreoptions.cbmoreoptionssubmit .cboptions li{width:110px;float:left;}
+.cbmoreoptionssubmit .cboptions{width:155px;float:left;}
+.cbmoreoptionssubmit .cboptions li{width:155px;}
+/* \*/
+#content.home .cbform{padding-bottom:4.3em;}
+#content.home .cbform{min-height:222px;height:expression("262px");}
+.cbmoreoptionssubmit{position:absolute;width:263px;margin:0px 6px;bottom:3px;vertical-align:bottom}
+#air_moreoptions .cbsubmitoptions{width:142px;text-align:right;}
+#air_moreoptions.cbmoreoptionssubmit .cboptions{top:auto;position:absolute;bottom:0px;left:0px;}
+#air_moreoptions.cbmoreoptionssubmit .cboptions li{float:none;}
+.cbsubmitoptions{position:absolute;bottom:0px;right:0px}
+/* */
+#cbForms button{text-align:center;}
+#cb_FHCarMsg{padding:2px 0px 2px 8px;background:#ffc09a;margin:2px 4px}
+#cb_FHCarMsg img{text-align:left;}
+#cbairchildages.cbrow {background:#F7BE94;margin-bottom:2px;}
+#content.home #cb div.cbhr{border-top:0px;border-bottom:1px dotted #fff;clear:both;margin:3px 0;clear:both;overflow:hidden;}
+#cb_FHCarMsg{display:none;}
+#cbNav1_5 .cbnavtablast a{border-right:0px;}
+.cbPackagesTab{width:89px;}
+.cbFlightsTab{width:72px;}
+.cbCarsTab{width:51px;}
+.cbHotelsTab{width:63px;}
+#content.home #cb div.cbhr{border-width:0px;background:#F7BE94 repeat-x;height:1px;clear:both;margin:3px 0px;clear:both;overflow:hidden;width:auto;}
+#content.home #cb .cbform div.cbhr{margin:3px 4px;}
+#cb #cb_airtripoptions .cbrow{background:transparent;margin:0px;border-width:0px}
+#cb #cb_airtripoptions #cb_typeselect{margin:0px;border-width:1px 0px 0px 0px}
+#cb_airtripoptions #cb_typeselect li.typeselected{background:#F9C5A5;}
+#content.home #cbForms button {text:shadow:0px;background-image:none;border-color:#F9C5A5 #99623E #99623E #F9C5A5;background-color:#C27C4F}
+#content.home #cbForms button div {FILTER:none;}
+#cb_COIDmsg{float:left;width:90px;}
+#cb .cb_a{color:#394A21;}
+#cb_COPUDO{float:left;width:170px;}
+#cbForms.cb1_5 button{padding:0px;cursor:pointer;cursor:hand;text-decoration:none;white-space:normal;color:#fff;font-weight:600;border-width:2px;border-style:solid;border-color:#C7AF92 #6A4E2D #6A4E2D #C7AF92;background: #A66C3F;text-shadow:0px;margin:0px;width:93px;}
+#cbForms.cb1_5 #air_moreoptions button{margin-bottom:5px;}
+#cbForms.cb1_5 #air_moreoptions #airFHSubmit{width:142px;margin-bottom:0px;}
+#cbForms.cb1_5 .cbSubmit{font-size:11px;clear:both;text-align:center;color:#956C42;margin:0px 8px 0px 0px;width:267px;padding:3px 0px 0px 0px;vertical-align:middle;}
+.cb1_5_title{position:absolute;left:-1500px;}
+/*cru special rate*/
+#cb_specialOption{margin-left:20px;position:relative}
+#cb_specialOption input{position:absolute;left:-24px;top:-2px;}
+.cb_specialLabel{font-weight:bold;}
+#cb_specialOption .cb_specialLabel{line-height:1.4em;text-align:bottom;}
+#banner {border:1px solid #CCCCCC;clear:both;height:90px;margin:0px 0px 12px 0px;padding:6px;}

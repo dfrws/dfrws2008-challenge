@@ -1,0 +1,16 @@
+crash> mount
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bf7c0 d1964000 rootfs rootfs         /
+c12bfc40 d16cf000 ext3   /dev/root      /
+c12bfbc0 d1481200 tmpfs  /dev           /dev
+c12bfb40 c12b7a00 proc   /proc          /proc
+c12bfac0 d1964200 sysfs  /sys           /sys
+c12bff40 d151f600 usbfs  /proc/bus/usb  /proc/bus/usb
+c12bf8c0 d19c0600 devpts devpts         /dev/pts
+c12bf9c0 d0cf5000 ext2   /dev/sda1      /boot
+c12bfe40 d0cf5800 tmpfs  tmpfs          /dev/shm
+c12bfec0 d0cf5400 vmhgfs .host:/        /mnt/hgfs
+c12bfcc0 d0cf5200 binfmt_misc none           /proc/sys/fs/binfmt_misc
+c12bfdc0 d0cf3400 vmblock none           /proc/fs/vmblock/mountPoint
+c12bfa40 d0cf2200 autofs /etc/auto.misc /misc
+cedccf40 d0cf3200 autofs -hosts         /net

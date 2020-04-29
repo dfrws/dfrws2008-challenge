@@ -1,0 +1,226 @@
+//////////////////////////////////////////////////////
+// Interpolls Banner Unit
+// Size: 300x250
+// Type: in-page
+// Base: 1.2
+// Category: CPG - Food/Beverage
+//
+// Copyright (c) 2007 Interpolls All rights reserved.
+//
+var rndStr = Math.random()*1000000000000000000+""; 
+cmp_id = "special/horizon/300";
+_ipGObj = window.ipollGObj;
+adPanelId=_ipGObj[cmp_id];
+adUID=adPanelId.queue.pop();
+adObj98809z801=adPanelId[adUID];
+adObj98809z801.adObj98809z801Str="window.ipollGObj['"+cmp_id+"']."+adUID;
+adObj98809z801.inited=false; 
+adObj98809z801.envDivName = "baseIpoll"+adUID;
+adObj98809z801.expDivName = "expIpoll1"+adUID;
+adObj98809z801.preDivName = "preIpoll"+adUID;
+adObj98809z801.shmDivName = "shmIpoll"+adUID;
+adObj98809z801.scrId = "ipollUnit_"+adUID;
+adObj98809z801.baseSize = [300, 250];
+adObj98809z801.clipParamsO = ["0px","0px","0px","0px"];
+adObj98809z801.clipParamsC = ["0px","0px","0px","0px"];
+// [width, height]
+adObj98809z801.expSize = [0, 0];
+// [top, left]
+adObj98809z801.expPositions = [0, 0];
+adObj98809z801.shimSize = [];
+adObj98809z801.shimPositions = [];
+adObj98809z801.shimSize[0] = typeof(adObj98809z801.shimSize[0])=="undefined"?adObj98809z801.expSize[0]:adObj98809z801.shimSize[0];
+adObj98809z801.shimSize[1] = typeof(adObj98809z801.shimSize[1])=="undefined"?adObj98809z801.expSize[1]:adObj98809z801.shimSize[1];
+adObj98809z801.shimPositions[0] = typeof(adObj98809z801.shimPositions[0])=="undefined"?adObj98809z801.expPositions[0]:adObj98809z801.shimPositions[0];
+adObj98809z801.shimPositions[1] = typeof(adObj98809z801.shimPositions[1])=="undefined"?adObj98809z801.expPositions[1]:adObj98809z801.shimPositions[1];
+if (!_ipGObj.browser.is_ie) {
+	adObj98809z801.doOnResize_prev = window.onresize; 
+	window.onresize = function () { if (typeof(adObj98809z801.doOnResize_prev) == "function") { try { adObj98809z801.doOnResize_prev(); } catch (e) {} } _ipGObj.util.doAttach(adObj98809z801.envDivName, adObj98809z801.expDivName, adObj98809z801); return;}
+}
+adObj98809z801.init = function () { 
+	if (this.inited) return;
+	var target=_ipGObj.util.getObj(adObj98809z801.scrId);
+	if (target) {
+		var iframe=adObj98809z801.iframe;
+		if (adObj98809z801.breakout && iframe) {
+		 	iframe.width = 0;
+			 iframe.height = 0;
+			 iframe.style.width = "0px";
+			 iframe.style.height = "0px";
+			 iframe.style.visibility = "hidden";
+		}
+		if (!_ipGObj.browser.is_ie) {
+			var rng=document.createRange();  
+			rng.selectNode(document.body);  
+			document.body.appendChild(rng.createContextualFragment(adObj98809z801.expDiv));
+			_ipGObj.util.doAttach(this.envDivName, this.expDivName, this);
+		}
+		if (_ipGObj.browser.is_valid) {  
+			var pObj = _ipGObj.util.getObj(this.preDivName);
+			if (pObj) { 
+				pObj.innerHTML = preStr;
+			}  
+		}  
+		var eObj = _ipGObj.util.getObj(this.expDivName);
+		if (eObj) { 
+			eObj.innerHTML = this.expStr;
+		} 
+		if (this.onReadyStateTimer) clearInterval(this.onReadyStateTimer);
+		this.inited = true;
+	}
+}  
+adObj98809z801.initTimer = function() {
+	this.onReadyStateTimer = setInterval(this.adObj98809z801Str+".init()",100);
+}
+adObj98809z801.expTimer=null;
+adObj98809z801.expStatus=0; 
+adObj98809z801.expStatus_opened=0; 
+adObj98809z801.oExpDiv = function () { 
+	this.expStatus=1;
+}
+adObj98809z801.oExpDiv_cond = function () { 
+	if(this.expStatus_opened) { this.expStatus=1; }
+}
+adObj98809z801.cExpDiv = function () { 
+	this.expStatus=0; 
+}
+adObj98809z801.cExpDiv_forc = function () { 
+	this._clExpDiv(); 
+	this.expStatus=0; 
+	this.expStatus_opened = 0; 
+}
+adObj98809z801._opExpDiv = function () { 
+	if (this.expStatus_opened) return; 
+	if (!_ipGObj.browser.is_ie) _ipGObj.util.doAttach(this.envDivName, this.expDivName, this);
+//	_ipGObj.util.aExpTrk(adObj98809z801, 45371, this.c, 1, 10, 11);
+//	_ipGObj.util.aExpTrk(adObj98809z801, 48966, this.c, 1, 10, 11);
+	_ipGObj.util.getZeroZObj(this.envDivName);
+	var tObj=_ipGObj.util.getObj(this.expDivName); 
+	if (tObj) { 
+		if (_ipGObj.browser.is_ie) {
+			var sObj=_ipGObj.util.getObj(this.shmDivName);
+			sObj.style.clip = "rect("+this.clipParamsO[0]+" "+this.clipParamsO[1]+" "+this.clipParamsO[2]+" "+this.clipParamsO[3]+")"; 
+		}
+		tObj.style.clip = "rect("+this.clipParamsO[0]+" "+this.clipParamsO[1]+" "+this.clipParamsO[2]+" "+this.clipParamsO[3]+")"; 
+	}
+}
+adObj98809z801._clExpDiv = function (inVar) {
+	if (!this.expStatus_opened) return; 
+	_ipGObj.util.setZeroZObj(); 
+	var tObj=_ipGObj.util.getObj(this.expDivName);
+	if (tObj) { 
+		tObj.style.clip = "rect("+this.clipParamsC[0]+" "+this.clipParamsC[1]+" "+this.clipParamsC[2]+" "+this.clipParamsC[3]+")"; 
+		if (_ipGObj.browser.is_ie) {
+			var sObj=_ipGObj.util.getObj(this.shmDivName);
+			sObj.style.clip = "rect("+this.clipParamsC[0]+" "+this.clipParamsC[1]+" "+this.clipParamsC[2]+" "+this.clipParamsC[3]+")"; 
+		}
+	} 
+}
+adObj98809z801.checkExp = function () {
+	if (this.expStatus) {
+		this._opExpDiv();
+		this.expStatus_opened=1;
+	} else {
+		this._clExpDiv();
+		this.expStatus_opened=0;
+	}  
+}
+adObj98809z801.expTimer= function () {
+	setInterval( this.adObj98809z801Str+".checkExp()", 50 );
+}
+adObj98809z801.expTimer();
+adObj98809z801.UR = function ( inVar ) { 
+	if (typeof(this.cv)=="undefined") { this.cv=0; }
+	this.cv = inVar; 
+	return;
+}
+//Target URL
+ipoll_targeturl="http://www.horizonorganic.com";
+if (adObj98809z801.link_g.length > 15) {  ipoll_targeturl = adObj98809z801.link2+adObj98809z801.link_g+escape(ipoll_targeturl); } else { ipoll_targeturl = adObj98809z801.link2+adObj98809z801.link_y+ipoll_targeturl; }
+//Flash declare
+try { ipollDocDomain=document.location.host; } catch (e) { } if (ipollDocDomain.length > 6) { ipollDocDomain="&inD="+ipollDocDomain; } else { ipollDocDomain = ""; }
+var ipoll_flashSourceBtm=_ipGObj.util.crUrl+"a/1/tjc.swf?inA=48966&inC="+adObj98809z801.c+"&inP=1"+ipollDocDomain;
+var ipoll_flashTargetBase="http://sw.interpolls.com/"+"redir.poll?c="+adObj98809z801.c+"&p=98809&i=";
+var ipoll_flashTarget="ipollTarget1="+escape(ipoll_flashTargetBase+"38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl));
+// Base Ad Unit Layout
+adObj98809z801.target=adObj98809z801.link2+adObj98809z801.preTarget+"http://sw.interpolls.com/"+"cache/special/horizon/poster_o.poll?a=48966&p=98809&c="+adObj98809z801.c+"&b="+escape(adObj98809z801.bumper)+"&u=";
+adObj98809z801.postF = function () { 
+	randvar=window.open(this.target+this.cv,"","width=450,height=500,toolbars=0,scrollbars=0,location=0,statusbars=0,menubars=0,resizable=0,top=100,left=100"); 
+	randvar.focus(); 
+	return; 
+}
+var defaultSty="margin:0px!important;padding:0px!important;background:none!important;border:0px!important; border-collapse:collapse!important; border-spacing:0px!important; list-style:none!important; background:none!important;";
+var onepxSty="line-height:1px!important;"+defaultSty;
+var imgSty="display:block!important;vertical-align:baseline!important;"+defaultSty;
+var qSty="font-family:arial,helvetica,sans-serif; font-weight:bold; font-size:12px; line-height:14px; color:#FDF169;";
+var cSty="font-family:arial,helvetica,sans-serif; font-weight:bold; font-size:12px; line-height:14px; color:#FFFFFF;";
+
+if (typeof(adObj98809z801.es2) == "undefined") adObj98809z801.es2 = ""; 
+if (adObj98809z801.es2 != "" && adObj98809z801.es2.toLowerCase().substring(0,7) == "http://") { 
+	adObj98809z801.es2 = "<img style=\""+imgSty+"\" src='"+adObj98809z801.es2+"' width=1 height=1 border=0>"; 
+} else { 
+	adObj98809z801.es2 = ""; 
+}
+
+if (typeof(adObj98809z801.es) == "undefined") adObj98809z801.es = ""; 
+if (adObj98809z801.es != "" && adObj98809z801.es.toLowerCase().substring(0,7) == "http://") { 
+	adObj98809z801.es = "<img style=\""+imgSty+"\" src='"+adObj98809z801.es2+"' width=1 height=1 border=0>"; 
+} else { 
+	adObj98809z801.es = ""; 
+}
+adObj98809z801.expDiv="<div id=\""+adObj98809z801.expDivName+"\" name=\""+adObj98809z801.expDivName+"\" onmouseout=\"\" style=\"clip: rect("+adObj98809z801.clipParamsC[0]+" "+adObj98809z801.clipParamsC[1]+" "+adObj98809z801.clipParamsC[2]+" "+adObj98809z801.clipParamsC[3]+"); position: absolute; top: "+adObj98809z801.expPositions[0]+"px; left: "+adObj98809z801.expPositions[1]+"px; visibility: visible; z-index: 2000; text-align: left; width: "+adObj98809z801.expSize[0]+"px; height: "+adObj98809z801.expSize[1]+"px; display: block;\"></div>";
+adObj98809z801.expStr="";
+//envelop div
+adObj98809z801.outStr="<div id=\""+adObj98809z801.envDivName+"\" name=\""+adObj98809z801.envDivName+"\" style=\"position: relative; z-index: 2000; width: "+adObj98809z801.baseSize[0]+"px; height: "+adObj98809z801.baseSize[1]+"px; \">";
+//impression div
+adObj98809z801.outStr+="<div id='impr' style='width:1px; height:1px; top:0px; left:0px; visibility:hidden; position:absolute; z-index:2; overflow:hidden;'>"+adObj98809z801.es+adObj98809z801.es2+"<img style=\""+imgSty+"\" src='"+"http://sw.interpolls.com/"+"imprimage.poll?a=48966&c="+adObj98809z801.c+"&p=1&t=9&i=0&rnd="+rndStr+"' width=1 height=1></div>";
+if (_ipGObj.browser.is_ie) {
+	adObj98809z801.outStr+=adObj98809z801.expDiv;
+}
+//main div
+adObj98809z801.outStr+="<div style=\"position: absolute; top: 0px; left: 0px; visibility: visible; text-align: left; width: "+adObj98809z801.baseSize[0]+"px; height: "+adObj98809z801.baseSize[1]+"px; display: block;\">";
+//table 1
+adObj98809z801.outStr+="<table name='ipollt98809z801' width=300 cellspacing=0 cellpadding=0 border=0 background='"+_ipGObj.util.crUrl+"c/2/tja.jpg'><tr><td style=\""+onepxSty+"\"><form style=\""+onepxSty+"\" name='ipollform98809z801'><table width=300 cellspacing=0 cellpadding=0 border=0 background=''>";
+//top img(horizon logo)
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" valign=top align=left><a style=\"background-color:transparent;\" href=\"http://sw.interpolls.com/redir.poll?c="+adObj98809z801.c+"&p=98809&i=38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl)+"\" target='_blank'><img style=\""+imgSty+"\" src='"+_ipGObj.util.crUrl+"b/2/tjb.gif' width=300 height=57 border=0></a></td></tr>";
+//row 1 of t2, question table 3(12x85SP+question+12x85SP)
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" valign=top align=center><table cellpadding=0 cellspacing=0 border=0 width=300 background=''><tr><td style=\""+onepxSty+"\" valign=top align=left><a style=\"background-color:transparent;\" href=\"http://sw.interpolls.com/redir.poll?c="+adObj98809z801.c+"&p=98809&i=38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl)+"\" target='_blank'><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=5 height=43 border=0></a></td><td style=\""+onepxSty+"text-align:center;\" align=center valign=middle><span style=\""+qSty+"\">How much milk is in your fridge?</span></td><td style=\""+onepxSty+"\" valign=top align=left><a style=\"background-color:transparent;\" href=\"http://sw.interpolls.com/redir.poll?c="+adObj98809z801.c+"&p=98809&i=38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl)+"\" target='_blank'><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=5 height=43 border=0></a></td></tr></table></td></tr>";//end of question table 3
+//question & choices table 2
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" valign=top><table width=100% cellspacing=0 cellpadding=0 border=0 background=''>";
+//row 2 of t2, Vote table
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" colspan=2 align=left valign=top><table border=0 cellpadding=0 cellspacing=0 width=100% background=''>";
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" rowspan=5><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=5 height=120 border=0></td><td style=\""+onepxSty+"\" align=left><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=20 height=1 border=0></td><td style=\""+onepxSty+"\" align=left><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=100 height=1 border=0></td><td style=\""+onepxSty+"\" rowspan=5><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=3 height=120 border=0></td></tr>";
+var as98809z801 = new Array(); as98809z801[0] = "Two or more gallons"; as98809z801[1] = "Just enough for cereal"; as98809z801[2] = "3 different half gallons"; 
+var idx = 0; 
+for (var ac=0;ac<as98809z801.length;) { 
+	idx = Math.floor(Math.random() * as98809z801.length); 
+	if (as98809z801[idx] != "ztk") { 
+		ac++;  
+		adObj98809z801.outStr+="<tr valign=top><td style=\""+onepxSty+"\" align=left valign=middle><input style=\"margin-right:3px;\" type=radio name='ia' onclick='adObj98809z801.UR("+(idx+1)+");' value='"+(idx+1)+"'></td><td style=\""+onepxSty+"\" align=left valign=middle><span style=\""+cSty+"\">"+as98809z801[idx]+"</span></td></tr>";
+ 		as98809z801[idx] = "ztk"; 
+	} 
+}
+//Vote Button
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" align=center><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=20 height=10 border=0></td><td style=\""+onepxSty+"\" align=left><input type=button value='  Vote  ' onClick='javascript:adObj98809z801.postF();'></td></tr>";
+adObj98809z801.outStr+="<tr><td style=\""+onepxSty+"\" colspan=4><a style=\"background-color:transparent;\" href=\"http://sw.interpolls.com/redir.poll?c="+adObj98809z801.c+"&p=98809&i=38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl)+"\" target='_blank'><img style=\""+imgSty+"\" src='"+_ipGObj.util.spUrl+"' width=150 height=30 border=0></a></td></tr>";
+adObj98809z801.outStr+="</table></td>";
+if (_ipGObj.browser.is_valid) {
+adObj98809z801.outStr+="<td style=\""+onepxSty+"\" valign=top align=left><object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\"  codebase=\"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0\" width=\"145\"  height=\"150\"  align=\"left\"><PARAM NAME=flashvars VALUE=\""+ipoll_flashTarget+"\"><param name=\"swliveconnect\" value=\"true\"> <param name=\"allowScriptAccess\" value=\"always\" /> <param name=\"movie\" value=\""+ipoll_flashSourceBtm+"\" /> <param name=\"quality\" value=\"high\" /> <param name=\"wmode\" value=\"transparent\" /> <param name=\"bgcolor\" value=\"#ffffff\" /><embed src=\""+ipoll_flashSourceBtm+"\" quality=\"high\" wmode=\"transparent\" swliveconnect=\"true\" bgcolor=\"#ffffff\" width=\"145\" height=\"150\" align=right align=\"left\" allowScriptAccess=\"always\" flashvars=\""+ipoll_flashTarget+"\" type=\"application/x-shockwave-flash\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\"></embed></object></td>";
+} else {
+adObj98809z801.outStr+="<td style=\""+onepxSty+"\" valign=top align=right><a style=\"background-color:transparent;\" href=\"http://sw.interpolls.com/redir.poll?c="+adObj98809z801.c+"&p=98809&i=38287&t="+escape(adObj98809z801.bumper+ipoll_targeturl)+"\" target='_blank'><img style=\""+imgSty+"\" src='"+_ipGObj.util.crUrl+"0/b/tjd.jpg' width=145 height=150 border=0></a></td>"; }
+adObj98809z801.outStr+="</tr></table></td></tr></table></form></td></tr></table>";
+adObj98809z801.outStr+="</div></div>";
+if (adObj98809z801.breakout) {
+	_ipGObj.util.ipoll_injectHTML(adObj98809z801.outStr,adObj98809z801.scrId);
+} else {
+	document.writeln(adObj98809z801.outStr);
+}
+adObj98809z801.initTimer();
+
+
+
+
+
+
+
+

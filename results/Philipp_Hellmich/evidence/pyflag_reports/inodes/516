@@ -1,0 +1,73 @@
+function cDisplay(){
+	a_args = cDisplay.arguments;
+	for(var i=0;i<a_args.length;i++){a_items=a_args[i].split(",");document.getElementById(a_items[0]).style.display = a_items[1];}
+}
+function cVis(){
+	a_args = cVis.arguments;
+	for(var i=0;i<a_args.length;i++){a_items=a_args[i].split(",");document.getElementById(a_items[0]).style.visibility = a_items[1];}
+}
+function cb_getRadio(s_formid,s_radio){
+	o_form = document.getElementById(s_formid);
+	a_radio = eval("o_form."+s_radio);
+	o_radio = a_radio[0];
+	for(var i=0;i<a_radio.length;i++)if(a_radio[i].checked)o_radio = a_radio[i];
+	return o_radio;
+}
+function cb_airDateType(o_radio){
+	o_ul = o_radio.parentNode.parentNode;
+	a_li = o_ul.getElementsByTagName("li")
+	for(var i=0;i<a_li.length;i++)a_li[i].className="";
+	o_radio.parentNode.className="typeselected";
+	a_msgspan = document.getElementById("cb_typeselectmsgtxt").getElementsByTagName("span");
+	for(var i=0;i<a_msgspan.length;i++)a_msgspan[i].style.display = "none";
+	cDisplay(o_radio.value+",inline");
+	switch(o_radio.value){
+		case "exactDates":
+			cDisplay("datedf,none","daterf,none","air_fromrowfd,none","air_torowfd,none");			
+			cDisplay("datelt,inline","datert,inline","air_fromrowed,block","air_torowed,block","cbSubmitText,block","FHbutton,block");
+			cVis("cb_air_nba,visible");
+			document.getElementById("cb_nba_input").checked ? cDisplay('exactDatesCSA,inline','exactDatesnoCSA,none') : cDisplay('exactDatesCSA,none','exactDatesnoCSA,inline');
+			document.getElementById("cbSubmitAirHP").className = "twobutton"
+			cb_nearByAirports(document.getElementById("cb_nba_input")); 			
+		break;
+		case "plusMinusDates":
+			cDisplay("datedf,inline","daterf,inline","air_fromrowed,block","air_torowed,block");
+			cDisplay("datelt,none","datert,none","air_fromrowfd,none","air_torowfd,none","cbSubmitText,none","FHbutton,none");
+			document.getElementById("cbSubmitAirHP").className = "onebutton" 
+			cVis("cb_air_nba,hidden");
+		break;
+		case "flexibleDates":
+			cDisplay("air_fromrowfd,block","air_torowfd,block","air_fromrowed,none","air_torowed,none","cbSubmitText,none","FHbutton,none");
+			cVis("cb_air_nba,hidden");
+			document.getElementById("cbSubmitAirHP").className = "onebutton" 
+		break;
+		default:
+	}
+}	
+function cb_changeAirType(){
+	o_dateTypeSelect = cb_getRadio("formair","dateTypeSelect");
+	o_form = document.getElementById("formair");
+	s_radio = "dateTypeSelect";
+	a_radio = eval("o_form."+s_radio);	
+	cDisplay("cb_multi,none","cb_rtow,block","cb_air_pmd,inline","cb_air_nba,block","air_torowed,block");
+	cb_nearByAirports(document.getElementById("cb_nba_input"));
+}
+function cb_nearByAirports(o_check){
+	document.getElementById("nearbymsg").style.display = (o_check.checked) ? "inline" : "none";
+	document.getElementById("cb_air_pmd").style.display = (o_check.checked) ? "none" : "inline";
+	document.getElementById("cb_air_fd").style.display = (o_check.checked) ? "none" : "inline";
+	o_button = document.getElementById("FObutton");
+	document.getElementById("cbSubmitAirHP").className = (o_check.checked) ?  "onebutton" : "twobutton";
+	o_check.checked ? cDisplay("exactDatesCSA,inline","exactDatesnoCSA,none","cbSubmitText,none","FHbutton,none") : cDisplay("cbSubmitText,block","FHbutton,block","exactDatesCSA,none","exactDatesnoCSA,inline");
+}
+function switchEnv(){
+	newenv = document.getElementById("environment")[document.getElementById("environment").selectedIndex].text;
+	if(newenv.indexOf("belle")>-1)document.getElementById("snappy").disabled = false;
+	else document.getElementById("snappy").disabled = true;
+	document.getElementById("formair").action = newenv;
+}
+function setUpAir(){
+	cb_nearByAirports(document.getElementById("cb_nba_input"));
+	cb_airDateType(cb_getRadio("formair","dateTypeSelect"))
+	childAges(document.getElementById("air_children"),"cbairchildages")
+}	

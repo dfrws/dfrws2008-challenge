@@ -1,0 +1,12 @@
+.noprint { display: none;} 
+img.print {display: block;}
+td.noprint { display: none;} 
+
+#content {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+

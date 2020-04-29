@@ -1,0 +1,44 @@
+====================== lo <struct net_device 0xc067f380>  ====================
+lo             127.0.0.1/8  mtu=16436                        LOOPBACK
+  inet6 addr: ::1/128
+    flags=<IFF_UP|IFF_LOOPBACK>
+    features=<FRAGLIST|SG|NO_CSUM|HIGHDMA|LLTX>
+    LINK_STATE   6 (START|PRESENT)
+    open=<None>, stats=<get_stats> mtu=16436 promisc=0
+    	last_rx  400.49 s ago
+
+            RX                -= Stats =-            TX          
+     -----------------------                ------------------------
+   --CPU 0                             
+    rx_packets           451               tx_packets           451
+    rx_bytes             1158988           tx_bytes             1158988
+                                       
+    .............................................................
+    <struct Qdisc 0xc068b5c0> qlen=0
+	enqueue=<None> dequeue=<noop_dequeue>
+	qlen=0 backlog=0 drops=0 requeues=0 overlimits=0
+====================== eth0 <struct net_device 0xd19f8000>  ==================
+eth0    192.168.151.130/24  mtu=1500      00:0c:29:c2:2f:0c  ETHER
+  inet6 addr: fe80::20c:29ff:fec2:2f0c/64
+    flags=<IFF_UP|IFF_BROADCAST|IFF_MULTICAST>
+    LINK_STATE   6 (START|PRESENT)
+    open=<vmxnet_open>, stats=<vmxnet_get_stats> mtu=1500 promisc=0
+    	last_rx 3111.77 s ago
+    	trans_start  119.01 s ago
+    .............................................................
+    <struct Qdisc 0xd14357c0> qlen=0
+	enqueue=<pfifo_fast_enqueue> dequeue=<pfifo_fast_dequeue>
+	qlen=0 backlog=0 drops=0 requeues=0 overlimits=0
+	== Bands ==
+	  sk_buff_head=0xd1435840 len=0
+	  sk_buff_head=0xd1435850 len=0
+	  sk_buff_head=0xd1435860 len=0
+====================== sit0 <struct net_device 0xd0337000>  ==================
+sit0                        mtu=1480                         SIT
+    flags=<IFF_NOARP>
+    LINK_STATE   4 (PRESENT)
+    open=<None>, stats=<ipip6_tunnel_get_stats> mtu=1480 promisc=0
+    .............................................................
+    <struct Qdisc 0xc068b4e0> qlen=0
+	enqueue=<noop_enqueue> dequeue=<noop_dequeue>
+	qlen=0 backlog=0 drops=0 requeues=0 overlimits=0

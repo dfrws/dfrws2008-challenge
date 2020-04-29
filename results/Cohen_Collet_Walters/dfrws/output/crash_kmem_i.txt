@@ -1,0 +1,18 @@
+crash> kmem -i
+              PAGES        TOTAL      PERCENTAGE
+ TOTAL MEM    70990     277.3 MB         ----
+      FREE     3536      13.8 MB    4% of TOTAL MEM
+      USED    67454     263.5 MB   95% of TOTAL MEM
+    SHARED    14692      57.4 MB   20% of TOTAL MEM
+   BUFFERS     3130      12.2 MB    4% of TOTAL MEM
+    CACHED    36554     142.8 MB   51% of TOTAL MEM
+      SLAB     2996      11.7 MB    4% of TOTAL MEM
+
+TOTAL HIGH        0            0    0% of TOTAL MEM
+ FREE HIGH        0            0    0% of TOTAL HIGH
+ TOTAL LOW    70990     277.3 MB  100% of TOTAL MEM
+  FREE LOW     3536      13.8 MB    4% of TOTAL LOW
+
+TOTAL SWAP   130526     509.9 MB         ----
+ SWAP USED        0            0    0% of TOTAL SWAP
+ SWAP FREE   130526     509.9 MB  100% of TOTAL SWAP

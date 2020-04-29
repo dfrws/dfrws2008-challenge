@@ -1,0 +1,59 @@
+*{font-family:Arial, Helvetica, sans-serif;font-size:100%;}
+body.body, body.default{background:#036;padding:0px;margin:0 0 0 10px;}
+.clear{clear:both}
+#header{z-index:5;text-align:left;font-size:.69em;width:766px;background:#003366;}
+#header img{border:0;z-index:6}
+#headerad{position:absolute;width:766px;text-align:right;top:3px;z-index:99999;}
+#headerad table{position:absolute;right:0px;}
+#logo{position:absolute;float:left;z-index:1;margin:10px 0 0 4px;}
+#navServices ul{position:relative;list-style:none;margin:0;padding:68px 5px 5px 0;border-bottom:1px solid #6A87A7;background:#003366;color:#ffffff;text-align:right;}
+#navServices{padding:0;}
+#navServices li{display:inline;font-size:1em}
+#navServices a:link,#navServices a:visited,#navServices a:hover,#navServices a:active{margin:0;padding:0 5px;background:#003366;color:#ffffff;text-decoration:none;font-size:1em;}
+#navServices a:hover{text-decoration:underline;}
+#skipNav{display:none;}
+#skip{clear:both;}
+#mainNav{background:#003366;z-index:4;position:relative;height:5.15em;padding:0;margin:0;}
+#mainNav #mainNavContent{padding-left:12px;float:left;height:5.15em;width:744px;}
+#mainNavmessage{position:absolute;float:none;display:block;margin:0;padding:0;text-align:right;height:33px;line-height:3em;background:#fff;color:#000;top:2.2em;left:0;width:766px;}
+#mainNavmessage span{display:block;padding:0 12px 0 0;}
+#mainNav #mainNavContent div{float:left;padding:0;margin:0;}
+#mainNav div br{float:none;clear:both}
+#mainNav div a{display:block;float:left;font-size:1.1em;line-height:2em;padding:0 9px 0 10px;background:transparent;color:#fff;text-decoration:none;font-weight:900;}
+#mainNav ul{visibility:hidden;position:absolute;list-style:none;padding:0;margin:0;background:#ccd6e0;width:14.5em;}
+#mainNav ul li{padding:0;margin:0;display:inline;list-style:none;background:#ccd6e0;font-size:1em;}
+#mainNav li a{margin:0;font-size:1em;line-height:1.8em;border-bottom:1px solid #40668c;border-left:1px solid #40668c;border-right:1px solid #40668c;font-weight:300;color:#003;padding:0 8px;display:block;background:#ccd6e0;width:14.5em;}
+#mainNav li a:hover{background:#7f99b2;color:#ffffff;}
+#mainNav .navOver{background:#40668c;}
+#mainNav .navOver ul{z-index:10;visibility:visible;}
+#mainNav #currentNav{padding:0;margin:0;background:#fff;position:static;}
+#mainNav #currentNav a{background:#fff;color:#036;border-width:0px;}
+#mainNav #currentNav ul{width:700px;position:absolute;left:12px;visibility:visible;z-index:1;white-space:nowrap;background:transparent;}
+#mainNav #currentNav ul li{padding:0;margin:0;background:#fff;display:inline;line-height:3em;width:auto;font-size:1em;}
+#mainNav #currentNav ul li a{border:0;padding:0;line-height:3em;color:#036;padding:0 10px 0 0;display:inline;background:#fff;width:auto;}
+#mainNav #currentNav li a:hover{background:#fff;color:#036;text-decoration:underline;}
+#mainNav #currentNav li.mainSubNav{line-height:3em;color:#FD6505;float:left;display:block;padding:0 10px 0 0;}
+#mainNav .smark{font-size:.6em;line-height:.6em;vertical-align:super;text-decoration:none;}
+#mainNavmessage img{float:right;z-index:2;}
+#mainNav div#mainNavmessage a{float:none;color:#000;text-decoration:underline;font-weight:300;line-height:3em;font-size:1em;padding-left:5px;float:right;width:20px;white-space:nowrap}
+/* \*/
+#mainNav div#mainNavmessage a{width:auto}
+#footer{position:relative;width:766px;clear:both;padding:9px 0 5px 0;background:#003366;color:#A5B2C3;font-size:.57em;text-align:right;}
+#footer ul{margin:0;padding:0 5px 0 0;list-style:none;}
+#footer li{display:inline;font-size:1em}
+#footer a{background:#003366;color:#ABBCCD;text-decoration:underline;}
+#footer li a{padding:0 7px;}
+#footer span{display:inline;padding:0 .2em;}
+#footer p{line-height:1.1em;margin:0 10px 0 0;padding:4px 0 0 0;font-size:1em;}
+@media print{#header{background:#036;}
+#logo{z-index:5;}
+#header #headerad,#header #navServices,#header #currentNav ul{visibility:hidden;}
+#header #mainNavmessage span{padding-right:170px;}
+#footer{display:none;}
+}
+@media screen{#header{background:#036;}
+#logo{z-index:5;}
+#header #headerad,#header #navServices,#header #currentNav ul{visibility:visible;}
+#header #mainNavmessage span{padding-right:12px;}
+#footer,#locator,#sidebar{display:block;}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="public_ip" mtime="1197865446" type="string">
+                <stringvalue>24.3.109.26</stringvalue>
+        </entry>
+</gconf>

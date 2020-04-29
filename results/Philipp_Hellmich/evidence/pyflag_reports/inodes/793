@@ -1,0 +1,53 @@
+// JavaScript Document
+
+	  
+        function setClock()
+	    {
+          // initialize accumulative HTML variable to empty string
+          var text = ""
+          // set standard convention for digit and punctuation images
+          // initialize time-related variables with current time settings
+          var now = new Date()
+          var day_of_week = getDayOfWeek(now.getDay()) ;
+          var month = getMonthName(now.getMonth()) ;
+          var day = now.getDate();
+          var year = now.getFullYear();
+            
+          text = day_of_week+" "+month+" "+day+", "+year;
+          return text
+        }
+         
+        function getMonthName(month)
+		{
+          // create array to hold name of each month
+          var ar = new Array(12)
+          ar[0] = "January"
+          ar[1] = "February"
+          ar[2] = "March"
+          ar[3] = "April"
+          ar[4] = "May"
+          ar[5] = "June"
+          ar[6] = "July"
+          ar[7] = "August"
+          ar[8] = "September"
+          ar[9] = "October"
+          ar[10] = "November"
+          ar[11] = "December"
+          // return name of specified month (parameter)
+          return ar[month]
+        }
+        
+        function getDayOfWeek(day)
+		{
+          // create array to hold name of each month
+          var ar = new Array(12)
+          ar[0] = "Sunday"
+          ar[1] = "Monday"
+          ar[2] = "Tuesday"
+          ar[3] = "Wednesday"
+          ar[4] = "Thursday"
+          ar[5] = "Friday"
+          ar[6] = "Saturday"
+          // return name of specified month (parameter)
+          return ar[day]
+		}

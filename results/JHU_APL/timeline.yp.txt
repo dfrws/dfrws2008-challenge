@@ -1,0 +1,307 @@
+#!/usr/bin/python
+
+"""Forensic Timeline Generation Tool
+
+This tool compiles a timeline of user activity generated from various
+sources. Specific pieces of information extracted are added to an array which
+is later sorted by time and output for further processing.
+
+This script requires Python 2.5 and the following additional packages:
+dpkt - http://code.google.com/p/dpkt/
+pcapy - http://oss.coresecurity.com/projects/pcapy.html
+
+We were originally using this package rather than pcapy, but could not get it
+to compile on Ubuntu 7.10:
+pcap - http://code.google.com/p/pypcap/
+
+"""
+
+__author__ = "Rodney Jokerst, Kevin Snow"
+__version__ = "1.1"
+__date__ = "June 18, 2008"
+__copyright__ = "JHUAPL"
+__license__ = "JHUAPL"
+
+# Copyright 2008 The Johns Hopkins University/Applied Physics Laboratory
+
+# This software was developed at The Johns Hopkins University/Applied Physics
+# Laboratory ("JHU/APL") that is the author thereof under the "work made for
+# hire" provisions of the copyright law.  Permission is hereby granted, free
+# of charge, to any person obtaining a copy of this software and associated
+# documentation (the "Software"), to use the Software without restriction,
+# including without limitation the rights to copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to permit
+# others to do so, subject to the following conditions:
+
+# 1.  This LICENSE AND DISCLAIMER, including the copyright notice, shall be
+# included in all copies of the Software, including copies of substantial
+# portions of the Software; 
+# 2.  JHU/APL assumes no obligation to provide support of any kind with
+# regard to the Software.  This includes no obligation to provide assistance
+# in using the Software nor to provide updated versions of the Software; and
+# 3.  THE SOFTWARE AND ITS DOCUMENTATION ARE PROVIDED AS IS AND WITHOUT ANY
+# EXPRESS OR IMPLIED WARRANTIES WHATSOEVER.  ALL WARRANTIES INCLUDING, BUT
+# NOT LIMITED TO, PERFORMANCE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+# PURPOSE, AND NONINFRINGEMENT ARE HEREBY DISCLAIMED.  USERS ASSUME THE
+# ENTIRE RISK AND LIABILITY OF USING THE SOFTWARE.  USERS ARE ADVISED TO TEST
+# THE SOFTWARE THOROUGHLY BEFORE RELYING ON IT.  IN NO EVENT SHALL THE JOHNS
+# HOPKINS UNIVERSITY BE LIABLE FOR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT
+# LIMITATION, ANY LOST PROFITS, LOST SAVINGS OR OTHER INCIDENTAL OR
+# CONSEQUENTIAL DAMAGES, ARISING OUT OF THE USE OR INABILITY TO USE THE
+# SOFTWARE.
+
+import os
+import operator
+import re
+import sys
+import commands
+import string
+from datetime import datetime
+import dpkt, pcapy
+import time
+from optparse import OptionParser
+
+parser = OptionParser()
+parser.add_option("-b", "--browser-history", help="Firefox history in RDF format", dest="history")
+parser.add_option("-m", "--memory-dump", help="Memory dump file", dest="memfile")
+parser.add_option("-p", "--pcap-file", help="Network packet capture file", dest="pcapfile")
+parser.add_option("-r", "--root-path", help="Root path", dest="fs_path")
+parser.add_option("-f", "--pcap-filter", help="Filter pcap results [default]", dest="pcap_filter", action="store_true")
+parser.add_option("-u", "--pcap-nofilter", help="Do not filter pcap results", dest="pcap_filter", action="store_false")
+parser.add_option("-t", "--pcap-timing", help="Eliminate auto-generated requests faster than given interval (sec)", dest="pcap_timing_filter", type="float")
+
+parser.set_defaults(pcap_filter=True)
+parser.set_defaults(pcap_timing_filter=1.0)
+
+(options, args) = parser.parse_args()
+
+# Print help if we get no command-line arguements
+if (len(sys.argv) <= 1):
+  parser.print_help()
+
+# Misc parameters that could be provided as arguments
+#pcap_filter = 1 		# Enable / Disable filtering of pcap file
+# Eliminate auto-generated requests faster than this time interval
+#pcap_timing_filter = 1.0
+# Eliminate problems with roll-over image timing
+pcap_request_filter = '\.gif$|\.jpg$|\.png$'
+# Eliminate problems with scripted ad refreshes
+pcap_host_filter = 'hitbox|pagead|questionmarket|blogads' 
+# No year appears in time strings found in memory logs, so we have to
+# manually indicate it
+mem_year = "2007"; 
+
+# Entries is the array which contains all time-related information. We push
+# entries into this array and then sort them by time at the end.
+entries = []
+
+if (options.fs_path):
+  # Compile all of our regular expressions
+  mtime_re = re.compile("mtime=\"(\d+)\"")
+  atime_re = re.compile("atime=\"(\d+)\"")
+  name_re = re.compile("name=\"(\S+)\"")
+  uri_re = re.compile("uri=\"(\S+)\"")
+
+  # Do a full walk of the root path, examining every file we find
+  for root, dirs, files in os.walk(options.fs_path, topdown=False):
+    for name in files:
+      fullname = os.path.join(root, name)
+      # Create a short version of the full name with the root path removed
+      # for asthetics
+      shortname = fullname.replace(options.fs_path, '')
+
+      # Get stat info for the file. We need to run this before the file
+      # utility because it will change the last access time.
+      statinfo = os.stat(fullname)
+
+      # Run the "file" utility on each file to get a rough guess as to its
+      # type
+      details = commands.getoutput("file " + fullname)
+      type = string.split(details, ':')[1]
+
+      # Add an entry for each time in the stat structure to the entries
+      # array.
+      entry = [statinfo.st_atime, (shortname + " (" + type + ")"), "ACCESS"]
+      entries.append(entry)
+      entry = [statinfo.st_mtime, (shortname + " (" + type + ")"), "MODIFICATION"]
+      entries.append(entry)
+      entry = [statinfo.st_ctime, (shortname + " (" + type + ")"), "PERMISSIONS"]
+      entries.append(entry)
+
+      # Open the file and pull out any settings information
+      file = open(fullname, 'r')
+
+      for line in file:
+
+	# Search each file for a string mtime="" or atime=""
+	mtime = mtime_re.search(line, 1)
+	atime = atime_re.search(line, 1)
+	name = name_re.search(line, 1)
+	uri = uri_re.search(line, 1)
+
+	if mtime and name:
+	  entry = [eval(mtime.group(1)), shortname, "SETTING ("\
+	      + name.group(1) + ") change"]
+	  entries.append(entry)
+
+	if atime and uri:
+	  entry = [eval(atime.group(1)), shortname, "URI ("\
+	      + uri.group(1) + ")"]
+	  entries.append(entry)
+
+      file.close()
+
+    #for name in dirs:
+    #  print("DIR: " + os.path.join(root, name))
+
+
+if (options.history):
+  # Now, process the firefox history information
+  print "Opening firefox history file: " + options.history
+  file = open(options.history, 'r')
+  print "Reading file contents"
+  # Compile the regular expressions needed for this analysis. For each entry,
+  # we want the last visit date, first visit date, and URL.
+  lastvisit_re = re.compile("<LastVisitDate>(\d\d\d\d\d\d\d\d\d\d)")
+  firstvisit_re = re.compile("<FirstVisitDate>(\d\d\d\d\d\d\d\d\d\d)")
+  url_re = re.compile("<URL>(\S+)</URL>")
+  entry_re = re.compile("</entry>")
+
+  last_time = ""
+  first_time = ""
+  url_value = ""
+
+  for line in file:
+    lastvisit = lastvisit_re.search(line, 1)
+    firstvisit = firstvisit_re.search(line, 1)
+    url = url_re.search(line, 1)
+    entry = entry_re.search(line, 1)
+
+    if lastvisit:
+      last_time = lastvisit.group(1)
+    elif firstvisit:
+      first_time = firstvisit.group(1)
+    elif url:
+      url_value = url.group(1)
+    # When we encounter the end of an entry, add the most recent first visit
+    # and last visit information to the entries array
+    elif entry:
+      if first_time:
+	entry = [eval(first_time), url_value, "HISTORY First Browse"]
+	entries.append(entry)
+      if last_time:
+	entry = [eval(last_time), url_value, "HISTORY Last Browse"]
+	entries.append(entry)
+
+  file.close()
+
+# Now process the pcap file
+if (options.pcapfile):
+  flows = {}
+  lastTimings = {}
+
+  print "Opening PCAP file: " + options.pcapfile
+  print "PCAP Filter Toggle: " + str(options.pcap_filter)
+  print "PCAP Timing Filter: " + str(options.pcap_timing_filter)
+  pc = pcapy.open_offline(options.pcapfile)
+  # Filter all TCP packets from capture
+  pc.setfilter('tcp')
+
+  try:
+    hdr, pkt = pc.next()
+    while pkt:
+      # Unpack the packet header
+      ts, usec = hdr.getts()
+
+      pETH = dpkt.ethernet.Ethernet(pkt)
+      pIP = dpkt.ip.IP(str(pETH.data))
+      pTCP = dpkt.tcp.TCP(str(pIP.data))
+
+      if pIP.__getitem__('src') < pIP.__getitem__('dst'):
+	smallip = pIP.__getitem__('src')
+	bigip = pIP.__getitem__('dst')
+	smallport = pTCP.__getitem__('sport')
+	bigport = pTCP.__getitem__('dport')
+      else:
+	smallip = pIP.__getitem__('dst')
+	bigip = pIP.__getitem__('src')
+	smallport = pTCP.__getitem__('dport')
+	bigport = pTCP.__getitem__('sport')
+
+      tup = (smallip, bigip, smallport, bigport)
+
+      # If the packet contains TCP data
+      if len(pTCP.data) > 0:
+	request_entry = re.compile('(GET|POST) (.+) ').search(pTCP.data)
+	host_entry = re.compile('Host: (.+)').search(pTCP.data)
+	agent_entry = re.compile('User-Agent: (.+)').search(pTCP.data)
+      
+	# If there is a GET/POST request with a host and user agent
+	if (agent_entry and host_entry and request_entry):
+	  agent = agent_entry.group(1).strip()
+	  host = host_entry.group(1).strip()
+	  request = request_entry.group(2)
+
+	  # If we are using the filtering mechanism
+	  if options.pcap_filter:
+	    if not (agent in lastTimings):
+	      lastTimings[agent] = 0
+
+	    newTime = ts
+	    # Only include entries that are outside the timing filter window
+	    if (ts - lastTimings[agent] >= options.pcap_timing_filter):
+	      if re.compile(pcap_request_filter).search(request) or re.compile(pcap_host_filter).search(host):
+		newTime = lastTimings[agent]
+	      else:
+		entry = [ts, "Agent: " + agent + " http://" + host + request, "PCAP"]
+		entries.append(entry)
+
+	    lastTimings[agent] = newTime
+	  # Otherwise, we are not filtering, so we include every entry
+	  else:
+	    entry = [ts, "Agent: " + agent + " http://" + host + request, "PCAP"]
+	    entries.append(entry)
+	
+	# Otherwise, add a single TCP flow entry and mark the flow as active
+	else:
+	  if not (tup in flows):
+	    entry = [ts, "Tcp/Flow " + `pIP.__getitem__('dst')` + ":" + `pTCP.__getitem__('dport')`, "PCAP"]
+	    entries.append(entry)
+   
+	flows[tup] = 1;
+
+      hdr, pkt = pc.next()
+
+  except:
+    print "Finished parsing PCAP file"
+
+
+# Now process the memory file
+if (options.memfile):
+  file = open(options.memfile, 'rb')
+  log_re = re.compile('^([A-Z][a-z][a-z] \d\d \d\d:\d\d:\d\d) (.+:.+)')
+  file_re = re.compile('^([d-][r-][w-][x-][r-][w-][x-][r-][w-][x-] .+ ([A-Z][a-z][a-z][ \t]+\d+[ \t]+\d\d:\d\d) .+)')
+  for line in file:
+    log_entry = log_re.search(line)
+    file_entry = file_re.search(line)
+    if log_entry:
+      entry = [time.mktime(datetime.strptime(log_entry.group(1)+" "+mem_year,\
+	  "%b %d %H:%M:%S %Y").timetuple()), log_entry.group(2), "SYSLOG"]
+      entries.append(entry)
+    if file_entry:
+      entry = [time.mktime(datetime.strptime(file_entry.group(2)+":00 "+mem_year,\
+	    "%b %d %H:%M:%S %Y").timetuple()), file_entry.group(1), "CREATE/MODIFY"]
+      entries.append(entry)
+  file.close()
+
+
+# Sort the entries by the first element in each entry (the time in UNIX time
+# format)
+e2 = sorted(entries, key=operator.itemgetter(0))
+
+
+for entry in e2:
+  # Convert UNIX time to readable time and output to standard out
+  print datetime.fromtimestamp(entry[0]).strftime("%Y-%m-%d %H:%M:%S") \
+      + " " + entry[2] \
+      + " of " + entry[1]

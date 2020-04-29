@@ -1,0 +1,2 @@
+document.writeln("<a href=\"http://adsrv.bankrate.com/accipiter/adclick/CID=000096ed4344434500000000/site=brm/aamsz=banner/position=top/parent_channel=newadv/area=cc/ftb=/page=story/product_id=0/acc_random=388485643022575\" target=\"_blank\"><img src=\"http://bankrate-images.adbureau.net/bankrate/cardratings/cardratings_aug2006_bankrate728_ROC_080706_cc.gif\" border=\"0\"></a>");
+document.close();

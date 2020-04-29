@@ -1,0 +1,32 @@
+
+navTimer = null;
+currentNav = 0;
+o_navigator = navigator.userAgent
+var isIE5 = (o_navigator.indexOf("MSIE 5") > -1) ? 1 : 0;
+var isMac = (o_navigator.indexOf("Mac") > -1) ? 1 : 0;
+var isIE50 = (o_navigator.indexOf("MSIE 5.0") > -1) ? 1 : 0;
+var isIE52 = (o_navigator.indexOf("MSIE 5.2") > -1) ? 1 : 0;
+var isNN6 = (o_navigator.indexOf("Netscape6") > -1) ? 1 : 0;
+var isDOM = (document.getElementById) ? 1 : 0;
+
+function mainNavOver(o_div){
+	if(isDOM&&!isNN6&&!isIE52&&!isIE50){
+		if(currentNav)currentNav.className = "";
+		clearTimeout(navTimer);
+		o_div.className="navOver";
+	}
+}
+function mainNavOut(o_div){
+	if(isDOM&&!isNN6&&!isIE52&&!isIE50){
+		currentNav = o_div;
+		navTimer = setTimeout('currentNav.className=""',1);
+	}
+}
+function launchWindow(url,w,h){
+	winName = "_new"
+	if (!h)popHeight = screen.availHeight - 100;
+	else popHeight = h;
+	winParams = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=' + w + ',height=' + popHeight;
+	newwin = window.open(url, winName, winParams);
+	newwin.focus();
+}

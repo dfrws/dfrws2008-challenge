@@ -1,0 +1,130 @@
+/*  header/footer */
+.nav_tabText {font-family: arial,helvetica; font-size:12px; font-weight:bold;}
+.nav_notab {font-family: arial,helvetica; font-size:12px; font-weight:bold;}
+.nav_subDivider {font-size:10px; color:#ffffff;}
+#nav_sub {font-family: arial,helvetica; color: #ffffff; font-size: 11px;}
+#nav_off {color:#666666; text-decoration:none;}
+#nav_off:hover {text-decoration:underline;}
+#nav_on {color:#ffffff; background-color:#0066cc; text-decoration:none;}
+#footerLink {padding-left:6px; padding-right:6px;}
+
+/* template components */
+.container {width: 778px; padding: 5;}
+.sidebar {padding: 0 0 0 0;	width: 125px;}
+.sidebarHead {height:20px; background:#ffcc66; width: 125px; line-height: 18px; font: bold 13px arial,Helvetica; color: #000000;}
+#pagetitle {position:relative; width:637px; height:26px; border-style:solid; border-color:#cccccc; border-top-width:0px; border-right-width:0px; border-bottom-width:1px; border-left-width:0px; padding-top:5px; padding-bottom:3px; margin-bottom:10px;}
+#pagetitleLeft {float:left; clear:none;}
+#pagetitleRight {float:right;}
+.barNumber{text-align: center; background: #888888; width: 20px; padding: 1; line-height: 18px;}
+.barNumberBox{vertical-align: middle; background: #eaeaea; border-top: solid 1px #cccccc; border-bottom: solid 1px #cccccc; padding: 1 3 1 3; line-height: 18px;}
+.hRule1 {padding: 3 0 3 0; margin: 5 0 5 0; border-bottom: solid 1px #cccccc;}
+.hRule2 {padding: 3 0 3 0; margin: 5 0 5 0; border-top: solid 1px #cccccc;}
+td {font-family: arial,helvetica; color: #000000; font-size: small;}
+B {font-weight: bold}
+div.clear {clear:both;}
+
+/*  alerts & errors */
+.alert {position:relative; border:1px solid #0066cc; background-color:#ffffcc; width:100%; padding:5px; clear:none; margin:0px 0px 10px 0px;}
+.alertLeft {margin:0px 5px 0px 0px; float:left;}
+.alertMargin {margin:0px 0px 0px 29px;}
+#error {position:relative; width:100%; background-color:#ffffcc; border:1px solid #cc0000; padding:5px; margin-bottom:10px;}
+.error {background-color:#ffffcc;}
+.alertbox {position:relative; border:1px solid #6666cc; background-color:#ffcc66; width:630; padding:5px; clear:none; margin:10px 10px 10px 0px;}
+
+
+/*  links */
+A:visited {color: #0066CC}
+A:active {color: #FF6600}
+A {color: #003399}
+
+/*  scaleable fonts */
+.content {font-family: arial,helvetica; color: #000000; font-size: small;}
+.content-lg {font-family: arial,helvetica; color: #000000; font-size: medium;}
+.content-sm {font-family: arial,helvetica; color: #000000; font-size: x-small;}
+/*  flexible medium font - use outside of TDs */
+.content-md-em {font: .725em arial, helvetica; color:#000000;}
+/* flexible medium font - use within TDs */
+.content-md-em2 {font: .925em arial, helvetica; color:#000000;}
+
+
+/*  fixed fonts */
+.content-md {font-family: arial,helvetica; color: #000000; font-size: 13px;}
+.content-fxd {font-family: arial,helvetica; color: #000000; font-size: 10pt;}
+.content-fxd-sm {font-family: arial,helvetica; color: #000000; font-size: 10px;}
+.content-fxd-lg {font-family: arial,helvetica; color: #000000; font-size: 18px;}
+.category-head-sm-wht {font-family: arial,helvetica; color: #ffffff; font-size: 10px;}
+.category-head-wht {font-family: arial,helvetica; color: #ffffff; font-size: 13px; font-weight: bold;}
+.category-head {font-family: arial,helvetica; color: #000000; font-size: 13px; font-weight: bold;}
+.category-head-bg {font-family: arial,helvetica; color: #000000; font-size: 10pt; font-weight: bold; background-color:#ffcc66;} 
+.head {font-family: arial,helvetica; color: #0066cc; font-size: 17px; font-weight: bold;}
+.subhead {font-family: arial,helvetica; color: #6699cc; font-size: 15px; font-weight: bold;}
+
+
+/*  colors  */
+.gray {color: #999999;}
+.instr_txt {color: #6699cc;}
+.notice {color: #0066cc;}
+.blue {color: #0066cc}
+.white {color: #ffffff}
+.hilite {color: #ff9933; font-weight: bold;}
+.unavail {color: #cc0000; font-weight: bold;}
+
+/* bullet points */
+ul.caret {list-style-image: url(images/spacer.png); margin: 0 0 5 10; padding: 0 0 0 5;}
+ul.blackB {list-style-image: url(images/spacer.png); margin: 0 0 5 20; padding: 0 0 0 5;}
+ul.blueB {list-style-image: url(images/spacer.png);}
+
+
+/*  form attributes */
+.buttonSpace {padding: 7 5 19 5;}
+.label1 {text-align: right; padding: 2; vertical-align: middle;}
+.label2 {padding-right: 4; text-align:right; width: 150px; vertical-align: top;}
+.label3 {width: 200px; text-align: right; padding: 2; vertical-align: middle;}
+/* align form fields to labels */
+.formField {text-align: left; padding: 2; vertical-align: middle}
+div.formTag {height:1px; clear:both;}
+
+/* progress bar */
+#trackprogress_bar {background-color:#eaeaea; width:340px; border-style:solid; border-color:#999999; border-top-width:1px; border-right-width:0px; border-bottom-width:1px; border-left-width:0px;}
+
+
+/*  spacing attributes */
+.vSpace1 {padding: 3 0 0 0;}
+.vSpace2 {padding: 5 0 0 0;}
+.vSpace3 {padding: 8 0 0 0;}
+.vSpace4 {padding: 10 0 0 0;} 
+.vSpace5 {padding: 15 0 0 0;} 
+.vSpace6 {padding: 20 0 0 0;}
+.leftIndent0 {padding: 0 0 0 3; text-align: left; }
+.leftIndent1 {padding: 0 0 0 5; text-align: left;}
+.leftIndent2 {padding: 0 0 0 10; text-align:left;}
+
+
+/* depricated - old header  */
+.tabs {font-family: arial,helvetica; color: #003399; font-size: 12px; font-weight: bold; background-color: #ffcc66;}
+#subtabs {font-family: arial,helvetica; color: #ffffff; font-size: 12px; background-color: #0066cc;}
+#tab-lit {font-family: arial,helvetica; font-size: 12px; font-weight: bold; color: #ffffff; background-color: #0066cc;}
+
+
+/* depricated - duplicates  */
+.pr_price {font-family: arial,helvetica; color: #000000; font-size: 13px;}   
+div.hr {display: none}
+/*/*/a{}
+div.hr {display: block; height: 1px; background:#cccccc; margin: 5px 0px 5px 0px;}
+/*hr {display:none} - removed caused hr's to disappear on cruise */
+
+
+/* depricated - need to get rid of & make sure no-one is using anymore  */
+.pr_terms {font-family: arial,helvetica; color: #000000; font-size: 11px;}
+.pr_orange {font-family: arial,helvetica; color: #FF9900; font-size: 21px; font-weight: bold;}
+.pr_blue {font-family: arial,helvetica; color: #0066CC; font-size: 21px; font-weight: bold;}
+.form {font-family: arial,helvetica; color: #000000; font-size: 10pt;}
+#gray {color: #999999;}
+#instr_txt {color: #6699cc;}
+#notice {color: #0066cc;}
+#blue {color: #0066cc}
+#white {color: #ffffff}
+#hilite {color: #ff9933; font-weight: bold;}
+#unavail {color: #cc0000; font-weight: bold;}
+td.formTag {height:1px; clear:both;}
+/* */

@@ -1,0 +1,124 @@
+wyciwyg:wyciwyg://4/http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+.spreadsheets.google.com	TRUE	/	FALSE	1260933402	__utma	155071098.272284940.1197103829.1197648655.1197861402.4
+.spreadsheets.google.com	TRUE	/	FALSE	1213629402	__utmz	155071098.1197861402.4.4.utmccn=(referral)|utmcsr=docs.google.com|utmcct=/|utmcmd=referral
+http://docs.google.com/?action=home#spreadsheets
+https://www.google.com/accounts/CreateServiceAccount?service=wise&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den
+http://spreadsheets.google.com/femail?id=o17742632304305298979.6904981162451457119.08953231559355367409.3362999466403390403&hl=en&to=%20%3Cfaatali%40hotmail.com%3E&cc=
+HTTP:http://www.google.com/images/spreadsheets/bg-btn.gif
+HTTP:http://www.google.com/images/spreadsheets/arrow.gif
+HTTP:http://www.google.com/images/spreadsheets/bg-btn.png
+HTTP:http://www.google.com/images/spreadsheets/top-grad.gif
+HTTP:http://www.google.com/images/spreadsheets/icon-dropdn.gif
+HTTP:http://www.google.com/images/spreadsheets/icon-disabled-dropdn.gif
+HTTP:http://www.google.com/images/spreadsheets/hatch-darker-8.gif
+HTTP:http://www.google.com/images/spreadsheets/tab_ul.gif
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103884808000&tfe=he_14&MODE=init&zx=v3ilgg-omxrtr&t=1
+HTTP:http://www.google.com/images/spreadsheets/tab_ur.gif
+HTTP:http://www.google.com/images/spreadsheets/close_box.gif
+HTTP:http://www.google.com/images/spreadsheets/openDlgBack.png
+FHTTP:http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=272284940&utmcs=UTF-8&utmsr=1900x1004&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=-&utmcn=1&utmdt=Unsaved%20spreadsheet%20-%20Google%20Docs&utmhn=spreadsheets.google.com&utmr=-&utmp=/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en&utmac=UA-18065-4&utmcc=__utma%3D155071098.272284940.1197103829.1197103829.1197103829.1%3B%2B__utmb%3D155071098%3B%2B__utmc%3D155071098%3B%2B__utmz%3D155071098.1197103829.1.1.utmccn%3D(direct)%7Cutmcsr%3D(direct)%7Cutmcmd%3D(none)%3B%2B
+HTTP:http://www.google.com/images/spreadsheets/spinWait.gif
+HTTP:http://www.google.com/images/spreadsheets/closeX.gif
+HTTP:http://www.google.com/images/spreadsheets/toolbarAll7.gif
+HTTP:http://www.google.com/images/spreadsheets/icon_preview.gif
+HTTP:http://www.google.com/images/spreadsheets/icon_print.gif
+HTTP:http://www.google.com/images/spreadsheets/buttonDownTriBlue.gif
+HTTP:http://www.google.com/images/spreadsheets/modalDlgBack.png
+HTTP:http://www.google.com/images/spreadsheets/hyperlink.gif
+HTTP:http://www.google.com/images/spreadsheets/gradient-12.gif
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103884808000&tfe=he_14&TYPE=xmlhttp&zx=suayc8-iaxuhs&t=1
+HTTP:http://www.google.com/images/spreadsheets/gradient-on-12.gif
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103966609000&tfe=he_14&SID=39D4D9B0296B4D&RID=81739&TYPE=terminate&zx=ogy9cu-lwojz5
+HTTP:http://spreadsheets.google.com/remotelogout?r=5499567575077715237
+HTTP:http://www.google.com/images/spreadsheets/icon_email.gif
+HTTP:http://spreadsheets.google.com/c/ui/js/3158726572-EmailAc.js
+HTTP:http://spreadsheets.google.com/c/data/contacts?out=js&max=250
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103974985000&tfe=he_14&RID=rpc&SID=52FD439550F32A4&CI=0&AID=0&TYPE=xmlhttp&zx=uxaohg-h7xehy&t=1
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197104044022000&tfe=he_14&SID=52FD439550F32A4&RID=11287&TYPE=terminate&zx=98thit-vu50te
+HTTP:http://spreadsheets.google.com/remotelogout?r=4358464512219083626
+HTTP:http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJAAAAC9svgMekiqCizyzzrWvbcpTd0S4xcpzptZumRxtMuKni5HYafOL9ayLw2sAyY8ejS9Rde7d0mkFHogkRsHNtXXrScuV_gVVje0sxNVHbVThMdqVWthXH4VPuM0c5rhPMij_99DPb_5uryCG5zL4y5gezbi8pzEgMEwiI4BuBQDzjVEMXWBb-mVVjrvzUVtCr8&gausr=Steve.Vogon%40gmail.com
+Location: http://spreadsheets.google.com/ccc?doNothing&pli=1
+http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAI8AAACECowomwiGldUAHZaVQP2Lg8hhAaX7DRl43He40-zZeuFQcM7toxw6dtfxZhA_APVSXDwZo_t9HMpuMtzxqZ4niSU_ny0y5J_-9ON3JRYhZq1CygcF2LwY8tjKzhQugVzepxE5bSLXiOC-H1b_tEBZBnDWwJbconzvYL4bnEzOzkO0FaiDYsY8fNvkhfqwzt0&gausr=Steve.Vogon%40gmail.com
+http://docs.google.com/#spreadsheets
+https://www.google.com/accounts/NewServiceAccount?service=wise&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den
+http://docs.google.com/#spreadsheets
+HTTP:http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+HTTP:http://www.google.com/images/spreadsheets/favicon.ico
+HTTP:http://spreadsheets.google.com/client/css/1565280913-trix_main.css
+HTTP:http://spreadsheets.google.com/client/js/1096577086-trix_main_messages_en.js
+HTTP:http://spreadsheets.google.com/client/js/1591714928-trix_main.js
+HTTP:http://www.google.com/images/spreadsheets/logos/en/docs_spreadsheets_sm.gif
+HTTP:http://spreadsheets.google.com/ccc?doNothing&pli=1
+FHTTP:http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=513716227&utmcs=UTF-8&utmsr=1900x1004&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=-&utmdt=Negotiate%20-%20Google%20Docs&utmhn=spreadsheets.google.com&utmr=http://docs.google.com/?action=home&utmp=/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en&utmac=UA-18065-4&utmcc=__utma%3D155071098.272284940.1197103829.1197103829.1197103829.1%3B%2B__utmb%3D155071098%3B%2B__utmc%3D155071098%3B%2B__utmz%3D155071098.1197103829.1.1.utmccn%3D(direct)%7Cutmcsr%3D(direct)%7Cutmcmd%3D(none)%3B%2B
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103974985000&tfe=he_14&MODE=init&zx=kb95js-7hy3ky&t=1
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103974985000&tfe=he_14&TYPE=xmlhttp&zx=ex12ce-h1lt8r&t=1
+HTTP:http://www.google.com/images/spreadsheets/button-bg.gif
+HTTP:http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJEAAADcf_VzN0uh1hxUusj4JefNW1lNFYm3XlGAXefA0Ww3Tx-uKcMWr0l6VwC4cHhSfpoDo5RditjwGvTGnxwyYAdkX2hrvDzJK7FNtFVhGFHPY9lYu0W_mlpbBgbLC_obHAGATczb6C80wLoUIq3ITieuqkC56C8yhGHRlfW5lm7SlW9HR0dAbt6qsYvZFjGFjLny5IVvh0_BKPoGMLk8Gaun&gausr=Steve.Vogon%40gmail.com
+Location: http://spreadsheets.google.com/ccc?doNothing&pli=1
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.306731473650171417&hl=en&VER=6&lsq=1197861437895000&tfe=bx_95&MODE=init&zx=xgm412-jsmkij&t=1
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.306731473650171417&hl=en&VER=6&lsq=1197861437895000&tfe=bx_95&TYPE=xmlhttp&zx=snlsf5-9ehpk0&t=1
+HTTP:http://www.google.com/images/spreadsheets/close_box_dialog.gif
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.306731473650171417&hl=en&VER=6&lsq=1197861437895000&tfe=bx_95&RID=rpc&SID=7EF716ECA64CCE78&CI=0&AID=0&TYPE=xmlhttp&zx=dgnmwb-3u1a8v&t=1
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.306731473650171417&hl=en&VER=6&lsq=1197861489585000&tfe=bx_95&SID=7EF716ECA64CCE78&RID=3553&TYPE=terminate&zx=9v7d1c-jm8ng6
+http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJAAAAC9svgMekiqCizyzzrWvbcpTd0S4xcpzptZumRxtMuKni5HYafOL9ayLw2sAyY8ejS9Rde7d0mkFHogkRsHNtXXrScuV_gVVje0sxNVHbVThMdqVWthXH4VPuM0c5rhPMij_99DPb_5uryCG5zL4y5gezbi8pzEgMEwiI4BuBQDzjVEMXWBb-mVVjrvzUVtCr8&gausr=Steve.Vogon%40gmail.com
+http://spreadsheets.google.com/femail?id=o17742632304305298979.6904981162451457119.08953231559355367409.3362999466403390403&hl=en&to=%20%3Cfaatali%40hotmail.com%3E&cc=
+https://www.google.com/accounts/ServiceLogin?service=wise&passive=true&nui=1&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing
+http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJEAAAC82izn40cn379bmrqjkw1ljhybwV3yUk-GHKMFfVEyqsYIA0TdJf8D_7ZVRJtzTiaTDD301FejnAhCQ-Tm6Pv5WNL4yhvHn46ryTTUb8o-oyaz96iyprGj-ZxKnCug-atfp0bgUidgMtEg6g0w6Ft08RjCkYImkQZhnos_mTPQflcw4-cF07simApo9FEuh5SZjjAQiMzTmU0awl9zaUWw&gausr=Steve.Vogon%40gmail.com
+http://spreadsheets.google.com/ccc?doNothing&pli=1
+http://spreadsheets.google.com/c/ui/EmailAc?service=wise
+http://spreadsheets.google.com/ccc?new&hl=en
+https://www.google.com/accounts/NewServiceAccount?service=wise&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den
+https://www.google.com/accounts/CreateServiceAccount?service=wise&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3Fnew%26hl%3Den
+http://spreadsheets.google.com/ccc?new&hl=en&auth=DQAAAJAAAABsszmcPAp4hTHgoF17n5Wd3p3p6digW8RuI2DLK-7n7aaP8-9GSBX5qG-WQtqCofT9bMlWjNIq4_7xEcwM3XO40OxDUo8qSZYFYwTgxrOzQ8YEMkc9SaRJhvn3qtJhj9HQVJ1cUflDEqex_CAwH4atBRi4mtPb5_ES_CnLQLjiqUKSEMohnxaGI-YW7M33wHs&gausr=Steve.Vogon%40gmail.com
+http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en#
+http://docs.google.com/?action=home#spreadsheets
+http://spreadsheets.google.com/ccc?doNothing
+spreadsheets.google.com
+https://www.google.com/accounts/NewServiceAccount?service=wise&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing
+HTTP:http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAI8AAACECowomwiGldUAHZaVQP2Lg8hhAaX7DRl43He40-zZeuFQcM7toxw6dtfxZhA_APVSXDwZo_t9HMpuMtzxqZ4niSU_ny0y5J_-9ON3JRYhZq1CygcF2LwY8tjKzhQugVzepxE5bSLXiOC-H1b_tEBZBnDWwJbconzvYL4bnEzOzkO0FaiDYsY8fNvkhfqwzt0&gausr=Steve.Vogon%40gmail.com
+Location: http://spreadsheets.google.com/ccc?doNothing&pli=1
+HTTP:http://spreadsheets.google.com/client/js/3408057138-trix_main.js
+HTTP:http://spreadsheets.google.com/fm/test?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.7188964737831463857&hl=en&VER=6&lsq=1197648661037000&tfe=bx_116&MODE=init&zx=jiefht-a6dwbu&t=1
+FHTTP:http://www.google-analytics.com/__utm.gif?utmwv=1&utmn=1020022859&utmcs=UTF-8&utmsr=1900x986&utmsc=24-bit&utmul=en-us&utmje=1&utmfl=-&utmcn=1&utmdt=Negotiate%20-%20Google%20Docs&utmhn=spreadsheets.google.com&utmr=http://docs.google.com/&utmp=/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en&utmac=UA-18065-4&utmcc=__utma%3D155071098.272284940.1197103829.1197179091.1197648655.3%3B%2B__utmb%3D155071098%3B%2B__utmc%3D155071098%3B%2B__utmz%3D155071098.1197648655.3.3.utmccn%3D(referral)%7Cutmcsr%3Ddocs.google.com%7Cutmcct%3D%2F%7Cutmcmd%3Dreferral%3B%2B
+wyciwyg:wyciwyg://5/http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+HTTP:http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJEAAAC82izn40cn379bmrqjkw1ljhybwV3yUk-GHKMFfVEyqsYIA0TdJf8D_7ZVRJtzTiaTDD301FejnAhCQ-Tm6Pv5WNL4yhvHn46ryTTUb8o-oyaz96iyprGj-ZxKnCug-atfp0bgUidgMtEg6g0w6Ft08RjCkYImkQZhnos_mTPQflcw4-cF07simApo9FEuh5SZjjAQiMzTmU0awl9zaUWw&gausr=Steve.Vogon%40gmail.com
+Location: http://spreadsheets.google.com/ccc?doNothing&pli=1
+HTTP:http://www.google.com/images/spreadsheets/toastBackFill.png
+HTTP:http://www.google.com/images/spreadsheets/toastBackTop.png
+HTTP:http://spreadsheets.google.com/fm/bind?fmcmd=80&id=o17742632304305298979.6904981162451457119.08953231559355367409.1971809599772514543&hl=en&VER=6&lsq=1197103884808000&tfe=he_14&RID=rpc&SID=39D4D9B0296B4D&CI=0&AID=0&TYPE=xmlhttp&zx=dl93ri-jlezb8&t=1
+HTTP:http://www.google.com/images/spreadsheets/menu-downarrow.gif
+HTTP:http://spreadsheets.google.com/ccc?new&hl=en
+HTTP:http://spreadsheets.google.com/ccc?new&hl=en&auth=DQAAAJAAAABsszmcPAp4hTHgoF17n5Wd3p3p6digW8RuI2DLK-7n7aaP8-9GSBX5qG-WQtqCofT9bMlWjNIq4_7xEcwM3XO40OxDUo8qSZYFYwTgxrOzQ8YEMkc9SaRJhvn3qtJhj9HQVJ1cUflDEqex_CAwH4atBRi4mtPb5_ES_CnLQLjiqUKSEMohnxaGI-YW7M33wHs&gausr=Steve.Vogon%40gmail.com
+Location: http://spreadsheets.google.com/ccc?new&hl=en
+HTTP:http://spreadsheets.google.com/ccc?doNothing
+Location: https://www.google.com/accounts/ServiceLogin?service=wise&passive=true&nui=1&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing&followup=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing
+wyciwyg:wyciwyg://0/http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+    =http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAI8AAACECowom\
+    =http://docs.google.com/#spreadsheets)(247
+    =http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJEAAADcf_VzN\
+    =http://spreadsheets.google.com/femail?id=o17742632304305298979.6904981162\
+http://spreadsheets.google.com/ccc?key=pI958hhN-OvZf1K54yGvTXw&hl=en
+m/#spreadsheets
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment[en]=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment[en_GB]=Perform calculation, analyse information and manage lists in spreadsheets using Calc.
+Comment[en_ZA]=Perform calculation, analyse information and manage lists in spreadsheets by using Calc.
+Comment[hi_IN]=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment[sw_TZ]=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment[ta]=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Comment[ta_IN]=Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyse information and manage lists in spreadsheets using Calc.
+Perform calculation, analyse information and manage lists in spreadsheets by using Calc.
+Perform calculation, analyze information and manage lists in spreadsheets by using Calc.
+i=1&continue=http%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing&followup=h\
+ttp%3A%2F%2Fspreadsheets.google.com%2Fccc%3FdoNothing)(118
+    =http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJEAAAC82izn4\
+com)(119=http://spreadsheets.google.com/ccc?doNothing&pli=1)(11A
+    =http://spreadsheets.google.com/c/ui/EmailAc?service=wise)(13E
+    =http://spreadsheets.google.com/ccc?doNothing&pli=1&auth=DQAAAJAAAAC9svgMe\

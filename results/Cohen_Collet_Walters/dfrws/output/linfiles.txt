@@ -1,0 +1,1035 @@
+PID: 0      TASK: 0xc0660bc0  CPU: 0   COMMAND: "swapper"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 1      TASK: 0xd1957aa0  CPU: 0   COMMAND: "init"
+FD   FILE       DENTRY     INODE      TYPE PATH
+10   0xd14eb080 0xc13b73c0 0xd16a75bc FIFO /dev/initctl
+
+PID: 2      TASK: 0xd1957550  CPU: 0   COMMAND: "migration/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 3      TASK: 0xd1957000  CPU: 0   COMMAND: "ksoftirqd/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 4      TASK: 0xd195eaa0  CPU: 0   COMMAND: "watchdog/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 5      TASK: 0xd195e550  CPU: 0   COMMAND: "events/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 6      TASK: 0xd195e000  CPU: 0   COMMAND: "khelper"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 7      TASK: 0xd1ad2aa0  CPU: 0   COMMAND: "kthread"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 10     TASK: 0xd1aafaa0  CPU: 0   COMMAND: "kblockd/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 11     TASK: 0xd1aaf550  CPU: 0   COMMAND: "kacpid"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 72     TASK: 0xc13fb000  CPU: 0   COMMAND: "cqueue/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 75     TASK: 0xd1970000  CPU: 0   COMMAND: "khubd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 77     TASK: 0xd1977550  CPU: 0   COMMAND: "kseriod"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 140    TASK: 0xc13fbaa0  CPU: 0   COMMAND: "pdflush"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 141    TASK: 0xd1a86000  CPU: 0   COMMAND: "pdflush"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 142    TASK: 0xd19b1000  CPU: 0   COMMAND: "kswapd0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 143    TASK: 0xd19bcaa0  CPU: 0   COMMAND: "aio/0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 294    TASK: 0xd1417aa0  CPU: 0   COMMAND: "kpsmoused"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 324    TASK: 0xd1a3d000  CPU: 0   COMMAND: "scsi_eh_0"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 325    TASK: 0xd1404aa0  CPU: 0   COMMAND: "kjournald"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 353    TASK: 0xd199b550  CPU: 0   COMMAND: "kauditd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 387    TASK: 0xd1993550  CPU: 0   COMMAND: "udevd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14eb980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14eb980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14eb980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14eb200 0xd14b3778 0xd1487ce8 SOCK socket:/[1131]
+4    0xd14ebd40 0xd14b3998 0xd14879e8 SOCK socket:/[1132]
+5    0xd150b600 0xd15213c0 0xd1945088 PIPE pipe:/[1142]
+6    0xd150b0c0 0xd15213c0 0xd1945088 PIPE pipe:/[1142]
+7    0xd150b300 0xd19a4090 0xd19bee10 DIR  inotify
+
+PID: 702    TASK: 0xd1aa0000  CPU: 0   COMMAND: "kgameportd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 1224   TASK: 0xd0e4baa0  CPU: 0   COMMAND: "kmirrord"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 1249   TASK: 0xd09f7550  CPU: 0   COMMAND: "vmhgfs"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 1565   TASK: 0xd19f9550  CPU: 0   COMMAND: "dhclient"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14eb140 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0cc0bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd1bf7e00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd184c6c0 0xcef934d0 0xce529e48 REG  /var/lib/dhclient/dhclient-eth0.leases
+4    0xd0ca6780 0xcef93668 0xd07ff3a8 SOCK socket:/[4640]
+5    0xd0cc0b00 0xd0267910 0xd07ff228 SOCK socket:/[4639]
+6    0xc376a680 0xcf8a4dd8 0xc03ed568 SOCK socket:/[8666]
+
+PID: 1637   TASK: 0xd0b3c550  CPU: 0   COMMAND: "syslogd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd18d89c0 0xce851a20 0xd07ff6a8 SOCK socket:/[4788]
+1    0xd1bf7080 0xcf33f1a0 0xcedc62c0 REG  /var/log/messages
+2    0xd1520a40 0xce851cc8 0xcedc60d4 REG  /var/log/secure
+3    0xd184b540 0xce851d50 0xce547e48 REG  /var/log/maillog
+4    0xd18d8cc0 0xce851c40 0xce547c5c REG  /var/log/cron
+5    0xd14a2480 0xce851bb8 0xce547a70 REG  /var/log/spooler
+6    0xd1bf7d40 0xce851778 0xce547884 REG  /var/log/boot.log
+
+PID: 1640   TASK: 0xd09f7aa0  CPU: 0   COMMAND: "klogd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0ccc6c0 0xcf3c5090 0xd0bdde40 REG  /proc/kmsg
+1    0xd14ebbc0 0xd02675e0 0xd07ff528 SOCK socket:/[4796]
+
+PID: 1705   TASK: 0xd1993aa0  CPU: 0   COMMAND: "vmmemctl"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 1753   TASK: 0xd0809000  CPU: 0   COMMAND: "vmware-guestd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14e96c0 0xc9add888 0xcef6d76c PIPE pipe:/[5008]
+4    0xd0c8cb00 0xc9add888 0xcef6d76c PIPE pipe:/[5008]
+5    0xd0cccc00 0xc9add118 0xcef6d4c4 PIPE pipe:/[5009]
+6    0xd14a20c0 0xc9add118 0xcef6d4c4 PIPE pipe:/[5009]
+7    0xd18d8f00 0xc9add090 0xcef6d370 PIPE pipe:/[5010]
+8    0xd14eba40 0xc9add090 0xcef6d370 PIPE pipe:/[5010]
+9    0xd0c8f600 0xc9c2a558 0xcef6d21c PIPE pipe:/[5067]
+10   0xd1bd4380 0xc9c2a558 0xcef6d21c PIPE pipe:/[5067]
+
+PID: 1791   TASK: 0xd0b3e550  CPU: 0   COMMAND: "dbus-daemon"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0ccc180 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0ccc180 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0ccc180 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14a2540 0xce7c15e0 0xce588e68 SOCK socket:/[5109]
+4    0xd0ccc180 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+5    0xd19088c0 0xce7c1090 0xd10004ac DIR  /etc/dbus-1/system.d
+6    0xd0c996c0 0xce7b9998 0xd07ff0a8 SOCK socket:/[5118]
+7    0xd184bb40 0xd0264090 0xce588ce8 SOCK socket:/[5119]
+8    0xd1908740 0xcd585aa8 0xcd3776e8 SOCK socket:/[6328]
+9    0xc90a90c0 0xc903ff70 0xcb8fd9a8 SOCK socket:/[7283]
+10   0xc91c7b00 0xc929ef70 0xc920e868 SOCK socket:/[7306]
+11   0xc8160b40 0xc82641a0 0xc8198b28 SOCK socket:/[7453]
+12   0xc84f7600 0xc87ca6f0 0xc7d6ece8 SOCK socket:/[7489]
+13   0xc73f7900 0xc6c806f0 0xc6c4b3a8 SOCK socket:/[7567]
+14   0xc7875f00 0xc6fe8558 0xc6862ce8 SOCK socket:/[7610]
+15   0xc376ce00 0xc237ebb8 0xc4bc13a8 SOCK socket:/[7988]
+
+PID: 1833   TASK: 0xd0e04550  CPU: 0   COMMAND: "automount"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1908e00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd1908e00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd1908e00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1bf7bc0 0xcb912668 0xcb695ba8 PIPE pipe:/[5209]
+5    0xd1908680 0xcb9124d0 0xce588b68 SOCK socket:/[5208]
+6    0xd0ccc480 0xcb912668 0xcb695ba8 PIPE pipe:/[5209]
+7    0xd0c8f240 0xcb912448 0xcb695a54 PIPE pipe:/[5210]
+8    0xd0ccc600 0xcb912448 0xcb695a54 PIPE pipe:/[5210]
+9    0xd1bbc6c0 0xcb912090 0xcb695900 DIR  /misc/
+10   0xd14e9cc0 0xcb9121a0 0xcb6957ac PIPE pipe:/[5223]
+11   0xd1908800 0xcb9121a0 0xcb6957ac PIPE pipe:/[5223]
+12   0xd1908080 0xcb912118 0xcb695658 PIPE pipe:/[5224]
+13   0xd14a2780 0xcb912118 0xcb695658 PIPE pipe:/[5224]
+14   0xd0ccccc0 0xcb912228 0xcb695504 DIR  /net/
+
+PID: 1852   TASK: 0xd1410550  CPU: 0   COMMAND: "acpid"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1520980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd18d8540 0xcee95778 0xccc36c5c REG  /var/log/acpid
+2    0xd18d8540 0xcee95778 0xccc36c5c REG  /var/log/acpid
+3    0xd14e9780 0xcee95668 0xd182274c REG  /proc/acpi/event
+4    0xd184bc00 0xcee955e0 0xce5889e8 SOCK socket:/[5248]
+5    0xd150bf00 0xccc6cdd8 0xca9d30a8 SOCK socket:/[6112]
+6    0xd0c8f780 0xcee8de60 0xcee240d4 REG  /etc/acpi/events/video.conf
+7    0xd184ccc0 0xcd59c3c0 0xd07ff828 SOCK socket:/[6636]
+
+PID: 1872   TASK: 0xd09f7000  CPU: 0   COMMAND: "sendmail"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd19a3980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0cfa680 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0cfa680 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd0c8f6c0 0xcca01b30 0xce588868 SOCK socket:/[5317]
+4    0xd184bd80 0xcca01910 0xce5886e8 SOCK socket:/[5318]
+5    0xd18d8480 0xca92a888 0xcc9f72c0 REG  /var/run/sendmail.pid
+
+PID: 1880   TASK: 0xd0bf1000  CPU: 0   COMMAND: "sendmail"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd19a3740 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6d40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6d40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14e6380 0xca92a778 0xce588568 SOCK socket:/[5344]
+4    0xd1bbc900 0xcca016f0 0xcbcade48 REG  /var/run/sm-client.pid
+
+PID: 1892   TASK: 0xd0d1d550  CPU: 0   COMMAND: "gpm"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0e7ce00 0xcf4564d0 0xd00250c8 CHR  /pts/0
+1    0xd0e7ce00 0xcf4564d0 0xd00250c8 CHR  /pts/0
+2    0xd0e7ce00 0xcf4564d0 0xd00250c8 CHR  /pts/0
+3    0xd18d8900 0xcb623f70 0xce5883e8 SOCK socket:/[5367]
+5    0xd0cfac80 0xcb623888 0xce5880e8 SOCK socket:/[5397]
+
+PID: 1903   TASK: 0xd0bbeaa0  CPU: 0   COMMAND: "crond"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e6140 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6140 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6140 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14e6440 0xcca013c0 0xceeac2c0 REG  /var/run/crond.pid
+4    0xd14e6800 0xcca01800 0xce588268 SOCK socket:/[5392]
+
+PID: 1934   TASK: 0xd0b3caa0  CPU: 0   COMMAND: "xfs"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1bd45c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd1bd45c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd1bd45c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14eb5c0 0xc9dac4d0 0xca9d3e28 SOCK socket:/[5452]
+4    0xd1407b40 0xcf12daa8 0xd07ffe28 SOCK socket:/[6651]
+
+PID: 1945   TASK: 0xd0b3e000  CPU: 0   COMMAND: "atd"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14ec0c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14ec540 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14ec600 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14ec900 0xcb623910 0xca2150d4 REG  /var/run/atd.pid
+
+PID: 1961   TASK: 0xd0b3c000  CPU: 0   COMMAND: "hald"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+5    0xd0cfa980 0xcaf0e910 0xcb695108 PIPE pipe:/[5516]
+6    0xd1bd4500 0xcaf0e910 0xcb695108 PIPE pipe:/[5516]
+7    0xd1b86180 0xcaf0e888 0xca9d3ca8 SOCK socket:/[5517]
+8    0xd1974240 0xcaf0e800 0xca9d3b28 SOCK socket:/[5518]
+9    0xd19746c0 0xcaf0e338 0xca9d3828 SOCK socket:/[5521]
+10   0xd184c300 0xcaf0e090 0xca9d36a8 SOCK socket:/[5526]
+11   0xd14c6600 0xcb7c1e60 0xd0e3374c REG  /proc/1961/mounts
+12   0xd150b480 0xcc084cc8 0xca9d3528 SOCK socket:/[6101]
+13   0xd14e6e00 0xccc6c118 0xcd377e68 SOCK socket:/[6145]
+14   0xd14e6a40 0xcd08a3c0 0xcd3779e8 SOCK socket:/[6301]
+15   0xd150b3c0 0xcd585b30 0xcd377b68 SOCK socket:/[6327]
+
+PID: 1962   TASK: 0xd0809aa0  CPU: 0   COMMAND: "hald-runner"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0c8c440 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1974a80 0xcaf0e3c0 0xca9d39a8 SOCK socket:/[5520]
+
+PID: 1968   TASK: 0xd19b1aa0  CPU: 0   COMMAND: "hald-addon-acpi"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1974180 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1974e40 0xcc70c338 0xca9d33a8 SOCK socket:/[6098]
+4    0xd150b540 0xccc6ce60 0xca9d3228 SOCK socket:/[6111]
+
+PID: 1973   TASK: 0xd19b1550  CPU: 0   COMMAND: "hald-addon-keyb"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd150b780 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1b86a80 0xccc6c3c0 0xcd377ce8 SOCK socket:/[6140]
+4    0xd1407780 0xd0a4c090 0xd0828408 CHR  /dev/input/event0
+
+PID: 1985   TASK: 0xd19f9000  CPU: 0   COMMAND: "hald-addon-stor"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1407cc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e5c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd150b9c0 0xcd08a4d0 0xcd377868 SOCK socket:/[6300]
+
+PID: 1999   TASK: 0xd19f9aa0  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0cfa5c0 0xd150faa8 0xd150e770 CHR  /dev/tty1
+1    0xd0cfa5c0 0xd150faa8 0xd150e770 CHR  /dev/tty1
+2    0xd0cfa5c0 0xd150faa8 0xd150e770 CHR  /dev/tty1
+
+PID: 2007   TASK: 0xd1410000  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e9840 0xd150f778 0xd150e5bc CHR  /dev/tty2
+1    0xd14e9840 0xd150f778 0xd150e5bc CHR  /dev/tty2
+2    0xd14e9840 0xd150f778 0xd150e5bc CHR  /dev/tty2
+
+PID: 2010   TASK: 0xd0809550  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd184c0c0 0xd150f448 0xd150e408 CHR  /dev/tty3
+1    0xd184c0c0 0xd150f448 0xd150e408 CHR  /dev/tty3
+2    0xd184c0c0 0xd150f448 0xd150e408 CHR  /dev/tty3
+
+PID: 2013   TASK: 0xd1977aa0  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd150ab00 0xd150f118 0xd150e254 CHR  /dev/tty4
+1    0xd150ab00 0xd150f118 0xd150e254 CHR  /dev/tty4
+2    0xd150ab00 0xd150f118 0xd150e254 CHR  /dev/tty4
+
+PID: 2014   TASK: 0xc13fb550  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e6680 0xd1510d50 0xd150e0a0 CHR  /dev/tty5
+1    0xd14e6680 0xd1510d50 0xd150e0a0 CHR  /dev/tty5
+2    0xd14e6680 0xd1510d50 0xd150e0a0 CHR  /dev/tty5
+
+PID: 2015   TASK: 0xd19bc000  CPU: 0   COMMAND: "mingetty"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14c4740 0xd1510a20 0xd1511e40 CHR  /dev/tty6
+1    0xd14c4740 0xd1510a20 0xd1511e40 CHR  /dev/tty6
+2    0xd14c4740 0xd1510a20 0xd1511e40 CHR  /dev/tty6
+
+PID: 2016   TASK: 0xd1993000  CPU: 0   COMMAND: "gdm-binary"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0d0ee00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd1bd6f00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd1bd6f00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd0d0e740 0xd0fe6aa8 0xcd59fe48 FIFO /var/gdm/.gdmfifo
+4    0xd0c8c200 0xcf422228 0xcf74bb28 PIPE pipe:/[6570]
+5    0xd14c4ec0 0xcf422228 0xcf74bb28 PIPE pipe:/[6570]
+6    0xd150bc00 0xcf4221a0 0xcd377568 SOCK socket:/[6571]
+7    0xd1bbc540 0xd182fd50 0xd1487868 SOCK socket:/[6600]
+8    0xd150a140 0xcd59cf70 0xcf74b9d4 PIPE pipe:/[6575]
+
+PID: 2095   TASK: 0xd1970550  CPU: 0   COMMAND: "gdm-binary"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd184b300 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c4380 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0d0e500 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1520500 0xcf410338 0xd07ff9a8 SOCK socket:/[6645]
+4    0xcca45f00 0xcbdfcb30 0xccc025d8 PIPE pipe:/[6821]
+5    0xd14c4ec0 0xcf422228 0xcf74bb28 PIPE pipe:/[6570]
+6    0xd1407540 0xd150d800 0xd150ee40 CHR  /dev/console
+7    0xd1bd7380 0xcd59cf70 0xcf74b9d4 PIPE pipe:/[6575]
+8    0xd14eb500 0xcf12add8 0xd0e83884 REG  /home/stevev/.xsession-errors
+9    0xd14ece40 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+11   0xd150bd80 0xcbdfcb30 0xccc025d8 PIPE pipe:/[6821]
+
+PID: 2105   TASK: 0xd09deaa0  CPU: 0   COMMAND: "Xorg"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14073c0 0xcd59c1a0 0xcf193e48 REG  /var/log/Xorg.0.log
+1    0xd14c4d40 0xcd59c118 0xd14876e8 SOCK socket:/[6617]
+2    0xd0c8c2c0 0xcf071b30 0xcdd8d4ac REG  /var/log/gdm/:0.log
+3    0xd14cd8c0 0xcf0716f0 0xd07ffca8 SOCK socket:/[6635]
+4    0xd1bf7440 0xd15106f0 0xd1511c8c CHR  /dev/tty7
+5    0xd1b86f00 0xcf4105e0 0xd18478b0 REG  /proc/bus/pci/00/0f.0
+6    0xd1520380 0xcf01df70 0xd0c78058 REG  /proc/mtrr
+7    0xd14ec3c0 0xd0d0fc40 0xd08dc408 CHR  /dev/input/mice
+8    0xd1407d80 0xcf12db30 0xd07ffb28 SOCK socket:/[6650]
+9    0xd1520080 0xcf12de60 0xcd3773e8 SOCK socket:/[6655]
+10   0xd0ca6300 0xcba20bb8 0xcc0df228 SOCK socket:/[6915]
+11   0xd0d0d800 0xcdfc2998 0xcc0df528 SOCK socket:/[6920]
+12   0xd14e99c0 0xc9bf3118 0xcb9cae28 SOCK socket:/[7136]
+13   0xd0d0d5c0 0xcdc942b0 0xca4a73e8 SOCK socket:/[7201]
+14   0xc959e440 0xce233668 0xcb9ca0a8 SOCK socket:/[7218]
+15   0xc97140c0 0xc95c8c40 0xc95c56a8 SOCK socket:/[7248]
+16   0xc91c7680 0xc903fc40 0xcb8fd6a8 SOCK socket:/[7290]
+17   0xc8c1bc80 0xc929e448 0xc920e268 SOCK socket:/[7317]
+18   0xc8472a80 0xc87ca800 0xc8198528 SOCK socket:/[7485]
+19   0xc8472840 0xc7fda3c0 0xc7d6e268 SOCK socket:/[7504]
+20   0xc78e78c0 0xc78e8558 0xc8228e28 SOCK socket:/[7510]
+21   0xc84f7180 0xc7a74e60 0xc8228828 SOCK socket:/[7522]
+22   0xc6c0bec0 0xc75e0998 0xc75cfb68 SOCK socket:/[7542]
+23   0xc6e38e40 0xc78e8910 0xc6e2dce8 SOCK socket:/[7582]
+24   0xc5ad5980 0xc616a4d0 0xc68620e8 SOCK socket:/[7647]
+25   0xc5bfe180 0xc5b01778 0xc5ae5e68 SOCK socket:/[7666]
+26   0xc5039380 0xc5642bb8 0xc5038ca8 SOCK socket:/[7685]
+27   0xc53c93c0 0xc4c49338 0xc68623e8 SOCK socket:/[7760]
+28   0xc6b46e00 0xcd6f1778 0xc53066a8 SOCK socket:/[10135]
+29   0xc666b080 0xc815be60 0xc3761b68 SOCK socket:/[7975]
+30   0xc0347380 0xc19045e0 0xc3761ce8 SOCK socket:/[8412]
+
+PID: 2152   TASK: 0xd0876550  CPU: 0   COMMAND: "gnome-session"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1bbc0c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xd0d0d980 0xcdfc2a20 0xcc0df3a8 SOCK socket:/[6919]
+4    0xd1908b00 0xcc3e1778 0xcc0df828 SOCK socket:/[6939]
+5    0xd19085c0 0xcc3e16f0 0xcc0df6a8 SOCK socket:/[6940]
+6    0xcca46440 0xcc3e1910 0xcc0c80c8 PIPE pipe:/[6936]
+7    0xd14cd980 0xcc3e1910 0xcc0c80c8 PIPE pipe:/[6936]
+8    0xd0d0d200 0xcc3e1888 0xccc0272c PIPE pipe:/[6937]
+9    0xd0d0dd40 0xcc3e1888 0xccc0272c PIPE pipe:/[6937]
+10   0xd1908980 0xcc3e1800 0xcf74b484 PIPE pipe:/[6938]
+11   0xd0ca6540 0xcc3e1800 0xcf74b484 PIPE pipe:/[6938]
+12   0xd0c99840 0xcaaded50 0xca4a7b68 SOCK socket:/[7100]
+13   0xd0e7cec0 0xcaade448 0xca4a7568 SOCK socket:/[7114]
+14   0xd1bd7bc0 0xc9bf3c40 0xca4a76e8 SOCK socket:/[7125]
+15   0xcbc3f180 0xcaade1a0 0xcf74b5d8 PIPE pipe:/[7117]
+16   0xcf9b8bc0 0xce3c4f70 0xce36ace8 SOCK socket:/[7203]
+17   0xc95c0e40 0xce233448 0xce36a268 SOCK socket:/[7223]
+18   0xc9714e40 0xc95c8090 0xc95c53a8 SOCK socket:/[7253]
+19   0xc94c5780 0xc903f998 0xcb8fd3a8 SOCK socket:/[7295]
+20   0xc8166740 0xc8185a20 0xc8ec3b68 SOCK socket:/[7426]
+21   0xc860abc0 0xc78e83c0 0xc8228b28 SOCK socket:/[7512]
+22   0xc03475c0 0xc1904998 0xc37616e8 SOCK socket:/[8417]
+
+PID: 2208   TASK: 0xd1404550  CPU: 0   COMMAND: "ssh-agent"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd150ad40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd150ad40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd150ad40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14c63c0 0xcca423c0 0xcc0dfca8 SOCK socket:/[6898]
+
+PID: 2211   TASK: 0xd0876aa0  CPU: 0   COMMAND: "dbus-daemon"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd1bd6cc0 0xcba20ee8 0xcd3770e8 SOCK socket:/[6909]
+4    0xd19743c0 0xcca424d0 0xcc0dfe28 SOCK socket:/[6910]
+5    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+6    0xd0d0e980 0xcba20dd8 0xcd377268 SOCK socket:/[6911]
+7    0xd1520bc0 0xc9bf3bb8 0xca4a79e8 SOCK socket:/[7126]
+8    0xc9714f00 0xc97e6aa8 0xc97ea868 SOCK socket:/[7262]
+9    0xd0d0db00 0xcc5dfee8 0xcb9ca3a8 SOCK socket:/[7153]
+10   0xc91c7bc0 0xc929ee60 0xc920e568 SOCK socket:/[7308]
+11   0xc90ec680 0xc97e63c0 0xc97ea268 SOCK socket:/[7273]
+12   0xc8166c80 0xc8185448 0xc8198e28 SOCK socket:/[7439]
+13   0xc8e30c00 0xc815b3c0 0xc8ec39e8 SOCK socket:/[7468]
+14   0xc8472300 0xc87ca998 0xc8198228 SOCK socket:/[7487]
+15   0xc6e38cc0 0xc6e58a20 0xc6e5db28 SOCK socket:/[7597]
+16   0xc853bbc0 0xc6fe8668 0xc6e5d0a8 SOCK socket:/[7608]
+17   0xc6b46080 0xc237ecc8 0xc4bc16a8 SOCK socket:/[7986]
+
+PID: 2212   TASK: 0xd1417000  CPU: 0   COMMAND: "dbus-launch"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd1bbc0c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0ca6e40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0ca6e40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd0ca6e40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+4    0xd184c540 0xce562118 0xcc0df0a8 SOCK socket:/[6914]
+7    0xd150ae00 0xcca42888 0xd0025370 PIPE pipe:/[6902]
+
+PID: 2218   TASK: 0xd1aaf000  CPU: 0   COMMAND: "gconfd-2"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xcca41540 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xcca41540 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xcca41540 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xcca41540 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+4    0xd14e6500 0xcdfc2558 0xcc0dfb28 SOCK socket:/[6926]
+5    0xd0c99b40 0xcaadec40 0xca4a7e68 SOCK socket:/[7098]
+6    0xcca41300 0xcdfc25e0 0xcf74b088 PIPE pipe:/[6927]
+7    0xcca416c0 0xcdfc25e0 0xcf74b088 PIPE pipe:/[6927]
+8    0xcca41480 0xcdfc2668 0xcf74b1dc PIPE pipe:/[6928]
+9    0xd1407300 0xcdfc2668 0xcf74b1dc PIPE pipe:/[6928]
+10   0xd1974600 0xcdfc23c0 0xcf74b330 PIPE pipe:/[6929]
+11   0xcca46140 0xcdfc23c0 0xcf74b330 PIPE pipe:/[6929]
+12   0xcca46ec0 0xcdfc22b0 0xcc0df9a8 SOCK socket:/[6931]
+13   0xd14cdc80 0xcdfc21a0 0xcde300d4 REG  /tmp/gconfd-stevev/lock/0t1197861372ut396520u501p2218r27031109k3218444872
+14   0xc376a080 0xc1904888 0xc3761868 SOCK socket:/[8420]
+15   0xd0c99900 0xcaadecc8 0xca4a7ce8 SOCK socket:/[7099]
+16   0xd14e9600 0xcb9ddd50 0xcb9cab28 SOCK socket:/[7141]
+17   0xd0cc0a40 0xcb9ddbb8 0xcb9ca828 SOCK socket:/[7144]
+18   0xd0cfa140 0xcdc94228 0xce36ab68 SOCK socket:/[7195]
+19   0xd14cdd40 0xcdc94558 0xce36a568 SOCK socket:/[7198]
+20   0xcca41780 0xce2331a0 0xc95c5e28 SOCK socket:/[7226]
+21   0xc94c59c0 0xc95c8f70 0xc95c5b28 SOCK socket:/[7229]
+22   0xc967f8c0 0xc97e6dd8 0xc95c50a8 SOCK socket:/[7256]
+23   0xc967f140 0xc97e6c40 0xc97eace8 SOCK socket:/[7259]
+24   0xc90ecbc0 0xc97e6338 0xc97ea6e8 SOCK socket:/[7277]
+25   0xc90ecd40 0xc97e61a0 0xcb8fde28 SOCK socket:/[7280]
+26   0xc91c7140 0xc903f4d0 0xcb8fd0a8 SOCK socket:/[7300]
+27   0xc90e7540 0xc903f338 0xc920ece8 SOCK socket:/[7303]
+28   0xc84b7440 0xc8185800 0xc8ec36e8 SOCK socket:/[7432]
+29   0xc8166980 0xc8185668 0xc8ec33e8 SOCK socket:/[7435]
+30   0xc84b7a40 0xc87ca448 0xc7d6e9e8 SOCK socket:/[7494]
+31   0xc8472600 0xc87ca2b0 0xc7d6e6e8 SOCK socket:/[7497]
+32   0xc84b7080 0xc7a744d0 0xc82283a8 SOCK socket:/[7532]
+33   0xc84f7e40 0xc7a74338 0xc82280a8 SOCK socket:/[7535]
+34   0xc6c0b980 0xc75e0778 0xc75cf868 SOCK socket:/[7547]
+35   0xc6c0bd40 0xc75e05e0 0xc75cf568 SOCK socket:/[7550]
+36   0xc6e38840 0xc6c80090 0xc6e2d9e8 SOCK socket:/[7587]
+37   0xc6e386c0 0xc6e58e60 0xc6e2d6e8 SOCK socket:/[7590]
+38   0xc6f446c0 0xc6fe8998 0xc6e5d828 SOCK socket:/[7602]
+39   0xc6f59b40 0xc6fe8800 0xc6e5d528 SOCK socket:/[7605]
+40   0xc5afbc00 0xc616a118 0xc5affca8 SOCK socket:/[7652]
+41   0xc6dc0b40 0xc5b01ee8 0xc5aff9a8 SOCK socket:/[7655]
+42   0xc5bfe900 0xc5b014d0 0xc5ae5b68 SOCK socket:/[7671]
+43   0xc5623980 0xc5b01338 0xc5ae5868 SOCK socket:/[7674]
+44   0xc50395c0 0xc5642668 0xc50389a8 SOCK socket:/[7690]
+45   0xc511d900 0xc56424d0 0xc50386a8 SOCK socket:/[7693]
+46   0xc6b46380 0xcd6f13c0 0xc5306828 SOCK socket:/[10147]
+47   0xc3768740 0xcd6f14d0 0xce983ca8 SOCK socket:/[10150]
+48   0xc376be40 0xc2106090 0xc4bc1e28 SOCK socket:/[7980]
+49   0xc376bcc0 0xc237ee60 0xc4bc1b28 SOCK socket:/[7983]
+50   0xc3769cc0 0xc1904b30 0xc4bc10a8 SOCK socket:/[8423]
+
+PID: 2221   TASK: 0xd1404000  CPU: 0   COMMAND: "gnome-keyring-d"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0e7c080 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd1bd72c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xcca46500 0xc9bf3d50 0xca4a7868 SOCK socket:/[7123]
+14   0xd14c6c00 0xcaade1a0 0xcf74b5d8 PIPE pipe:/[7117]
+
+PID: 2223   TASK: 0xd1970aa0  CPU: 0   COMMAND: "gnome-settings-"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14e9180 0xc9bf31a0 0xca4a70e8 SOCK socket:/[7135]
+4    0xd184ca80 0xc9bf3338 0xcf74b880 PIPE pipe:/[7137]
+5    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+6    0xd0cfae00 0xc9bf3338 0xcf74b880 PIPE pipe:/[7137]
+7    0xd0cfa740 0xc9bf33c0 0xcb9dae10 PIPE pipe:/[7138]
+8    0xd0cfa2c0 0xc9bf33c0 0xcb9dae10 PIPE pipe:/[7138]
+9    0xd1bd7d40 0xc9bf3558 0xcb9dacbc PIPE pipe:/[7139]
+10   0xd19a3e00 0xc9bf3558 0xcb9dacbc PIPE pipe:/[7139]
+11   0xd0d0d740 0xcb9dddd8 0xcb9caca8 SOCK socket:/[7140]
+12   0xd19a3d40 0xcb9ddcc8 0xcb9ca9a8 SOCK socket:/[7142]
+13   0xd0cc0740 0xcb9ddb30 0xcb9ca6a8 SOCK socket:/[7145]
+14   0xd0cc0c80 0xcb9dd800 0xcb9dab68 PIPE pipe:/[7150]
+15   0xd0cc0680 0xcb9dd800 0xcb9dab68 PIPE pipe:/[7150]
+16   0xcbc3c980 0xcc5dff70 0xcb9ca528 SOCK socket:/[7152]
+17   0xcbc3ce00 0xd19a4090 0xd19bee10 DIR  inotify
+18   0xcbc3cd40 0xcc5df558 0xcb9daa14 PIPE pipe:/[7154]
+19   0xcbc3c500 0xcc5df558 0xcb9daa14 PIPE pipe:/[7154]
+
+PID: 2233   TASK: 0xd19bc550  CPU: 0   COMMAND: "xrdb"
+FD   FILE       DENTRY     INODE      TYPE PATH
+No open files
+
+PID: 2235   TASK: 0xd1aa0aa0  CPU: 0   COMMAND: "metacity"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xcdc8e6c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xcbc3c2c0 0xcdc94888 0xcdc04e50 PIPE pipe:/[7191]
+4    0xce342800 0xcdc94888 0xcdc04e50 PIPE pipe:/[7191]
+5    0xce342ec0 0xcdc94b30 0xcb9da0c8 PIPE pipe:/[7192]
+6    0xce342e00 0xcdc94b30 0xcb9da0c8 PIPE pipe:/[7192]
+7    0xcbc3cc80 0xcdc946f0 0xcb9da21c PIPE pipe:/[7193]
+8    0xd0ca69c0 0xcdc946f0 0xcb9da21c PIPE pipe:/[7193]
+9    0xcbc3c380 0xcdc94800 0xce36a868 SOCK socket:/[7194]
+10   0xd0c990c0 0xcdc94998 0xce36a9e8 SOCK socket:/[7196]
+11   0xd0cc0440 0xcde7e338 0xce36a6e8 SOCK socket:/[7199]
+12   0xcca46200 0xce3c46f0 0xca4a7268 SOCK socket:/[7200]
+13   0xcf9b8d40 0xcde7e3c0 0xce36ae68 SOCK socket:/[7202]
+
+PID: 2242   TASK: 0xd0e04000  CPU: 0   COMMAND: "gnome-panel"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xce342bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc959e500 0xce2336f0 0xcb9ca228 SOCK socket:/[7217]
+4    0xc959e200 0xce233778 0xcdc04cfc PIPE pipe:/[7219]
+5    0xc959e2c0 0xce233778 0xcdc04cfc PIPE pipe:/[7219]
+6    0xc959e380 0xce233800 0xcf74b72c PIPE pipe:/[7220]
+7    0xc959e5c0 0xce233800 0xcf74b72c PIPE pipe:/[7220]
+8    0xc959e680 0xce233a20 0xcb9da76c PIPE pipe:/[7221]
+9    0xc959e740 0xce233a20 0xcb9da76c PIPE pipe:/[7221]
+10   0xc95c0f00 0xce2334d0 0xce36a3e8 SOCK socket:/[7222]
+11   0xc95c0d80 0xce233228 0xce36a0e8 SOCK socket:/[7225]
+12   0xc94c5c00 0xce233118 0xc95c5ca8 SOCK socket:/[7227]
+13   0xce230e40 0xc95c8ee8 0xc95c59a8 SOCK socket:/[7230]
+14   0xc8c1b5c0 0xc8cde888 0xc8ce1ca8 SOCK socket:/[7325]
+15   0xc8e9c680 0xc8cde090 0xc8ce10a8 SOCK socket:/[7342]
+16   0xc815d200 0xc8264090 0xc8198828 SOCK socket:/[7458]
+17   0xc8e0cec0 0xd19a4090 0xd19bee10 DIR  inotify
+18   0xc8e0c380 0xc815b338 0xc8ce13a8 SOCK socket:/[7467]
+19   0xc8e0c8c0 0xc60e1090 0xc8ce1528 SOCK socket:/[7625]
+21   0xc6c0b800 0xc6c80c40 0xc6c4bb28 SOCK socket:/[7562]
+22   0xc8de6540 0xc6c80f70 0xc6c4b6a8 SOCK socket:/[7565]
+23   0xc78ea2c0 0xc6fe8118 0xc6862b68 SOCK socket:/[7617]
+24   0xc78ea500 0xc82beee8 0xc68626e8 SOCK socket:/[7620]
+26   0xc51768c0 0xc5144800 0xc51253e8 SOCK socket:/[7725]
+27   0xc577c0c0 0xc5144c40 0xc51259e8 SOCK socket:/[7706]
+28   0xc511da80 0xc5144a20 0xc5125568 SOCK socket:/[7710]
+29   0xc511d3c0 0xc5144778 0xc5125268 SOCK socket:/[7717]
+30   0xc511d180 0xc51445e0 0xc5306e28 SOCK socket:/[7720]
+31   0xc511db40 0xc51444d0 0xc5306b28 SOCK socket:/[7728]
+
+PID: 2244   TASK: 0xd0e04aa0  CPU: 0   COMMAND: "nautilus"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xcca41b40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc97c6ec0 0xc95c8338 0xc95c5828 SOCK socket:/[7247]
+4    0xc967f380 0xc95c82b0 0xcb9da618 PIPE pipe:/[7249]
+5    0xc967f2c0 0xc95c82b0 0xcb9da618 PIPE pipe:/[7249]
+6    0xc9714300 0xc95c8228 0xcb9da8c0 PIPE pipe:/[7250]
+7    0xc97143c0 0xc95c8228 0xcb9da8c0 PIPE pipe:/[7250]
+8    0xc9714480 0xc95c81a0 0xcdc04658 PIPE pipe:/[7251]
+9    0xc9714600 0xc95c81a0 0xcdc04658 PIPE pipe:/[7251]
+10   0xc9714d80 0xc95c8118 0xc95c5528 SOCK socket:/[7252]
+11   0xc967f800 0xc97e6f70 0xc95c5228 SOCK socket:/[7255]
+12   0xc967f200 0xc97e6d50 0xc97eae68 SOCK socket:/[7257]
+13   0xc967f080 0xc97e6bb8 0xc97eab68 SOCK socket:/[7260]
+14   0xc967f500 0xc97e6b30 0xc97ea9e8 SOCK socket:/[7261]
+15   0xc8e9c200 0xc8ec4ee8 0xc8ec3ce8 SOCK socket:/[7344]
+16   0xc8c1b800 0xc8cde800 0xc8ce1b28 SOCK socket:/[7326]
+17   0xc8166ec0 0xd19a4090 0xd19bee10 DIR  inotify
+19   0xc78756c0 0xc7a74aa8 0xc82286a8 SOCK socket:/[7524]
+
+PID: 2248   TASK: 0xd0e4b000  CPU: 0   COMMAND: "bonobo-activati"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc8e30840 0xc8cde118 0xc8ce1228 SOCK socket:/[7341]
+4    0xc9665800 0xc95c8a20 0xcb9da370 PIPE pipe:/[7238]
+5    0xc9665740 0xc95c8a20 0xcb9da370 PIPE pipe:/[7238]
+6    0xc9665680 0xc95c8998 0xcdc04ba8 PIPE pipe:/[7239]
+7    0xc96655c0 0xc95c8998 0xcdc04ba8 PIPE pipe:/[7239]
+8    0xc9665500 0xc95c8910 0xcdc04a54 PIPE pipe:/[7240]
+9    0xc9665440 0xc95c8910 0xcdc04a54 PIPE pipe:/[7240]
+10   0xc9670c00 0xc95c8778 0xcdc04900 PIPE pipe:/[7241]
+11   0xc9670b40 0xc95c8778 0xcdc04900 PIPE pipe:/[7241]
+12   0xc9670a80 0xc95c86f0 0xcdc047ac PIPE pipe:/[7242]
+13   0xc96709c0 0xc95c86f0 0xcdc047ac PIPE pipe:/[7242]
+14   0xc8c1b680 0xc8cde998 0xc8ce1e28 SOCK socket:/[7322]
+15   0xc8c1b8c0 0xc8cde778 0xc8ce19a8 SOCK socket:/[7327]
+16   0xc8e9c2c0 0xc8ec4f70 0xc8ec3e68 SOCK socket:/[7343]
+17   0xc8c1b980 0xc8cde6f0 0xc8ce1828 SOCK socket:/[7328]
+18   0xc6e38480 0xc6e58cc8 0xc6e2d268 SOCK socket:/[7593]
+19   0xc5623d40 0xc5b011a0 0xc5ae53e8 SOCK socket:/[7677]
+20   0xc6e383c0 0xc6e58c40 0xc6e2d0e8 SOCK socket:/[7594]
+21   0xc511dcc0 0xc5642338 0xc5038228 SOCK socket:/[7696]
+22   0xc5bfe540 0xc5b01118 0xc5ae5268 SOCK socket:/[7678]
+23   0xc511dd80 0xc56422b0 0xc50380a8 SOCK socket:/[7697]
+24   0xc0347680 0xc1904c40 0xc03edce8 SOCK socket:/[8426]
+25   0xc0347ec0 0xc1904118 0xc03edb68 SOCK socket:/[8427]
+26   0xc73f7e40 0xc75e0448 0xc75cf0e8 SOCK socket:/[7553]
+28   0xc73f7d80 0xc75e03c0 0xc6c4be28 SOCK socket:/[7554]
+33   0xc5ad5080 0xc5b01d50 0xc5aff528 SOCK socket:/[7658]
+35   0xc5ad5140 0xc5b01cc8 0xc5aff3a8 SOCK socket:/[7659]
+
+PID: 2251   TASK: 0xd0bbe550  CPU: 0   COMMAND: "gnome-vfs-daemo"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc90eca40 0xc97e6558 0xcdc043b0 PIPE pipe:/[7270]
+4    0xc90ec980 0xc97e6558 0xcdc043b0 PIPE pipe:/[7270]
+5    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+6    0xc90ec8c0 0xc97e64d0 0xc97ea3e8 SOCK socket:/[7271]
+7    0xc90a9780 0xc97e65e0 0xcdc0425c PIPE pipe:/[7274]
+8    0xc90a9840 0xc97e65e0 0xcdc0425c PIPE pipe:/[7274]
+9    0xc90ec5c0 0xc97e6668 0xcdc04504 PIPE pipe:/[7275]
+10   0xc90ec500 0xc97e6668 0xcdc04504 PIPE pipe:/[7275]
+11   0xc90ecb00 0xc97e6800 0xc97ea568 SOCK socket:/[7276]
+12   0xc90ecc80 0xc97e62b0 0xc97ea0e8 SOCK socket:/[7278]
+13   0xc90ece00 0xc97e6118 0xcb8fdca8 SOCK socket:/[7281]
+14   0xc90ecec0 0xc97e6090 0xcb8fdb28 SOCK socket:/[7282]
+15   0xc90a9240 0xd19a4090 0xd19bee10 DIR  inotify
+
+PID: 2255   TASK: 0xd0bbe000  CPU: 0   COMMAND: "eggcups"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc91ebcc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc9346a80 0xc929e4d0 0xc920e3e8 SOCK socket:/[7316]
+4    0xc9346180 0xc929e558 0xc91e46ec PIPE pipe:/[7318]
+5    0xc93460c0 0xc929e558 0xc91e46ec PIPE pipe:/[7318]
+6    0xc8c1bbc0 0xc929e6f0 0xc91e4598 PIPE pipe:/[7319]
+7    0xc9346b40 0xc929e6f0 0xc91e4598 PIPE pipe:/[7319]
+8    0xc8c1bd40 0xc929e3c0 0xc91e4444 PIPE pipe:/[7320]
+9    0xc93463c0 0xc929e3c0 0xc91e4444 PIPE pipe:/[7320]
+10   0xc8c1b500 0xc929e228 0xc920e0e8 SOCK socket:/[7321]
+11   0xc853be00 0xc8185888 0xc8ec3868 SOCK socket:/[7431]
+12   0xc81668c0 0xc8185778 0xc8ec3568 SOCK socket:/[7433]
+13   0xc8166a40 0xc81855e0 0xc8ec3268 SOCK socket:/[7436]
+14   0xc85c9d80 0xc8185558 0xc91e419c PIPE pipe:/[7437]
+15   0xc8166b00 0xc8185558 0xc91e419c PIPE pipe:/[7437]
+16   0xc8166bc0 0xc81854d0 0xc8ec30e8 SOCK socket:/[7438]
+17   0xc8163380 0xc130cd50 0xd1bb2c8c CHR  /dev/urandom
+18   0xc8160a80 0xc8264228 0xc8198ca8 SOCK socket:/[7452]
+
+PID: 2256   TASK: 0xd0d1d000  CPU: 0   COMMAND: "gnome-volume-ma"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc91ebe40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc91ebe40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc91ebe40 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc91c7740 0xc903fcc8 0xcb8fd828 SOCK socket:/[7289]
+4    0xc91c7380 0xc903fd50 0xcdc04108 PIPE pipe:/[7291]
+5    0xc91c7440 0xc903fd50 0xcdc04108 PIPE pipe:/[7291]
+6    0xc91c75c0 0xc903fee8 0xc91e4d90 PIPE pipe:/[7292]
+7    0xc91c7800 0xc903fee8 0xc91e4d90 PIPE pipe:/[7292]
+8    0xc91c78c0 0xc903fbb8 0xc91e4c3c PIPE pipe:/[7293]
+9    0xc91c7980 0xc903fbb8 0xc91e4c3c PIPE pipe:/[7293]
+10   0xc90e7600 0xc903fa20 0xcb8fd528 SOCK socket:/[7294]
+11   0xc91ebd80 0xc903f558 0xcb8fd228 SOCK socket:/[7299]
+12   0xc90e7780 0xc903f448 0xc920ee68 SOCK socket:/[7301]
+13   0xc90e7480 0xc903f2b0 0xc920eb68 SOCK socket:/[7304]
+14   0xc90e73c0 0xc903f090 0xc920e9e8 SOCK socket:/[7305]
+15   0xc91c7500 0xc929eee8 0xc920e6e8 SOCK socket:/[7307]
+16   0xc91c7c80 0xc929edd8 0xc91e4840 PIPE pipe:/[7309]
+17   0xc91c7d40 0xc929edd8 0xc91e4840 PIPE pipe:/[7309]
+
+PID: 2262   TASK: 0xd09d3000  CPU: 0   COMMAND: "bt-applet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc8e30780 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc84b7bc0 0xc87ca888 0xc81986a8 SOCK socket:/[7484]
+4    0xc8472480 0xc87ca910 0xc81980a8 SOCK socket:/[7486]
+5    0xc84720c0 0xc87ca778 0xc7d6ee68 SOCK socket:/[7488]
+6    0xc8472780 0xc87ca668 0xc81e7880 PIPE pipe:/[7490]
+7    0xc8472b40 0xc87ca668 0xc81e7880 PIPE pipe:/[7490]
+8    0xc84f7900 0xc87ca5e0 0xc81e772c PIPE pipe:/[7491]
+9    0xc84f7840 0xc87ca5e0 0xc81e772c PIPE pipe:/[7491]
+10   0xc84f76c0 0xc87ca558 0xc81e75d8 PIPE pipe:/[7492]
+11   0xc8472e40 0xc87ca558 0xc81e75d8 PIPE pipe:/[7492]
+12   0xc84b7b00 0xc87ca4d0 0xc7d6eb68 SOCK socket:/[7493]
+13   0xc8a63140 0xc87ca3c0 0xc7d6e868 SOCK socket:/[7495]
+14   0xc84726c0 0xc87ca228 0xc7d6e568 SOCK socket:/[7498]
+
+PID: 2266   TASK: 0xd1417550  CPU: 0   COMMAND: "puplet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc967fe00 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc78eabc0 0xc6fe8bb8 0xc91e4ae8 PIPE pipe:/[7598]
+4    0xc8a63080 0xc7fda448 0xc7d6e3e8 SOCK socket:/[7503]
+5    0xc860a200 0xc6fe8bb8 0xc91e4ae8 PIPE pipe:/[7598]
+6    0xc860a140 0xc6fe8b30 0xc91e42f0 PIPE pipe:/[7599]
+7    0xc860a080 0xc6fe8b30 0xc91e42f0 PIPE pipe:/[7599]
+8    0xc8de69c0 0xc6fe8aa8 0xd083d1dc PIPE pipe:/[7600]
+9    0xc8c1b140 0xc6fe8aa8 0xd083d1dc PIPE pipe:/[7600]
+10   0xc6f4e080 0xc6fe8a20 0xc6e5d9a8 SOCK socket:/[7601]
+11   0xc6f59c00 0xc6fe8910 0xc6e5d6a8 SOCK socket:/[7603]
+12   0xc6f59a80 0xc6fe8778 0xc6e5d3a8 SOCK socket:/[7606]
+13   0xc8144b40 0xc6fe86f0 0xc6e5d228 SOCK socket:/[7607]
+14   0xc6dcda40 0xc6fe85e0 0xc6862e68 SOCK socket:/[7609]
+
+PID: 2268   TASK: 0xd0bf1550  CPU: 0   COMMAND: "nm-applet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc84729c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc7875900 0xc7a74ee8 0xc82289a8 SOCK socket:/[7521]
+4    0xc7875840 0xc7a74800 0xc75bdcbc PIPE pipe:/[7528]
+5    0xc78e7b00 0xc7a74800 0xc75bdcbc PIPE pipe:/[7528]
+6    0xc84b7e00 0xc7a74778 0xc75bdb68 PIPE pipe:/[7529]
+7    0xc86045c0 0xc7a74778 0xc75bdb68 PIPE pipe:/[7529]
+8    0xc8e306c0 0xc7a746f0 0xc75bda14 PIPE pipe:/[7530]
+9    0xc860aec0 0xc7a746f0 0xc75bda14 PIPE pipe:/[7530]
+10   0xc8472900 0xc7a74558 0xc8228528 SOCK socket:/[7531]
+11   0xc84f7f00 0xc7a74448 0xc8228228 SOCK socket:/[7533]
+12   0xc84f7d80 0xc7a742b0 0xc75cfe68 SOCK socket:/[7536]
+13   0xc73f7840 0xc6c80778 0xc6c4b528 SOCK socket:/[7566]
+
+PID: 2269   TASK: 0xd1a86550  CPU: 0   COMMAND: "vmware-user"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd0c8c800 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xd14e96c0 0xc9add888 0xcef6d76c PIPE pipe:/[5008]
+4    0xd0c8cb00 0xc9add888 0xcef6d76c PIPE pipe:/[5008]
+5    0xd0cccc00 0xc9add118 0xcef6d4c4 PIPE pipe:/[5009]
+6    0xd14a20c0 0xc9add118 0xcef6d4c4 PIPE pipe:/[5009]
+7    0xd18d8f00 0xc9add090 0xcef6d370 PIPE pipe:/[5010]
+8    0xd14eba40 0xc9add090 0xcef6d370 PIPE pipe:/[5010]
+9    0xd0c8f600 0xc9c2a558 0xcef6d21c PIPE pipe:/[5067]
+10   0xd1bd4380 0xc9c2a558 0xcef6d21c PIPE pipe:/[5067]
+11   0xc853b500 0xc81611a0 0xc8168cdc REG  /proc/fs/vmblock/dev
+12   0xc53c9300 0xc4c493c0 0xc6862568 SOCK socket:/[7759]
+13   0xc53c9600 0xc4da3ee8 0xc91e4048 PIPE pipe:/[7763]
+14   0xc53c9c00 0xc4da3ee8 0xc91e4048 PIPE pipe:/[7763]
+15   0xc53c9900 0xc4da3f70 0xc81e7dd0 PIPE pipe:/[7764]
+16   0xc53c9840 0xc4da3f70 0xc81e7dd0 PIPE pipe:/[7764]
+17   0xc53c9780 0xc4da3998 0xc81e7484 PIPE pipe:/[7765]
+18   0xc5176ec0 0xc4da3998 0xc81e7484 PIPE pipe:/[7765]
+19   0xc53c9cc0 0xc4da3910 0xc75bd370 PIPE pipe:/[7766]
+20   0xc6f443c0 0xc4da3910 0xc75bd370 PIPE pipe:/[7766]
+
+PID: 2271   TASK: 0xd1a86aa0  CPU: 0   COMMAND: "pam-panel-icon"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc853b380 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc78e7800 0xc78e85e0 0xc7d6e0e8 SOCK socket:/[7509]
+4    0xc78e7c80 0xc78e8448 0xc8228ca8 SOCK socket:/[7511]
+7    0xc78e7440 0xc78e8228 0xc81e71dc PIPE pipe:/[7515]
+
+PID: 2281   TASK: 0xc8249aa0  CPU: 0   COMMAND: "gam_server"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc8165cc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc8160d80 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc8160d80 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc8160480 0xd19a4090 0xd19bee10 DIR  inotify
+4    0xc81603c0 0xc83c2e60 0xc81989a8 SOCK socket:/[7456]
+5    0xc8160300 0xc83c2dd8 0xc81e7b28 PIPE pipe:/[7457]
+6    0xc8160240 0xc83c2dd8 0xc81e7b28 PIPE pipe:/[7457]
+7    0xc8144cc0 0xc87cab30 0xc81983a8 SOCK socket:/[7477]
+8    0xc860a2c0 0xc55b8668 0xc8ce16a8 SOCK socket:/[7626]
+
+PID: 2290   TASK: 0xd1410aa0  CPU: 0   COMMAND: "wnck-applet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc73f70c0 0xc75e0a20 0xc75cfce8 SOCK socket:/[7541]
+4    0xc6c0bbc0 0xc75e0aa8 0xc75bd8c0 PIPE pipe:/[7543]
+5    0xc6c0bc80 0xc75e0aa8 0xc75bd8c0 PIPE pipe:/[7543]
+6    0xc6c0be00 0xc75e0b30 0xc75bd76c PIPE pipe:/[7544]
+7    0xc73f7180 0xc75e0b30 0xc75bd76c PIPE pipe:/[7544]
+8    0xc73f7240 0xc75e0cc8 0xc75bd618 PIPE pipe:/[7545]
+9    0xc73f7300 0xc75e0cc8 0xc75bd618 PIPE pipe:/[7545]
+10   0xc7380200 0xc75e0800 0xc75cf9e8 SOCK socket:/[7546]
+11   0xc8e0c200 0xc75e06f0 0xc75cf6e8 SOCK socket:/[7548]
+12   0xc6c0b8c0 0xc75e0558 0xc75cf3e8 SOCK socket:/[7551]
+13   0xc73f7cc0 0xc75e0338 0xc6c4bca8 SOCK socket:/[7555]
+14   0xc73f7f00 0xc75e04d0 0xc75cf268 SOCK socket:/[7552]
+15   0xc6c0b440 0xc6c80ee8 0xc6c4b9a8 SOCK socket:/[7564]
+16   0xc73f73c0 0xc6c80bb8 0xc6c4b828 SOCK socket:/[7563]
+
+PID: 2294   TASK: 0xc82e3550  CPU: 0   COMMAND: "trashapplet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc7875540 0xc6c803c0 0xc6e2de68 SOCK socket:/[7581]
+4    0xc6dcd200 0xc7a74998 0xc81e79d4 PIPE pipe:/[7583]
+5    0xc6dcd140 0xc7a74998 0xc81e79d4 PIPE pipe:/[7583]
+6    0xc6e38d80 0xc83c23c0 0xc91e4994 PIPE pipe:/[7584]
+7    0xc6dcd440 0xc83c23c0 0xc91e4994 PIPE pipe:/[7584]
+8    0xc6dcd500 0xc87caa20 0xcb9da4c4 PIPE pipe:/[7585]
+9    0xc6dcd5c0 0xc87caa20 0xcb9da4c4 PIPE pipe:/[7585]
+10   0xc6e38900 0xc6c80118 0xc6e2db68 SOCK socket:/[7586]
+11   0xc6e38780 0xc6e58f70 0xc6e2d868 SOCK socket:/[7588]
+12   0xc6e38600 0xc6e58dd8 0xc6e2d568 SOCK socket:/[7591]
+13   0xc6e389c0 0xc6e58bb8 0xc6e5de28 SOCK socket:/[7595]
+14   0xc6e38540 0xc6e58d50 0xc6e2d3e8 SOCK socket:/[7592]
+15   0xc8160e40 0xc6e58aa8 0xc6e5dca8 SOCK socket:/[7596]
+16   0xc6f4eec0 0xc82bef70 0xc68629e8 SOCK socket:/[7619]
+17   0xc78ea380 0xc6fe8090 0xc6862868 SOCK socket:/[7618]
+18   0xc6f44e40 0xd19a4090 0xd19bee10 DIR  inotify
+
+PID: 2298   TASK: 0xd199b000  CPU: 0   COMMAND: "pam_timestamp_c"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc853b380 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc78e7500 0xc78e8228 0xc81e71dc PIPE pipe:/[7515]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+
+PID: 2300   TASK: 0xc79b2000  CPU: 0   COMMAND: "mapping-daemon"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc78e7ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc78e7140 0xc78e8998 0xc6c4b228 SOCK socket:/[7571]
+4    0xc6dc0d80 0xc6c80338 0xc6c4b0a8 SOCK socket:/[7575]
+
+PID: 2315   TASK: 0xc82a6550  CPU: 0   COMMAND: "notification-ar"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc5ad5a40 0xc616a448 0xc6862268 SOCK socket:/[7646]
+4    0xc5ad5740 0xc616a888 0xc5af6e50 PIPE pipe:/[7648]
+5    0xc5ad5800 0xc616a888 0xc5af6e50 PIPE pipe:/[7648]
+6    0xc5ad5b00 0xc616a3c0 0xc5af6cfc PIPE pipe:/[7649]
+7    0xc5a13600 0xc616a3c0 0xc5af6cfc PIPE pipe:/[7649]
+8    0xc5a82300 0xc616a338 0xc5af6ba8 PIPE pipe:/[7650]
+9    0xc5a82240 0xc616a338 0xc5af6ba8 PIPE pipe:/[7650]
+10   0xc5afbcc0 0xc616a1a0 0xc5affe28 SOCK socket:/[7651]
+11   0xc5ad5bc0 0xc616a090 0xc5affb28 SOCK socket:/[7653]
+12   0xc5afbb40 0xc5b01e60 0xc5aff828 SOCK socket:/[7656]
+13   0xc5ad5200 0xc5b01c40 0xc5aff228 SOCK socket:/[7660]
+14   0xc5afbf00 0xc5b01dd8 0xc5aff6a8 SOCK socket:/[7657]
+15   0xc511d0c0 0xc5144888 0xc5125ce8 SOCK socket:/[7726]
+16   0xc577c180 0xc5144558 0xc5306ca8 SOCK socket:/[7727]
+
+PID: 2317   TASK: 0xc82e3000  CPU: 0   COMMAND: "mixer_applet2"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc5bfe240 0xc5b01a20 0xc5aff0a8 SOCK socket:/[7665]
+4    0xc5bfeb40 0xc5b01800 0xc5af6a54 PIPE pipe:/[7667]
+5    0xc5bfe9c0 0xc5b01800 0xc5af6a54 PIPE pipe:/[7667]
+6    0xc5bfe0c0 0xc5b01888 0xc5af6900 PIPE pipe:/[7668]
+7    0xc5bfe300 0xc5b01888 0xc5af6900 PIPE pipe:/[7668]
+8    0xc5bfe3c0 0xc5b016f0 0xc5af67ac PIPE pipe:/[7669]
+9    0xc5bfe480 0xc5b016f0 0xc5af67ac PIPE pipe:/[7669]
+10   0xc5bfe840 0xc5b01558 0xc5ae5ce8 SOCK socket:/[7670]
+11   0xc5623a40 0xc5b01448 0xc5ae59e8 SOCK socket:/[7672]
+12   0xc56238c0 0xc5b012b0 0xc5ae56e8 SOCK socket:/[7675]
+13   0xc5623e00 0xc5b01090 0xc5ae50e8 SOCK socket:/[7679]
+14   0xc5623c80 0xc5b01228 0xc5ae5568 SOCK socket:/[7676]
+15   0xc511d240 0xc5144668 0xc5125868 SOCK socket:/[7719]
+16   0xc511d300 0xc51446f0 0xc51250e8 SOCK socket:/[7718]
+17   0xc4c42900 0xd0d0f090 0xd0d80ad8 CHR  /dev/snd/controlC0
+
+PID: 2319   TASK: 0xd1aa0550  CPU: 0   COMMAND: "clock-applet"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc9665bc0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc5039440 0xc5642a20 0xc5038e28 SOCK socket:/[7684]
+4    0xc5039800 0xc5642998 0xc75bd0c8 PIPE pipe:/[7686]
+5    0xc5039740 0xc5642998 0xc75bd0c8 PIPE pipe:/[7686]
+6    0xc50392c0 0xc5642910 0xc75bd21c PIPE pipe:/[7687]
+7    0xc5039500 0xc5642910 0xc75bd21c PIPE pipe:/[7687]
+8    0xc50398c0 0xc5642888 0xc75bde10 PIPE pipe:/[7688]
+9    0xc577c240 0xc5642888 0xc75bde10 PIPE pipe:/[7688]
+10   0xc511d9c0 0xc56426f0 0xc5038b28 SOCK socket:/[7689]
+11   0xc5039680 0xc56425e0 0xc5038828 SOCK socket:/[7691]
+12   0xc511d840 0xc5642448 0xc5038528 SOCK socket:/[7694]
+13   0xc511de40 0xc5642228 0xc5125e68 SOCK socket:/[7698]
+14   0xc511dc00 0xc56423c0 0xc50383a8 SOCK socket:/[7695]
+15   0xc5039b00 0xc5144aa8 0xc5125b68 SOCK socket:/[7709]
+16   0xc5623380 0xc5144b30 0xc51256e8 SOCK socket:/[7708]
+
+PID: 2422   TASK: 0xc82a6aa0  CPU: 0   COMMAND: "gnome-screensav"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc376b3c0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xd14e6ec0 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc4c485c0 0xc815bee8 0xc37619e8 SOCK socket:/[7974]
+4    0xc666b140 0xc21062b0 0xc5af6504 PIPE pipe:/[7976]
+5    0xc4b1a9c0 0xc21062b0 0xc5af6504 PIPE pipe:/[7976]
+6    0xc376b300 0xc2106228 0xc5af6658 PIPE pipe:/[7977]
+7    0xc376ae00 0xc2106228 0xc5af6658 PIPE pipe:/[7977]
+8    0xc376c980 0xc21061a0 0xc5af63b0 PIPE pipe:/[7978]
+9    0xc376b780 0xc21061a0 0xc5af63b0 PIPE pipe:/[7978]
+10   0xc6b46200 0xc2106118 0xc3761e68 SOCK socket:/[7979]
+11   0xc376bd80 0xc237ef70 0xc4bc1ca8 SOCK socket:/[7981]
+12   0xc376bc00 0xc237edd8 0xc4bc19a8 SOCK socket:/[7984]
+13   0xc6b46140 0xc237ed50 0xc4bc1828 SOCK socket:/[7985]
+14   0xc376aec0 0xc237ec40 0xc4bc1528 SOCK socket:/[7987]
+
+PID: 2582   TASK: 0xc79b2aa0  CPU: 0   COMMAND: "gnome-terminal"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc1466780 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+2    0xd14c42c0 0xcf12a888 0xcc0c821c PIPE pipe:/[6825]
+3    0xc0347200 0xc1904778 0xc37610e8 SOCK socket:/[8411]
+4    0xc1466f00 0xc1902d50 0xc0250e50 PIPE pipe:/[8413]
+5    0xc376ad40 0xc1902d50 0xc0250e50 PIPE pipe:/[8413]
+6    0xc0347b00 0xc19044d0 0xc5af625c PIPE pipe:/[8414]
+7    0xc0347800 0xc19044d0 0xc5af625c PIPE pipe:/[8414]
+8    0xc0347980 0xc19042b0 0xc0250cfc PIPE pipe:/[8415]
+9    0xc0347500 0xc19042b0 0xc0250cfc PIPE pipe:/[8415]
+10   0xc0c6ae00 0xc1904910 0xc3761268 SOCK socket:/[8416]
+11   0xc0347080 0xc1904a20 0xc37613e8 SOCK socket:/[8419]
+12   0xc3769b40 0xc1904228 0xc3761568 SOCK socket:/[8421]
+13   0xc0347bc0 0xc1904ee8 0xc4bc1228 SOCK socket:/[8424]
+14   0xc376a140 0xc1904090 0xc03ed9e8 SOCK socket:/[8428]
+15   0xc0347140 0xc1904cc8 0xc03ede68 SOCK socket:/[8425]
+16   0xc376b240 0xd150d4d0 0xd150ec8c CHR  /dev/ptmx
+17   0xc0251d80 0xc0d8f778 0xc0250a54 PIPE pipe:/[8444]
+18   0xc0c6a680 0xc0d8fb30 0xc03ed868 SOCK socket:/[8430]
+19   0xc0251e40 0xc0d8f778 0xc0250a54 PIPE pipe:/[8444]
+20   0xc1466d80 0xc0d8f800 0xc0250900 PIPE pipe:/[8445]
+21   0xc6b51b40 0xc0d8f800 0xc0250900 PIPE pipe:/[8445]
+23   0xd0881980 0xd150d4d0 0xd150ec8c CHR  /dev/ptmx
+
+PID: 2584   TASK: 0xd0e4b550  CPU: 0   COMMAND: "gnome-pty-helpe"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc376bf00 0xc0d8faa8 0xc03ed6e8 SOCK socket:/[8431]
+1    0xc376bf00 0xc0d8faa8 0xc03ed6e8 SOCK socket:/[8431]
+2    0xc0c6a740 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+5    0xc02519c0 0xd0cc3998 0xd12d3698 REG  /var/run/utmp
+
+PID: 2585   TASK: 0xc82a6000  CPU: 0   COMMAND: "bash"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc0251cc0 0xc0d8f888 0xc0250ba8 CHR  /pts/1
+1    0xc0251cc0 0xc0d8f888 0xc0250ba8 CHR  /pts/1
+2    0xc0251cc0 0xc0d8f888 0xc0250ba8 CHR  /pts/1
+255  0xc0251cc0 0xc0d8f888 0xc0250ba8 CHR  /pts/1
+
+PID: 2921   TASK: 0xcd4c9aa0  CPU: 0   COMMAND: "bash"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xd0881800 0xcdd88c40 0xc0250658 CHR  /pts/2
+1    0xd0881800 0xcdd88c40 0xc0250658 CHR  /pts/2
+2    0xd0881800 0xcdd88c40 0xc0250658 CHR  /pts/2
+255  0xd0881800 0xcdd88c40 0xc0250658 CHR  /pts/2
+
+PID: 3020   TASK: 0xd1ad2000  CPU: 0   COMMAND: "firefox"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc3762500 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc63de980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc376a200 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+255  0xc4b1af00 0xc45636f0 0xc6ace698 REG  /usr/lib/firefox-1.5.0.12/firefox
+
+PID: 3043   TASK: 0xd0b3eaa0  CPU: 0   COMMAND: "run-mozilla.sh"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc3762500 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc63de980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc376a200 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+255  0xc511d600 0xc45635e0 0xc6ace2c0 REG  /usr/lib/firefox-1.5.0.12/run-mozilla.sh
+
+PID: 3048   TASK: 0xd1ad2550  CPU: 0   COMMAND: "firefox-bin"
+FD   FILE       DENTRY     INODE      TYPE PATH
+0    0xc3762500 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+1    0xc63de980 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+2    0xc376a200 0xd14b9dd8 0xd19b90a0 CHR  /dev/null
+3    0xc3765cc0 0xcd6f1338 0xc5306228 SOCK socket:/[10134]
+4    0xc37653c0 0xc666d090 0xc38cb4ac REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/.parentlock
+5    0xc3765d80 0xcd6f12b0 0xc81e7330 PIPE pipe:/[10141]
+6    0xc37650c0 0xcd6f12b0 0xc81e7330 PIPE pipe:/[10141]
+7    0xcfa5d240 0xc09f9910 0xc81e7c7c PIPE pipe:/[10142]
+8    0xcfa5d180 0xc09f9910 0xc81e7c7c PIPE pipe:/[10142]
+9    0xc3768e00 0xcd6f1800 0xc81e7088 PIPE pipe:/[10143]
+10   0xc3768d40 0xcd6f1800 0xc81e7088 PIPE pipe:/[10143]
+11   0xc14666c0 0xcfba5090 0xc75bd4c4 PIPE pipe:/[10144]
+12   0xc6b468c0 0xcfba5090 0xc75bd4c4 PIPE pipe:/[10144]
+13   0xc6b46440 0xcd6f1448 0xc5af6108 PIPE pipe:/[10145]
+14   0xc6b465c0 0xcd6f1448 0xc5af6108 PIPE pipe:/[10145]
+15   0xc6b46c80 0xcd6f1558 0xc53069a8 SOCK socket:/[10146]
+16   0xc6b46500 0xcfba55e0 0xce983b28 SOCK socket:/[10148]
+17   0xc37682c0 0xcd6f1090 0xce9839a8 SOCK socket:/[10151]
+18   0xcf55b6c0 0xc3aca338 0xc3ad2698 REG  /usr/lib/firefox-1.5.0.12/chrome/browser.jar
+19   0xc4b1a780 0xc3aca090 0xc3b19c5c REG  /usr/lib/firefox-1.5.0.12/chrome/en-US.jar
+20   0xcf55b240 0xc3b1daa8 0xc3414c5c REG  /usr/lib/firefox-1.5.0.12/chrome/classic.jar
+21   0xcf55bd80 0xc3b1dd50 0xc3b192c0 REG  /usr/lib/firefox-1.5.0.12/chrome/toolkit.jar
+22   0xc24ae2c0 0xc5144dd8 0xd11f82c0 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/formhistory.dat
+23   0xc4f38440 0xc3b1d888 0xc34144ac REG  /usr/lib/firefox-1.5.0.12/chrome/reporter.jar
+24   0xc26f3d40 0xc28c0e60 0xc28b2c5c REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/history.dat
+25   0xc4c48080 0xc33b6aa8 0xc3339a70 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/cert8.db
+26   0xc4b1ab40 0xc33b6a20 0xc3339884 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/key3.db
+27   0xcf80a080 0xc28c02b0 0xc28b2698 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_MAP_
+28   0xc24ae140 0xc28c0338 0xc28b2884 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_001_
+29   0xc24ae200 0xc28c03c0 0xc28b2a70 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_002_
+30   0xc63de8c0 0xc28c0448 0xc4b04e48 REG  /home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_003_
+38   0xc33e2180 0xd19a4090 0xd19bee10 DIR  inotify

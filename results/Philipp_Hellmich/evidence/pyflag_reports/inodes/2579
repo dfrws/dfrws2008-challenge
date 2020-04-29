@@ -1,0 +1,621 @@
+
+function Set_doLinkFlash(lUrl,lTarget){
+	bN=navigator.userAgent.toString();
+	try{
+		if(bN.indexOf("MSIE")!=-1){
+			var b=document.getElementsByTagName("body")[0],l=document.createElement("a");
+			l.setAttribute("href",lUrl);
+			l.setAttribute("id","flashReferrerLink");
+			if(lTarget){l.setAttribute("target", lTarget);}
+			b.appendChild(l);
+			l.click();
+		} else {
+			if(lTarget == "_blank"){
+				window.open(lUrl);
+			} else {
+				location.href=lUrl;
+			}
+		}
+	}catch(e){
+		location.href=lUrl;
+	}
+}
+function getNAxFlash(){na_flash=0;if(navigator.plugins) {for (var i=0; i<navigator.plugins.length; i++) { try{ na_flash=/shockwave flash (\d+)/gi.exec(navigator.plugins[i].description)[1]; break; } catch(notIt){}}}return na_flash;}
+function getAxFlash(){iVersion = -1;try{iVersion = parseInt(new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version").substr(3));}catch(e){}return iVersion; }
+iFlashCm = (navigator.appName.indexOf("Micro") != -1 && (navigator.platform.indexOf("Win") != -1 || navigator.platform.toLowerCase().indexOf("ce") != -1))?getAxFlash():getNAxFlash();
+
+function params(wut,qp,dflt){ dflt=(dflt==null)?'':dflt; try{r=unescape(wut.match(new RegExp(qp+"=+([^&;]*)"))[1]);}catch(qp){r=dflt;} return r; }
+function br_params(qp,dflt){dflt=(dflt==null)?-1:dflt;try{r=unescape(navigator.userAgent.match(new RegExp(qp+"( |\:|\/)+([^&;\) ]*)"))[2]);}catch(qp){r=dflt;} return r; }
+
+function SetCookieUtil (name,value,expires,path,domain,secure) {
+	document.cookie = name + "=" + escape (value) +	((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "; path=/") + ((domain) ? "; domain=" + domain : "; domain=.go.com") +	((secure) ? "; secure" : "");
+}
+//Breadcrumb methods
+function fHasOpener(){
+	try{if(opener)return true;}catch(e){return false;}
+}
+function fIsBranded(){
+	var bIsBranded = false;
+	try{bIsBranded = (bCrumbLevel_1)?true:false;}catch(e){}
+	try{if(this.hasOpener && opener.bCrumbLevel_1)bIsBranded= true;}catch(e){}
+	return bIsBranded;
+}
+function fIsBrandedChild(){
+	try{ return (opener.bCrumbLevel_1)?true:false;}catch(e){ return false;}
+	return false;
+}
+function fIsBrandedChildWithBCrumb(){
+	try{if(this.isBrandedChild)	return (bCrumbLevel_1)?true:false;}catch(e){return false;}
+}
+function addBreadCrumbs(){
+	var x = 0;
+	var CIB = (this.fHasOpener == true && this.fIsBrandedChildWithBCrumb == false)?"opener.bCrumbLevel_":"bCrumbLevel_";
+	var bt = HB_BrandTags();
+	if(bt== "/DB")bt += "/";
+	var holdValue;
+	var d;
+	do{
+		if(x >= 6){
+			d = "f";
+		}else{
+			holdValue = CIB + x;
+			try{
+				ehv = eval(holdValue);
+				if(ehv != "" && ehv.toString() != "null")bt += ehv+"/";
+			}catch(e){
+				try{
+					holdValue = CIB + x +"_text";
+					ehv = eval(holdValue);
+					if(ehv != "" && ehv.toString() != "null")bt += ehv +"/";
+				}catch(e){}
+			}
+			x++;
+		}
+	}while (d != "f");
+	return bt;
+}
+function createBreadedObj(){
+	this.addBreadCrumbs=addBreadCrumbs;
+	this.fHasOpener=fHasOpener;
+	this.fIsBranded=fIsBranded;
+	this.fIsBrandedChildWithBCrumb=fIsBrandedChildWithBCrumb;
+	this.fIsBrandedChild=fIsBrandedChild;
+	this.bCrumbLevel_1=false;
+	this.isBranded=this.fIsBranded();
+	this.hasOpener=this.fHasOpener();
+	this.isBrandedChild=this.fIsBrandedChild();
+	this.brandTag=this.addBreadCrumbs();
+	this.isBrandedChildWithBCrumb=(this.isBrandedChild)?this.fIsBrandedChildWithBCrumb():false;
+	try{if(this.isBranded && !this.hasOpener)this.bCrumbLevel_1=bCrumbLevel_1;}catch(e){}
+	try{if(this.isBranded && this.hasOpener){if(!this.isBrandedChildWithBCrumb){this.bCrumbLevel_1 = bCrumbLevel_1;	}else{	this.bCrumbLevel_1 = opener.bCrumbLevel_1;}}}catch(e){}
+}
+
+breadedObj = new createBreadedObj();
+done = false;
+b_domain = document.domain;
+b_domain = b_domain.toString();
+vc_foo=window.location.search
+
+function HB_MLC_Loop(arg){
+	var hold = "";
+	var mlcAr = arg.split("/");
+	for(i=0;i<mlcAr.length;i++)if(mlcAr[i].indexOf(".") == -1)hold += "/" + mlcAr[i];
+	return hold;
+}
+function HB_MLC_Constructor(){
+	var winLoc = window.location.href;
+	var winHost = window.location.host;
+	var winHostLen = winHost.length;
+	var winLocIndex = winLoc.indexOf(winHost) + winHostLen + 1;
+	var winLocMLC = winLoc.substr(winLocIndex);
+	var winLocMLC_Final = this.HB_MLC_Loop(winLocMLC);
+	return winLocMLC_Final;
+}
+global_flag = 0;
+function HB_BrandTags(){
+	isDisney = false;
+	isDisney = (window.location.href.indexOf("playhouse") != -1 || window.location.href.indexOf("disney") != -1 || window.location.href.indexOf("familyfun") != -1 || window.location.href.indexOf("toontown") != -1)?true:false;
+	whatBrand = false;
+	try{
+		if(breadedObj.bCrumbLevel_1 && window.location.href.indexOf("movies.go") == -1)whatBrand = true;
+	}catch(e){
+		global_flag=1;
+		whatBrand=false;
+	}
+	if(whatBrand)var foo = "/DB";
+	else var foo = (isDisney)?"/DB":"/NB/";
+	return (whatBrand || isDisney)?"/DB":"NB/";
+}
+function HB_GetDynDomain(){
+	var this_domain = document.domain.toString();
+	this_domain = this_domain
+	return this_domain;
+}
+function HB_ParseBreadCrumb(arg){
+	CIBreadCrumb = "bCrumbLevel_";
+	this.x = 1;
+	var myreturn = this.HB_BrandTags();
+	if(myreturn == "/DB")myreturn += "/";
+	//legacy code, will remove later
+	if(myreturn == "/DB/"){
+	myreturn = HB_Chomp(breadedObj.brandTag);
+	} else {
+		if(arg){
+			myreturn += arg;
+		} else{
+			dyn_domain = this.HB_GetDynDomain();
+			dyn_domain = dyn_domain.replace(/.movies.go.com/,"");
+			dyn_domain = dyn_domain.replace(/.go.com/,"");
+			myreturn += dyn_domain;
+		}
+	}
+	return (this.HB_ReplaceTool(myreturn));
+}
+function HB_Chomp(arg){
+	var len = arg.length -1;
+	return arg.substring(0,len);
+}
+function HB_ReplaceTool(arg){
+	return arg.replace(/ /g,"+").replace(/[\|\!\#\:\$\%\&\'\\\<\^\>\~]/g,"");
+}
+function HB_PlaceAccount(_args_){
+	var foo = "";
+	for(i=0;i<arguments.length;i++){
+		foo += arguments[i] + ";"
+	}
+	foo = HB_Chomp(foo);
+	this.account = foo;
+
+}
+function HB_WriteScript(){
+	var protoType=window.location.protocol + "", isACdn="hb.";
+	if(protoType == "https:"){ isACdn = ""; }
+	//var myHost = window.location.host;
+	//hbxDomain = (myHost.indexOf("disney") != -1 || myHost.indexOf("family") != -1)?"disney":"global";
+	hbxDomain = "disney";
+	document.write('<script src="'+protoType+'//'+isACdn+hbxDomain+'.go.com/stat/hbx.js" type="text/javascript"></scr'+'ipt>');
+	if(this.media != -1)document.write('<script src="'+protoType+'//'+isACdn+hbxDomain+'.go.com/stat/hbxmedia.js" type="text/javascript"></scr'+'ipt>');
+}
+
+function HB_RenderFunction(opt,typ,keywords,results,attr1,attr2,attr3,attr4){
+	_hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+	hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-dig.hitbox.com";
+	hbx.acct = this.account;
+	hbx.mlc = this.mlc;
+	hbx.pn = this.pn;
+	hbx.ci = this.ci;
+	hbx.cid = this.cid;
+	hbx.cpm = this.cmp;
+	hbx.cmpn = this.cmpn;
+	hbx.cp = this.cp;
+	hbx.cpd = this.cpd;
+	hbx.ctdef=this.ctdef;
+	hbx.dcmp=this.dcmp;
+	hbx.dcmpe=this.dcmpe;
+	hbx.dcmpn=this.dcmpn;
+	hbx.dcmpre=this.dcmpre;
+	hbx.dlf=this.dlf;
+	hbx.dft=this.dft;
+	hbx.elf=this.elf;
+	hbx.fnl=this.fnl;
+	hbx.fv=this.fv;
+	hbx.gp=this.gp;
+	hbx.gpn=this.gpn;
+	hbx.hcn=this.hcn;
+	hbx.hla=this.hla;
+	hbx.hlt=this.hlt;
+	hbx.hqsp=this.hqsp;
+	hbx.hqsr=this.hqsr;
+	hbx.hra=this.hra;
+	hbx.hrf=this.hrf;
+	hbx.hvc=this.hvc;
+	hbx.lt=this.lt;
+	hbx.pec=this.pec;
+	hbx.pndef=this.pndef;
+	hbx.seg=this.seg;
+	hbx.lvm=this.lvm;
+	cv = _hbEvent("cv");
+	this.iFlashCm = iFlashCm;
+
+	//Custom code to handle Custom Metric 9 (Safari versions PC/MAC, Firefox Version, Flash Version)
+	cv.c9="";
+	if(window.location.href.indexOf("detect/setup/ie/flash_landing.html") == -1){
+		cv.c9 += ((cv.c9!="")?",":"")+"Flash+Version|"+this.iFlashCm;
+	}
+	ff_version = parseFloat(br_params("Firefox"))
+	if(ff_version > 0){cv.c9 +=((cv.c9!="")?",":"")+"Firefox|"+ff_version;}
+	var _safariPC=((navigator.userAgent.indexOf("Windows")!= -1 && navigator.userAgent.indexOf("Safari")!=-1)?true:false);
+	var _safariMAC=((navigator.userAgent.indexOf("Macintosh")!= -1 && navigator.userAgent.indexOf("Safari")!=-1)?true:false);
+	if(_safariPC){
+		cv.c9 += ((cv.c9!="")?",":"")+"Safari|PC";
+	} else {
+		if(_safariMAC){
+			cv.c9 += ((cv.c9!="")?",":"")+"Safari|MAC";
+		}
+	}
+	//Custom code to track referring URLs from 404 page into Custom Metric 13.
+	if(location.href=="http://home.disney.go.com/error/pagenotfound"){
+		cv.c13="Page+Not+Found+Referrer|"+params(document.cookie,"hbxRF","undefined");
+		hbx.hrf=params(document.cookie,"hbxRF","");
+	} else {
+		document.cookie = "hbxRF="+location.href+";path=/;domain=.go.com";
+	}
+	
+	//Custom code to track page views by grouping it to 5 minute intervals into Custom Metric 7.
+	if(location.href=="http://home.disney.go.com/" ||
+		location.href=="http://disney.go.com/index" ||
+		location.href=="http://home.disney.go.com/index"){
+		var curDateTime = new Date();
+		var timezoneGMTOffset = -(curDateTime.getTimezoneOffset()/60);
+		var curYear = curDateTime.getYear();
+		var curMonth = curDateTime.getMonth() + 1;
+		var curDay = curDateTime.getDate();
+		var curHour = curDateTime.getHours();
+		var curMin = curDateTime.getMinutes();
+
+		curMonth = ((curMonth < 10) ? "0" : "") + curMonth;
+		curDay = ((curDay < 10) ? "0" : "") + curDay;
+		if(curYear<1000) curYear+=1900;
+		curMin = curMin - (curMin % 5);
+		curMin = ((curMin < 10) ? "0" : "") + curMin;
+		curHour = ((curHour < 10) ? "0" : "") + curHour;
+		var curTime = curYear + curMonth + curDay + " " + curHour + ":" + curMin;
+		cv.c7 = timezoneGMTOffset + "|" + curTime;
+	}
+	
+	//Custom code to handle acqsrc and put value in cv.c19
+	_ls = params(location.search,"acqsrc",null);
+	if(_ls) cv.c19 = _ls;
+	//media;
+
+	//custom code to handle AB testing for HCS pages.
+	if(this.AB_test_version != null)cv.c15=this.AB_test_version;
+	
+	if(this.media != -1)hbx.media = this.media;
+	if(this.onlyMedia)hbx.onlyMedia = this.onlyMedia;
+	if(this.hc1)hbx.hc1=this.hc1;
+	if(this.hc2)hbx.hc2=this.hc2;
+	if(this.hc3)hbx.hc3=this.hc3;
+	if(this.hc4)hbx.hc4=this.hc4;
+	if(this.mlc.indexOf("CONTENT+CATEGORY") != -1) hbx.ctdef="full";
+	if(typ){
+		if(typ == "search"){
+			ev1 = new _hbEvent(typ);
+			ev1.keywords = keywords;
+			ev1.results = results;
+			if(attr1)ev1.attr1 = attr1;
+			if(attr2)ev1.attr2 = attr2;
+			if(attr3)ev1.attr3 = attr3;
+			if(attr4)ev1.attr4 = attr4;
+		}else{
+			switch(opt){
+				case 2 :
+				ev2 = new _hbEvent(typ);
+				ev2.keywords = keywords;
+				ev2.results = results;
+				if(attr1)ev2.attr1 = attr1;
+				if(attr2)ev2.attr2 = attr2;
+				if(attr3)ev2.attr3 = attr3;
+				if(attr4)ev2.attr4 = attr4;
+				break;
+				case 3 :
+				ev3 = new _hbEvent(typ);
+				ev3.keywords = keywords;
+				ev3.results = results;
+				if(attr1)ev3.attr1 = attr1;
+				if(attr2)ev3.attr2 = attr2;
+				if(attr3)ev3.attr3 = attr3;
+				if(attr4)ev3.attr4 = attr4;
+				break;
+				case 4:
+				ev4 = new _hbEvent(typ);
+				ev4.keywords = keywords;
+				ev4.results = results;
+				if(attr1)ev4.attr1 = attr1;
+				if(attr2)ev4.attr2 = attr2;
+				if(attr3)ev4.attr3 = attr3;
+				if(attr4)ev4.attr4 = attr4;
+				break;
+			}
+		}
+	}
+	if(opt != "special"){
+		this.HB_WriteScript();
+	}
+}
+
+function OutSide(opt,typ,keywords,results,attr1,attr2,attr3,attr4){
+	_hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+	this[opt] = new _hbEvent(typ);
+	this[opt].keywords = keywords;
+	this[opt].results = results;
+	if(attr1)this[opt].attr1 = attr1;
+	if(attr2)this[opt].attr2 = attr2;
+	if(attr3)this[opt].attr3 = attr3;
+
+}
+function HB_PlaceName(arg){
+	if(!arg){
+		this.pn = "PUT+PAGE+NAME+HERE";
+	}
+	else{
+		foo = HB_ReplaceTool(arg);
+		this.pn = foo;
+	}
+}
+function HB_AppendInformation(arg_mlc){
+	var hold = "/";
+	var inti = "";
+	if(!arg_mlc){
+		var protemp_mlc = this.first_mlc;
+	}
+	else{
+		var protemp_mlc = arg_mlc;
+	}
+	return protemp_mlc;
+
+}
+// interface functions
+function HB_ParseContentArray(){
+	var myParse = "";
+
+	for(i=0;i<contentTrackAr.length;i++){
+		myParse += contentTrackAr[i] + ";";
+	}
+	myParse = this.HB_Chomp(myParse);
+	return myParse;
+}
+//Flash functions
+function Set_hbPageView(YourPageName,YourContentCategoryName,arrayInfo){
+	if(YourContentCategoryName == true){
+		contentTrackAr = arrayInfo;
+		fromArray = this.HB_ParseContentArray();
+		send_mlc = this.CI_Raw + this.HB_AppendInformation(contentTrackAr[0]);
+		var complete_mlc = fromArray + ";" + send_mlc;
+	}
+	else{
+		var send_mlc = this.CI_Raw + this.HB_AppendInformation(YourContentCategoryName) + "/flash";
+		var complete_mlc = YourContentCategoryName + ";" + send_mlc;
+	}
+	_hbPageView(YourPageName,complete_mlc);
+}
+function Set_hbExitLink(YourExitLinkName){
+	_hbExitLink(YourExitLinkName);
+}
+function Set_hbDownload(YourDownloadName){
+	_hbDowload(YourDownloadName);
+}
+
+function Set_hbCampaign(YourCampaignID,YourPageName,YourContentCategoryName){
+	_hbCampaign(YourCampaignID,YourPageName,YourContentCategoryName);
+}
+function Set_hbGoalPage(YourGoalPageCampaignID,YourPageName,YourContentCategoryName){
+	_hbGoalPage(YourGoalPageCampaignID,YourPageName,YourContentCategoryName)
+}
+function Set_hbVisitorSeg(YourSegmentID,YourPageName,YourContentCategoryName){
+	_hbVisitorSeg(YourSegmentID,YourPageName,YourContentCategoryName);
+}
+function Set_hbSet(AnyHBXGatewayVariable,AlternateValueOfVariable){
+	_hbSet(AnyHBXGatewayVariable,AlternateValueOfVariable);
+	//alert("hi");
+}
+function Set_hbSend(){
+	_hbSend();
+}
+function Set_hbLink(YourLinkID,YourLinkPosition){
+	_hbLink(YourLinkID,YourLinkPosition);
+}
+//Custom Metric Code
+function PlaceCustomMetric(val,res){
+	switch(val){
+		case "hc1":
+		this.hc1 = res;
+		try{hbx.hc1 = res;}catch(e){}
+		break;
+		case "hc2":
+		this.hc2 = res;
+		try{hbx.hc2 = res;}catch(e){}
+		break;
+		case "hc3":
+		this.hc3 = res;
+		try{hbx.hc3 = res;}catch(e){}
+		break;
+		case "hc4":
+		this.hc4 = res;
+		try{hbx.hc4 = res;}catch(e){}
+		break;
+	}
+	return true;
+
+}
+function GetUrl(){
+	winLoc = window.href;
+	winLoc = HH_ReplaceTool(winLoc);
+	return winLoc;
+
+}
+function HH_ReplaceTool(arg){
+	var str = arg;
+	var newString = "";
+	ind = str.indexOf("//");
+	str = str.substr(ind + 2);
+	for(i=0;i<str.length;i++){
+		str = str.replace(/ /,"+");
+		str = str.replace(/\//,"_");
+
+	}
+	for(i=0;i<str.length;i++)str=str.replace(/\./,"+");
+	return str;
+}
+//MEDIA FUNCTION 6/29/2006
+function hbxMediaPlay(hbxFileName, hbxCurrentPos, hbxEndPos, hbxFlashVersion){
+	this.Set_hbSet("m.f",hbxFileName);
+	this.Set_hbSet("m.cp",hbxCurrentPos);
+	this.Set_hbSet("m.ep",hbxEndPos);
+	this.Set_hbSet("m.s","play");
+	this.Set_hbSet("m.cl","Flash Player");
+	this.Set_hbSet("m.cv",hbxFlashVersion);
+	this.Set_hbSet("m.tt","e");
+	this.Set_hbSend();
+}
+function hbxMediaPause(hbxFileName, hbxCurrentPos, hbxEndPos, hbxFlashVersion){
+	this.Set_hbSet("m.f",hbxFileName);
+	this.Set_hbSet("m.cp",hbxCurrentPos);
+	this.Set_hbSet("m.ep",hbxEndPos);
+	this.Set_hbSet("m.s","pause");
+	this.Set_hbSet("m.cl","Flash Player");
+	this.Set_hbSet("m.cv",hbxFlashVersion);
+	this.Set_hbSet("m.tt","e");
+	this.Set_hbSend();
+}
+function hbxMediaStop(hbxFileName, hbxCurrentPos, hbxEndPos, hbxFlashVersion){
+	this.Set_hbSet("m.f",hbxFileName);
+	this.Set_hbSet("m.cp",hbxCurrentPos);
+	this.Set_hbSet("m.ep",hbxEndPos);
+	this.Set_hbSet("m.s","stop");
+	this.Set_hbSet("m.cl","Flash Player");
+	this.Set_hbSet("m.cv",hbxFlashVersion);
+	this.Set_hbSet("m.tt","e");
+	this.Set_hbSend();
+}
+function hbxMediaPlayProgress(hbxFileName, hbxCurrentPos, hbxEndPos, hbxFlashVersion){
+	this.Set_hbSet("m.f",hbxFileName);
+	this.Set_hbSet("m.cp",hbxCurrentPos);
+	this.Set_hbSet("m.ep",hbxEndPos);
+	this.Set_hbSet("m.s","playp");
+	this.Set_hbSet("m.cl","Flash Player");
+	this.Set_hbSet("m.cv",hbxFlashVersion);
+	this.Set_hbSet("m.tt","e");
+	this.Set_hbSend();
+}
+//END MEDIA FUNCTIONS
+function HB_CreateObject(the_mlc,nb_mlc){
+	this.account = "";
+	this.HB_GetDynDomain = HB_GetDynDomain;
+	this.HB_ReplaceTool = HB_ReplaceTool;
+	this.pn = "PUT+PAGE+NAME+HERE";
+	this.HB_AppendInformation = HB_AppendInformation
+	this.HB_PlaceAccount = HB_PlaceAccount
+	this.HB_ParseBreadCrumb = HB_ParseBreadCrumb
+	this.HB_Chomp = HB_Chomp;
+	this.HB_BrandTags = HB_BrandTags;
+	this.HB_render = HB_RenderFunction;
+	this.HB_WriteScript = HB_WriteScript;
+	this.HB_MLC_Constructor = HB_MLC_Constructor;
+	this.HB_MLC_Loop = HB_MLC_Loop;
+	this.HB_ParseContentArray = HB_ParseContentArray;
+	//cookie reader
+	this.params = params;
+	this.cid = this.params(document.cookie,"SWID","null");
+	//custom metrics
+	this.PlaceCustomMetric = PlaceCustomMetric;
+	//ab testing
+	this.HB_SetAB = HB_SetAB;
+	//Flash Functions
+	this.Set_hbPageView = Set_hbPageView;
+	this.Set_hbExitLink = Set_hbExitLink;
+	this.Set_hbDownload = Set_hbDownload;
+	this.Set_hbCampaign = Set_hbCampaign;
+	this.Set_hbGoalPage = Set_hbGoalPage;
+	this.Set_hbVisitorSeg = Set_hbVisitorSeg;
+	this.Set_hbSet = Set_hbSet;
+	this.Set_hbSend = Set_hbSend;
+	this.Set_hbLink = Set_hbLink;
+	this.set_mlc = the_mlc;
+	this.Set_doLinkFlash = Set_doLinkFlash;
+	this.Chrome_hbLink = function(linkOut){this.Set_hbLink("chrome_micro_"+linkOut.toLowerCase(),"chrome_micro");} // Chrome is a dummy variable
+	this.Footer_hbLink = function(linkOut){this.Set_hbLink(linkOut,"footer");}
+	//to draw in the media script
+	this.MyIn = function(arg){}
+	this.media = -1;
+	this.hbxMediaPlayProgress = hbxMediaPlayProgress;
+	this.hbxMediaStop = hbxMediaStop;
+	this.hbxMediaPause = hbxMediaPause;
+	this.hbxMediaPlay = hbxMediaPlay;
+	//end media functions
+	if(this.set_mlc.substring(0,1) != "/")this.set_mlc = "/" + this.set_mlc;
+	this.first_mlc = this.HB_ReplaceTool(this.set_mlc);
+	if(nb_mlc){
+		this.CI_Raw = this.HB_ParseBreadCrumb(nb_mlc);
+	}
+	else{
+		this.CI_Raw = this.HB_ParseBreadCrumb();
+	}
+	this.combo_mlc = this.CI_Raw + this.HB_AppendInformation();
+	this.mlc = this.first_mlc + ";" +  this.combo_mlc;
+	if(this.mlc.indexOf("//") != -1)this.mlc = this.mlc.replace(/\/\//,"/");
+	this.HB_PlaceName = HB_PlaceName;
+	this.ci="";
+	this.cmp="";
+	this.cmpn="";
+	this.cp="null";
+	this.cpd="";
+	this.ctdef="full";
+	this.dcmp="";
+	this.dcmpe="";
+	this.dcmpn="";
+	this.dcmpre="";
+	this.dlf="n";
+	this.dft="n";
+	this.elf="n";
+	this.fnl="";
+	this.fv="n";
+	this.gp="";
+	this.gpn="";
+	this.hcn="";
+	this.hla="";
+	this.hlt="";
+	this.hqsp="";
+	this.hqsr="";
+	this.hra="";
+	this.hrf="";
+	this.hvc="";
+	this.lt="auto";
+	this.lvm="";
+	this.pec="";
+	this.pndef="title";
+	this.seg="";
+	this.hc1="";
+	this.hc2="";
+	this.hc3="";
+	this.hc4="";
+	this.onlyMedia = "";
+	this.Init_ci=function(arg){this.ci=arg;}
+	this.Init_cmp=function(arg){this.cmp=arg;}
+	this.Init_cmpn=function(arg){this.cmpn=arg;}
+	this.Init_cp=function(arg){this.cp=arg;}
+	this.Init_cpd=function(arg){this.cpd=arg;}
+	this.Init_ctdef=function(arg){}
+	this.Init_dcmp=function(arg){this.dcmp=arg;}
+	this.Init_dcmpe=function(arg){this.dcmpe=arg;}
+	this.Init_dcmpn=function(arg){this.dcmpe=arg;}
+	this.Init_dcmpre=function(arg){this.dcmpre=arg;}
+	this.Init_dlf=function(arg){this.dlf=arg;}
+	this.Init_dft=function(arg){this.dft=arg;}
+	this.Init_elf=function(arg){this.elf=arg;}
+	this.Init_fnl=function(arg){this.fnl=arg;}
+	this.Init_fv=function(arg){this.fv=arg;}
+	this.Init_gp=function(arg){this.gp=arg;}
+	this.Init_gpn=function(arg){this.gpn=arg;}
+	this.Init_hcn=function(arg){this.hcn=arg;}
+	this.Init_hla=function(arg){this.hla=arg;}
+	this.Init_hlt=function(arg){this.hlt=arg;}
+	this.Init_hqsp=function(arg){this.hqsp=arg;}
+	this.Init_hqsr=function(arg){this.hqsr=arg;}
+	this.Init_hra=function(arg){this.hra=arg;}
+	this.Init_hrf=function(arg){this.hrf=arg;}
+	this.Init_hvc=function(arg){this.hvc=arg;}
+	this.Init_lt=function(arg){this.lt=arg;}
+	this.Init_onlyMedia=function(arg){this.onlyMedia=arg;}
+	this.Init_pndef=function(arg){}
+	this.Init_pec=function(arg){this.pec=arg;}
+	this.Init_seg=function(arg){this.seg=arg;}
+	this.Init_lvm=function(arg){this.lvm=arg;}
+
+}
+
+//page function to set the AB test version for HCS pages. Value will be set to custom metric 15
+function HB_SetAB(test_version)
+{
+	this.AB_test_version = test_version;
+}

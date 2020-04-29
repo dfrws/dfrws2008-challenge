@@ -1,0 +1,4 @@
+load dfrws
+cd /network/streams/2007-12-17/192.168.151.130-219.93.175.67/
+stat */forward
+#find . forward

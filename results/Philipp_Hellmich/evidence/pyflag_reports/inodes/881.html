@@ -1,0 +1,61 @@
+
+//<img height='90' border='0' width='728' src=783.jpg  reference="http://ads1.msn.com/ads/1/0000000001_000000000000000506812.jpg" />=0 && parseFloat(navigator.appVersion.substr(navigator.appVersion.indexOf("MSIE ")+5))>=4) {document.write(' \n');document.write('on error resume next \n');document.write('g_bShowFlash = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');document.write('');}
+}
+
+if(g_bShowFlash == true)
+{
+	var sFlashObjName_1243201 = "embedMovie_1243201";
+	var objText_1243201 = 'classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="' + sFlashObjName_1243201 + '" width="' + MSNadsWIDTH + '"  height="' + MSNadsHEIGHT + '" style="z-index:-1">';
+	
+	if (isFirefox_1243201)
+	{
+		document.write('');
+	}
+	else
+	{
+		if (inDapIF_244)
+		{
+			document.write('');
+			attachEvents_1243201();
+		}
+		else
+		{	
+			if (document.body == null) document.write('<html><body>');
+			document.write('<span id='ad_span_1243201'></span>');
+			document.write('');		
+			if (document.body == null) document.write('</body></html>');
+		}
+	}
+	acbfs_244(fObjforAcb_244);
+}
+else
+{
+	dlWrite_1243201();
+}
+
+function attachEvents_1243201()
+{
+	document.all[sFlashObjName_1243201].attachEvent("fscommand", function (cmd,args) {embedMovie_1243201_DoFSCommand(cmd, args);});
+}
+
+function initFlash_1243201()
+{
+	if (event.srcElement.readyState == "complete")
+	{
+		writeObjectTagGeneric("ad_span_1243201", objText_1243201);
+		attachEvents_1243201();
+	}
+}
+function acbfs_244(f)
+{
+  try
+  {
+    if(inDapIF_244)
+    {
+      parent.ShowAcb(document.body.id, 1243201, 728, 90, 'g.msn.com', '0AD0006H',"4170555", f);
+    }
+  }
+  catch(e){}
+}
+document.close();
+//]]>

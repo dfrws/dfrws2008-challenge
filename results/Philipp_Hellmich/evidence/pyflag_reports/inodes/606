@@ -1,0 +1,156 @@
+/****************************************************************/
+/*  Disney.com Legal Footer					
+/*  Updated 06/18/2007											
+/*  DO NOT EDIT OR MODIFY WITHOUT QA ENGINEERING APPROVAL
+/*  CONTACT QA ENGINEERING FOR ISSUES
+/****************************************************************/
+
+var lfIsValidColor=false,lfDcWrtInf="";
+var _cFURL=location.href,isThisPageURL=_cFURL.toLowerCase(),ppLink="";
+
+/********* 
+Updated Privacy Policy link style
+Set this to true to change the privacy policy link to BOLD and RED; false for normal
+**********/
+var updatePrivacyPolicyRED=false;
+
+function lfCheckValidColor(hexColor){var strPattern=/^#([0-9a-f]{1,2}){3}$/i; lfIsValidColor=strPattern.test(hexColor); return lfIsValidColor;}
+function SetFooterOut(linkOut){try{hitbox.Footer_hbLink(linkOut);}catch(e){}}
+function isThisPage(identifier){return(isThisPageURL.indexOf(identifier)!=-1)?true:false;}
+
+legalFooterImgPath="//disney.go.com/globalmedia/legal_footer/images";
+var lFArVersion=navigator.appVersion.split("MSIE"),lFVersion=parseFloat(lFArVersion[1]),lFBrowserAgent=navigator.userAgent,legalFooterWidth=770;
+try{if(!legalFooterColor){legalFooterColor="#000000";}}catch(e){var legalFooterColor="#000000";}
+try{if(lFMCFtr){lFMCFtr=true;}}catch(e){var lFMCFtr=false;}//check for Movie Club variable.
+try{if(!lgMinLinks){lgMinLinks=false;}}catch(e){var lgMinLinks=false;}
+try{if(!lfCatLinks){lfCatLinks=false;}}catch(e){var lfCatLinks=false;}
+try{if(!legalFooterCat){legalFooterCat="home";}}catch(e){var legalFooterCat="home";}
+legalFooterCat=legalFooterCat.toLowerCase();
+lfCheckValidColor(legalFooterColor); if(!lfIsValidColor){legalFooterColor="#000000";}
+try{if(chromeWidth!=null){legalFooterWidth=chromeWidth;}}catch(e){}
+var legalFooterLineWidth=0;
+try{if(legalFtrLine1==null){legalFtrLine1="<span style='font-weight:bold;'>"+document.title+"</span>";}}
+catch(e){try{if(legalFtrOpts){legalFtrLine1="<span style='font-weight:bold;'>"+document.title+"</span>";}}catch(e){}}
+ppText="Privacy Policy/Your California Privacy Rights";
+//Do Privacy Policy Stuff
+if(isThisPage("disney.go.com/disneychannel")||isThisPage("disney.go.com/playhouse")||isThisPage("psc.disney.go.com/abcnetworks/toondisney")||isThisPage("register.go.com/disneychannel/")){
+	ppQuery="pp_abccng";
+}else if(isThisPage("disney.go.com/visa")||isThisPage("disneyrewards.disney.go.com")){
+	ppQuery="pp_dccs";
+}else if(isThisPage("disney.go.com/disneytheatrical")||isThisPage("register.go.com/disneytheatrical")||isThisPage("register.go.com/disney/disneyonice/")||isThisPage("disney.go.com/theatre")){
+	ppQuery="pp_bvtg";
+}else if(isThisPage("disney.go.com/disneyartclassics")){
+	ppQuery="pp_ddrp";
+	ppText="Privacy Policy";
+}else if(isThisPage("disneyvideos.disney.go.com")||isThisPage("register.go.com/bvhe/")){
+	ppQuery="pp_bvhe";
+}else if(isThisPage("disney.go.com/disneyadventures")||isThisPage("disney.go.com/disneymagazine")){
+	ppQuery="pp_bvm";
+}else if(isThisPage("eventservices.disney.go.com")||isThisPage("disney.go.com/eventservices")||isThisPage("disneyland.disney.go.com")||isThisPage("disneyworld.disney.go.com")||isThisPage("disneycruise.disney.go.com")||isThisPage("abd.disney.go.com")||isThisPage("disneyworldsports.disney.go.com")||isThisPage("disneyweddings.go.com")||isThisPage("vmk.disney.go.com")||isThisPage("disneymeetings.disney.go.com")||isThisPage("disneymagicalbeginnings.com")||isThisPage("honeymoonregistry.disney.go.com")||isThisPage("disneylandgradnite.com")||isThisPage("destinations.disney.go.com")||isThisPage("disneyeverest.com")||isThisPage("secure.disney.go.com/tickets/en_us/index")||isThisPage("secure.disney.go.com/registration/sites/dyp/")||isThisPage("disneylandyouthprograms.com")||isThisPage("www.disneylandmagicmusicdays.com")){
+	ppQuery="pp_wdpro";
+}else if(isThisPage("dvc.disney.go.com")||isThisPage("disney.go.com/dvc/")){
+	ppQuery="pp_dvc";
+}else{
+	ppQuery="pp_wdig";
+}
+ppLink="http://disney.go.com/corporate/privacy/"+ppQuery+".html"
+
+//Do Legal Footer Image Stuff
+if(isThisPage("/disneypictures/")||isThisPage("disneyvideos.disney.go.com")||isThisPage("disney.videos.go.com")||isThisPage("mydisneymovies.go.com")||isThisPage(".com/movies/")||legalFooterCat=="movies"){
+	legalFooterImg="movies.png";//Movies
+	legalFooterImgLink="http://home.disney.go.com/movies/index";
+}else if(isThisPage("disney.go.com/games")||isThisPage("/blast")||isThisPage("playhouse.go.com")||isThisPage("play.toontown.com")||isThisPage("vmk.disney.go.com")||isThisPage("disney.go.com/webtoons")||isThisPage("disney.go.com/surfswell")||isThisPage("disney.go.com/hotshot")||isThisPage("buenavistagames")||isThisPage("disney.go.com/features/souvenears/")||isThisPage(".com/games/")||legalFooterCat=="games"){
+	legalFooterImg="games.png";	//Games
+	legalFooterImgLink="http://home.disney.go.com/games/index";
+}else if(isThisPage("radio.disney.go.com")||isThisPage("disney.go.com/disneyrecords/")||isThisPage("disney.go.com/music/")||isThisPage(".com/music/")||legalFooterCat=="music"){
+	legalFooterImg="music.png";	//Music
+	legalFooterImgLink="http://home.disney.go.com/music/index";
+}else if(isThisPage("disney.go.com/theatre/")||isThisPage("disneyonice.disney.go.com")||isThisPage("disney.go.com/disneylive/")||isThisPage(".com/liveevents/")||legalFooterCat=="liveevents"){
+	legalFooterImg="liveevents.png";	//Live Events
+	legalFooterImgLink="http://home.disney.go.com/liveevents/index";
+}else if(isThisPage("disneyparks.disney.go.com")||isThisPage("disneyworld.disney.go.com")||isThisPage("disneyland.disney.go.com")||isThisPage("disneycruise.disney.go.com")||isThisPage("dvc.disney.go.com")||isThisPage("abd.disney.go.com")||isThisPage("dvc.disney.go.com")||isThisPage("disneycruise.disney.go.com")||isThisPage("disneymeetings.disney.go.com")||isThisPage("disneyyouthgroups.disney.go.com")||isThisPage("disneyworldsports.disney.go.com")||isThisPage("disneyweddings.")||isThisPage("disneygolf.")||isThisPage(".com/travel/")||legalFooterCat=="travel"){
+	legalFooterImg="travel.png";	//Travel
+	legalFooterImgLink="http://home.disney.go.com/travel/index";
+}else if(isThisPage("disneyshopping.go.com")||isThisPage("disney.go.com/visa")||isThisPage("disney.go.com/disneybooks")||isThisPage("disney.go.com/disneygiftcard")||isThisPage("eventservices.disney.go.com/pintrading/")||isThisPage("disney.go.com/dcards")||isThisPage("disney.go.com/disneyadventures/")||isThisPage(".com/shopping/")||legalFooterCat=="shop"){
+	legalFooterImg="shop.png";	//Shop
+	legalFooterImgLink="http://home.disney.go.com/shopping/index";
+}else if(isThisPage("disneymobile.go.com")||isThisPage("mobile.disney.go.com")||isThisPage(".com/mobile/")||legalFooterCat=="mobile"){
+	legalFooterImg="mobile.png";	//Mobile
+	legalFooterImgLink="http://home.disney.go.com/mobile/index";
+}else if(isThisPage("/disneychannel")||isThisPage("tv.disney.go.com")||isThisPage(".com/tv/")||isThisPage("playhouse/today")||isThisPage(".com/abcnetworks/")||legalFooterCat=="dctvnetwork"){
+	legalFooterImg="disneychannel_tv_network.png";	//DC&TV
+	legalFooterImgLink="http://home.disney.go.com/tv/index";
+}else{
+	legalFooterImg="disney_footer.png";
+	legalFooterImgLink="http://home.disney.go.com/index";
+}
+var copyRight="",copyRightType="",ftTransfer="http://transfer.go.com/cgi/transfer.dll?srvc=dis&goto=";
+try{if(legalFtrCpyRgt){copyRight=legalFtrCpyRgt;}}catch(e){copyRight="&copy; Disney. All rights reserved.";}
+//Spit out the legal footer...
+dolFooterMainTable="width:"+legalFooterWidth+"px; text-align:center; padding:0px; margin:10px 0px; background:transparent none; border:none; ";
+dolFooterTableCell="padding:0px; margin:12px 0px; background:transparent none; border:none; ";
+dolFooterSt="font-family:verdana,helvetica; color:"+legalFooterColor+"; background-color:transparent; text-align:center; font-size:10pt; border:none; "
+dolFooterSmallSt="font-family:verdana,helvetica; color:"+legalFooterColor+"; background-color:transparent; text-align:center; font-size:10px; border:none; "
+dolFooterLnk="font-size:10pt !important; ";
+dolFooterLnkRed="color: #FF0000 !important; font-size:10pt !important; font-weight: bold;";
+dolFooterSmallLnk="font-size:10px !important; ";
+lfDcWrtInf=lfDcWrtInf+"<style>a.dolFooterLnk,a.dolFooterLnk:visited,a.dolFooterLnk:hover,a.dolFooterLnk:active,a.dolFooterSmallLnk,a.dolFooterSmallLnk:visited,a.dolFooterSmallLnk:hover,a.dolFooterSmallLnk:active{color:"+legalFooterColor+" !important;background-color:transparent !important;text-decoration:underline;}a.dolFooterLnkRed,a.dolFooterLnkRed:visited,a.dolFooterLnkRed:hover,a.dolFooterLnkRed:active{color:#FF0000 !important;background-color:transparent !important;text-decoration:underline;}</style>";
+lfDcWrtInf=lfDcWrtInf+'<div align="center"><table cellspacing="0" cellpadding="0" align="center" style="'+dolFooterMainTable+'">';
+try{if(legalFtrLine1.toString()!="undefined")lfDcWrtInf=lfDcWrtInf+'<tr><td style="'+dolFooterSt+'" colspan="3">'+legalFtrLine1+'</td></tr>';}catch(e){}
+try{
+	if(legalFtrOpts){
+		lfDcWrtInf=lfDcWrtInf+'<tr><td style="'+dolFooterSt+'" colspan="3">';
+		for(i=0;i<legalFtrOpts.length;i+=2){
+			lfDcWrtInf=lfDcWrtInf+'<a href="'+legalFtrOpts[i+1]+'" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'">'+legalFtrOpts[i]+'</a>';
+			if(i<legalFtrOpts.length-2)lfDcWrtInf=lfDcWrtInf+'&nbsp;|&nbsp;';
+		}
+		lfDcWrtInf=lfDcWrtInf+'</td></tr>';
+	}	
+}catch(e){}
+try{if(legalFtrLine2.toString()!="undefined")lfDcWrtInf=lfDcWrtInf+'<tr><td style="'+dolFooterSt+'" colspan="3">'+legalFtrLine2+'</td></tr>';}catch(e){}
+legalFooterHostName=location.hostname;
+lgFtHrLn='<hr style="border: 0; border-top: 1px solid #A3A3A3; height: 0px; background: #A3A3A3;">';
+if(copyRight.indexOf("Disney")!=-1||copyRight.indexOf("Buena Vista Home Entertainment")!=-1||copyRight.indexOf("Buena Vista Pictures Marketing")!=-1||copyRight.indexOf("Baby Einstein Company")!=-1){   /******** USE Disney Logo *********/
+	legalFooterLineWidth=(parseInt(legalFooterWidth)-205)/2;
+	lfDcWrtInf=lfDcWrtInf+'<tr><td style="width:'+legalFooterLineWidth+'px;text-align:center;">'+lgFtHrLn+'</td><td style="width:205px;text-align:center;">';
+	if(!lgMinLinks){lfDcWrtInf=lfDcWrtInf+'<a href="'+legalFooterImgLink+'" name="&lid=footer_legal_image_'+legalFooterCat+'&lpos=footer_legal">';}
+	if((lFVersion>=5.5&&lFVersion<7)&&(document.body.filters)){
+		lfDcWrtInf=lfDcWrtInf+'<img src="'+legalFooterImgPath+'/clear.gif" border="0" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''+legalFooterImgPath+'/'+legalFooterImg+'\')">';
+	} else {
+		lfDcWrtInf=lfDcWrtInf+'<img src="'+legalFooterImgPath+'/'+legalFooterImg+'" border="0">';
+	}
+	if(!lgMinLinks){lfDcWrtInf=lfDcWrtInf+'</a>';}
+	lfDcWrtInf=lfDcWrtInf+'</td><td style="width:'+legalFooterLineWidth+'px;text-align:center;">'+lgFtHrLn+'</td></tr>';
+}else{ /******** USE Company Logo *********/
+	legalFooterLineWidth=(parseInt(legalFooterWidth)-150)/2;
+	lfDcWrtInf=lfDcWrtInf+'<tr><td style="width:'+legalFooterLineWidth+'px;text-align:center;">'+lgFtHrLn+'</td><td style="width:150px;text-align:center;">';
+	if((lFVersion>=5.5&&lFVersion<7)&&(document.body.filters)){
+		lfDcWrtInf=lfDcWrtInf+'<img src="'+legalFooterImgPath+'/clear.gif" border="0" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\''+legalFooterImgPath+'/disneyCO_footer.png\')">';
+	} else {
+		lfDcWrtInf=lfDcWrtInf+'<img src="'+legalFooterImgPath+'/disneyCO_footer.png" border="0">';
+	}
+	lfDcWrtInf=lfDcWrtInf+'</td><td style="width:'+legalFooterLineWidth+'px;text-align:center;">'+lgFtHrLn+'</td></tr>';
+}
+lfDcWrtInf=lfDcWrtInf+'<tr><td align="center" style="width:'+legalFooterWidth+'px; '+dolFooterSt+'" colspan="3">';
+if(!lgMinLinks){
+	lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://home.disney.go.com/guestservices&name=g_legalFooter_guestservices" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_GuestServices&lpos=footer_legal">Disney.com Guest Services/Help</a>&nbsp;|&nbsp;';
+	lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://home.disney.go.com/sitemap/&name=g_legalFooter_sitemap" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_SiteMap&lpos=footer_legal">Site Map</a><br />';
+	//lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://home.disney.go.com/guestservices/faqs&name=g_legalFooter_faqhelp" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_FAQ&lpos=footer_legal">FAQ/Help</a>&nbsp;|&nbsp;';
+	//if(!lFMCFtr){lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://disney.go.com/youraccount/index.html&name=g_legalFooter_youraccount" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_YourAccount&lpos=footer_legal">Your Account</a>&nbsp;|&nbsp;';}
+}
+if(!lFMCFtr){lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+ppLink+'&name=g_legalFooter_privacypolicy" target="_top" class="dolFooterLnk'+(updatePrivacyPolicyRED?"Red":"")+'" style="'+(updatePrivacyPolicyRED?dolFooterLnkRed:dolFooterLnk)+'" name="&lid=footer_legal_PrivacyPolicy&lpos=footer_legal">'+ppText+'</a>&nbsp;|&nbsp;';}
+lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://disney.go.com/corporate/privacy/terms.html%3FppLink='+ppQuery+'&name=g_legalFooter_termsofuse" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_TermsOfUse&lpos=footer_legal">Terms of Use</a>&nbsp;|&nbsp;';
+lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://disney.go.com/corporate/privacy/safety.html%3FppLink='+ppQuery+'&name=g_legalFooter_internetsafety" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_InternetSafety&lpos=footer_legal">Internet Safety</a>';
+if(lfCatLinks){
+	lfDcWrtInf=lfDcWrtInf+'<br /><a href="'+ftTransfer+'http://corporate.disney.go.com/index.html&name=g_legalFooter_corpinfo" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_CorpInfo&lpos=footer_legal">Corporate Info</a>&nbsp;|&nbsp;';
+	lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://home.disney.go.com/guestservices/legalnotices&name=g_legalFooter_legalnotices" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_LegalNotices&lpos=footer_legal">Legal Notices</a>&nbsp;|&nbsp;';
+	lfDcWrtInf=lfDcWrtInf+'<a href="'+ftTransfer+'http://home.disney.go.com/more&name=g_legalFooter_moredsites" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_MoreDisneySites&lpos=footer_legal">More Disney Sites</a><br />';
+}
+/******** Added Disney Rewards Visa link on Search pages 5/16/07 ********/
+if(isThisPage("search.disney.go.com")){lfDcWrtInf=lfDcWrtInf+'<br /><a href="'+ftTransfer+'http://disney.go.com/visa/today/index.html?CELL=6B5Q19&name=g_legalFooter_DisneyVisa" target="_top" class="dolFooterLnk" style="'+dolFooterLnk+'" name="&lid=footer_legal_DisneyVisa&lpos=footer_legal"><span style="font-style:italic;">Disney Rewards</span>&reg; Visa&reg; Card</a><br />';}
+
+lfDcWrtInf=lfDcWrtInf+'<br /><span style="'+dolFooterSmallSt+'">'+copyRight+'</span></td></tr></table></div><br />';
+
+document.write(lfDcWrtInf);
+/***************  CEREBELLUM SCRIPT *****************/
+document.write('<scr'+'ipt src="//clog.go.com/log?srvc=dis&a=5" type="text/javascript"></scr'+'ipt>');

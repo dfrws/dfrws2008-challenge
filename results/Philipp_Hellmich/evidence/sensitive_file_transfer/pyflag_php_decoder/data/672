@@ -1,0 +1,6 @@
+GET http://www.msn.com/ HTTP/1.0
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US) Gecko/20071126
+Accept: */*
+Host: www.msn.com
+Cookie: RMID=AAOIKow5VXgAAFBLBQYAAAAAAwADAA8BAABEUgAAAAA=
+

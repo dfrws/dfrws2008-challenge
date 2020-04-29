@@ -1,0 +1,204 @@
+/* CSS Document */
+
+#header {width:auto;}
+
+#banner {display: block;
+background-image: url(763.jpg );
+background-repeat: repeat-x;
+left: 0px;
+top: 0px;
+margin: 0px;
+padding: 0px;
+background-position: 0px 0px;
+border-bottom-width:1px;
+border-bottom-style: solid;
+border-bottom-color: #ffffff;}
+
+#travelLinks {float: right;
+text-align: left;
+position: relative;
+left: -5px;
+top: -120px;
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;}
+
+#travelLinks a {color: #ffffff;
+text-decoration:none;}
+
+#travelLinks a:visited {color: #ffffff;
+text-decoration:none;}
+
+#travelLinks a:hover {color: #ffffff;
+text-decoration:underline;}
+
+#search {float: right;
+text-align: left;
+position: relative;
+left: 425px;
+top: -85px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #ffffff;
+vertical-align: bottom}
+
+#feedbackLinks {float: right;
+text-align: left;
+position: relative;
+left: 650px;
+top: -38px;
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;}
+
+#feedbackLinks a {color: #ffffff;
+text-decoration:none;}
+
+#feedbackLinks a:visited {color: #ffffff;
+text-decoration:none;}
+
+#feedbackLinks a:hover {color: #ffffff;
+text-decoration:underline;}
+
+#navBar {position: absolute;
+top: 121px;
+background-image: url(627.gif );
+padding: 0px;
+height: 33px;
+width: 100%;}
+
+#dateBox {position: absolute;
+left: 2px;
+top: -2px;
+font: 10px Arial, Helvetica, sans-serif;
+color: #ffffff;
+padding: 12px 0 5px 4px;
+border-bottom:0px #002850 solid;
+width: 193px;}
+
+#navButtons {position: absolute;
+left: 185px;
+top: 0px;
+height: 30px;
+border-bottom: 0px #002850 solid;
+width: 567px;}
+
+#navButtons ul {padding: 0;
+margin: 0;
+vertical-align: top;}
+
+#navButtons ul li {float: left;
+background-repeat: no-repeat;
+list-style-type: none;
+top: 120px;
+height: 30px;}
+
+#navButtons ul li a {display: block;
+float: left;
+height: 30px;}
+
+#navButtons ul li a span {display: none;}
+
+#navButtons ul li.travel {background-image: url(508.gif );}
+
+#imgtravel {background-image: url(508.gif );
+width: 125px;}
+
+#imgtravel:hover {background-image: url(508.gif );}
+
+#imgtravelon {background-image: url(images/spacer.png);
+width: 125px;}
+
+#imgtravelon:hover {background-image: url(images/spacer.png);}
+
+#navButtons ul li.passports {background-image: url(1386.gif );}
+
+#imgpassports {background-image: url(1386.gif );
+width: 74px;}
+
+#imgpassports:hover {background-image: url(1386.gif );}
+
+#imgpassportson {background-image: url(images/spacer.png);
+width: 74px;}
+
+#imgpassportson:hover {background-image: url(images/spacer.png);}
+
+#navButtons ul li.visas {background-image: url(341.gif );}
+
+#imgvisas {background-image: url(341.gif );
+width: 48px;}
+
+#imgvisas:hover {background-image: url(341.gif );}
+
+#imgvisason {background-image: url(images/spacer.png);
+width: 48px;}
+
+#imgvisason:hover {background-image: url(images/spacer.png);}
+
+#navButtons ul li.family {background-image: url(1116.gif );}
+
+#imgfamily {background-image: url(1116.gif );
+width: 109px;}
+
+#imgfamily:hover {background-image: url(1116.gif );}
+
+#imgfamilyon {background-image: url(images/spacer.png);
+width: 109px;}
+
+#imgfamilyon:hover {background-image: url(images/spacer.png);}
+
+#navButtons ul li.news {background-image: url(images/spacer.png);}
+
+#imgnews {background-image: url(images/spacer.png);
+width: 51px;}
+
+#imgnews:hover {background-image: url(images/spacer.png);}
+
+#imgnewson {background-image: url(images/spacer.png);
+width: 51px;}
+
+#imgnewson:hover {background-image: url(images/spacer.png);}
+
+#navButtons ul li.law {background-image: url(1269.gif );}
+
+#imglaw {background-image: url(1269.gif );
+width: 86px;}
+
+#imglaw:hover {background-image: url(1269.gif );}
+
+#imglawon {background-image: url(1081.gif );
+width: 86px;}
+
+#imglawon:hover {background-image: url(1081.gif );}
+
+#navButtons ul li.about {background-image: url(images/spacer.png);}
+
+#imgabout {background-image: url(images/spacer.png);
+width: 74px;}
+
+#imgabout:hover {background-image: url(images/spacer.png);}
+
+#imgabouton {background-image: url(images/spacer.png);
+width: 74px;}
+
+#imgabouton:hover {background-image: url(images/spacer.png);}
+
+#quickMenu {float: right; font-family: Arial, Helvetica, sans-serif;
+font-size:8px;
+margin-top:2px;
+margin-right: 10px;
+margin-bottom: 0px;
+margin-left: 0px;
+color: #FFFFFF;
+padding-top: 2px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+float: right;}
+
+#quickMenu option.row1 {background-color: #ebebeb;}
+
+#quickMenu option.row2 {background-color: #f8f8f8;}

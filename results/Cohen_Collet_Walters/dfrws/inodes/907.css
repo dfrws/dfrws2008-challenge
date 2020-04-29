@@ -1,0 +1,202 @@
+/* Dropdown menu styles
+====================================================================================*/
+#nav ul {
+	float: left;
+	list-style: none;
+	line-height: 1em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 0 350px 0;
+}
+
+#nav{
+	border-top: 1px solid #cccccc;
+	list-style: none;
+	line-height: 1em;
+	font-weight: bold;
+	padding-left: 1px;
+	margin: 0 0 0 199px;
+}
+
+#nav:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+* html #nav, * html #nav li li a{
+	height: 1%;
+}
+
+#nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 7px 10px 7px 10px;
+	text-transform: uppercase;
+}
+
+#nav a:hover{
+	background-color: White;
+	color:#3D3D3D;
+}
+
+#nav li {
+	float: left;
+	text-transform: uppercase;
+}
+
+.sub {
+	background-image: url(images/spacer.png) !important ;
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding-right: 10px;
+}
+
+.divider {
+	background-image: url(245.gif ) !important ;
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+#nav li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 14em;
+	font-weight: normal;
+	margin: 0;
+	border-right: 1px solid #BFBFBF;
+	border-left: 1px solid #BFBFBF;
+	border-bottom: 2px solid #BFBFBF;
+	z-index: 200000;
+	background-color: #fff;
+}
+
+#nav li li {
+	padding-right: 1em;
+	width: 20em;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #BABABA;
+}
+
+#nav li ul a {
+	border-right: 1px solid #585757;
+	text-transform:none;
+	padding:.5em 1em;
+}
+
+#nav li ul a:hover {
+	
+}
+
+#nav li ul ul {
+	margin: -1.75em 0 0 14.1em;
+	border: 1px solid #BFBFBF;
+	border-bottom: 2px solid #BFBFBF;
+	background-color: #F6F6EE;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+	background-color: white;
+	color: #0270AB;
+}
+
+#nav li li:hover, #nav li li.sfhover {
+	background-color: #fff;
+	color: #0270AB;
+}
+#nav li:hover a, #nav li.sfhover a {
+	color: #0270AB;
+	text-decoration: underline;
+}
+#nav li:hover li a, #nav li.sfhover li a {
+	color: #0270AB;
+	text-decoration: underline;
+
+}
+
+#nav li li a:hover, #nav li li.sfhover a:hover{
+	background-color: #F6F6EE;
+	color: #0270AB;
+}
+
+#nav li li a, #nav li li.sfhover a{
+	border: none;
+	background-color: #FFF;
+	color: #0270AB;
+	position:relative;
+}
+
+#nav li li.bottom {
+	background-color: white;
+	border-bottom: none;
+}
+#nav li.on a{
+	color:#3D3D3D;
+}
+#nav li.on li a{
+	color:white;
+}
+
+.daddy{
+	background-image: url(images/spacer.png) !important ;
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.bottom {
+	border-bottom: none;
+}
+
+/* Static submenu styles
+====================================================================================*/
+#subnav{
+	margin: 4px 4px 6px 8px;
+	padding: 0;
+	clear: both;
+	overflow: auto;
+}
+
+* html #subnav{
+	height: 1%;
+}
+
+#subnav li{
+	list-style: none;
+	float: left;
+	padding: 0px 0px 0px 4px;
+	margin: 0;
+}
+
+#subnav a{
+	color: #3d3d3d;
+	text-decoration: underline;
+	margin-bottom: 4px;
+	margin-right: 2px;
+}
+
+#subnav a:hover{
+	color: #585757;
+	text-decoration: underline;
+}
+/** Support for dropdown fix **/
+#nav iframe {
+position: absolute;
+left: 0;
+top: 0;
+z-index: 0;
+filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+}
+/** end **/

@@ -1,0 +1,110 @@
+
+div#adspot_873748312.adspot {
+border-spacing:0;
+overflow:hidden;
+background-color:#EEEEEE;
+border-color:#000000;
+border-width:0px;
+border-style:none;
+width:150px !important;
+font-size:10pt;
+}
+div#adspot_873748312 .adspot_head {
+font-family:Verdana;
+font-size:10pt;
+color:#000000;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;
+text-align:left;
+}
+div#adspot_873748312 a.adspot_link , div#adspot_873748312 a.adspot_adurl {
+font-family:Verdana;
+font-size:8pt;
+font-style:normal;
+color:#006699;
+font-weight:normal;
+margin:0;
+padding:0;
+display: inline;
+text-decoration:underline;
+text-align:left;
+background-image: none;
+}
+div#adspot_873748312 a.adspot_link:link, div#adspot_873748312 a.adspot_link:visited, div#adspot_873748312 a.adspot_adurl:link, div#adspot_873748312 a.adspot_adurl:visited {
+color:#006699;
+text-decoration:underline;
+font-size:8pt;
+font-style:normal;
+}
+div#adspot_873748312 a.adspot_link:active, div#adspot_873748312 a.adspot_link:hover, div#adspot_873748312 a.adspot_adurl:active, div#adspot_873748312 a.adspot_adurl:hover {
+color:#006699;
+text-decoration:none;
+}
+div#adspot_873748312 * ul {
+list-style-position:outside;
+list-style-image:none;
+list-style-type:none;
+width:150px;
+margin:0;
+padding:0;
+}
+div#adspot_873748312 * li {
+background:#eeeeee;
+width:150px;
+margin:0;
+margin-bottom:5px;
+padding:0;
+text-align:left;
+border-color:#BBBBBB;
+border-width:0px;
+border-style:none;
+border-spacing:0;
+display:block;
+text-indent:0;
+overflow:hidden;
+line-height: 12px;
+}
+div#adspot_873748312 span.blogad_rss_ad li {
+border: none;
+}
+div#adspot_873748312 .adspot_adhead {
+text-align:left;
+font-family:Verdana;
+font-size:10pt;
+font-weight:normal;
+color:#000000;
+margin:0;
+padding:2px;
+border-spacing:0;
+width:150px;
+display:block;
+}
+div#adspot_873748312 * img {
+border-width:0;
+border-spacing:0;
+}
+div#adspot_873748312 * li * img {
+text-align:center;
+display:block;
+clear:both;
+margin:auto;
+}
+div#adspot_873748312 .adspot_adtext {
+font-family:Verdana;
+font-size:8pt;
+font-weight:normal;
+font-style:normal;
+color:#000000;
+margin:0;
+padding:2px;
+border-spacing:0;
+display:inline;
+clear:both;
+width:150px;
+text-align:left;
+}
+div#adspot_873748312 div.adspot_link {
+width:150px !important;
+text-align:left;
+}

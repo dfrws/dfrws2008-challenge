@@ -1,0 +1,498 @@
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bf7c0 d1964000 rootfs rootfs         /         
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfc40 d16cf000 ext3   /dev/root      /         
+OPEN FILES
+ DENTRY    INODE    TYPE  PATH
+d0268aa8  cf943e48  REG   usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-png.so
+c0d8fdd8  cfbcf4ac  REG   usr/share/fonts/dejavu-lgc/DejaVuLGCSerif.ttf
+c28c0e60  c28b2c5c  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/history.dat
+cc82f888  cb95ee48  REG   usr/share/fonts/default/Type1/n019024l.pfb
+cb2b9cc8  cb42a698  REG   usr/share/fonts/default/Type1/n019023l.pfb
+c21addd8  c21aec5c  REG   usr/lib/firefox-1.5.0.12/components/libnkgnomevfs.so
+cc82f2b0  cc38e884  REG   usr/share/fonts/default/Type1/n021004l.pfb
+c0d8ff70  cfb1a2c0  REG   usr/share/fonts/dejavu-lgc/DejaVuLGCSansMono.ttf
+c9bf35e0  ca6c1698  REG   usr/lib/libfam.so.0.0.0
+d0262d50  ceee1a70  REG   lib/libacl.so.1.1.0
+d0262c40  ceee1698  REG   lib/libattr.so.1.1.0
+cc5dfd50  ccdaea70  REG   usr/lib/gnome-vfs-2.0/modules/libfile.so
+c2282f70  c2053c5c  REG   usr/lib/firefox-1.5.0.12/plugins/libunixprintplugin.so
+c28c0bb8  c2053e48  REG   usr/lib/firefox-1.5.0.12/plugins/libnullplugin.so
+c28c0cc8  c4b042c0  REG   usr/lib/firefox-1.5.0.12/components/libgkplugin.so
+cc82f448  cc38ee48  REG   usr/share/fonts/default/Type1/n019004l.pfb
+cc82f800  cb95ec5c  REG   usr/share/fonts/default/Type1/n019003l.pfb
+c28c0668  c4b04a70  REG   lib/libnss_dns-2.5.so
+c28c0448  c4b04e48  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_003_
+c28c03c0  c28b2a70  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_002_
+c28c0338  c28b2884  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_001_
+c28c02b0  c28b2698  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/Cache/_CACHE_MAP_
+c5144dd8  d11f82c0  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/formhistory.dat
+cf456c40  cf453698  REG   usr/share/fonts/bitmap-fonts/9x15.pcf
+c6b4c228  c3bd4c5c  REG   usr/lib/pango/1.5.0/modules/pango-arabic-fc.so
+cd409aa8  c3bd4e48  REG   usr/lib/pango/1.5.0/modules/pango-arabic-lang.so
+c28c0ee8  c28b2e48  REG   usr/lib/firefox-1.5.0.12/components/libmork.so
+c2d2e1a0  c2aa4698  REG   usr/lib/firefox-1.5.0.12/components/libmozgnome.so
+c321f558  c33394ac  REG   usr/lib/firefox-1.5.0.12/components/libeditor.so
+c33b6cc8  c3339698  REG   usr/lib/libnssckbi.so
+c33b6a20  c3339884  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/key3.db
+c33b6aa8  c3339a70  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/cert8.db
+cd59cbb8  cd916e48  REG   usr/lib/libfreebl3.so
+d10a5e60  d118a4ac  REG   usr/lib/libsoftokn3.so
+d10225e0  d118ac5c  REG   usr/lib/libnss3.so
+d10226f0  d118ae48  REG   usr/lib/libsmime3.so
+d1022778  ca8230d4  REG   usr/lib/libssl3.so
+c321fe60  c3339e48  REG   usr/lib/firefox-1.5.0.12/components/libpipnss.so
+cfb0f228  cfbcf698  REG   usr/share/fonts/dejavu-lgc/DejaVuLGCSans.ttf
+cf01c090  cd1254ac  REG   usr/lib/libart_lgpl_2.so.2.3.17
+cfea9998  cef790d4  REG   usr/lib/libgnomecanvas-2.so.0.1400.0
+cba20090  cb4654ac  REG   usr/lib/libgnome-keyring.so.0.0.1
+cba204d0  cc76d4ac  REG   usr/lib/libbonoboui-2.so.0.0.0
+cba20800  cc76dc5c  REG   usr/lib/libgnomeui-2.so.0.1600.0
+c375f4d0  c37590d4  REG   usr/lib/firefox-1.5.0.12/components/libimgicon.so
+c375f6f0  c3759884  REG   usr/lib/firefox-1.5.0.12/components/libsearchservice.so
+c375f778  c3759a70  REG   usr/lib/firefox-1.5.0.12/components/libtxmgr.so
+c375f800  c3759c5c  REG   usr/lib/firefox-1.5.0.12/libxpcom_compat.so
+c375f888  c3759e48  REG   usr/lib/firefox-1.5.0.12/components/libbrowsercomps.so
+c3b1d888  c34144ac  REG   usr/lib/firefox-1.5.0.12/chrome/reporter.jar
+cb2b9d50  cb42a884  REG   usr/share/fonts/default/Type1/n021003l.pfb
+cf10b668  cfad9884  REG   usr/lib/pango/1.5.0/modules/pango-basic-fc.so
+cfb0f4d0  cfb1a4ac  REG   var/cache/fontconfig/87f5e051180a7a75f16eb6fe7dbd3749-x86.cache-2
+cfb0f5e0  cfb1a884  REG   var/cache/fontconfig/b79f3aaa7d385a141ab53ec885cc22a8-x86.cache-2
+cfb0f6f0  cfb1ac5c  REG   var/cache/fontconfig/7ddba6133ef499da58de5e8c586d3b75-x86.cache-2
+cfb0f910  cfb134ac  REG   var/cache/fontconfig/e3ead4b767b8819993a6fa3ae306afa9-x86.cache-2
+cfb0fa20  cfb13884  REG   var/cache/fontconfig/e19de935dec46bbf3ed114ee4965548a-x86.cache-2
+cfb0fc40  cfb13c5c  REG   var/cache/fontconfig/beeeeb3dfe132a8a0633a017c99ce0c0-x86.cache-2
+c3b1d668  c362dc5c  REG   usr/lib/firefox-1.5.0.12/components/libhtmlpars.so
+c3b1d6f0  c362de48  REG   usr/lib/firefox-1.5.0.12/components/libremoteservice.so
+c3b1daa8  c3414c5c  REG   usr/lib/firefox-1.5.0.12/chrome/classic.jar
+c3b1dd50  c3b192c0  REG   usr/lib/firefox-1.5.0.12/chrome/toolkit.jar
+c3aca090  c3b19c5c  REG   usr/lib/firefox-1.5.0.12/chrome/en-US.jar
+c3aca338  c3ad2698  REG   usr/lib/firefox-1.5.0.12/chrome/browser.jar
+c39c6b30  c495d884  REG   usr/lib/firefox-1.5.0.12/libjsj.so
+c39c6bb8  c495da70  REG   usr/lib/firefox-1.5.0.12/components/liboji.so
+c39c6c40  c495dc5c  REG   usr/lib/firefox-1.5.0.12/components/libpipboot.so
+c39c6f70  c67944ac  REG   usr/lib/firefox-1.5.0.12/components/libcookie.so
+c6b4c090  c6794698  REG   usr/lib/firefox-1.5.0.12/components/libpermissions.so
+c6b4c2b0  c6794884  REG   usr/lib/firefox-1.5.0.12/components/libwebbrwsr.so
+c6b4c118  c6794a70  REG   usr/lib/firefox-1.5.0.12/components/libgklayout.so
+cd4c5118  cd4b2a70  REG   usr/lib/libkrb5support.so.0.1
+d14bd4d0  d1b01698  REG   lib/libsepol.so.1
+cd4c5228  cd4b2e48  REG   usr/lib/libk5crypto.so.3.0
+cd4c5338  cd58c2c0  REG   lib/libcom_err.so.2.1
+cd4c5448  cd58c698  REG   usr/lib/libkrb5.so.3.2
+cd4c5558  cd58ca70  REG   usr/lib/libgssapi_krb5.so.2.2
+ce7c1998  d1000e48  REG   lib/libcap.so.1.10
+d18abb30  ce666698  REG   lib/libnsl-2.5.so
+cdfc2ee8  d184f0d4  REG   lib/libasound.so.2.0.0
+cdfc2cc8  cde30c5c  REG   usr/lib/libORBitCosNaming-2.so.0.1.0
+cf4566f0  cf08f884  REG   lib/libutil-2.5.so
+d14bd448  d1b014ac  REG   lib/libselinux.so.1
+cef95910  ced5d4ac  REG   lib/libresolv-2.5.so
+cf01ca20  cb7dc0d4  REG   usr/lib/libavahi-client.so.3.2.1
+cf01c910  cb7dc4ac  REG   usr/lib/libavahi-common.so.3.4.3
+cf01c800  cb7dc884  REG   usr/lib/libavahi-glib.so.1.0.1
+cd4c5c40  cba434ac  REG   lib/libcrypto.so.0.9.8b
+cd4c5d50  cba43884  REG   lib/libssl.so.0.9.8b
+d0262800  ce6492c0  REG   lib/libdbus-1.so.3.2.0
+caf0eaa8  ca8660d4  REG   usr/lib/libdbus-glib-1.so.2.0.0
+cfea9778  cd125884  REG   usr/lib/libxml2.so.2.6.26
+d150ccc8  d12840d4  REG   usr/lib/libpopt.so.0.0.0
+cba20a20  cb6a44ac  REG   usr/lib/libaudiofile.so.0.0.2
+cba20aa8  cb6a4884  REG   usr/lib/libesd.so.0.2.36
+cba201a0  cb465884  REG   usr/lib/libbonobo-activation.so.4.0.0
+cba202b0  cb465c5c  REG   usr/lib/libbonobo-2.so.0.0.0
+cf01c1a0  cd1250d4  REG   usr/lib/libgnomevfs-2.so.0.1600.2
+cba203c0  cc76d0d4  REG   usr/lib/libgnome-2.so.0.1600.0
+cdfc2dd8  cb4650d4  REG   usr/lib/libjpeg.so.62.0.0
+c673f2b0  c6794c5c  REG   usr/lib/firefox-1.5.0.12/components/libimglib2.so
+c673f3c0  c6794e48  REG   usr/lib/firefox-1.5.0.12/components/libdocshell.so
+c673f4d0  c67030d4  REG   usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.so
+c46a5aa8  c46a6698  REG   usr/lib/firefox-1.5.0.12/libgfxpsshar.so
+d0e893c0  d118ba70  REG   usr/lib/libXft.so.2.1.2
+c46a5cc8  c46a6884  REG   usr/lib/firefox-1.5.0.12/components/libgfx_gtk.so
+c46a5d50  c46a6a70  REG   usr/lib/firefox-1.5.0.12/components/libcommandlines.so
+cf01c4d0  cad3a4ac  REG   lib/libgthread-2.0.so.0.1200.3
+cf01c3c0  cad3a884  REG   usr/lib/libORBit-2.so.0.1.0
+cf01c2b0  cad3ac5c  REG   usr/lib/libgconf-2.so.4.1.0
+c44d3998  c62da4ac  REG   usr/lib/firefox-1.5.0.12/components/libnsappshell.so
+c44d3a20  c62da698  REG   usr/lib/firefox-1.5.0.12/components/libappcomps.so
+c44d3b30  c62daa70  REG   usr/lib/firefox-1.5.0.12/components/libsystem-pref.so
+c44d3d50  c44bb2c0  REG   usr/lib/firefox-1.5.0.12/components/librdf.so
+c45813c0  c606e698  REG   usr/lib/firefox-1.5.0.12/components/libcaps.so
+c4581448  c606e884  REG   usr/lib/firefox-1.5.0.12/components/libembedcomponents.so
+c45814d0  c606ea70  REG   usr/lib/firefox-1.5.0.12/components/libtoolkitcomps.so
+d0407b30  cf897a70  REG   usr/lib/gtk-2.0/2.10.0/engines/libclearlooks.so
+d0b76778  d084a2c0  REG   usr/lib/libICE.so.6.3.0
+d1b335e0  d084a698  REG   usr/lib/libSM.so.6.0.0
+c4581778  c606ec5c  REG   usr/lib/libXt.so.6.0.0
+c4581998  c66ba0d4  REG   usr/lib/firefox-1.5.0.12/libgtkxtbin.so
+c4581a20  c66ba2c0  REG   usr/lib/firefox-1.5.0.12/libgkgfx.so
+c4581aa8  c66ba4ac  REG   usr/lib/firefox-1.5.0.12/components/libwidget_gtk2.so
+c477a090  c4ff44ac  REG   usr/lib/firefox-1.5.0.12/components/libjar50.so
+c477a118  c4ff4698  REG   usr/lib/firefox-1.5.0.12/components/libxpconnect.so
+c4b92d50  c4b94a70  REG   usr/lib/firefox-1.5.0.12/components/libuconv.so
+c4b92dd8  c4b94c5c  REG   usr/lib/firefox-1.5.0.12/components/libi18n.so
+c479d090  c6091a70  REG   usr/lib/firefox-1.5.0.12/components/libnecko.so
+c479d1a0  c6091e48  REG   usr/lib/firefox-1.5.0.12/components/libpref.so
+c479d228  c47990d4  REG   usr/lib/firefox-1.5.0.12/components/libchrome.so
+c479d338  c47992c0  REG   usr/lib/firefox-1.5.0.12/components/libbrowserdirprovider.so
+c666d090  c38cb4ac  REG   home/stevev/.mozilla/firefox/n5q6tfua.default/.parentlock
+c666d1a0  c38cb884  REG   usr/lib/gconv/UTF-16.so
+d0a4c2b0  cffc00d4  REG   usr/lib/gconv/ISO8859-1.so
+d190a448  d117d2c0  REG   usr/lib/gconv/gconv-modules.cache
+c13f3aa8  d100b698  REG   lib/libnss_files-2.5.so
+d190a668  d117d698  REG   usr/lib/locale/locale-archive
+d0e896f0  d0ffae48  REG   lib/libexpat.so.0.5.0
+d0407ee8  d0ffa698  REG   usr/lib/libXdmcp.so.6.0.0
+d0b76558  d0ffaa70  REG   usr/lib/libXau.so.6.0.0
+d150ce60  d127bc5c  REG   lib/librt-2.5.so
+d0b76dd8  d09ad698  REG   usr/lib/libpng12.so.0.10.0
+d0e89778  d09ada70  REG   usr/lib/libz.so.1.2.3
+d1b33998  d0ddb2c0  REG   usr/lib/libfreetype.so.6.3.10
+d0e94a20  d0d51698  REG   usr/lib/libpangoft2-1.0.so.0.1400.9
+d0b76aa8  d09ade48  REG   usr/lib/libXfixes.so.3.1.0
+d0b3d910  d04272c0  REG   usr/lib/libXcursor.so.1.0.2
+d0b3dc40  d0427698  REG   usr/lib/libXrandr.so.2.0.0
+d0b9e6f0  d0427a70  REG   usr/lib/libXi.so.6.0.0
+d0a4cbb8  d0427e48  REG   usr/lib/libXinerama.so.1.0.0
+d094b118  d0ddba70  REG   usr/lib/libXrender.so.1.3.0
+d0a87e60  d0ffa2c0  REG   usr/lib/libXext.so.6.4.0
+d0b3dcc8  d0ddb698  REG   usr/lib/libfontconfig.so.1.1.0
+d14c0e60  d1b010d4  REG   lib/libc-2.5.so
+d0e89d50  d0028884  REG   lib/libgcc_s-4.1.1-20070105.so.1
+d0fbc090  cf073c5c  REG   usr/lib/libstdc++.so.6.0.8
+d150c1a0  d12bf884  REG   lib/libm-2.5.so
+d0cc3668  d0889e48  REG   usr/lib/libX11.so.6.2.0
+d19fb448  d12844ac  REG   lib/libglib-2.0.so.0.1200.3
+d0cc3cc8  d084aa70  REG   lib/libgmodule-2.0.so.0.1200.3
+c130fdd8  d084ae48  REG   lib/libgobject-2.0.so.0.1200.3
+d0fe6800  d0d51a70  REG   usr/lib/libcairo.so.2.9.2
+d0cd2aa8  d0d512c0  REG   usr/lib/libpango-1.0.so.0.1400.9
+d0e945e0  d0d51e48  REG   usr/lib/libpangocairo-1.0.so.0.1400.9
+d0b9ef70  d08892c0  REG   usr/lib/libgdk_pixbuf-2.0.so.0.1000.4
+d0b9e998  d0889698  REG   usr/lib/libatk-1.0.so.0.1212.0
+d1b33118  d0889a70  REG   usr/lib/libgdk-x11-2.0.so.0.1000.4
+d0e895e0  d118b698  REG   usr/lib/libgtk-x11-2.0.so.0.1000.4
+d14c0998  d16e9c5c  REG   lib/libdl-2.5.so
+d14ea118  d127b884  REG   lib/libpthread-2.5.so
+d1022448  d118a698  REG   usr/lib/libnspr4.so
+d10224d0  d118a884  REG   usr/lib/libplc4.so
+d1022558  d118aa70  REG   usr/lib/libplds4.so
+c4567888  c6ac40d4  REG   usr/lib/firefox-1.5.0.12/libxpcom_core.so
+c4567ee8  c6ac42c0  REG   usr/lib/firefox-1.5.0.12/libxpcom.so
+c4567910  c6ac44ac  REG   usr/lib/firefox-1.5.0.12/libmozjs.so
+d14bda20  d1b01a70  REG   lib/ld-2.5.so
+c4563118  c6ac4a70  REG   usr/lib/firefox-1.5.0.12/firefox-bin
+c45635e0  c6ace2c0  REG   usr/lib/firefox-1.5.0.12/run-mozilla.sh
+d1488bb8  d100be48  REG   lib/libtermcap.so.2.0.8
+d1488b30  d14af2c0  REG   bin/bash
+c45636f0  c6ace698  REG   usr/lib/firefox-1.5.0.12/firefox
+cf456b30  cf4532c0  REG   usr/share/fonts/bitmap-fonts/9x18.pcf
+c0d8fcc8  cf453884  REG   usr/share/fonts/bitmap-fonts/6x13.pcf
+d0cc3998  d12d3698  REG   var/run/utmp
+cf456998  cf08fc5c  REG   usr/lib/vte/gnome-pty-helper
+c0d8fc40  cf4534ac  REG   usr/share/fonts/bitmap-fonts/console8x16.pcf
+cf456aa8  cf4530d4  REG   usr/share/fonts/bitmap-fonts/10x20.pcf
+cfb0f1a0  cfbcfa70  REG   usr/share/fonts/default/Type1/n022003l.pfb
+cfb0f2b0  cfbcfc5c  REG   usr/share/X11/fonts/Type1/l047013t.pfa
+d1b51668  d118b2c0  REG   usr/lib/libpangoxft-1.0.so.0.1400.9
+d0b3daa8  d0ddbe48  REG   usr/lib/libpangox-1.0.so.0.1400.9
+d0b76c40  d118be48  REG   usr/lib/libncurses.so.5.5
+d0e89668  d12e32c0  REG   usr/lib/libvte.so.9.1.5
+cba205e0  cc76d884  REG   usr/lib/libstartup-notification-1.so.0.0.0
+ce562888  cb2afc5c  REG   usr/lib/libglade-2.0.so.0.0.7
+c65061a0  c65090d4  REG   usr/bin/gnome-terminal
+c9bf3800  ca6c1e48  REG   usr/lib/libgnome-menu.so.2.1.3
+c929eb30  c920d4ac  REG   usr/lib/libXss.so.1.0.0
+c2106338  c2109698  REG   usr/bin/gnome-screensaver
+cd2dcd50  cc35f4ac  REG   usr/share/fonts/dejavu-lgc/DejaVuLGCSans-Bold.ttf
+d0258800  ce6662c0  REG   lib/libcrypt-2.5.so
+c4c85910  c81770d4  REG   usr/lib/vmware-tools/lib32/libgtk-1.2.so.0/libgtk-1.2.so.0
+c4c856f0  c81772c0  REG   usr/lib/vmware-tools/lib32/libgdk-1.2.so.0/libgdk-1.2.so.0
+c4c85558  c81774ac  REG   usr/lib/vmware-tools/lib32/libgmodule-1.2.so.0/libgmodule-1.2.so.0
+c4c854d0  c8177698  REG   usr/lib/vmware-tools/lib32/libglib-1.2.so.0/libglib-1.2.so.0
+c8a61f70  c8a5c698  REG   usr/lib/libXtst.so.6.1.0
+c81a1a20  c81a4a70  REG   usr/lib/vmware-tools/bin32/vmware-user
+c4c80dd8  c4c81e48  REG   usr/lib/gstreamer-0.10/libgstossaudio.so
+c4c80228  c4c832c0  REG   usr/lib/gstreamer-0.10/libgstalsa.so
+c4c7b228  c4c7fc5c  REG   usr/lib/gstreamer-0.10/libgstadder.so
+c87fcdd8  c87a60d4  REG   usr/share/icons/hicolor/icon-theme.cache
+c8804cc8  c8816884  REG   usr/share/icons/gnome/icon-theme.cache
+c8804e60  c8816e48  REG   usr/share/icons/Bluecurve/icon-theme.cache
+cd4c5bb8  cba432c0  REG   lib/libdb-4.3.so
+c5642c40  c6c5a2c0  REG   usr/lib/libcamel-1.2.so.0.0.0
+c616ac40  c6c5a698  REG   usr/lib/libedataserver-1.2.so.7.1.0
+c616abb8  c6c5aa70  REG   usr/lib/libebook-1.2.so.9.0.0
+c616a6f0  c6c5ae48  REG   usr/lib/libedataserverui-1.2.so.8.0.0
+c5642d50  c61a82c0  REG   usr/lib/libecal-1.2.so.7.0.0
+c83c2090  c8defe48  REG   usr/lib/libpanel-applet-2.so.0.2.11
+c8ec4090  c8ee24ac  REG   usr/share/icons/Clearlooks/icon-theme.cache
+c8a61e60  c8a5c2c0  REG   usr/lib/libgstbase-0.10.so.0.8.1
+c616a800  c61a8a70  REG   usr/libexec/clock-applet
+cba20910  cb6a40d4  REG   usr/lib/libgnome-desktop-2.so.2.2.21
+c8804118  c8a5ca70  REG   usr/lib/libgstaudio-0.10.so.0.6.0
+c8804338  c89d32c0  REG   usr/lib/libgstinterfaces-0.10.so.0.6.0
+c8804448  c89d3698  REG   usr/lib/libgstreamer-0.10.so.0.8.1
+c616aaa8  c61a8c5c  REG   usr/libexec/mixer_applet2
+c616aa20  c61a8e48  REG   usr/libexec/notification-area-applet
+c82be228  c6a8ce48  REG   usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.so
+c6fd52b0  c6fd3698  REG   usr/lib/python2.4/site-packages/rhpl/_translate.so
+c6fd5668  c6fd3884  REG   usr/lib/python2.4/lib-dynload/zlibmodule.so
+c6fab1a0  c6fa90d4  REG   usr/lib/python2.4/site-packages/rhpl/iconv.so
+c6f97888  c6f632c0  REG   usr/lib/python2.4/lib-dynload/stropmodule.so
+c6f4f338  c6f4a0d4  REG   usr/lib/python2.4/lib-dynload/_localemodule.so
+c6f3ac40  c6f42a70  REG   usr/lib/python2.4/site-packages/dbus/dbus_glib_bindings.so
+c6e9edd8  c6e59c5c  REG   usr/lib/python2.4/site-packages/libxml2mod.so
+c6c80a20  c6ca0884  REG   usr/libexec/trashapplet
+c6c80448  c6ca02c0  REG   usr/libexec/mapping-daemon
+c75e0d50  c75d0698  REG   usr/lib/libXRes.so.1.0.0
+c7a74b30  c7af82c0  REG   usr/lib/gnome-vfs-2.0/modules/libmapping.so
+d0cc3118  d12c2c5c  REG   lib/libaudit.so.0.0.0
+d0b9e778  d18a6e48  REG   lib/libpam.so.0.81.5
+c78e8338  c78e42c0  REG   sbin/pam_timestamp_check
+c78db118  c787d4ac  REG   usr/lib/python2.4/lib-dynload/_weakref.so
+c78702b0  c787da70  REG   usr/lib/python2.4/site-packages/dbus/dbus_bindings.so
+c870c448  c87a6c5c  REG   usr/lib/libnotify.so.1.1.0
+c7863cc8  c7832698  REG   usr/lib/python2.4/site-packages/gtk-2.0/pynotify/_pynotify.so
+c7831228  c7832e48  REG   usr/lib/python2.4/site-packages/gtk-2.0/gconf.so
+c7fda558  c7dc60d4  REG   usr/lib/python2.4/site-packages/gtk-2.0/gtk/glade.so
+c7f8c3c0  c7dc6a70  REG   usr/lib/python2.4/site-packages/gtk-2.0/pangocairo.so
+c7dfc800  c7dc6c5c  REG   usr/lib/python2.4/site-packages/gtk-2.0/atk.so
+c7dc5c40  c7dc6e48  REG   usr/lib/python2.4/site-packages/gtk-2.0/pango.so
+c929e778  c9303698  REG   usr/lib/libgpg-error.so.0.3.0
+c929e888  c9303a70  REG   usr/lib/libgcrypt.so.11.2.2
+c87cad50  c8def698  REG   usr/lib/libnm-util.so.0.0.0
+cc6321a0  cb24c0d4  REG   usr/lib/libhal.so.1.0.0
+c87caee8  c8defa70  REG   usr/lib/libwnck-1.so.18.2.3
+c83c21a0  c8e992c0  REG   usr/libexec/wnck-applet
+c870c338  c87c52c0  REG   usr/lib/bonobo/monikers/libmoniker_std_2.so
+c8161dd8  c818b884  REG   usr/bin/pam-panel-icon
+c8264778  c81a4884  REG   usr/libexec/gam_server
+c870c1a0  c87a6a70  REG   usr/bin/nm-applet
+c870c558  c86180d4  REG   usr/lib/python2.4/site-packages/cairo/_cairo.so
+c8619778  c8618884  REG   usr/lib/python2.4/site-packages/gtk-2.0/gtk/_gtk.so
+c8619b30  c8618a70  REG   usr/lib/python2.4/site-packages/gtk-2.0/gobject/_gobject.so
+c85eab30  c85de4ac  REG   usr/lib/python2.4/lib-dynload/timemodule.so
+c85e5558  c85de884  REG   usr/lib/python2.4/lib-dynload/cStringIO.so
+c85e5e60  c85dea70  REG   usr/lib/python2.4/lib-dynload/binascii.so
+c85a96f0  c859b0d4  REG   usr/lib/python2.4/lib-dynload/structmodule.so
+c85a7668  c859b698  REG   usr/lib/python2.4/lib-dynload/fcntlmodule.so
+c859a090  c859b884  REG   usr/lib/python2.4/lib-dynload/selectmodule.so
+c8a61aa8  c8ac0698  REG   usr/lib/libpython2.4.so.1.0
+c8a61b30  c8ac0884  REG   usr/bin/python
+c8a61c40  c8ac0a70  REG   usr/lib/nautilus/extensions-1.0/libnautilus-open-terminal.so
+c8a61cc8  c8ac0c5c  REG   usr/lib/nautilus/extensions-1.0/libnautilus-sendto.so
+c8a61d50  c8ac0e48  REG   usr/lib/nautilus/extensions-1.0/libnautilus-burn-extension.so
+c8a61dd8  c8a5c0d4  REG   usr/lib/nautilus/extensions-1.0/libnautilus-fileroller.so
+c8804228  c8a5ce48  REG   usr/lib/libgstvideo-0.10.so.0.6.0
+c8804558  c89d3a70  REG   usr/lib/libXxf86vm.so.1.0.0
+c8804668  c89d3e48  REG   usr/lib/nautilus/extensions-1.0/libtotem-properties-page.so
+c88046f0  c88800d4  REG   usr/lib/libmetacity-private.so.0.0.0
+c9bf3910  ca3632c0  REG   usr/lib/libgnome-window-settings.so.1.0.0
+c8804800  c88804ac  REG   usr/lib/nautilus/extensions-1.0/libnautilus-themus.so
+c8804888  c8880698  REG   usr/lib/libpoppler.so.1.0.0
+c8804998  c8880a70  REG   usr/lib/libtiff.so.3.8.2
+c8804aa8  c8880e48  REG   usr/lib/libpoppler-glib.so.1.0.0
+c8804bb8  c88162c0  REG   usr/lib/nautilus/extensions-1.0/libevince-properties-page.so
+c8804c40  c88164ac  REG   usr/lib/nautilus/extensions-1.0/libnautilus-fontilus.so
+c8ec4b30  c8ce22c0  REG   usr/bin/bt-applet
+c929e998  c9303e48  REG   usr/lib/libgnutls.so.13.0.6
+c929eaa8  c920d2c0  REG   usr/lib/libcups.so.2
+c929ec40  c920d884  REG   usr/lib/libgnomecups-1.0.so.1.0.0
+c903f6f0  c967e0d4  REG   usr/bin/eggcups
+cc70c448  cccd3e48  REG   usr/lib/libhal-storage.so.1.0.0
+c97e6888  c967e884  REG   usr/libexec/gnome-vfs-daemon
+cf01cb30  cb443c5c  REG   usr/lib/libbz2.so.1.0.3
+cf01c6f0  cb7dcc5c  REG   usr/lib/libcroco-0.6.so.3.0.1
+cf01c5e0  cad3a0d4  REG   usr/lib/libgsf-1.so.114.0.1
+c95c8bb8  c9501698  REG   usr/libexec/bonobo-activation-server
+ce233888  c9501e48  REG   usr/bin/gnome-volume-manager
+ce233aa8  c94000d4  REG   usr/lib/libexif.so.12.0.1
+cf12c5e0  cd125c5c  REG   usr/lib/librsvg-2.so.2.16.1
+ce233bb8  c94004ac  REG   usr/lib/libgailutil.so.18.0.1
+ce233cc8  c9400884  REG   usr/lib/libeel-2.so.2.16.1
+ce233dd8  c9400c5c  REG   usr/lib/libnautilus-extension.so.1.1.0
+ce233e60  cf15e0d4  REG   usr/bin/nautilus
+ce3c4ee8  cf15e2c0  REG   usr/bin/gnome-panel
+cdc94778  cf15ea70  REG   usr/bin/metacity
+cf4153c0  d0f51a70  REG   usr/lib/libxkbfile.so.1.0.2
+c9bf36f0  ca6c1a70  REG   usr/lib/libXxf86misc.so.1.1.0
+c9bf3a20  ca363698  REG   usr/lib/libxklavier.so.11.0.0
+c9bf3b30  ca363a70  REG   usr/libexec/gnome-settings-daemon
+c9bf3f70  c9be72c0  REG   usr/bin/gnome-keyring-daemon
+cc3e1cc8  cc3e04ac  REG   usr/lib/GConf/2/libgconfbackend-xml.so
+cdfc21a0  cde300d4  REG   tmp/gconfd-stevev/lock/0t1197861372ut396520u501p2218r27031109k3218444872
+cdfc26f0  cde30884  REG   usr/libexec/gconfd-2
+cc08d558  cc76fa70  REG   usr/bin/gnome-session
+ca3c2090  ce649884  REG   bin/dbus-daemon
+cb8c82b0  cb8c3e48  REG   usr/bin/dbus-launch
+cb8c8668  cb5b00d4  REG   usr/bin/ssh-agent
+cf12add8  d0e83884  REG   home/stevev/.xsession-errors
+cf4224d0  cd5644ac  REG   lib/security/pam_console.so
+cf422558  cd564698  REG   lib/security/pam_loginuid.so
+cf4225e0  cd564884  REG   lib/security/pam_limits.so
+cf422668  cd564a70  REG   lib/security/pam_keyinit.so
+cf422f70  cd564c5c  REG   lib/security/pam_cracklib.so
+cf422ee8  cd564e48  REG   lib/security/pam_permit.so
+cf422e60  cfb460d4  REG   lib/security/pam_nologin.so
+cf422dd8  cfb462c0  REG   lib/security/pam_deny.so
+cf4226f0  cfb464ac  REG   lib/security/pam_succeed_if.so
+cf422778  cfb46698  REG   usr/lib/libcrack.so.2.8.0
+cf422888  cfb46a70  REG   lib/security/pam_unix.so
+cf422a20  cf06f0d4  REG   lib/security/pam_env.so
+d026c888  cfd0ec5c  REG   usr/lib/xorg/modules/extensions/libGLcore.so
+d0133a20  cfd0ee48  REG   usr/lib/xorg/modules/libramdac.so
+d0133558  d0b260d4  REG   usr/lib/xorg/modules/libshadowfb.so
+d0163f70  d0b262c0  REG   usr/lib/xorg/modules/libfb.so
+d0163bb8  d0b264ac  REG   usr/lib/xorg/modules/libvgahw.so
+d0163558  d0b26698  REG   usr/lib/xorg/modules/input/mouse_drv.so
+d0258448  d0b26884  REG   usr/lib/xorg/modules/input/kbd_drv.so
+d0264558  d0b26a70  REG   usr/lib/xorg/modules/drivers/vmware_drv.so
+d002d090  d0b26c5c  REG   usr/lib/xorg/modules/linux/libdrm.so
+d18abe60  d0b26e48  REG   usr/lib/xorg/modules/extensions/libdri.so
+d02621a0  d025f0d4  REG   usr/lib/xorg/modules/extensions/librecord.so
+d02fb228  d025f2c0  REG   usr/lib/xorg/modules/fonts/libtype1.so
+d0266800  d025f4ac  REG   usr/lib/xorg/modules/fonts/libfreetype.so
+d02e6998  d025f698  REG   usr/lib/xorg/modules/extensions/libglx.so
+d026db30  d025f884  REG   usr/lib/xorg/modules/extensions/libdbe.so
+d0269cc8  d025fa70  REG   usr/lib/xorg/modules/extensions/libextmod.so
+d0fbcd50  d026e4ac  REG   usr/lib/xorg/modules/libpcidata.so
+d0a8a090  d026e698  REG   usr/lib/xorg/modules/fonts/libbitmap.so
+cd59c1a0  cf193e48  REG   var/log/Xorg.0.log
+d0fbc338  d0028c5c  REG   usr/lib/libfontenc.so.1.0.0
+d0f8ac40  d073f0d4  REG   usr/lib/libXfont.so.1.4.1
+d0a33f70  d09ad4ac  REG   usr/bin/Xorg
+cf071b30  cdd8d4ac  REG   var/log/gdm/:0.log
+d1b33228  cf073884  REG   usr/lib/libpcsclite.so.1.0.0
+d0fe6aa8  cd59fe48  FIFO  var/gdm/.gdmfifo
+d1022bb8  ca8232c0  REG   usr/sbin/gdm-binary
+d182fcc8  d12e7e48  REG   sbin/mingetty
+cd08a1a0  cccb5a70  REG   usr/libexec/hald-addon-storage
+ccc6c2b0  cce1b4ac  REG   usr/libexec/hald-addon-keyboard
+cc70c6f0  cccd3884  REG   usr/libexec/hald-addon-acpi
+caf0e448  cb24ca70  REG   usr/libexec/hald-runner
+c9dac1a0  ca8664ac  REG   usr/sbin/hald
+cb623910  ca2150d4  REG   var/run/atd.pid
+cb912d50  ceeac4ac  REG   lib/libpam_misc.so.0.81.2
+c9dd13c0  ca2154ac  REG   usr/sbin/atd
+c9dacaa8  c9dad0d4  REG   usr/lib/libFS.so.6.0.0
+c9dac5e0  c9dad4ac  REG   usr/bin/xfs
+cca013c0  ceeac2c0  REG   var/run/crond.pid
+cb623998  ceeac884  REG   usr/sbin/crond
+cb623e60  cbcad4ac  REG   usr/sbin/gpm
+cca016f0  cbcade48  REG   var/run/sm-client.pid
+cd4c5668  cd58ce48  REG   usr/lib/liblber-2.3.so.0.2.15
+cd4c5778  cbaec2c0  REG   usr/lib/libldap-2.3.so.0.2.15
+cd4c5888  cbaec698  REG   usr/lib/libsasl2.so.2.0.22
+cd4c5998  cbaeca70  REG   usr/lib/libhesiod.so.0.0.0
+cd4c5aa8  cbaece48  REG   usr/lib/libwrap.so.0.7.6
+cee95910  cee24c5c  REG   usr/sbin/sendmail.sendmail
+ca92a888  cc9f72c0  REG   var/run/sendmail.pid
+cca01bb8  cc9f74ac  REG   usr/lib/sasl2/liblogin.so.2.0.22
+cca01cc8  cc9f7884  REG   usr/lib/sasl2/libsasldb.so.2.0.22
+cca01dd8  cc9f7c5c  REG   usr/lib/sasl2/libplain.so.2.0.22
+cca01f70  cca632c0  REG   usr/lib/sasl2/libanonymous.so.2.0.22
+ca92a118  cca63698  REG   usr/lib/sasl2/libcrammd5.so.2.0.22
+ca92a448  cb58c0d4  REG   usr/lib/sasl2/libdigestmd5.so.2.0.22
+cee8de60  cee240d4  REG   etc/acpi/events/video.conf
+cee95778  ccc36c5c  REG   var/log/acpid
+cee95a20  cbd9d0d4  REG   usr/sbin/acpid
+cee95aa8  cbd9dc5c  REG   usr/lib/autofs/lookup_hosts.so
+cb912800  cbe02698  REG   usr/lib/autofs/mount_bind.so
+cb912888  cbe02884  REG   usr/lib/autofs/mount_nfs.so
+cb912910  cbe02a70  REG   usr/lib/autofs/parse_sun.so
+cb912a20  cbe02e48  REG   usr/lib/autofs/lookup_file.so
+ce7b91a0  ce415698  REG   usr/sbin/automount
+ce7c1090  d10004ac  DIR   etc/dbus-1/system.d
+c9add1a0  c9aec4ac  REG   usr/lib/vmware-tools/sbin32/vmware-guestd
+cef92338  cedc6e48  REG   sbin/klogd
+ce851778  ce547884  REG   var/log/boot.log
+ce851bb8  ce547a70  REG   var/log/spooler
+ce851c40  ce547c5c  REG   var/log/cron
+ce851d50  ce547e48  REG   var/log/maillog
+ce851cc8  cedc60d4  REG   var/log/secure
+cf33f1a0  cedc62c0  REG   var/log/messages
+cef94778  ce5690d4  REG   sbin/syslogd
+cef934d0  ce529e48  REG   var/lib/dhclient/dhclient-eth0.leases
+cef95a20  cf339c5c  REG   sbin/dhclient
+d14ea5e0  d12a1e48  REG   sbin/udevd
+d14bdf70  d17830d4  REG   sbin/init
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfbc0 d1481200 tmpfs  /dev           /dev      
+OPEN FILES
+ DENTRY    INODE    TYPE  PATH
+d14b9dd8  d19b90a0  CHR   null
+d0d0f090  d0d80ad8  CHR   snd/controlC0
+c130cd50  d1bb2c8c  CHR   urandom
+d0d0fc40  d08dc408  CHR   input/mice
+d1b8b6f0  d183b5bc  CHR   mem
+d0a4c090  d0828408  CHR   input/event0
+d150c5e0  d16a7c8c  BLK   sda2
+c13b73c0  d16a75bc  FIFO  initctl
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfb40 c12b7a00 proc   /proc          /proc     
+OPEN FILES
+ DENTRY    INODE    TYPE  PATH
+c81611a0  c8168cdc  REG   fs/vmblock/dev
+cf01df70  d0c78058  REG   mtrr
+cf4105e0  d18478b0  REG   bus/pci/00/0f.0
+cb7c1e60  d0e3374c  REG   1961/mounts
+cee95668  d182274c  REG   acpi/event
+cf3c5090  d0bdde40  REG   kmsg
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfac0 d1964200 sysfs  /sys           /sys      
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bff40 d151f600 usbfs  /proc/bus/usb  /proc/bus/usb
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bf8c0 d19c0600 devpts devpts         /dev/pts  
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bf9c0 d0cf5000 ext2   /dev/sda1      /boot     
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfe40 d0cf5800 tmpfs  tmpfs          /dev/shm  
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfec0 d0cf5400 vmhgfs .host:/        /mnt/hgfs 
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfcc0 d0cf5200 binfmt_misc none           /proc/sys/fs/binfmt_misc
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfdc0 d0cf3400 vmblock none           /proc/fs/vmblock/mountPoint
+OPEN FILES
+No open files found
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+c12bfa40 d0cf2200 autofs /etc/auto.misc /misc     
+OPEN FILES
+ DENTRY    INODE    TYPE  PATH
+cb912090  cb695900  DIR   
+
+VFSMOUNT SUPERBLK TYPE   DEVNAME        DIRNAME
+cedccf40 d0cf3200 autofs -hosts         /net      
+OPEN FILES
+ DENTRY    INODE    TYPE  PATH
+cb912228  cb695504  DIR   

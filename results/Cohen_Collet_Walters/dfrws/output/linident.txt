@@ -1,0 +1,10 @@
+DUMPFILE   : challenge.mem
+CPUS       : 1
+GMTDATE    : Mon Dec 17 04:33:42 2007
+TIMEZONE   : GMT -5 (minutes west: 300 dsttime: 0)
+RELEASE    : 2.6.18-8.1.15.el5
+NODENAME   : goldfinger
+SYSNAME    : Linux
+VERSION    : #1 SMP Mon Oct 22 08:32:04 EDT 2007
+MACHINE    : i686
+DOMAINNAME : (none)

@@ -1,0 +1,3 @@
+crash> swap
+FILENAME           TYPE         SIZE      USED   PCT  PRIORITY
+/dev/sda2        PARTITION     522104k       0k   0%     -1

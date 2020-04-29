@@ -1,0 +1,635 @@
+h1	{
+font-family: Arial,Helvetica,sans-serif;
+font-size: 11px;
+line-height: 30px;
+font-weight: bold;
+color: #4883ae;
+}
+li a img	{
+	border: 0;
+}
+.a	{
+	display: block;
+	margin: 0 auto 1em;
+}
+.b	{
+	display: inline;
+	float: left;
+	margin: 0 1em 1em 0;
+}
+.c	{
+	display: inline;
+	float: right;
+	margin: 0 0 1em 1em;
+}
+.fiftyactions, .fiftyactions a, .fiftyactions a:visited	{
+	color: white;
+}
+.fiftyactions	{
+	background: #6fad2c url(images/spacer.png) no-repeat 95% 5%;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+.fiftyactions dd	{
+	line-height: 1.1em;
+	margin: 0 190px 1em 1em;
+}
+.fiftyactions dt	{
+	font-size: 1.4em;
+	line-height: 1.3em;
+	padding: 0 190px 0 1em;
+}
+.fiftyactions h1	{
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 1.1em;
+	margin: 1em 190px 0 1em;
+	text-transform: uppercase;
+}
+.fiftyactions li	{
+	margin: 0;
+	padding: 0.3em 0;
+}
+.fiftyactions ol	{
+	padding: 0.5em 190px 0.5em 3em;
+}
+.fiscaltable	{
+	display: block;
+	margin: 1em auto;
+}
+.photo	{
+	border: 1px solid #4883ae;
+}
+.titlelinks a	{
+	font-size: 11px;
+	font-weight: bold;
+}
+.titlelinks a:link, .titlelinks a:visited	{
+	text-decoration: none;
+}
+.titlelinks a:link {
+	color: #4883ae;
+}
+.titlelinks a:visited	{
+	color: #7da5c1;
+}
+.titlelinks a:active, .titlelinks a:hover	{
+	text-decoration: underline;
+	color: #4883ae;
+}
+input {
+	background-color: #c6e29b;
+	border:1px solid #6FAD2C; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+select {
+	background-color: #c6e29b;
+	border: 1px solid #6FAD2C; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.pdfNote	{	position:absolute; float:left; top:0px; left:0px; width:300px; min-width:300px; visibility:hidden; overflow: hidden; word-break: break-word; font-family:arial,helvetica; font-size:11px; color: #000000; background-color: #c6e29b; padding: 3px; border:1px solid #6FAD2C; 	}
+
+.pdfNote2	{	position:relative; top:0px; left:0px; width:300px; min-width:300px; visibility:shown; overflow: shown; word-break: break-word; font-family:arial,helvetica; font-size:11px; color: #000000; background-color: #c6e29b; padding: 3px; border:1px solid #6FAD2C; 	}
+
+
+
+/* Style sheet for the Environmentality Index page */
+
+#right_column {
+	position: relative;
+	display: block;
+	padding-top: 10px;
+	background-color: #FFFFFF;
+	height: 325px;
+}
+#top_left_area {
+	background-color: #FFFFFF;
+	position: absolute;
+  	margin-top: 0px;
+  	left: 8px;
+  	width: 362px;
+	height: 312px;
+}
+#bottom_area {
+	position: relative;
+	display: block;
+	padding-top: 0px;
+	background-color: #FFFFFF;
+	min-height: 460px;
+}
+* html #bottom_area {
+	height: 460px;
+}
+#bottom_area a, #bottom_area a:visited{
+	text-decoration: none;
+	border: none;
+	background-color: none;
+}
+#bottom_area a:active, #bottom_area a:focus, #bottom_area a:hover, #bottom_area a:link{
+	text-decoration: none;
+	background: none;
+}
+#header_area {
+	position: relative;
+	display: block;
+	padding-top: 3px;
+	background-color: #FFFFFF;
+	height: 30px;
+}
+
+#description_area1 {
+	position: absolute;
+	display: block;
+	background-color: #FFFFFF;
+	margin-top: 96px;
+	width: 185px; 
+	min-height: 300px;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #6fad2c;
+	margin-left: 15px;
+	padding-top: 10px;
+}
+
+#description_area2 {		
+	position: absolute;
+	display: block;
+	background-color: #FFFFFF;
+	margin-top: 96px;
+	width: 185px;
+	min-height:300px; 
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #6fad2c;	
+	margin-left: 215px;
+	padding-top: 10px;
+}
+* html #description_area1, * html #description_area2{
+	height: 300px;
+}
+#description_area3 {	
+	position: absolute;
+	display: block;
+	background-color: #FFFFFF;
+	margin-top: 96px;
+	width: 180px;
+	min-height:130px;
+	margin-left: 410px;
+	padding-top: 10px;
+}
+
+#top_right_area {
+	background: #fff79a url(images/spacer.png) repeat-x;
+	position: absolute;
+	display: block;
+  	margin-top: 0px;
+  	left: 384px;
+  	width: 197px;
+  	height: 315px;
+}
+
+#top_border {
+	width: 197px;
+	height: 6px;
+	top: 0px;
+	margin-top: -10px;
+}
+
+
+#left_border {
+ 	position: absolute;
+	width: 3px;
+	height: 305px;
+	left: 0px;
+	margin-top: 6px;
+}
+
+#right_border {
+	position: absolute;
+	width: 3px;
+	height: 305px;
+	left: 194px;
+	top: 6px;
+}
+#bottom_border {
+	position: absolute;
+	top: 310px;
+	left: 0px;	
+}
+#top_left_image {
+	position: absolute;
+	margin-left: 3px;
+}
+
+#top_center_image {
+	position: absolute;
+	margin-left: 203px;
+}
+
+#top_right_image {
+	position: absolute;
+	margin-left: 403px;
+}
+#bottom_left_image {
+	position: absolute;
+	margin-top: 14px;
+	margin-left: 14px;
+}
+
+#bottom_center_image {
+	position: absolute;
+	margin-top: 14px;
+	margin-left: 214px;
+}
+
+#bottom_right_image {
+	position: absolute;
+	margin-top: 14px;
+	margin-left: 414px;
+}
+
+.promo_picture {
+	margin: 0px auto 0px auto;
+	display: block;
+	text-align: center;
+	border: none;
+}
+html>body .promo_picture{
+	margin-top: 8px;
+}
+.promo_picture a img{
+	border: none;
+}
+.promo_text {
+	display: block;
+	text-align: center;
+	font-family: Arial; 
+	font-size: 11px;
+	color: #115d0f;
+	font-weight: bolder;
+	margin-bottom: 18px;	
+}
+
+.heading_text {
+	text-align: center;
+	font-family: Arial; 
+	font-size: 16px;
+	font-weight: bolder; 
+	color: #005200;
+	margin: 0px auto 4px auto;
+}
+.description_text{
+	font-family: Arial; 
+	font-size: 11px; 
+	color: #111111;
+	display: block;	
+	padding-right: 10px;
+	font-weight: normal;
+ 	line-height: 14px; 
+}
+
+.description_text a, .description_text a:visited {
+	text-decoration: none;
+	color: #688fd7;
+	font-weight: bold;
+}
+.description_text a:hover{
+	color: #6fad2c;
+}
+#horizontal_line {
+	color: #6fad2c;
+}
+
+/* @ Holiday Module */
+.holiday, .holiday h1, .holiday h2, .holiday .menu, .holiday .menu li, .holiday .trees	{
+	margin: 0;
+	padding: 0;
+}
+.holiday h1, .holiday .tips h2	{
+	text-indent: -9999px;
+}
+.holiday	{
+	background: url(images/spacer.png) repeat-y 0% 0%;
+	font: 1.4em Verdana, Arial, sans-serif;
+	line-height: 1.3em;
+}
+.holiday div.top, .holiday div.bottom	{
+	border: 0;
+	height: 89px;
+}
+.holiday div.bottom	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+}
+.holiday div.top	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+}
+.holiday ol	{
+	text-align: justify;
+}
+.holiday p, .holiday strong	{
+	margin: 1em 2em;
+	text-align: center;
+}
+.holiday strong	{
+	display: block;
+}
+.holiday .menu	{
+	list-style: none;
+	padding-left: 5px;
+}
+.holiday .menu a	{
+	display: block;
+	margin-bottom: 10px;
+	text-indent: -9999px;
+}
+.holiday .tips a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 87px;
+	width: 455px;
+}
+.holiday .tips a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -87px;
+}
+.holiday .gifts a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 87px;
+	margin-left: 15px;
+	width: 430px;
+}
+.holiday .gifts a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -87px;
+}
+.holiday .more a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 87px;
+	margin-left: 15px;
+	width: 545px;
+}
+.holiday .more a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -87px;
+}
+.holiday .trees	{
+	text-align: center;
+}
+.holiday .trees a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	display: block;
+	height: 265px;
+	margin: 20px auto 0;
+	text-indent: -9999px;
+	width: 209px;
+}
+.holiday .trees a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -265px;
+}
+#holidaymore, #holidaymore a:link, #holidaymore a:visited	{
+	color: white;
+}
+#holidaymore h1	{
+	background: url(images/spacer.png) no-repeat 50% 0%;
+	height: 72px;
+}
+#holidaymore h2, #holidaymore .section p	{
+	text-align: left;
+}
+#holidaymore li, .gifts li	{
+	padding-bottom: 1em;
+}
+#holidaymore #athome	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	padding-top: 190px;
+}
+#holidaymore #community	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	padding-top: 100px;
+}
+#holidaymore #shopping	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	padding-top: 160px;
+}
+#holidaymore .section	{
+	margin: 10px 40px;
+}
+#holidaymore .section, #holidaymore .section .last	{
+	padding: 0;
+}
+#holidaymore .section h2, #holidaymore .section p, #holidaymore .section ul	{
+	margin-left: 230px;
+	margin-right: 10px;
+}
+#holidaymore .section p	{
+	font-style: italic;
+}
+#holidaymore .section .last	{
+	background: url(images/spacer.png) no-repeat 0% 100%;
+	height: 10px;
+	margin: 0;
+}
+.gifts h1	{
+	background: url(images/spacer.png) no-repeat 50% 0%;
+	height: 77px;
+}
+.gifts p	{
+	color: white;
+}
+.gifts ul	{
+	margin: 0 10px 0 190px;
+	padding: 2em 2em 1em 3em;
+}
+.gifts #one	{
+	background: url(images/spacer.png) no-repeat 5px 0%;
+}
+.gifts #one ul	{
+	background: #fcba70;
+}
+.gifts #two	{
+	background: url(images/spacer.png) no-repeat 5px 0%;
+}
+.gifts #two ul	{
+	background: #abbd26;
+}
+.gifts #three	{
+	background: url(images/spacer.png) no-repeat 0 20px;
+}
+.gifts #three ul	{
+	background: #fff797;
+}
+.gifts .section	{
+	margin: 20px 25px;
+	padding-top: 50px;
+}
+.tips h1	{
+	background: url(images/spacer.png) no-repeat 50% 0%;
+	height: 79px;
+}
+.tips #celebrating h2	{
+	background: url(images/spacer.png) no-repeat 202px 0%;
+	height: 169px;
+}
+.tips #decorating h2	{
+	background: url(images/spacer.png) no-repeat 226px 0%;
+	height: 155px;
+}
+.tips #giving h2	{
+	background: url(images/spacer.png) no-repeat 338px 0%;
+	height: 160px;
+}
+.tips #shopping h2	{
+	background: url(images/spacer.png) no-repeat 267px 0%;
+	height: 154px;
+}
+.tips .icon	{
+	position: absolute;
+}
+.tips #celebrating .icon	{
+	top: 20px;
+} 
+.tips #decorating .icon	{
+	left: 19px;
+	top: 20px;
+}
+.tips #giving .icon	{
+	top: 20px;
+} 
+.tips #shopping .icon	{
+	top: 20px;
+} 
+.tips .section	{
+	background: url(images/spacer.png) repeat 0% 0%;
+	border: 1px solid black;
+	margin: 20px;
+	position: relative;
+}
+.tips .section ol	{
+	background: #f1f6f9;
+	margin: 10px 20px 20px 190px;
+	opacity: .80;
+	padding: 10px 10px 10px 2em;
+}
+
+/* @ NEW Holiday Module */
+.newholiday, .newholiday h1, .newholiday h2, .newholiday .menu, .newholiday .menu li
+	{
+	margin: 0;
+	padding: 0;
+}
+.newholiday	{
+	background: #000000 url(images/spacer.png) no-repeat 0 0;
+	color: white;
+	font: 1em Verdana, Arial, sans-serif;
+	line-height: 1.5em;
+	position: relative;
+}
+.newholiday a:link, .newholiday a:visited	{
+	color: #ffffff;
+}
+.holidaybottom	{
+	background: #000000 url(images/spacer.png) repeat-x 0 100%;
+	height: 110px;
+	width: 100%;
+}
+.newholiday h1	{
+	height: 110px;
+	text-indent: -9999px;
+	margin: 0 20px 0;
+}
+.newholiday h2	{
+	font-size: 1.3em;
+}
+.newholiday ol	{
+	text-align: justify;
+}
+.newholiday p, .newholiday .section	{
+	padding: 0 20px 0;
+}
+.newholiday strong	{
+	display: block;
+	margin: 0;
+	padding: 0 1em 1em;
+	text-align: center;
+}
+.newholiday ul	{
+	padding: 0 1.5em 1em;
+}
+.newholiday a.back	{
+	background: url(images/spacer.png) no-repeat 0 0;
+	display: block;
+	width: 148px;
+	height: 80px;
+	text-indent: -9999px;
+}
+.newholiday a.back:hover	{
+	background: url(images/spacer.png) no-repeat 0 -80px;
+}
+.newholiday .container	{
+	background: url(images/spacer.png) no-repeat 0 10px;
+	margin: 0 10px;
+	padding: 30px 0 0;
+}
+.newholiday .last	{
+	background: url(images/spacer.png) no-repeat 0 100%;
+	padding-bottom: 20px;
+}
+.newholiday .menu	{
+	list-style: none;
+}
+.newholiday .menu a	{
+	display: block;
+	position: absolute;
+	text-indent: -9999px;
+}
+.newholiday .tips a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 138px;
+	left: 83px;
+	top: 5px;
+	width: 133px;
+}
+.newholiday .tips a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -138px;
+}
+.newholiday .gifts a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 135px;
+	left: 243px;
+	top: 5px;
+	width: 115px;
+}
+.newholiday .gifts a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -135px;
+}
+.newholiday .more a	{
+	background: url(images/spacer.png) no-repeat 0% 0%;
+	height: 130px;
+	left: 392px;
+	top: 11px;
+	width: 117px;
+}
+.newholiday .more a:hover	{
+	background: url(images/spacer.png) no-repeat 0% -130px;
+}
+#holidaymain	{
+	height: 445px;
+}
+#moreinfo h1	{
+	background: url(images/spacer.png) no-repeat 0 0;
+}
+#moreinfo .section p	{
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+}
+.giftideas h1	{
+	background: url(images/spacer.png) no-repeat 0 0;
+}
+.holidaytips h1	{
+	background: url(images/spacer.png) no-repeat 0 0;
+}
+.holidaytips .section ol	{
+	padding: 0 10px 10px 2em;
+}

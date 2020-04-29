@@ -1,0 +1,31 @@
+<table cellpadding='0' cellspacing='0' class='ItemListContentTable%20InboxTable'>
+  <colgroup>
+    <col class='InboxTableImportanceCol'/>
+    <col class='InboxTableSentStateCol'/>
+    <col class='InboxTableAttachmentCol'/>
+    <col class='InboxTableCheckBoxCol'/>
+    <col class='InboxTableFromCol'/>
+    <col class='InboxTableSubjectCol'/>
+    <col class='InboxTableDateCol'/>
+    <col class='InboxTableSizeCol'/>
+  </colgroup>
+  <thead>
+    <tr class='ItemListHeaderRow'>
+        <th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>
+        <th><input title='Select%20all' type='checkbox' id='checkall' onclick='selectall()' name='SelectAllMessages'/></th>
+        <th><a href='InboxLight.aspx?FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=True&InboxSortBy=Sender&n=1679765662'><span>From</span></a></th><th class='BorderLeft'><a href='InboxLight.aspx?FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=True&InboxSortBy=Subject&n=1988169903'><span>Subject</span></a></th><th class='BorderLeft'><a href='InboxLight.aspx?FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=True&InboxSortBy=Date&n=1430152269'><span>Date</span>
+        <img src='./clear.gif' alt='Reverse%20the%20message%20sort%20order' class='descend_rest_dark' title='Reverse%20the%20message%20sort%20order'/></a></th><th class='BorderLeft%20TextAlignRight'><a href='InboxLight.aspx?FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=True&InboxSortBy=Size&n=236763236'><span>Size</span></a></th></tr></thead>
+  <tbody>
+    <tr class='InboxContentItemUnread'>
+           <td class='ImgCol%20FirstCol'>&nbsp;</td>
+           <td class='ImgCol'>
+            <img src='./clear.gif' alt='Unread' class='i_new' title='Unread'/></td>
+           <td class='ImgCol%20LastCol'>&nbsp;</td>
+           <td><input title='Select%20message' type='checkbox' name='SelectedMessages' value='c2795564-8e5f-4a82-b4f5-b94736331086' onclick='selectone(event)'></input></td>
+           <td class='InboxContentItemUnread'><a href='ReadMessageLight.aspx?Aux=0%7c0%7c8CA078CEEA0AFA0%7c&FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=False&InboxSortBy=Date&ReadMessageId=c2795564-8e5f-4a82-b4f5-b94736331086&n=1779836989' class='TruncateFrom'>accounts-noreply&#64;google.com</a></td>
+           <td class='InboxContentItemUnread'><a href='ReadMessageLight.aspx?Aux=0%7c0%7c8CA078CEEA0AFA0%7c&FolderID=00000000-0000-0000-0000-000000000001&InboxSortAscending=False&InboxSortBy=Date&ReadMessageId=c2795564-8e5f-4a82-b4f5-b94736331086&n=1449999540'>Google Email Verification&#x200f;</a></td>
+           <td class='NoWrap'>4:39 PM</td>
+           <td class='TextAlignRight'>3 KB</td>
+         </tr>
+  </tbody>
+</table>

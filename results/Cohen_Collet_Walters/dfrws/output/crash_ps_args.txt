@@ -1,0 +1,2008 @@
+crash> ps -a
+PID: 0      TASK: c0660bc0  CPU: 0   COMMAND: "swapper"
+ps: no user stack
+
+PID: 1      TASK: d1957aa0  CPU: 0   COMMAND: "init"
+ARG: init [5] 
+ENV: HOME=/
+     TERM=linux
+
+PID: 2      TASK: d1957550  CPU: 0   COMMAND: "migration/0"
+ps: no user stack
+
+PID: 3      TASK: d1957000  CPU: 0   COMMAND: "ksoftirqd/0"
+ps: no user stack
+
+PID: 4      TASK: d195eaa0  CPU: 0   COMMAND: "watchdog/0"
+ps: no user stack
+
+PID: 5      TASK: d195e550  CPU: 0   COMMAND: "events/0"
+ps: no user stack
+
+PID: 6      TASK: d195e000  CPU: 0   COMMAND: "khelper"
+ps: no user stack
+
+PID: 7      TASK: d1ad2aa0  CPU: 0   COMMAND: "kthread"
+ps: no user stack
+
+PID: 10     TASK: d1aafaa0  CPU: 0   COMMAND: "kblockd/0"
+ps: no user stack
+
+PID: 11     TASK: d1aaf550  CPU: 0   COMMAND: "kacpid"
+ps: no user stack
+
+PID: 72     TASK: c13fb000  CPU: 0   COMMAND: "cqueue/0"
+ps: no user stack
+
+PID: 75     TASK: d1970000  CPU: 0   COMMAND: "khubd"
+ps: no user stack
+
+PID: 77     TASK: d1977550  CPU: 0   COMMAND: "kseriod"
+ps: no user stack
+
+PID: 140    TASK: c13fbaa0  CPU: 0   COMMAND: "pdflush"
+ps: no user stack
+
+PID: 141    TASK: d1a86000  CPU: 0   COMMAND: "pdflush"
+ps: no user stack
+
+PID: 142    TASK: d19b1000  CPU: 0   COMMAND: "kswapd0"
+ps: no user stack
+
+PID: 143    TASK: d19bcaa0  CPU: 0   COMMAND: "aio/0"
+ps: no user stack
+
+PID: 294    TASK: d1417aa0  CPU: 0   COMMAND: "kpsmoused"
+ps: no user stack
+
+PID: 324    TASK: d1a3d000  CPU: 0   COMMAND: "scsi_eh_0"
+ps: no user stack
+
+PID: 325    TASK: d1404aa0  CPU: 0   COMMAND: "kjournald"
+ps: no user stack
+
+PID: 353    TASK: d199b550  CPU: 0   COMMAND: "kauditd"
+ps: no user stack
+
+PID: 387    TASK: d1993550  CPU: 0   COMMAND: "udevd"
+ARG: /sbin/udevd -d 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/console
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     ACTION=add
+     RUNLEVEL=S
+     PWD=/
+     LANG=en_US.UTF-8
+     TZ=/etc/localtime
+     PREVLEVEL=N
+     HOME=/
+     SHLVL=2
+     _=/sbin/udevd
+     OLDPWD=/lib/udev/devices
+
+PID: 702    TASK: d1aa0000  CPU: 0   COMMAND: "kgameportd"
+ps: no user stack
+
+PID: 1224   TASK: d0e4baa0  CPU: 0   COMMAND: "kmirrord"
+ps: no user stack
+
+PID: 1249   TASK: d09f7550  CPU: 0   COMMAND: "vmhgfs"
+ps: no user stack
+
+PID: 1565   TASK: d19f9550  CPU: 0   COMMAND: "dhclient"
+ARG: /sbin/dhclient -1 -q -cf /etc/dhclient-eth0.conf -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dhclient-eth0.pid eth0 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     OLDPWD=/etc/sysconfig/network-scripts
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/etc/sysconfig/network-scripts
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=3
+     _=/sbin/dhclient
+
+PID: 1637   TASK: d0b3c550  CPU: 0   COMMAND: "syslogd"
+ARG: syslogd -m 0 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/sbin/syslogd
+
+PID: 1640   TASK: d09f7aa0  CPU: 0   COMMAND: "klogd"
+ARG: klogd -x 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/sbin/klogd
+
+PID: 1705   TASK: d1993aa0  CPU: 0   COMMAND: "vmmemctl"
+ps: no user stack
+
+PID: 1753   TASK: d0809000  CPU: 0   COMMAND: "vmware-guestd"
+ARG: /usr/sbin/vmware-guestd --background /var/run/vmware-guestd.pid 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/usr/sbin
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/vmware-guestd
+     OLDPWD=/
+
+PID: 1791   TASK: d0b3e550  CPU: 0   COMMAND: "dbus-daemon"
+ARG: dbus-daemon --system 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/bin/dbus-daemon
+
+PID: 1833   TASK: d0e04550  CPU: 0   COMMAND: "automount"
+ARG: automount 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/automount
+
+PID: 1834   TASK: d09d3aa0  CPU: 0   COMMAND: "automount"
+ARG: automount 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/automount
+
+PID: 1835   TASK: d0876000  CPU: 0   COMMAND: "automount"
+ARG: automount 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/automount
+
+PID: 1838   TASK: d09de000  CPU: 0   COMMAND: "automount"
+ARG: automount 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/automount
+
+PID: 1841   TASK: d09de550  CPU: 0   COMMAND: "automount"
+ARG: automount 
+ENV: SELINUX_INIT=YES
+     CONSOLE=/dev/pts/0
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     RUNLEVEL=5
+     runlevel=5
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     previous=N
+     HOME=/
+     SHLVL=2
+     _=/usr/sbin/automount
+
+PID: 1852   TASK: d1410550  CPU: 0   COMMAND: "acpid"
+ARG: /usr/sbin/acpid 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/sbin/acpid
+
+PID: 1872   TASK: d09f7000  CPU: 0   COMMAND: "sendmail"
+ARG: sendmail: accepting connecti
+ENV: ons
+
+PID: 1880   TASK: d0bf1000  CPU: 0   COMMAND: "sendmail"
+ARG: sendmail: Queue runner@01:00:00 for /var/spo
+ENV: ol/clientmqueue
+
+PID: 1892   TASK: d0d1d550  CPU: 0   COMMAND: "gpm"
+ARG: gpm -m /dev/input/mice -t exps2 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/sbin/gpm
+
+PID: 1903   TASK: d0bbeaa0  CPU: 0   COMMAND: "crond"
+ARG: crond 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/sbin/crond
+
+PID: 1934   TASK: d0b3caa0  CPU: 0   COMMAND: "xfs"
+ARG: xfs -droppriv -daemon 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/bin/xfs
+
+PID: 1945   TASK: d0b3e000  CPU: 0   COMMAND: "atd"
+ARG: /usr/sbin/atd 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/sbin/atd
+
+PID: 1961   TASK: d0b3c000  CPU: 0   COMMAND: "hald"
+ARG: hald 
+ENV: CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     TERM=linux
+     INIT_VERSION=sysvinit-2.86
+     PATH=/sbin:/usr/sbin:/bin:/usr/bin
+     runlevel=5
+     RUNLEVEL=5
+     PWD=/
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     SHLVL=3
+     HOME=/
+     _=/usr/sbin/hald
+
+PID: 1962   TASK: d0809aa0  CPU: 0   COMMAND: "hald-runner"
+ARG: hald-runner 
+ENV: HALD_RUNNER_DBUS_ADDRESS=unix:abstract=/var/run/hald/dbus-LCiwSCNDmN,guid=a3e965470fa3e30b68ff20bca6e46a00
+     PATH=/usr/libexec:/usr/lib/hal/scripts:/usr/bin
+
+PID: 1968   TASK: d19b1aa0  CPU: 0   COMMAND: "hald-addon-acpi"
+ARG: hald-addon-acpi: listening on
+ENV:  acpid socket /var/run/acpid.socket
+
+PID: 1973   TASK: d19b1550  CPU: 0   COMMAND: "hald-addon-keyb"
+ARG: hald-addon-keyboard: listening on
+ENV:  /dev/input/event0
+
+PID: 1985   TASK: d19f9000  CPU: 0   COMMAND: "hald-addon-stor"
+ARG: hald-addon-storage: polling /dev
+ENV: /hdc
+
+PID: 1999   TASK: d19f9aa0  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty1 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2007   TASK: d1410000  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty2 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2010   TASK: d0809550  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty3 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2013   TASK: d1977aa0  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty4 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2014   TASK: c13fb550  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty5 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2015   TASK: d19bc000  CPU: 0   COMMAND: "mingetty"
+ARG: /sbin/mingetty tty6 
+ENV: HOME=/
+     TERM=linux
+     SELINUX_INIT=YES
+     PATH=/bin:/usr/bin:/sbin:/usr/sbin
+     RUNLEVEL=5
+     PREVLEVEL=N
+     CONSOLE=/dev/console
+     INIT_VERSION=sysvinit-2.86
+
+PID: 2016   TASK: d1993000  CPU: 0   COMMAND: "gdm-binary"
+ARG: /usr/sbin/gdm-binary -nodaemon 
+ENV: HOSTNAME=goldfinger
+     SELINUX_INIT=YES
+     CONSOLE=/dev/console
+     TERM=linux
+     HISTSIZE=1000
+     USER=root
+     LS_COLORS=no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:
+     INIT_VERSION=sysvinit-2.86
+     MAIL=/var/spool/mail/root
+     PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin
+     LC_MESSAGES=en_US.UTF-8
+     RUNLEVEL=5
+     INPUTRC=/etc/inputrc
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/
+     SHLVL=0
+     LOGNAME=root
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+
+PID: 2095   TASK: d1970550  CPU: 0   COMMAND: "gdm-binary"
+ARG: /usr/sbin/gdm-binary -nodaemon 
+ENV: HOSTNAME=goldfinger
+     SELINUX_INIT=YES
+     CONSOLE=/dev/console
+     TERM=linux
+     HISTSIZE=1000
+     USER=root
+     LS_COLORS=no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:
+     INIT_VERSION=sysvinit-2.86
+     MAIL=/var/spool/mail/root
+     PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin
+     LC_MESSAGES=en_US.UTF-8
+     RUNLEVEL=5
+     INPUTRC=/etc/inputrc
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/
+     SHLVL=0
+     LOGNAME=root
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+
+PID: 2105   TASK: d09deaa0  CPU: 0   COMMAND: "Xorg"
+ARG: /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7 
+ENV: HOSTNAME=goldfinger
+     SELINUX_INIT=YES
+     CONSOLE=/dev/console
+     TERM=linux
+     HISTSIZE=1000
+     USER=root
+     LS_COLORS=no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:
+     INIT_VERSION=sysvinit-2.86
+     MAIL=/var/spool/mail/root
+     PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin
+     LC_MESSAGES=en_US.UTF-8
+     RUNLEVEL=5
+     INPUTRC=/etc/inputrc
+     PWD=/
+     LANG=en_US.UTF-8
+     PREVLEVEL=N
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/
+     SHLVL=0
+     LOGNAME=root
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     LC_ALL=en_US.UTF-8
+     XAUTHORITY=/var/gdm/:0.Xauth
+     DISPLAY=:0
+
+PID: 2152   TASK: d0876550  CPU: 0   COMMAND: "gnome-session"
+ARG: /usr/bin/gnome-session 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+
+PID: 2208   TASK: d1404550  CPU: 0   COMMAND: "ssh-agent"
+ARG: /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+
+PID: 2211   TASK: d0876aa0  CPU: 0   COMMAND: "dbus-daemon"
+ARG: /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+
+PID: 2212   TASK: d1417000  CPU: 0   COMMAND: "dbus-launch"
+ARG: /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+
+PID: 2218   TASK: d1aaf000  CPU: 0   COMMAND: "gconfd-2"
+ARG: /usr/libexec/gconfd-2 5 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+
+PID: 2221   TASK: d1404000  CPU: 0   COMMAND: "gnome-keyring-d"
+ARG: /usr/bin/gnome-keyring-daemon 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_LIFETIME_FD=14
+
+PID: 2223   TASK: d1970aa0  CPU: 0   COMMAND: "gnome-settings-"
+ARG: /usr/libexec/gnome-settings-daemon 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+     DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     DBUS_STARTER_BUS_TYPE=session
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+
+PID: 2225   TASK: d1a3d550  CPU: 0   COMMAND: "gnome-settings-"
+ARG: /usr/libexec/gnome-settings-daemon 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+     DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     DBUS_STARTER_BUS_TYPE=session
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+
+PID: 2233   TASK: d19bc550  CPU: 0   COMMAND: "xrdb"
+ps: no user stack
+
+PID: 2235   TASK: d1aa0aa0  CPU: 0   COMMAND: "metacity"
+ARG: metacity --sm-client-id=default1 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     USER=stevev
+     LS_COLORS=
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     GNOME_DESKTOP_SESSION_ID=Default
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+
+PID: 2242   TASK: d0e04000  CPU: 0   COMMAND: "gnome-panel"
+ARG: gnome-panel --sm-client-id default2 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2244   TASK: d0e04aa0  CPU: 0   COMMAND: "nautilus"
+ARG: nautilus --no-default-window --sm-client-id default3 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2248   TASK: d0e4b000  CPU: 0   COMMAND: "bonobo-activati"
+ARG: /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2249   TASK: d1977000  CPU: 0   COMMAND: "bonobo-activati"
+ARG: /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2251   TASK: d0bbe550  CPU: 0   COMMAND: "gnome-vfs-daemo"
+ARG: /usr/libexec/gnome-vfs-daemon 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+     DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     DBUS_STARTER_BUS_TYPE=session
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+
+PID: 2255   TASK: d0bbe000  CPU: 0   COMMAND: "eggcups"
+ARG: eggcups --sm-client-id default4 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2256   TASK: d0d1d000  CPU: 0   COMMAND: "gnome-volume-ma"
+ARG: gnome-volume-manager --sm-client-id default5 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2262   TASK: d09d3000  CPU: 0   COMMAND: "bt-applet"
+ARG: bt-applet --sm-disable 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2266   TASK: d1417550  CPU: 0   COMMAND: "puplet"
+ARG: /usr/bin/python -tt /usr/bin/puplet 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2268   TASK: d0bf1550  CPU: 0   COMMAND: "nm-applet"
+ARG: nm-applet --sm-disable 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2269   TASK: d1a86550  CPU: 0   COMMAND: "vmware-user"
+ARG: /usr/lib/vmware-tools/bin32/vmware-user >/dev/null 2>&1 -blockFd 11 
+ENV: HOSTNAME=goldfinger
+     CONSOLE=/dev/pts/0
+     SELINUX_INIT=YES
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     USER=stevev
+     LD_LIBRARY_PATH=/usr/lib/vmware-tools/lib32/linux-gate.so.1:/usr/lib/vmware-tools/lib32/libglib-1.2.so.0:/usr/lib/vmware-tools/lib32/libgmodule-1.2.so.0:/usr/lib/vmware-tools/lib32/libgdk-1.2.so.0:/usr/lib/vmware-tools/lib32/libgtk-1.2.so.0
+     LS_COLORS=
+     INIT_VERSION=sysvinit-2.86
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     runlevel=5
+     RUNLEVEL=5
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     previous=N
+     PREVLEVEL=N
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     GNOME_DESKTOP_SESSION_ID=Default
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+
+PID: 2271   TASK: d1a86aa0  CPU: 0   COMMAND: "pam-panel-icon"
+ARG: pam-panel-icon --sm-client-id default0 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2281   TASK: c8249aa0  CPU: 0   COMMAND: "gam_server"
+ARG: /usr/libexec/gam_server 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     GAM_CLIENT_ID=
+
+PID: 2290   TASK: d1410aa0  CPU: 0   COMMAND: "wnck-applet"
+ARG: /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=19 
+ENV: DISPLAY=:0.0
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     LANG=en_US.UTF-8
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2294   TASK: c82e3550  CPU: 0   COMMAND: "trashapplet"
+ARG: /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=22 
+ENV: DISPLAY=:0.0
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     LANG=en_US.UTF-8
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2298   TASK: d199b000  CPU: 0   COMMAND: "pam_timestamp_c"
+ARG: /sbin/pam_timestamp_check -d root 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2300   TASK: c79b2000  CPU: 0   COMMAND: "mapping-daemon"
+ARG: /usr/libexec/mapping-daemon 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2315   TASK: c82a6550  CPU: 0   COMMAND: "notification-ar"
+ARG: /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=21 
+ENV: DISPLAY=:0.0
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     LANG=en_US.UTF-8
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2317   TASK: c82e3000  CPU: 0   COMMAND: "mixer_applet2"
+ARG: /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=24 
+ENV: DISPLAY=:0.0
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     LANG=en_US.UTF-8
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2319   TASK: d1aa0550  CPU: 0   COMMAND: "clock-applet"
+ARG: /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=29 
+ENV: DISPLAY=:0.0
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     LANG=en_US.UTF-8
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     G_BROKEN_FILENAMES=1
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+
+PID: 2422   TASK: c82a6aa0  CPU: 0   COMMAND: "gnome-screensav"
+ARG: gnome-screensaver 
+ENV: HOSTNAME=goldfinger
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     USERNAME=stevev
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=1
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/bin/ssh-agent
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SSH_AGENT_PID=2208
+     DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     DBUS_STARTER_BUS_TYPE=session
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+
+PID: 2582   TASK: c79b2aa0  CPU: 0   COMMAND: "gnome-terminal"
+ARG: gnome-terminal 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     DESKTOP_STARTUP_ID=nautilus/gnome-terminal/2244-0-goldfinger_TIME3860953148
+
+PID: 2584   TASK: d0e4b550  CPU: 0   COMMAND: "gnome-pty-helpe"
+ARG: gnome-pty-helper 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     DESKTOP_STARTUP_ID=
+
+PID: 2585   TASK: c82a6000  CPU: 0   COMMAND: "bash"
+ARG: bash 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=xterm
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     DESKTOP_STARTUP_ID=
+     COLORTERM=gnome-terminal
+     WINDOWID=48234577
+
+PID: 2586   TASK: d0d1daa0  CPU: 0   COMMAND: "gnome-terminal"
+ARG: gnome-terminal 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     DESKTOP_STARTUP_ID=nautilus/gnome-terminal/2244-0-goldfinger_TIME3860953148
+
+PID: 2921   TASK: cd4c9aa0  CPU: 0   COMMAND: "bash"
+ARG: bash 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=xterm
+     SHELL=/bin/bash
+     HISTSIZE=1000
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     USERNAME=stevev
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     GNOME_DESKTOP_SESSION_ID=Default
+     DESKTOP_STARTUP_ID=
+     COLORTERM=gnome-terminal
+     WINDOWID=48239736
+
+PID: 3020   TASK: d1ad2000  CPU: 0   COMMAND: "firefox"
+ARG: /bin/sh /usr/lib/firefox-1.5.0.12/firefox 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     TERM=dumb
+     SHELL=/bin/bash
+     DESKTOP_STARTUP_ID=gnome-panel/htmlview/2242-1-goldfinger_TIME3861957534
+     HISTSIZE=1000
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     MOZILLA_FIVE_HOME=/usr/lib/firefox-1.5.0.12
+     XLIB_SKIP_ARGB_VISUALS=1
+     USER=stevev
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     USERNAME=stevev
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins:/usr/lib/firefox-1.5.0.12/plugins
+     FONTCONFIG_PATH=/etc/fonts:/usr/lib/firefox-1.5.0.12/res/Xft
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=1
+     HOME=/home/stevev
+     GNOME_DESKTOP_SESSION_ID=Default
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+
+PID: 3043   TASK: d0b3eaa0  CPU: 0   COMMAND: "run-mozilla.sh"
+ARG: /bin/sh /usr/lib/firefox-1.5.0.12/run-mozilla.sh /usr/lib/firefox-1.5.0.12/firefox-bin 
+ENV: SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     MOZ_PIS_SESSION_PID=3020
+     DESKTOP_STARTUP_ID=gnome-panel/htmlview/2242-1-goldfinger_TIME3861957534
+     SHELL=/bin/bash
+     TERM=dumb
+     HISTSIZE=1000
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     MOZ_PIS_MOZBINDIR=/usr/lib/firefox-1.5.0.12
+     MOZILLA_FIVE_HOME=/usr/lib/firefox-1.5.0.12
+     MRE_HOME=/usr/lib/mre/mre-1.5.0.12
+     XLIB_SKIP_ARGB_VISUALS=1
+     USER=stevev
+     LS_COLORS=
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     USERNAME=stevev
+     MOZ_PIS_API=2
+     MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins:/usr/lib/firefox-1.5.0.12/plugins
+     MAIL=/var/spool/mail/stevev
+     DESKTOP_SESSION=default
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     FONTCONFIG_PATH=/etc/fonts:/usr/lib/firefox-1.5.0.12/res/Xft
+     GDM_XSERVER_LOCATION=local
+     INPUTRC=/etc/inputrc
+     PWD=/home/stevev
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     HOME=/home/stevev
+     SHLVL=2
+     GNOME_DESKTOP_SESSION_ID=Default
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     MOZ_PIS_USER_DIR=.mozilla/firefox
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     _=/usr/lib/firefox-1.5.0.12/run-mozilla.sh
+
+PID: 3048   TASK: d1ad2550  CPU: 0   COMMAND: "firefox-bin"
+ARG: /usr/lib/firefox-1.5.0.12/firefox-bin 
+ENV: XSUNTRANSPORT=shmem
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     MOZ_PIS_SESSION_PID=3020
+     TERM=dumb
+     SHELL=/bin/bash
+     DESKTOP_STARTUP_ID=gnome-panel/htmlview/2242-1-goldfinger_TIME3861957534
+     HISTSIZE=1000
+     LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/components:/usr/lib/mre/mre-1.5.0.12
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     MOZ_PIS_MOZBINDIR=/usr/lib/firefox-1.5.0.12
+     MOZILLA_FIVE_HOME=/usr/lib/firefox-1.5.0.12
+     XLIB_SKIP_ARGB_VISUALS=1
+     MRE_HOME=/usr/lib/mre/mre-1.5.0.12
+     USER=stevev
+     LD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/plugins:/usr/lib/mre/mre-1.5.0.12
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     LIBPATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     USERNAME=stevev
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins:/usr/lib/firefox-1.5.0.12/plugins
+     MOZ_PIS_API=2
+     ADDON_PATH=/usr/lib/firefox-1.5.0.12
+     FONTCONFIG_PATH=/etc/fonts:/usr/lib/firefox-1.5.0.12/res/Xft
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     XSUNSMESIZE=512
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=3
+     HOME=/home/stevev
+     GNOME_DESKTOP_SESSION_ID=Default
+     DYLD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     SHLIB_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     MOZ_PIS_USER_DIR=.mozilla/firefox
+     _=/usr/lib/firefox-1.5.0.12/firefox-bin
+
+PID: 3049   TASK: c82e3aa0  CPU: 0   COMMAND: "firefox-bin"
+ARG: /usr/lib/firefox-1.5.0.12/firefox-bin 
+ENV: XSUNTRANSPORT=shmem
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     MOZ_PIS_SESSION_PID=3020
+     TERM=dumb
+     SHELL=/bin/bash
+     DESKTOP_STARTUP_ID=gnome-panel/htmlview/2242-1-goldfinger_TIME3861957534
+     HISTSIZE=1000
+     LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/components:/usr/lib/mre/mre-1.5.0.12
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     MOZ_PIS_MOZBINDIR=/usr/lib/firefox-1.5.0.12
+     MOZILLA_FIVE_HOME=/usr/lib/firefox-1.5.0.12
+     XLIB_SKIP_ARGB_VISUALS=1
+     MRE_HOME=/usr/lib/mre/mre-1.5.0.12
+     USER=stevev
+     LD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/plugins:/usr/lib/mre/mre-1.5.0.12
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     LIBPATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     USERNAME=stevev
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins:/usr/lib/firefox-1.5.0.12/plugins
+     MOZ_PIS_API=2
+     ADDON_PATH=/usr/lib/firefox-1.5.0.12
+     FONTCONFIG_PATH=/etc/fonts:/usr/lib/firefox-1.5.0.12/res/Xft
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     XSUNSMESIZE=512
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=3
+     HOME=/home/stevev
+     GNOME_DESKTOP_SESSION_ID=Default
+     DYLD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     SHLIB_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     MOZ_PIS_USER_DIR=.mozilla/firefox
+     _=/usr/lib/firefox-1.5.0.12/firefox-bin
+
+PID: 3050   TASK: d1a3daa0  CPU: 0   COMMAND: "firefox-bin"
+ARG: /usr/lib/firefox-1.5.0.12/firefox-bin 
+ENV: XSUNTRANSPORT=shmem
+     SSH_AGENT_PID=2208
+     HOSTNAME=goldfinger
+     MOZ_PIS_SESSION_PID=3020
+     TERM=dumb
+     SHELL=/bin/bash
+     DESKTOP_STARTUP_ID=gnome-panel/htmlview/2242-1-goldfinger_TIME3861957534
+     HISTSIZE=1000
+     LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/components:/usr/lib/mre/mre-1.5.0.12
+     GTK_RC_FILES=/etc/gtk/gtkrc:/home/stevev/.gtkrc-1.2-gnome2
+     MOZ_PIS_MOZBINDIR=/usr/lib/firefox-1.5.0.12
+     MOZILLA_FIVE_HOME=/usr/lib/firefox-1.5.0.12
+     XLIB_SKIP_ARGB_VISUALS=1
+     MRE_HOME=/usr/lib/mre/mre-1.5.0.12
+     USER=stevev
+     LD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/firefox-1.5.0.12/plugins:/usr/lib/mre/mre-1.5.0.12
+     LS_COLORS=
+     SSH_AUTH_SOCK=/tmp/ssh-txmjiM2152/agent.2152
+     GNOME_KEYRING_SOCKET=/tmp/keyring-MH3RxR/socket
+     LIBPATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     USERNAME=stevev
+     SESSION_MANAGER=local/goldfinger:/tmp/.ICE-unix/2152
+     MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins:/usr/lib/firefox-1.5.0.12/plugins
+     MOZ_PIS_API=2
+     ADDON_PATH=/usr/lib/firefox-1.5.0.12
+     FONTCONFIG_PATH=/etc/fonts:/usr/lib/firefox-1.5.0.12/res/Xft
+     PATH=/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/stevev/bin
+     DESKTOP_SESSION=default
+     MAIL=/var/spool/mail/stevev
+     GDM_XSERVER_LOCATION=local
+     PWD=/home/stevev
+     INPUTRC=/etc/inputrc
+     XMODIFIERS=@im=none
+     LANG=en_US.UTF-8
+     XSUNSMESIZE=512
+     GDMSESSION=default
+     SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+     SHLVL=3
+     HOME=/home/stevev
+     GNOME_DESKTOP_SESSION_ID=Default
+     DYLD_LIBRARY_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     LOGNAME=stevev
+     CVS_RSH=ssh
+     DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IQQhGJUJwU,guid=fce9654736b9b41967c7e3f05f882f00
+     LESSOPEN=|/usr/bin/lesspipe.sh %s
+     SHLIB_PATH=/usr/lib/firefox-1.5.0.12:/usr/lib/mre/mre-1.5.0.12
+     DISPLAY=:0.0
+     G_BROKEN_FILENAMES=1
+     XAUTHORITY=/tmp/.gdm2HEF3T
+     MOZ_PIS_USER_DIR=.mozilla/firefox
+     _=/usr/lib/firefox-1.5.0.12/firefox-bin

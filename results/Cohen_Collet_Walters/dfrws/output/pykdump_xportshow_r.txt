@@ -1,0 +1,4 @@
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+192.168.151.0   0.0.0.0         255.255.255.0   U     0      0      0   eth0
+169.254.0.0     0.0.0.0         255.255.0.0     U     0      0      0   eth0
+0.0.0.0         192.168.151.2   0.0.0.0         UG    0      0      0   eth0

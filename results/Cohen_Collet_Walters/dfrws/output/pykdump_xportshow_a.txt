@@ -1,0 +1,301 @@
+tcp   127.0.0.1:25               0.0.0.0:*                   LISTEN
+udp   0.0.0.0:68                 0.0.0.0:*                  st=7
+unix   State          I-node  Path
+----------------------------------
+unix   LISTEN         7548    /tmp/orbit-stevev/linc-8f2-0-223d59014f6d
+unix   LISTEN         7571    /tmp/mapping-stevev
+unix   LISTEN         7588    /tmp/orbit-stevev/linc-8f6-0-223d5904a9f0
+unix   LISTEN         5397    /dev/gpmctl
+unix   CLOSE          1131    @/org/kernel/udev/udevd
+unix   LISTEN         7456    @/tmp/fam-stevev-
+unix   CLOSE          5526    @/org/freedesktop/hal/udev_eventpcf.gz
+unix   LISTEN         5518    @/var/run/hald/dbus-LCiwSCNDmN
+unix   CLOSE          4788    /dev/log
+unix   LISTEN         6909    @/tmp/dbus-IQQhGJUJwU
+unix   LISTEN         7603    /tmp/orbit-stevev/linc-8da-0-2791a915635c7
+unix   LISTEN         5109    /var/run/dbus/system_bus_socket
+unix   LISTEN         7653    /tmp/orbit-stevev/linc-90b-0-75b942ca5e28c
+unix   LISTEN         7672    /tmp/orbit-stevev/linc-90d-0-75b942ca6ac4a
+unix   LISTEN         7691    /tmp/orbit-stevev/linc-90f-0-75b942ca821ad
+unix   LISTEN         10148   /tmp/orbit-stevev/linc-be8-0-51d3aa4f4e96d
+unix   LISTEN         7981    /tmp/orbit-stevev/linc-975-0-641b57b7d094
+unix   LISTEN         8421    /tmp/orbit-stevev/linc-a16-0-5ceeb04e83145
+unix   LISTEN         5248    /var/run/acpid.socket
+unix   LISTEN         5452    /tmp/.font-unix/fs7100
+unix   LISTEN         6571    /tmp/.gdm_socket
+unix   LISTEN         6617    /tmp/.X11-unix/X0
+unix   LISTEN         6898    /tmp/ssh-txmjiM2152/agent.2152
+unix   LISTEN         6931    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   LISTEN         6940    /tmp/orbit-stevev/linc-868-0-46f3b564676a5
+unix   LISTEN         7114    /tmp/.ICE-unix/2152
+unix   LISTEN         7123    /tmp/keyring-MH3RxR/socket
+unix   LISTEN         7142    /tmp/orbit-stevev/linc-8af-0-3caebecdd466f
+unix   LISTEN         7196    /tmp/orbit-stevev/linc-8bb-0-267e6f238f39
+unix   LISTEN         7227    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   LISTEN         7257    /tmp/orbit-stevev/linc-8c4-0-6e0427136cb1e
+unix   LISTEN         7278    /tmp/orbit-stevev/linc-8cb-0-1cb0cb9572e2c
+unix   LISTEN         7301    /tmp/orbit-stevev/linc-8c6-0-6e0427138640e
+unix   LISTEN         7322    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   LISTEN         5517    @/var/run/hald/dbus-tHaR9o1D8ièŽÐà¶¶Î
+unix   LISTEN         7433    /tmp/orbit-stevev/linc-8cf-0-6e04271036a54
+unix   LISTEN         7495    /tmp/orbit-stevev/linc-8d6-0-1dffe0c09a8fd
+unix   LISTEN         7533    /tmp/orbit-stevev/linc-8dc-0-50c1514ceb31a
+unix   ESTABLISHED    10151   /tmp/orbit-stevev/linc-be8-0-51d3aa4f4e96d
+unix   ESTABLISHED    10150   
+unix   ESTABLISHED    10147   /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    10146   
+unix   ESTABLISHED    10135   /tmp/.X11-unix/X0
+unix   ESTABLISHED    10134   
+unix   CLOSE          8666    
+unix   ESTABLISHED    8431    
+unix   ESTABLISHED    8430    
+unix   ESTABLISHED    8428    /tmp/orbit-stevev/linc-a16-0-5ceeb04e83145
+unix   ESTABLISHED    8427    
+unix   ESTABLISHED    8426    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    8425    
+unix   ESTABLISHED    8424    /tmp/orbit-stevev/linc-a16-0-5ceeb04e83145
+unix   ESTABLISHED    8423    
+unix   ESTABLISHED    8420    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    8419    
+unix   ESTABLISHED    8417    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    8416    
+unix   ESTABLISHED    8412    /tmp/.X11-unix/X0
+unix   ESTABLISHED    8411    
+unix   ESTABLISHED    7988    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7987    
+unix   ESTABLISHED    7986    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7985    
+unix   ESTABLISHED    7984    /tmp/orbit-stevev/linc-975-0-641b57b7d094
+unix   ESTABLISHED    7983    
+unix   ESTABLISHED    7980    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7979    
+unix   ESTABLISHED    7975    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7974    
+unix   ESTABLISHED    7760    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7759    
+unix   ESTABLISHED    7728    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7727    
+unix   ESTABLISHED    7726    /tmp/orbit-stevev/linc-90b-0-75b942ca5e28c
+unix   ESTABLISHED    7725    
+unix   ESTABLISHED    7720    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7719    
+unix   ESTABLISHED    7718    /tmp/orbit-stevev/linc-90d-0-75b942ca6ac4a
+unix   ESTABLISHED    7717    
+unix   ESTABLISHED    7710    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7709    
+unix   ESTABLISHED    7708    /tmp/orbit-stevev/linc-90f-0-75b942ca821ad
+unix   ESTABLISHED    7706    
+unix   ESTABLISHED    7698    /tmp/orbit-stevev/linc-90f-0-75b942ca821ad
+unix   ESTABLISHED    7697    
+unix   ESTABLISHED    7696    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7695    
+unix   ESTABLISHED    7694    /tmp/orbit-stevev/linc-90f-0-75b942ca821ad
+unix   ESTABLISHED    7693    
+unix   ESTABLISHED    7690    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7689    
+unix   ESTABLISHED    7685    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7684    
+unix   ESTABLISHED    7679    /tmp/orbit-stevev/linc-90d-0-75b942ca6ac4a
+unix   ESTABLISHED    7678    
+unix   ESTABLISHED    7677    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7676    
+unix   ESTABLISHED    7675    /tmp/orbit-stevev/linc-90d-0-75b942ca6ac4a
+unix   ESTABLISHED    7674    
+unix   ESTABLISHED    7671    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7670    
+unix   ESTABLISHED    7666    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7665    
+unix   ESTABLISHED    7660    /tmp/orbit-stevev/linc-90b-0-75b942ca5e28c
+unix   ESTABLISHED    7659    
+unix   ESTABLISHED    7658    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7657    
+unix   ESTABLISHED    7656    /tmp/orbit-stevev/linc-90b-0-75b942ca5e28c
+unix   ESTABLISHED    7655    
+unix   ESTABLISHED    7652    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7651    
+unix   ESTABLISHED    7647    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7646    
+unix   ESTABLISHED    7626    @/tmp/fam-stevev-
+unix   ESTABLISHED    7625    
+unix   ESTABLISHED    7620    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7619    
+unix   ESTABLISHED    7618    /tmp/orbit-stevev/linc-8f6-0-223d5904a9f0
+unix   ESTABLISHED    7617    
+unix   ESTABLISHED    7610    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7609    
+unix   ESTABLISHED    7608    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7607    
+unix   ESTABLISHED    7606    /tmp/orbit-stevev/linc-8da-0-2791a915635c7
+unix   ESTABLISHED    7605    
+unix   ESTABLISHED    7602    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7601    
+unix   ESTABLISHED    7597    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7596    
+unix   ESTABLISHED    7595    /tmp/orbit-stevev/linc-8f6-0-223d5904a9f0
+unix   ESTABLISHED    7594    
+unix   ESTABLISHED    7593    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7592    
+unix   ESTABLISHED    7591    /tmp/orbit-stevev/linc-8f6-0-223d5904a9f0
+unix   ESTABLISHED    7590    
+unix   ESTABLISHED    7587    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7586    
+unix   ESTABLISHED    7582    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7581    
+unix   ESTABLISHED    7575    /tmp/mapping-stevev
+unix   ESTABLISHED    7567    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7566    
+unix   ESTABLISHED    7565    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7564    
+unix   ESTABLISHED    7563    /tmp/orbit-stevev/linc-8f2-0-223d59014f6d
+unix   ESTABLISHED    7562    
+unix   ESTABLISHED    7555    /tmp/orbit-stevev/linc-8f2-0-223d59014f6d
+unix   ESTABLISHED    7554    
+unix   ESTABLISHED    7553    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7552    
+unix   ESTABLISHED    7551    /tmp/orbit-stevev/linc-8f2-0-223d59014f6d
+unix   ESTABLISHED    7550    
+unix   ESTABLISHED    7547    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7546    
+unix   ESTABLISHED    7542    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7541    
+unix   ESTABLISHED    7536    /tmp/orbit-stevev/linc-8dc-0-50c1514ceb31a
+unix   ESTABLISHED    7535    
+unix   ESTABLISHED    7532    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7531    
+unix   ESTABLISHED    7524    
+unix   ESTABLISHED    7522    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7521    
+unix   ESTABLISHED    7512    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7511    
+unix   ESTABLISHED    7510    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7509    
+unix   ESTABLISHED    7504    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7503    
+unix   ESTABLISHED    7498    /tmp/orbit-stevev/linc-8d6-0-1dffe0c09a8fd
+unix   ESTABLISHED    7497    
+unix   ESTABLISHED    7494    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7493    
+unix   ESTABLISHED    7489    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7488    
+unix   ESTABLISHED    7487    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7486    
+unix   ESTABLISHED    7485    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7484    
+unix   ESTABLISHED    7468    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7467    
+unix   ESTABLISHED    7477    @/tmp/fam-stevev-
+unix   ESTABLISHED    7458    
+unix   ESTABLISHED    7453    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7452    
+unix   ESTABLISHED    7439    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7438    
+unix   ESTABLISHED    7436    /tmp/orbit-stevev/linc-8cf-0-6e04271036a54
+unix   ESTABLISHED    7435    
+unix   ESTABLISHED    7432    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7431    
+unix   ESTABLISHED    7344    /tmp/orbit-stevev/linc-8c4-0-6e0427136cb1e
+unix   ESTABLISHED    7343    
+unix   ESTABLISHED    7342    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7341    
+unix   ESTABLISHED    7328    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7326    
+unix   ESTABLISHED    7327    /tmp/orbit-stevev/linc-8c8-0-69d6b361afc17
+unix   ESTABLISHED    7325    
+unix   ESTABLISHED    7426    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7321    
+unix   ESTABLISHED    7317    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7316    
+unix   ESTABLISHED    7308    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7307    
+unix   ESTABLISHED    7306    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7305    
+unix   ESTABLISHED    7304    /tmp/orbit-stevev/linc-8c6-0-6e0427138640e
+unix   ESTABLISHED    7303    
+unix   ESTABLISHED    7300    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7299    
+unix   ESTABLISHED    7295    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7294    
+unix   ESTABLISHED    7290    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7289    
+unix   ESTABLISHED    7283    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    7282    
+unix   ESTABLISHED    7281    /tmp/orbit-stevev/linc-8cb-0-1cb0cb9572e2c
+unix   ESTABLISHED    7280    
+unix   ESTABLISHED    7277    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7276    
+unix   ESTABLISHED    7273    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7271    
+unix   ESTABLISHED    7262    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7261    
+unix   ESTABLISHED    7260    /tmp/orbit-stevev/linc-8c4-0-6e0427136cb1e
+unix   ESTABLISHED    7259    
+unix   ESTABLISHED    7256    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7255    
+unix   ESTABLISHED    7253    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7252    
+unix   ESTABLISHED    7248    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7247    
+unix   ESTABLISHED    7230    /tmp/orbit-stevev/linc-8c2-0-6e0427135de13
+unix   ESTABLISHED    7229    
+unix   ESTABLISHED    7226    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7225    
+unix   ESTABLISHED    7223    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7222    
+unix   ESTABLISHED    7218    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7217    
+unix   ESTABLISHED    7203    /tmp/.ICE-unix/2152
+unix   ESTABLISHED    7202    
+unix   ESTABLISHED    7201    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7200    
+unix   ESTABLISHED    7199    /tmp/orbit-stevev/linc-8bb-0-267e6f238f39
+unix   ESTABLISHED    7198    
+unix   ESTABLISHED    7195    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7194    
+unix   ESTABLISHED    7153    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7152    
+unix   ESTABLISHED    7145    /tmp/orbit-stevev/linc-8af-0-3caebecdd466f
+unix   ESTABLISHED    7144    
+unix   ESTABLISHED    7141    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    7140    
+unix   ESTABLISHED    7136    /tmp/.X11-unix/X0
+unix   ESTABLISHED    7135    
+unix   ESTABLISHED    7126    @/tmp/dbus-IQQhGJUJwU
+unix   ESTABLISHED    7125    
+unix   ESTABLISHED    7100    /tmp/orbit-stevev/linc-868-0-46f3b564676a5
+unix   ESTABLISHED    7099    
+unix   ESTABLISHED    7098    /tmp/orbit-stevev/linc-8aa-0-3a873fcd60ba5
+unix   ESTABLISHED    6939    
+unix   CLOSE          6926    
+unix   ESTABLISHED    6920    /tmp/.X11-unix/X0
+unix   ESTABLISHED    6919    
+unix   ESTABLISHED    6915    /tmp/.X11-unix/X0
+unix   ESTABLISHED    6914    
+unix   ESTABLISHED    6911    
+unix   ESTABLISHED    6910    
+unix   ESTABLISHED    6651    /tmp/.font-unix/fs7100
+unix   ESTABLISHED    6650    
+unix   ESTABLISHED    6655    /tmp/.X11-unix/X0
+unix   ESTABLISHED    6645    
+unix   ESTABLISHED    6636    /var/run/acpid.socket
+unix   ESTABLISHED    6635    
+unix   CLOSE          6600    
+unix   ESTABLISHED    6328    /var/run/dbus/system_bus_socket
+unix   ESTABLISHED    6327    
+unix   ESTABLISHED    6301    @/var/run/hald/dbus-tHaR9o1D8ièŽÐà¶¶Î
+unix   ESTABLISHED    6300    
+unix   ESTABLISHED    6145    @/var/run/hald/dbus-tHaR9o1D8ièŽÐà¶¶Î
+unix   ESTABLISHED    6140    
+unix   ESTABLISHED    6112    /var/run/acpid.socket
+unix   ESTABLISHED    6111    
+unix   ESTABLISHED    6101    @/var/run/hald/dbus-tHaR9o1D8ièŽÐà¶¶Î
+unix   ESTABLISHED    6098    
+unix   ESTABLISHED    5521    @/var/run/hald/dbus-LCiwSCNDmN
+unix   ESTABLISHED    5520    
+unix   CLOSE          5392    
+unix   CLOSE          5367    
+unix   CLOSE          5344    
+unix   CLOSE          5317    
+unix   CLOSE          5208    
+unix   ESTABLISHED    5119    
+unix   ESTABLISHED    5118    
+unix   CLOSE          4796    

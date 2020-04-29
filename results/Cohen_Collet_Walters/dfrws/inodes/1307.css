@@ -1,0 +1,298 @@
+html {
+	margin:  1em 0 1em 0;
+	padding: 0 0 0 0;
+}
+
+A:link  {
+	text-decoration: underline;
+	color: white;
+}
+
+A:visited  {
+	text-decoration: underline;
+	color: white;
+}
+
+A:active  {
+	text-decoration: underline;
+	color: white;
+}
+
+A:hover  {
+	color: white;
+	text-decoration: none;
+}
+
+body  {
+	font-family: 'Lucida Grande','Lucida Sans Unicode', verdana, sans-serif;
+	font-size: 10pt;
+	color:white;
+	background-color: white;
+	margin: 0 0 0 0;
+}
+
+.flush_outer {
+	padding: 0 0 0 0;	
+	border-collapse: collapse;
+	border: 0 0 0 0;
+	background-color: white;
+}
+
+.flush_inner {
+	padding: 0 0 0 0;	
+	border-collapse: collapse;
+	border: 0 0 0 0;
+	background-color: black;
+}
+
+.date-header {
+	font-family: verdana, sans-serif, arial, helvetica;
+	margin: 2.75em 0 0.25em;
+	font-size: 10pt;
+	color: white;
+	background: #444444;
+	padding: 0.1em 0.1em 0.1em 0.5em;;
+	border: 0.25px solid white;
+	font-weight: bold;
+}
+
+.title {
+	font-family: verdana, sans-serif, arial, helvetica;
+	margin: 2.75em 0 0.25em;
+	font-size: 10pt;
+	color: white;
+	background: #444444;
+	padding: 0.1em 0.1em 0.1em 0.5em;
+	border: 0.25px solid white;
+	font-weight: bold;
+}
+
+.title a:link		{ color: yellow;	}
+.title a:visited	{ color: yellow;	}
+.title a:active		{ color: yellow;	}
+.title a:hover		{ color: white;		}
+
+
+.page-header {
+  background-color: #dddddd;
+}
+
+.page-footer {
+  background-color: #dddddd;
+}
+
+.page-content {
+	padding: 2em 2em 2em 2em;
+}
+
+.copyright {
+	font-size:		8pt;
+	color: #aaaaaa;
+}
+
+.quote {
+	font-size:		8pt;
+	background-color: #444444;
+}
+
+.section-header {
+	font-size: 10pt;
+	font-weight: bold;
+	letter-spacing: .2em;
+	margin: 0em 0 0.2em;
+}
+
+.splash {
+	color: white;
+}
+
+
+.talk_title {
+	font-family: verdana, sans-serif, arial, helvetica;
+	font-size: 9pt;
+	color: white;
+	padding: 0.1em 0.5em 0.15em .5em;
+	border-left: 0.25px solid #cccccc;
+	border-top: 0.25px solid #cccccc;
+	font-weight: bold;
+}
+
+.download_sig {
+	font-size: 8pt;
+	font-variant: small-caps;
+}
+
+.giant {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.section {
+	
+}
+
+.subsection {
+	
+}
+
+.status-bar {
+	
+}
+
+.exploit_updates {
+	
+}
+
+.code {
+	background: #333333;
+	padding: 0.25em 0.25em 0.25em 0.25em;
+}
+
+.fatp {
+	margin: 2.0em 0 0.5em;
+}
+
+.vulnTitle {
+	font-weight: bold;
+	font-size: 10pt;
+	padding-bottom: 2em;
+}
+
+.vulnHeader {
+	font-weight: bold;
+}
+
+.vulnText {
+	padding-bottom: 1em;
+}
+
+.vulnInfoTable { 
+	background: #333333;
+	
+}
+
+.vulnInfoHeader { 
+	font-weight: bold;
+}
+
+.vulnInfoData { 
+
+}
+
+.left-col {
+	background-color: #036;
+}
+
+.middle-col {
+	background-color: black;
+}
+
+#sections_container
+{
+	margin: 0;
+	white-space: nowrap;
+	padding: 0;
+	font-size: 10pt;
+	background-color: #444444;
+	padding: 0.1em 0.5em 0.5em .5em;
+}
+
+#sections_active { color: yellow; }
+
+#subsections_container
+{
+	margin: 0;
+	white-space: nowrap;
+	font-size: 9pt;
+	background-color: #444444;
+	padding: 0.1em 0.5em 0.15em .5em;
+	border-top: 0.25px solid #333333;
+}
+
+#subsections_active { color: yellow; }
+
+
+.level1 
+{
+	list-style: none;
+	text-align: left;
+	padding: 0em 0em 1em 0em;
+}
+.level1 li
+{
+	padding: 1em .25em 0.25em 0.25em;
+}
+
+.level2 
+{
+	list-style: circle;
+	text-align: left;
+	padding: 0em 0.25em 0.25em 4em;
+}
+.level2 li
+{
+	padding: 0.25em .25em 0.25em 0.25em;
+}
+
+.level3 
+{
+	list-style: square;
+	text-align: left;
+	padding: 0em 0.25em 0.25em 4em;
+}
+.level3 li
+{
+	padding: 0.25em .25em 0.25em 0.25em;
+}
+
+
+
+.boxTable 
+{ 
+	border-left-style: solid; 
+	border-top-style: solid; 
+	border-right-style: solid; 
+	border-bottom-style: solid;
+	border-color: #333333;
+	font-family: verdana, sans-serif; 
+	font-size: 8pt; 
+	background-color: #333333;
+}
+.boxInnerTable 
+{ 
+	font-family: verdana, sans-serif; 
+	font-size: 8pt; 
+}
+.boxTdHeader 
+{ 
+	border-width: 0 0 0 0; 
+	border-color: #333333; 
+	border-left-style: solid; 
+	border-top-style: solid; 
+	border-right-style: solid; 
+	border-bottom-style: solid; 
+	background-color: #444444;
+	color: white;
+	height: 20px; 
+	font-weight: bold
+}
+.boxTd 
+{ 
+	border-width: 0 0 0 0; 
+	border-left-style: solid; 
+	border-top-style: solid;
+	border-right-style: solid; 
+	border-bottom-style: solid; 
+}
+.boxTd1
+{
+	background-color: #111111;
+}
+.boxTd2
+{
+	background-color: #111111;
+}
+.boxTh
+{
+	background-color: #333333;
+}

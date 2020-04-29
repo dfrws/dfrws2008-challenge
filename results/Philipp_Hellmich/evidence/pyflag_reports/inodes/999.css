@@ -1,0 +1,256 @@
+@media all
+{
+    body{
+    	background-color:white;
+		color:black;
+	}
+}
+@media screen,projection
+{
+/* ukryte h2 i h3 */
+		.ukryty{display:none}
+		body{font-family: Tahoma, Arial, Helvetica, "Trebuchet MS", sans-serif; font-size:62.01%;text-align:left}
+		* html body{font-family: Arial, Helvetica, "Trebuchet MS", sans-serif;font-size:62.01%;text-align:left}
+		div{text-align:left}
+		#pC{width:800px;margin-left:auto;margin-right:auto;}
+		hr{display:none}
+/* menuTop */
+		#blockTop{width:800px;margin-bottom:34px !important;margin-bottom:34px; cursor: default;;}
+		#homeLogo{background-color:#000}
+		#logoClick{background-color:#000;float:left;padding-left:75px;padding-top:15px}
+		#logoClick img{margin:0;padding:0;border:0}
+		#logo{width:800px}
+		#logo #pL14{background-color:#000}
+		#pM01{height:auto;background-color:#000;}
+		#pM01 .tmenu{height:105px}
+		#pM01 .tmenu .content{padding:60px 0 0 0}
+		#pM01 li{display:inline;padding:6px; float: left;}
+		#pM01 ul{text-align:right;padding: 0; margin-right:40px!important; margin-right:10px; float: right;}
+		#pM01 a{color:#CC9966;font-size:0.9em;text-decoration:none}
+		#pM01 a:hover{color:#fff;text-decoration:none}
+		#pM01 #nobleNet{background-color:#cc9966;height:20px;width:78px;float:right}
+		#pM01 #nobleNet a{color:#fff;font-weight:bold;font-size:10px;display:block;padding:2px 6px}
+		#pM01 .last a{font-weight:bold;font-size:10px}
+/* menu dziaï¿½ */		
+		#pM02, #pM02_1c {background:#fff; font-size:1.2em; *font-size:1.4em; padding: 7px 0 7px 0; border-bottom:1px solid #000; height: auto; width: 800px; font-weight: bold;}	
+		#pM02 li a, #pM02_1c li a {color:#000;font-weight:bold;}
+		#pM02 li a:hover, #pM02_1c li a:hover {color:#c96;text-decoration:none;}
+		#pM02 .tmenu{width:195px;float:left;}
+		#pM02_1c .tmenu{width:160px;float:left; text-transform:uppercase;}
+		#pM02 .menu1{width:215px}	
+		#pM02 .tmenu li, #pM02_1c .tmenu li {text-align:center;}
+		* html #pM02{width: 800px; font-size: 1.3em;}
+		* html #pM02_1c{width: 800px; font-size: 1.3em;}
+		* html #pM02 .tmenu{width: 15em;}
+		* html #pM02 .menu1{width: 15em;margin-left: 8px;}
+/* stopka */
+		#pM03{margin:30px 0 0 15px !important;margin:30px 0 0 7px;float:left; clear: both;}
+		#pM03 ul{border-bottom:1px solid #787878;padding-bottom:4px;}
+		#pM03 li{display:inline;padding-right:10px}
+		#pM03 li.last{padding-right:0px}
+		#pM03 a{color:#000;font-size:0.9em}
+		#pM03 a:hover{color:#000; text-decoration:underline}
+		#pM03 a:link, #pM03 a:active, #pM03 a:visited{color:#000}
+		#pM03 #footerText{padding-top:4px;color:#000;font-size:0.9em}
+		#pM03 ul li ul{display:none}
+/* linki dla serwisu */
+		a, .lar a, .bar a{color:#000;font-size:1em}
+		a:link, .lar a:link, .bar a:link, a:active, .lar a:active, .bar a:active, a:visited, .lar a:visited, .bar a:visited{color:#000;text-decoration:none}
+		a:hover, .lar a:hover, .bar a:hover{color:#000;text-decoration:underline}
+		.tac a:hover{text-decoration:none}
+/* link DRUKUJ */
+		.par a:hover{text-decoration:none}
+/* scieka - menu */
+		#pM05{margin-bottom:10px; }
+		#pM05 a, #pM05 a:link, #pM05 a:hover, #pM05 a:active, #pM05 a:visited{padding:0;color:#CC9966;font-weight:bold;font-size:1em;}
+		#pM05 .home, #pM05 .home:hover, #pM05 .home:link, #pM05 .home:active, #pM05 .home:visited{color:#000;font-weight:normal;background:none;padding:0}
+		#pM05 li{margin:0;display:inline;}
+		#pM05 li img{
+			padding:0 3px;
+		}
+/* lista artykuï¿½ dla dziaï¿½: 01, 02, 03 */
+		#pM06{width:400px;margin-bottom:20px; font-size: 1em; line-height: 14px;}
+		#pM06 #leftCol{width:190px;float:left;padding-right:00px}
+		#pM06 #rightCol{width:190px;float:right;padding-left:20px}
+		#pM06 #leftCol div{margin-bottom:5px}
+		#pM06 #rightCol div{margin-bottom:5px}
+		#pM06 a {color:#6699CC;font-weight:bold;}
+		#pM06 #leftCol div,#pM06 #rightCol div{padding: 1px 0; font-size: 1em;}
+/* odlegoï¿½miï¿½zy kilkoma artykuami na licie */
+		#pL05 .ar{margin-bottom:65px;}
+		#pL05 .lt{margin-bottom:25px;}
+/* odstï¿½y miï¿½zy wierszami */
+		#pT01 .bar, #pT01 .lar, .lar , #pL18 .bar, #pL18 .lar{line-height: 1.8em;}
+		.lar table{line-height: 14px;} 
+		.lar table tr{height: 30px;}
+        #cont01 .lar{font-size:1em}
+		
+		/* damage | tak chyba lepiej? - odstï¿½ miï¿½zy zajawk a tekstem */
+		#pT01 .bar, #pL18 .bar {margin-top:25px;}
+		#pT01 .lar, #pL18 .lar {font-weight:bold;} 
+		   
+/* selector oddziaï¿½ */
+		div#pE01 h2 {margin:2px 6px 2px 0;float:left}
+		div#pE01 .extSubm {display:none;} /*komentarz*/
+		#pE01 select{height:16px;width:10em;font-size:1em;border:1px solid #999999;font-family: Arial, sans-serif; *width: 100%;*height: 22px;}
+		* html #pE01 select{font-size: 0.9em;}
+/* zdjï¿½ia */
+/* w poziomie */
+		.hl1, .hl2, .hl3, .hl4, .hl5{text-align:left;}
+		.hc1, .hc2, .hc3, .hc4, .hc5{text-align:center;}
+		.hr1, .hr2, .hr3, .hr4, .hr5{text-align:right;}
+		.pcar div{display:inline}
+/* w pionie */
+		.vl1, .vl2, .vl3, .vl4, .vl5{float:left;margin-right:5px}
+		.vc1, .vc2, .vc3, .vc4, .vc5{text-align:center;}
+		.vr1, .vr2, .vr3, .vr4, .vr5{float:right;margin-left:5px}
+		.vl1 img, .vl2 img, .vl3 img, .vl4 img, .vl5 img, .vr1 img, .vr2 img, .vr3 img, .vr4 img, .vr5 img{display:block;margin-bottom:5px}
+		.thumbsGallery a img{margin:5px 10px}
+/* zaczniki */
+		.attch{width:400px;float:left;margin-top:20px;padding:5px 0;border-top:1px solid #ededed;border-bottom:1px solid #ededed}
+		.attch img{border:0}
+		.attch li{margin-left:15px;width:385px}
+		.pcar span{display:block;background-color:#ededed;padding:2px}
+		.pcar{width:auto}
+/* Odpowiada za Przydatne i Nasze rekomendacje */
+		#pL04 h3, #pL12 h3, #pL15 h3{margin:3px 0;padding-right:10px}
+		#pL12 .lt h3{margin-bottom:10px}
+/* Odpowiada za Kontakt, Nasze rekomendacje i Przydatne w prawej kolumnie */
+		.collectStats{display:none}
+		#pL13 h3{display:none}
+		#pL04 h2, #pL15 h2{background-color:#999999;padding:4px 4px;margin-bottom:10px}
+		#pL04 h2, #pL15 h2, #pL12 h2{color:#fff;font-weight:bold}
+		#pL04 .ar a, #pL04 .ar {color: #666; }
+		#pL12 h2{background-color:#6699CC;padding:4px 4px;margin-bottom:10px}
+		#pL12 h2{color:#fff;font-weight:bold;text-transform:uppercase}
+		* html #pL12 h2 {font-size: 0.95em;}
+		#pL12 h2 a{color:#fff;font-weight:bold;text-transform:uppercase}
+		#pL12 .ar a, #pL12 .ar{color: #6699cc; }
+		#pL13 h2{background-color:#CC9966;padding:4px 4px;margin-bottom:10px}
+		#pL13 h2 a{color:#fff;font-weight:bold}
+		#pL13 a{line-height: 1.3em;}
+		#pL04 .ar, #pL12 .ar{margin-bottom: 5px;}
+/* do podstron */
+		#tresc{margin-left: 15px;width:785px; font-size:1.25em;}
+		* html #tresc{font-size: 1.1em;}
+		#cont01{width:410px;float:left}
+		#cont02{width:335px;float:right}
+		#teaserText{width:335px}
+		#teaserText #pL01{background-color:#000}
+		#pL05 h3, #pT01 h3, #pL18 h3{font-size:1.3em;margin-bottom:20px}
+		#pT01 .par, #pL18 .par{float:right;margin:10px 0}
+		.par{padding:0px 6px;border:1px solid #000}
+		#pL05 .mar{float:right;margin:10px 0;width:380px;text-align:right}
+		#grupa2{margin-top:30px}
+		/*#grupa1 .lar{font-size: 1.2em;}*/
+		
+		#pL04, #pL15{width:150px;margin-right:5px;float:left;}
+		#grupa1{width:150px;float:right}
+		#pL05 h2.tac a{font-size:1.3em}
+		#pL05 h2.tac{margin-bottom:20px;padding-bottom:5px;border-bottom:1px solid #ededed}	
+
+	
+		/* temporary news_id holder */
+		#depForm {display:none;}	
+
+		#pL05 h4.sar,#pT01 h4.sar, #pL18 h4.sar{font-size:1.1em;margin-bottom:20px}
+		#pL05 #Lead051i153 h3.tar,#pT01 #Text011i153 h3.tar{margin-bottom:0px}
+
+}
+/*Formularz*/
+.error{
+	color: #ad0000;
+	font-size: 1.1em;	
+}
+/*Kalkulator ramka*/
+#ifra{
+	height: 145em;
+	width: 100%;
+	*width: 420px;
+	*position: absolute;
+	*left: expression(((document.body.clientWidth - 800)/2)+"px");
+}
+
+@media print
+{
+/* zdjï¿½ia */
+/* w poziomie */
+.hl1, .hl2, .hl3, .hl4, .hl5{text-align:left;}
+.hc1, .hc2, .hc3, .hc4, .hc5{text-align:center;}
+.hr1, .hr2, .hr3, .hr4, .hr5{text-align:right;}
+.pcar div{display:inline}
+/* w pionie */
+.vl1, .vl2, .vl3, .vl4, .vl5{float:left;margin-right:5px}
+.vc1, .vc2, .vc3, .vc4, .vc5{text-align:center;}
+.vr1, .vr2, .vr3, .vr4, .vr5{float:right;margin-left:5px}
+.vl1 img, .vl2 img, .vl3 img, .vl4 img, .vl5 img, .vr1 img, .vr2 img, .vr3 img, .vr4 img, .vr5 img{display:block;margin-bottom:5px}
+.thumbsGallery a img{margin:5px 10px}
+/* artyku */
+body{font-family: Tahoma, Arial, Helvetica, Sans-serif, "Trebuchet MS";}
+.ukryty, .par, .mar, #pM03, #blockTop, #cont02, #pM06, #pM07, #pM08, #pM09, #pE01, hr {display:none}
+.logoPrint{display:block;margin-bottom:30px}
+a{color:#000}
+h3.tar, h3.tar a{font-size:15px;margin-bottom:20px;color:#000;text-decoration:none}
+#pM05{margin-bottom:20px}
+#pM05 a{color:#000;margin-right:10px;text-decoration:none}
+.kontakt {display:block;margin-top:50px;text-align:center;padding-top:15px;border-top:1px solid #ededed}
+.kontakt2{float:right;position:relative;top:-50px;left:-200px;font-size:12px}
+#pL05 ul li{margin-bottom:10px}
+#pL05 ul{margin-top:15px;margin-bottom:25px}
+#pL05 .ar{margin-bottom:45px}
+#pL05 .lar a{text-decoration:none}
+#pL05 h2.tac{font-size:15px;margin-bottom:10px}
+	
+#pM05 li{margin:0;display:inline}
+#pM05 li font{display:none}
+#pM06, #pM07, #pM08, #pM09, #pL12, #pL13, #pM04, #pM04c{display:none}
+}
+
+/*notowania walut*/
+.curwal {margin-top: 40px;}
+ 
+* html  #pM01 .last a{font-weight:bold;font-size:0.9em}
+
+
+*+html #pM01 .last a{font-weight:bold;font-size:0.9em}
+*+html #pM01 {height:115px}
+
+#pM01 .last a{font-weight:bold;font-size:0.9em}
+#Lead061 {height:auto;width:auto;}
+#lok {width:190px;float:right;padding-bottom:30px; position:relative;}
+.g a {font-size:13px; font-weight:bold;}
+td {font-size:10px; width:190px}
+
+.g {border-bottom:1px solid #6699CC}
+.mid {background-color:#EBEBEB;}
+* html #lok {width:200px; height:auto;float:right;padding-bottom:30px; position:relative;}
+*+html #lok {width:200px; height:auto;float:right;padding-bottom:30px; position:relative;}
+/*wygl±d dla menu (belki pod obrazkiem) w dziale concierge */
+#grupa1c{width:160px;float:left; margin-top:30px}
+#grupa2c{width:160px;float:right; margin-top:30px}
+#pM04 ul li,#pM04c ul li {padding:4px 4px;margin-bottom:10px}
+#pM04 ul li a, #pM04c ul li a {color:#fff;font-weight:bold;text-transform:uppercase}
+#pM04 ul li a:hover, #pM04c ul li a:hover {text-decoration:none}
+#pM04 ul li {background-color:#999999}
+#pM04c ul li {background-color:#6699CC}
+
+
+/* notowania w INWESTORZY */
+#notowaniaWyniki #notowaniaHeader {font-size:20px;color:#CC9966}
+#notowaniaWyniki .fund {margin-top:15px;width:400px;border-collapse:collapse}
+#notowaniaWyniki table tr th {font-weight:normal;border-bottom:1px solid black;padding:0px;margin:0px;padding-bottom:4px;padding-top:2px;}
+#notowaniaWyniki table tr td {border-bottom:1px solid black;padding:0px;margin:0px;padding-bottom:4px;padding-top:2px}
+#notowaniaWyniki div a {text-decoration:none;background:url(images/spacer.png);padding-top:0px;padding-left:2px;padding-right:2px;padding-bottom:2px;display:inline;border-left:1px solid black;border-top:1px solid black;border-right:1px solid #C6C6C6;border-bottom:1px solid #C6C6C6;margin-top:0px;}
+#notowaniaWyniki div {margin-top:15px;}
+#notowaniaWyniki .header th {padding-right:20px;}
+#notowaniaWyniki .header .button2 {margin-left:2px;}
+
+
+#pokWyd, #wybZakr {float:left;}
+#pobNot, #odswWyk {float:right}
+#odswWyk {width:100px;padding-top:12px;}
+#wybZakr {padding-top:0px;}
+* html #wybZakr {padding-top:2px;}
+* + html #wybZakr {padding-top:1px;}
+#pokWyd, #pobNot {padding-top:3px;padding-bottom:5px}
+#notowaniaWyniki .sel {margin-top:22px}

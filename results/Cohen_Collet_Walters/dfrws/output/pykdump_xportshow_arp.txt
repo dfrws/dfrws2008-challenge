@@ -1,0 +1,11 @@
+crash> xportshow --arp
+=== <struct neigh_table 0xd2aa45e0> PF_INET6 nd_tbl
+IP ADDRESS        HW TYPE    HW ADDRESS           DEVICE  STATE
+----------        -------    ----------           ------  -----
+::                LOOPBACK   00:00:00:00:00:00    lo      NOARP
+
+=== <struct neigh_table 0xc06907c0> PF_INET arp_tbl
+IP ADDRESS        HW TYPE    HW ADDRESS           DEVICE  STATE
+----------        -------    ----------           ------  -----
+192.168.151.254   ETHER      00:50:56:e4:56:48    eth0    STALE
+0.0.0.0           LOOPBACK   00:00:00:00:00:00    lo      NOARP

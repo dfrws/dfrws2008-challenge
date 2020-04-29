@@ -1,0 +1,264 @@
+"""Forensic Browser Player Tool
+
+This script extracts the URL histories from the firefox cache and pcap
+files.  An attempt is made to filter unimportant requests by eliminating
+quickly timed sequences of requests, filtering images, and filtering known
+advertisement requests.
+
+The first arguement is the firefox history file. Unfortunately, the native
+format for this file is not easy to parse. Fortunately, a tool exists to
+convert the history file to XML format, which is more accessible.  The output
+of this script (demork.py) is what we expect here.
+http://exple.tive.org/blarg/?p=99
+
+The second arguement is a pcap file.
+
+This script requires Python 2.5 and the following additional packages:
+dpkt - http://code.google.com/p/dpkt/
+pcapy - http://oss.coresecurity.com/projects/pcapy.html
+
+"""
+
+__author__ = "Rodney Jokerst, Kevin Snow"
+__version__ = "1.0"
+__date__ = "June 18, 2008"
+__copyright__ = "JHUAPL"
+__license__ = "JHUAPL"
+
+# Copyright 2008 The Johns Hopkins University/Applied Physics Laboratory
+
+# This software was developed at The Johns Hopkins University/Applied Physics
+# Laboratory ("JHU/APL") that is the author thereof under the "work made for
+# hire" provisions of the copyright law.  Permission is hereby granted, free
+# of charge, to any person obtaining a copy of this software and associated
+# documentation (the "Software"), to use the Software without restriction,
+# including without limitation the rights to copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to permit
+# others to do so, subject to the following conditions:
+
+# 1.  This LICENSE AND DISCLAIMER, including the copyright notice, shall be
+# included in all copies of the Software, including copies of substantial
+# portions of the Software; 
+# 2.  JHU/APL assumes no obligation to provide support of any kind with
+# regard to the Software.  This includes no obligation to provide assistance
+# in using the Software nor to provide updated versions of the Software; and
+# 3.  THE SOFTWARE AND ITS DOCUMENTATION ARE PROVIDED AS IS AND WITHOUT ANY
+# EXPRESS OR IMPLIED WARRANTIES WHATSOEVER.  ALL WARRANTIES INCLUDING, BUT
+# NOT LIMITED TO, PERFORMANCE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+# PURPOSE, AND NONINFRINGEMENT ARE HEREBY DISCLAIMED.  USERS ASSUME THE
+# ENTIRE RISK AND LIABILITY OF USING THE SOFTWARE.  USERS ARE ADVISED TO TEST
+# THE SOFTWARE THOROUGHLY BEFORE RELYING ON IT.  IN NO EVENT SHALL THE JOHNS
+# HOPKINS UNIVERSITY BE LIABLE FOR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT
+# LIMITATION, ANY LOST PROFITS, LOST SAVINGS OR OTHER INCIDENTAL OR
+# CONSEQUENTIAL DAMAGES, ARISING OUT OF THE USE OR INABILITY TO USE THE
+# SOFTWARE.
+
+import os
+import operator
+import re
+import sys
+import commands
+import string
+from datetime import datetime
+import dpkt, pcapy
+import time
+from optparse import OptionParser
+import httplib
+import urllib
+
+parser = OptionParser()
+parser.add_option("-b", "--browser-history", help="Firefox history in RDF format", dest="history")
+parser.add_option("-p", "--pcap-file", help="Network packet capture file", dest="pcapfile")
+parser.add_option("-f", "--pcap-filter", help="Filter pcap results [default]", dest="pcap_filter", action="store_true")
+parser.add_option("-u", "--pcap-nofilter", help="Do not filter pcap results", dest="pcap_filter", action="store_false")
+parser.set_defaults(pcap_filter=True)
+
+(options, args) = parser.parse_args()
+
+# Print help if we get no command-line arguements
+if (len(sys.argv) <= 1):
+  parser.print_help()
+
+# Misc parameters that could be provided as arguments
+pcap_timing_filter = 1.0 	# Eliminate auto-generated requests faster than this time interval
+pcap_request_filter = '\.gif$|\.jpg$|\.png$' 		  # Eliminate problems with roll-over image timing
+pcap_host_filter = 'hitbox|pagead|questionmarket|blogads|doubleclick|adsize|derkeiler' # Eliminate problems with scripted ad refreshes
+
+# Entries is the array which contains all time-related information. We push
+# entries into this array and then sort them by time at the end.
+entries = []
+clientIDs = {}
+cidcnt = 0;
+
+clientIDs["Unknown"] = cidcnt
+cidcnt = cidcnt+1
+
+if (options.history):
+  clientIDs["Firefox History"] = cidcnt
+  cidcnt = cidcnt+1
+
+  # Now, process the firefox history information
+  file = open(options.history, 'r')
+  # Compile the regular expressions needed for this analysis. For each entry,
+  # we want the last visit date, first visit date, and URL.
+  lastvisit_re = re.compile("<LastVisitDate>(\d\d\d\d\d\d\d\d\d\d)")
+  firstvisit_re = re.compile("<FirstVisitDate>(\d\d\d\d\d\d\d\d\d\d)")
+  url_re = re.compile("<URL>(\S+)</URL>")
+  entry_re = re.compile("</entry>")
+
+  last_time = ""
+  first_time = ""
+  url_value = ""
+
+  for line in file:
+    lastvisit = lastvisit_re.search(line, 1)
+    firstvisit = firstvisit_re.search(line, 1)
+    url = url_re.search(line, 1)
+    entry = entry_re.search(line, 1)
+
+    if lastvisit:
+      last_time = lastvisit.group(1)
+    elif firstvisit:
+      first_time = firstvisit.group(1)
+    elif url:
+      url_value = url.group(1)
+    # When we encounter the end of an entry, add the most recent first visit
+    # and last visit information to the entries array
+    elif entry:
+      if first_time:
+	entry = [eval(first_time), url_value, `clientIDs["Firefox History"]`]
+	entries.append(entry)
+      if last_time:
+	entry = [eval(last_time), url_value, `clientIDs["Firefox History"]`]
+	entries.append(entry)
+
+  file.close()
+  
+# Eliminate duplicates and filter
+e2 = sorted(entries, key=operator.itemgetter(0))
+e3 = []
+lastEntry = [0,"x","x"]
+for entry in entries:
+	if not (lastEntry[0] == entry[0] and lastEntry[1] == entry[1]):
+	  if not (re.compile(pcap_host_filter).search(entry[1])):
+	    e3.append(entry)
+	lastEntry = entry
+entries = sorted(e3, key=operator.itemgetter(0))
+
+# Now process the pcap file
+if (options.pcapfile):
+  flows = {}
+  lastTimings = {}
+
+  pc = pcapy.open_offline(options.pcapfile)
+  # Filter all TCP packets from capture
+  pc.setfilter('tcp')
+
+  try:
+    hdr, pkt = pc.next()
+    while pkt:
+      # Unpack the packet header
+      ts, usec = hdr.getts()
+
+      pETH = dpkt.ethernet.Ethernet(pkt)
+      pIP = dpkt.ip.IP(str(pETH.data))
+      pTCP = dpkt.tcp.TCP(str(pIP.data))
+
+      if pIP.__getitem__('src') < pIP.__getitem__('dst'):
+	smallip = pIP.__getitem__('src')
+	bigip = pIP.__getitem__('dst')
+	smallport = pTCP.__getitem__('sport')
+	bigport = pTCP.__getitem__('dport')
+      else:
+	smallip = pIP.__getitem__('dst')
+	bigip = pIP.__getitem__('src')
+	smallport = pTCP.__getitem__('dport')
+	bigport = pTCP.__getitem__('sport')
+
+      tup = (smallip, bigip, smallport, bigport)
+
+      # If the packet contains TCP data
+      if len(pTCP.data) > 0:
+	request_entry = re.compile('(GET|POST) (.+) ').search(pTCP.data)
+	host_entry = re.compile('Host: (.+)').search(pTCP.data)
+	agent_entry = re.compile('User-Agent: (.+)').search(pTCP.data)
+      
+	# If there is a GET/POST request with a host and user agent
+	if (agent_entry and host_entry and request_entry):
+	  agent = agent_entry.group(1).strip()
+	  host = host_entry.group(1).strip()
+	  request = request_entry.group(2)
+	  
+	  if not (agent in clientIDs):
+	  	clientIDs[agent] = cidcnt
+  		cidcnt = cidcnt+1
+
+	  # If we are using the filtering mechanism
+	  if options.pcap_filter:
+	    if not (agent in lastTimings):
+	      lastTimings[agent] = 0
+
+	    newTime = ts+(usec/1000000.0)
+	    # Only include entries that are outside the timing filter window
+	    if (ts+(usec/1000000.0) - lastTimings[agent] >= pcap_timing_filter):
+	      if re.compile(pcap_request_filter).search(request) or re.compile(pcap_host_filter).search(host):
+		newTime = lastTimings[agent]
+	      else:
+		entry = [ts, "http://" + host + request, `clientIDs[agent]`]
+		entries.append(entry)
+
+	    lastTimings[agent] = newTime
+	  # Otherwise, we are not filtering, so we include every entry
+	  else:
+	    entry = [ts, "http://" + host + request, `clientIDs[agent]`]
+	    entries.append(entry)
+	
+	# Otherwise, add a single TCP flow entry and mark the flow as active
+	else:
+	  if not (tup in flows):
+	    entry = [ts, `pIP.__getitem__('dst')` + ":" + `pTCP.__getitem__('dport')`, `clientIDs["Unknown"]`]
+	    entries.append(entry)
+   
+	flows[tup] = 1;
+
+      hdr, pkt = pc.next()
+
+  except:
+    print ""
+
+
+
+print "<style type=\"text/css\">td{font:10px arial}</style><html><title>Browser Player</title><body><font size=\"2\">"
+
+for client in clientIDs:
+	print "<br> Client: " + client + "<br>"
+	print "<form>"
+	print "<select name=\"dest\" onchange=\"window.open(this.options[this.selectedIndex].value,'"+client+"');this.selectedIndex=0;\">"
+	print "    <option selected value=\"about:blank\">Choose a destination</option>"
+	for entry in sorted(entries, key=operator.itemgetter(0)):
+		  entry[1] = entry[1].replace('&amp;','&')
+		  entry[1] = urllib.unquote(entry[1])
+		  if entry[2] == `clientIDs[client]`:
+		  	htmlTitle = "";
+		  	try:
+				r1 = urllib.urlopen(entry[1].replace('\&amp\;','\&'))
+				title_entry = re.compile('<title>(.+)</title>',re.IGNORECASE).search(r1.read())
+				if title_entry:
+					htmlTitle = title_entry.group(1)
+			except:
+				print ""
+		  	tmp = ""
+		  	if len(entry[1]) > 50:
+		  		tmp = "..."
+		  	print "<option value=\""+entry[1]+"\">"+datetime.fromtimestamp(entry[0]).strftime("%Y-%m-%d %H:%M:%S")+" "+htmlTitle[0:50]+" "+entry[1][0:50]+tmp+"</option>"
+		  	#entry[1] = entry[1].replace('&amp;','&')
+		  	#print urllib.unquote(entry[1])
+	print "</select>"
+	print "</form>"
+	
+	print "<iframe src=\"about:blank\" name=\""+client+"\" width=\"800\" height=\"600\">"
+	print "    You can't see this because your browser does not support iframes."
+	print "</iframe>"
+	print "<hr>"
+	
+print "</font></body></html>"

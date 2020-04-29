@@ -1,0 +1,73 @@
+Display I/O port and I/O memory usage:
+
+RESOURCE    RANGE    NAME
+c0664920  0000-ffff  PCI IO
+c0662520  0000-001f  dma1
+c0662544  0020-0021  pic1
+c0662568  0040-0043  timer0
+c066258c  0050-0053  timer1
+c06625b0  0060-006f  keyboard
+d19c9600  0070-0077  rtc
+c06625d4  0080-008f  dma page reg
+c06625f8  00a0-00a1  pic2
+c066261c  00c0-00df  dma2
+c0662640  00f0-00ff  fpu
+d1426740  0170-0177  ide1
+d19c9540  02f8-02ff  serial
+d1426780  0376-0376  ide1
+d127de00  0378-037a  parport0
+c0674640  03c0-03df  vga+
+d186af40  03f2-03f5  floppy
+d186af00  03f7-03f7  floppy DIR
+d19c9580  03f8-03ff  serial
+d1902e00  0cf8-0cff  PCI conf1
+d1a962b0  1000-103f  0000:00:07.3
+d1a045c0  1000-103f  motherboard
+d1a04540  1000-1003  ACPI PM1a_EVT_BLK
+d1a04500  1004-1005  ACPI PM1a_CNT_BLK
+d1a044c0  1008-100b  ACPI PM_TMR
+d1a04480  100c-100f  ACPI GPE0_BLK
+d19c9880  1010-1015  ACPI CPU throttle
+d1a962d4  1040-104f  0000:00:07.3
+d1a04580  1040-104f  motherboard
+d1a96a44  1050-105f  0000:00:07.1
+d14267c0  1058-105f  ide1
+d1a96644  1060-107f  0000:00:07.2
+d1486cc0  1060-107f  uhci_hcd
+d1a959b4  1080-10ff  0000:00:10.0
+d1a95db4  1400-140f  0000:00:0f.0
+d1a956b0  2000-2fff  PCI Bus #02
+d1a951b4  2000-207f  0000:02:00.0
+d1271980  2000-2063  vmxnet ether
+d1a91db4  2080-20bf  0000:02:01.0
+d173c940  2080-20bf  Ensoniq AudioPCI
+
+RESOURCE        RANGE        NAME
+c0664960  00000000-ffffffff  PCI mem
+d1902f40  00000000-0009f7ff  System RAM
+c0666aa0  00000000-00000000  Crash kernel
+d1902f80  0009f800-0009ffff  reserved
+c06624e0  000a0000-000bffff  Video RAM area
+c0662760  000c0000-000c7fff  Video ROM
+c0662680  000ca000-000cafff  Adapter ROM
+c06627a0  000f0000-000fffff  System ROM
+d1902d80  00100000-11aeffff  System RAM
+c0662460  00400000-005fee0f  Kernel code
+c06624a0  005fee10-006d292f  Kernel data
+d1902e40  11af0000-11afefff  ACPI Tables
+d1902cc0  11aff000-11afffff  ACPI Non-volatile Storage
+d1902fc0  11b00000-11bfffff  System RAM
+d1a956f8  20000000-200fffff  PCI Bus #02
+d1a9528c  20000000-2000ffff  0000:02:00.0
+d1a95e8c  20100000-20107fff  0000:00:0f.0
+d1a95a8c  20108000-2010bfff  0000:00:10.0
+d1a95dfc  e8000000-e87fffff  0000:00:0f.0
+d1a959d8  e8800000-e8800fff  0000:00:10.0
+d1a955b4  e8801000-e8801fff  0000:00:11.0
+d1a956d4  e8900000-e89fffff  PCI Bus #02
+d1a919b4  e8900000-e8900fff  0000:02:02.0
+d1486940  e8900000-e8900fff  ehci_hcd
+d1a95dd8  f0000000-f7ffffff  0000:00:0f.0
+d1967240  fec00000-fec0ffff  reserved
+d1967280  fee00000-fee00fff  reserved
+d1967300  fffe0000-ffffffff  reserved

@@ -1,0 +1,203 @@
+.boxoa {
+	width: 173px;
+	border: 1px solid #FFFFFF;
+	padding: 2px 2px 1px 2px;
+	margin:0px 0px 0px 0px;
+	
+}
+.box2oa {
+	padding: 2px 2px 4px 2px;
+	background-color: #FFFFFF;	
+	margin:0px 0px 0px 0px;
+	
+}
+.topheadoa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 13px;
+	margin:1px 0px 5px 0px;
+}
+.head1oa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 15px;
+}
+.yellowlineoa {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #FFCC00;
+	line-height: 0px;
+}
+.headwsmoa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color:#CCE4FF;
+
+}
+
+
+.head3oa {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	line-height: 11px;
+	font-weight: bold;
+	color:#375777;
+	background-position: center;
+	text-align: center;
+	}
+.headsmoa {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height: 9px;
+	font-weight: normal;
+	color:#CCE4FF;
+}
+.subtitles {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color:#333333;
+}
+.oabody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #355473;
+	text-decoration: underline;
+	height: 18px;
+}
+.oabodyno {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #355473;
+}
+.row1-lpad {padding:0px 3px 1px 3px;background-color:#D7E6F2;}
+.row1 {background-color:#D7E6F2;}
+
+.row2-lpad {padding:0px 3px 1px 3px;background-color:#ffffff;}
+.row2 {background-color:#ffffff;}
+
+.row1-lpadfull {padding:0px 0px 1px 4px;background-color:#D7E6F2;}
+.row1full {background-color:#D7E6F2;padding:0px 0px 1px 4px;}
+
+.row2-lpadfull {padding:0px 0px 1px 4px;background-color:#ffffff;}
+.row2full {background-color:#ffffff;padding:0px 0px 1px 4px;}
+
+.table-border {
+margin:3px 0px 2px 0px;
+_margin:2px 0px 1px 0px;
+width:166px;
+background-color: #ffffff;
+}
+
+.table-borderoa {
+margin:3px 0px 2px 0px;
+_margin:2px 0px 1px 0px;
+width:166px;
+background-color: #ffffff;
+}
+.table-border-fulloa {
+margin:3px 0px 2px 0px;
+_margin:2px 0px 1px 0px;
+width:335px;
+background-color: #ffffff;
+}
+
+.borderoa {
+
+	background-color: #4B76A1;
+	width:185px;
+	
+		
+}
+.formddoa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	width: 150px;
+}
+
+.formoa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	width: 146px;
+}
+.formfulloa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+.blgooa
+{
+	background-color: #FFCC66;
+	border: 1px solid #CC9900;
+	color: #41668B;
+	cursor: hand;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 20px;
+	margin: 0px;
+	padding: 0px 0px 0px 1px;
+	text-align: center;
+	width: 22px;
+
+}
+.ratesoa
+{
+	background-color: #FFffff;
+	margin:0px 0px 0px 0px;
+	}
+	
+.rates2oa
+{
+	width:185px;
+	padding:2px 0px 0px 2px;
+	}
+
+	
+	#tablist{
+padding: 0px 0;
+margin-left: 0;
+margin-bottom: 0;
+margin-top: 0;
+}
+#tablist li{
+list-style: none;
+display: inline;
+margin: 0px;
+}
+
+/*Styles used to display dynamic rate box*/
+#tabcontentcontainer{
+width:360px;
+/* Insert Optional Height definition here to give all the content a unified height */
+}
+.tabcontent{
+display:none;
+
+}
+.tab-off {color:#1E5185;cursor:hand; cursor:pointer;text-align:center;padding:3px 0px;background-color:#BECBD4;font-family:arial;font-size:11px;font-weight:bold;border:solid #BECBD4; border-width:0px 0px 2px 0px;}
+
+.tab-on {cursor:hand; cursor:pointer;border:solid #FFCC00; border-width:0px 0px 2px 0px;text-align:center;color:#ffffff;padding:3px 0px;background-color:#1C4C7D;font-family:arial;font-size:11px;font-weight:bold;}
+
+.tab-border-right {border:solid #123466;border-width:0px 1px 0px 0px;}
+
+.oacolhds {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	line-height: 11px;
+	font-weight: bold;
+	color:#375777;
+
+}
+
+

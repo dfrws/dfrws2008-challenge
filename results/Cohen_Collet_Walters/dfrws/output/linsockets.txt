@@ -1,0 +1,607 @@
+PID: 0      TASK: 0xc0660bc0  CPU: 0   COMMAND: "swapper"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1      TASK: 0xd1957aa0  CPU: 0   COMMAND: "init"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2      TASK: 0xd1957550  CPU: 0   COMMAND: "migration/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 3      TASK: 0xd1957000  CPU: 0   COMMAND: "ksoftirqd/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 4      TASK: 0xd195eaa0  CPU: 0   COMMAND: "watchdog/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 5      TASK: 0xd195e550  CPU: 0   COMMAND: "events/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 6      TASK: 0xd195e000  CPU: 0   COMMAND: "khelper"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 7      TASK: 0xd1ad2aa0  CPU: 0   COMMAND: "kthread"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 10     TASK: 0xd1aafaa0  CPU: 0   COMMAND: "kblockd/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 11     TASK: 0xd1aaf550  CPU: 0   COMMAND: "kacpid"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 72     TASK: 0xc13fb000  CPU: 0   COMMAND: "cqueue/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 75     TASK: 0xd1970000  CPU: 0   COMMAND: "khubd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 77     TASK: 0xd1977550  CPU: 0   COMMAND: "kseriod"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 140    TASK: 0xc13fbaa0  CPU: 0   COMMAND: "pdflush"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 141    TASK: 0xd1a86000  CPU: 0   COMMAND: "pdflush"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 142    TASK: 0xd19b1000  CPU: 0   COMMAND: "kswapd0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 143    TASK: 0xd19bcaa0  CPU: 0   COMMAND: "aio/0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 294    TASK: 0xd1417aa0  CPU: 0   COMMAND: "kpsmoused"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 324    TASK: 0xd1a3d000  CPU: 0   COMMAND: "scsi_eh_0"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 325    TASK: 0xd1404aa0  CPU: 0   COMMAND: "kjournald"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 353    TASK: 0xd199b550  CPU: 0   COMMAND: "kauditd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 387    TASK: 0xd1993550  CPU: 0   COMMAND: "udevd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xd1487cc0 0xd10a9e40 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+4    0xd14879c0 0xd151fe00 PF_NETLINK:SOCK_DGRAM  NETLINK                                            
+
+PID: 702    TASK: 0xd1aa0000  CPU: 0   COMMAND: "kgameportd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1224   TASK: 0xd0e4baa0  CPU: 0   COMMAND: "kmirrord"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1249   TASK: 0xd09f7550  CPU: 0   COMMAND: "vmhgfs"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1565   TASK: 0xd19f9550  CPU: 0   COMMAND: "dhclient"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xd07ff380 0xcee3dc80 PF_INET:SOCK_DGRAM     UDP     0.0.0.0:68            0.0.0.0:*            
+5    0xd07ff200 0xd0cf5c00 PF_PACKET:SOCK_RAW     PACKET                                             
+6    0xc03ed540 0xc07e9040 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1637   TASK: 0xd0b3c550  CPU: 0   COMMAND: "syslogd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+0    0xd07ff680 0xd10a9200 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1640   TASK: 0xd09f7aa0  CPU: 0   COMMAND: "klogd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+1    0xd07ff500 0xd10a93c0 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1705   TASK: 0xd1993aa0  CPU: 0   COMMAND: "vmmemctl"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1753   TASK: 0xd0809000  CPU: 0   COMMAND: "vmware-guestd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1791   TASK: 0xd0b3e550  CPU: 0   COMMAND: "dbus-daemon"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xce588e40 0xd10a9040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+6    0xd07ff080 0xd10a9740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+7    0xce588cc0 0xd10a9580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+8    0xcd3776c0 0xcd376740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+9    0xcb8fd980 0xc9038740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc920e840 0xc92103c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc8198b00 0xc8143200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc7d6ecc0 0xc83bc200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc6c4b380 0xc6c4c200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc6862cc0 0xc6da4740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc4bc1380 0xc20f6c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1833   TASK: 0xd0e04550  CPU: 0   COMMAND: "automount"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+5    0xce588b40 0xd1862e40 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1852   TASK: 0xd1410550  CPU: 0   COMMAND: "acpid"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xce5889c0 0xd1862c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+5    0xca9d3080 0xcd230200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+7    0xd07ff800 0xd10a9ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1872   TASK: 0xd09f7000  CPU: 0   COMMAND: "sendmail"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xce588840 0xd1862ac0 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+4    0xce5886c0 0xd0388040 PF_INET:SOCK_STREAM    TCP     127.0.0.1:25          0.0.0.0:*            
+
+PID: 1880   TASK: 0xd0bf1000  CPU: 0   COMMAND: "sendmail"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xce588540 0xd1862900 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1892   TASK: 0xd0d1d550  CPU: 0   COMMAND: "gpm"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xce5883c0 0xd1862740 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+5    0xce5880c0 0xd18623c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1903   TASK: 0xd0bbeaa0  CPU: 0   COMMAND: "crond"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xce588240 0xd1862580 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 1934   TASK: 0xd0b3caa0  CPU: 0   COMMAND: "xfs"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xca9d3e00 0xd1862200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xd07ffe00 0xcf3dcc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1945   TASK: 0xd0b3e000  CPU: 0   COMMAND: "atd"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 1961   TASK: 0xd0b3c000  CPU: 0   COMMAND: "hald"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+7    0xca9d3c80 0xd1862040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+8    0xca9d3b00 0xcd230e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+9    0xca9d3800 0xcd230ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xca9d3680 0xcd230900 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+12   0xca9d3500 0xcd230740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xcd377e40 0xcd230040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xcd3779c0 0xcd376ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xcd377b40 0xcd376900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1962   TASK: 0xd0809aa0  CPU: 0   COMMAND: "hald-runner"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xca9d3980 0xcd230c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1968   TASK: 0xd19b1aa0  CPU: 0   COMMAND: "hald-addon-acpi"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xca9d3380 0xcd230580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xca9d3200 0xcd2303c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1973   TASK: 0xd19b1550  CPU: 0   COMMAND: "hald-addon-keyb"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcd377cc0 0xcd376e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1985   TASK: 0xd19f9000  CPU: 0   COMMAND: "hald-addon-stor"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcd377840 0xcd376c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 1999   TASK: 0xd19f9aa0  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2007   TASK: 0xd1410000  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2010   TASK: 0xd0809550  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2013   TASK: 0xd1977aa0  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2014   TASK: 0xc13fb550  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2015   TASK: 0xd19bc000  CPU: 0   COMMAND: "mingetty"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2016   TASK: 0xd1993000  CPU: 0   COMMAND: "gdm-binary"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+6    0xcd377540 0xd10a9c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+7    0xd1487840 0xcd376040 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+
+PID: 2095   TASK: 0xd1970550  CPU: 0   COMMAND: "gdm-binary"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xd07ff980 0xd10a9900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2105   TASK: 0xd09deaa0  CPU: 0   COMMAND: "Xorg"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+1    0xd14876c0 0xcd376200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+3    0xd07ffc80 0xcf3dce40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+8    0xd07ffb00 0xcd376580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+9    0xcd3773c0 0xcd3763c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xcc0df200 0xcf3dc200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xcc0df500 0xcca14e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xcb9cae00 0xca3613c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xca4a73c0 0xca361c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xcb9ca080 0xcc3633c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc95c5680 0xc95c7740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xcb8fd680 0xc90383c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xc920e240 0xc93fac80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc8198500 0xc83bcac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xc7d6e240 0xc7d79580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+20   0xc8228e00 0xc7d79200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+21   0xc8228800 0xc79daac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+22   0xc75cfb40 0xc73fbc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+23   0xc6e2dcc0 0xc7609ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+24   0xc68620c0 0xc63be900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+25   0xc5ae5e40 0xc5b05580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+26   0xc5038c80 0xc5b03200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+27   0xc68623c0 0xc63bec80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+28   0xc5306680 0xc530f040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+29   0xc3761b40 0xc3760200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+30   0xc3761cc0 0xc20f6740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2152   TASK: 0xd0876550  CPU: 0   COMMAND: "gnome-session"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcc0df380 0xcf3dc3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xcc0df800 0xcca14900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+5    0xcc0df680 0xcca14580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xca4a7b40 0xcca14200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xca4a7540 0xca361ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xca4a76c0 0xca361e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xce36acc0 0xcc363040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xce36a240 0xcf9bb3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc95c5380 0xc95c73c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xcb8fd380 0xc9038040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+20   0xc8ec3b40 0xc93fa900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+21   0xc8228b00 0xc79dae40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+22   0xc37616c0 0xc20f63c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2208   TASK: 0xd1404550  CPU: 0   COMMAND: "ssh-agent"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcc0dfc80 0xcf3dc580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2211   TASK: 0xd0876aa0  CPU: 0   COMMAND: "dbus-daemon"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcd3770c0 0xcf3dc740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xcc0dfe00 0xcf3dc900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+6    0xcd377240 0xcf3dcac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+7    0xca4a79c0 0xcca14040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+8    0xc97ea840 0xc97eb740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+9    0xcb9ca380 0xcc363740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc920e540 0xc9210040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc97ea240 0xc97eb040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc8198e00 0xc8143580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc8ec39c0 0xc8e97ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc8198200 0xc83bc3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc6e5db00 0xc6e5c740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc6e5d080 0xc6da4ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xc4bc1680 0xc3760e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2212   TASK: 0xd1417000  CPU: 0   COMMAND: "dbus-launch"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xcc0df080 0xcf3dc040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2218   TASK: 0xd1aaf000  CPU: 0   COMMAND: "gconfd-2"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xcc0dfb00 0xcca14c80 PF_LOCAL:SOCK_DGRAM    UNIX                                               
+5    0xca4a7e40 0xcca14740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xcc0df980 0xcca14ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc3761840 0xc20f6040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xca4a7cc0 0xcca143c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xcb9cab00 0xca361040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xcb9ca800 0xcc363c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xce36ab40 0xcf9bbe40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xce36a540 0xcf9bb740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+20   0xc95c5e00 0xcf9bb040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+21   0xc95c5b00 0xc95c7c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+22   0xc95c5080 0xc95c7040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+23   0xc97eacc0 0xc97ebc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+24   0xc97ea6c0 0xc97eb580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+25   0xcb8fde00 0xc9038c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+26   0xcb8fd080 0xc9210c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+27   0xc920ecc0 0xc9210900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+28   0xc8ec36c0 0xc8143e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+29   0xc8ec33c0 0xc8143ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+30   0xc7d6e9c0 0xc7d79e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+31   0xc7d6e6c0 0xc7d79ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+32   0xc8228380 0xc79da580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+33   0xc8228080 0xc79da200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+34   0xc75cf840 0xc73fb900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+35   0xc75cf540 0xc73fb580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+36   0xc6e2d9c0 0xc7609740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+37   0xc6e2d6c0 0xc76093c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+38   0xc6e5d800 0xc6e5c3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+39   0xc6e5d500 0xc6e5c040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+40   0xc5affc80 0xc63be580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+41   0xc5aff980 0xc63be200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+42   0xc5ae5b40 0xc5b05200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+43   0xc5ae5840 0xc5b03e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+44   0xc5038980 0xc5121e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+45   0xc5038680 0xc5121ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+46   0xc5306800 0xc530fac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+47   0xce983c80 0xc530f900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+48   0xc4bc1e00 0xc3760580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+49   0xc4bc1b00 0xc3760900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+50   0xc4bc1080 0xc07e9e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2221   TASK: 0xd1404000  CPU: 0   COMMAND: "gnome-keyring-d"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xca4a7840 0xca361900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2223   TASK: 0xd1970aa0  CPU: 0   COMMAND: "gnome-settings-"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xca4a70c0 0xca361580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xcb9cac80 0xca361200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xcb9ca980 0xcc363e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xcb9ca680 0xcc363ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xcb9ca500 0xcc363900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2233   TASK: 0xd19bc550  CPU: 0   COMMAND: "xrdb"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2235   TASK: 0xd1aa0aa0  CPU: 0   COMMAND: "metacity"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+9    0xce36a840 0xcf9bbac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xce36a9c0 0xcf9bbc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xce36a6c0 0xcf9bb900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xca4a7240 0xca361740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xce36ae40 0xcc363200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2242   TASK: 0xd0e04000  CPU: 0   COMMAND: "gnome-panel"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcb9ca200 0xcc363580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xce36a3c0 0xcf9bb580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xce36a0c0 0xcf9bb200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc95c5c80 0xc95c7e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc95c5980 0xc95c7ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc8ce1c80 0xc93fa580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc8ce1080 0xc8e97580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc8198800 0xc83bce40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc8ce1380 0xc8e97900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xc8ce1500 0xc8e97e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+21   0xc6c4bb00 0xc6c4c580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+22   0xc6c4b680 0xc6c4c900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+23   0xc6862b40 0xc6da4040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+24   0xc68626c0 0xc6da43c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+26   0xc51253c0 0xc51433c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+27   0xc51259c0 0xc5143900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+28   0xc5125540 0xc5143e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+29   0xc5125240 0xc5143200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+30   0xc5306e00 0xc5143c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+31   0xc5306b00 0xc530fe40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2244   TASK: 0xd0e04aa0  CPU: 0   COMMAND: "nautilus"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc95c5800 0xc95c7900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc95c5500 0xc95c7580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc95c5200 0xc95c7200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc97eae40 0xc97ebe40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc97eab40 0xc97ebac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc97ea9c0 0xc97eb900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc8ec3cc0 0xc8e97200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc8ce1b00 0xc93fa200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xc8228680 0xc79da900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2248   TASK: 0xd0e4b000  CPU: 0   COMMAND: "bonobo-activati"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc8ce1200 0xc8e97740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc8ce1e00 0xc93fa740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc8ce1980 0xc93fa3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc8ec3e40 0xc8e973c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xc8ce1800 0xc93fa040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc6e2d240 0xc6e5ce40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+19   0xc5ae53c0 0xc5b03900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+20   0xc6e2d0c0 0xc6e5cc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+21   0xc5038200 0xc5121580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+22   0xc5ae5240 0xc5b03740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+23   0xc5038080 0xc51213c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+24   0xc03edcc0 0xc07e9900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+25   0xc03edb40 0xc07e9740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+26   0xc75cf0c0 0xc73fb040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+28   0xc6c4be00 0xc6c4ce40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+33   0xc5aff500 0xc5b05c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+35   0xc5aff380 0xc5b05ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2251   TASK: 0xd0bbe550  CPU: 0   COMMAND: "gnome-vfs-daemo"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+6    0xc97ea3c0 0xc97eb200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc97ea540 0xc97eb3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc97ea0c0 0xc9038e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xcb8fdc80 0xc9038ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xcb8fdb00 0xc9038900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2255   TASK: 0xd0bbe000  CPU: 0   COMMAND: "eggcups"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc920e3c0 0xc93fae40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc920e0c0 0xc93faac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc8ec3840 0xc8e97040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc8ec3540 0xc8143c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc8ec3240 0xc8143900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc8ec30c0 0xc8143740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc8198c80 0xc81433c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2256   TASK: 0xd0d1d000  CPU: 0   COMMAND: "gnome-volume-ma"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xcb8fd800 0xc9038580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xcb8fd500 0xc9038200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xcb8fd200 0xc9210e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc920ee40 0xc9210ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc920eb40 0xc9210740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc920e9c0 0xc9210580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc920e6c0 0xc9210200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2262   TASK: 0xd09d3000  CPU: 0   COMMAND: "bt-applet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc8198680 0xc83bc740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xc8198080 0xc83bc900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+5    0xc7d6ee40 0xc83bc580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc7d6eb40 0xc83bc040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc7d6e840 0xc7d79c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc7d6e540 0xc7d79900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2266   TASK: 0xd1417550  CPU: 0   COMMAND: "puplet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xc7d6e3c0 0xc7d79740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc6e5d980 0xc6e5c580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc6e5d680 0xc6e5c200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc6e5d380 0xc6da4e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc6e5d200 0xc6da4c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc6862e40 0xc6da4900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2268   TASK: 0xd0bf1550  CPU: 0   COMMAND: "nm-applet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc8228980 0xc79dac80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc8228500 0xc79da740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc8228200 0xc79da3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc75cfe40 0xc79da040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc6c4b500 0xc6c4c3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2269   TASK: 0xd1a86550  CPU: 0   COMMAND: "vmware-user"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+12   0xc6862540 0xc63bee40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2271   TASK: 0xd1a86aa0  CPU: 0   COMMAND: "pam-panel-icon"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc7d6e0c0 0xc7d793c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xc8228c80 0xc7d79040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2281   TASK: 0xc8249aa0  CPU: 0   COMMAND: "gam_server"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+4    0xc8198980 0xc8143040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+7    0xc8198380 0xc83bcc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+8    0xc8ce1680 0xc8e97c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2290   TASK: 0xd1410aa0  CPU: 0   COMMAND: "wnck-applet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc75cfcc0 0xc73fbe40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc75cf9c0 0xc73fbac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc75cf6c0 0xc73fb740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc75cf3c0 0xc73fb3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc6c4bc80 0xc6c4cc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc75cf240 0xc73fb200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc6c4b980 0xc6c4cac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc6c4b800 0xc6c4c740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2294   TASK: 0xc82e3550  CPU: 0   COMMAND: "trashapplet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc6e2de40 0xc7609c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc6e2db40 0xc7609900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc6e2d840 0xc7609580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc6e2d540 0xc7609200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc6e5de00 0xc6e5cac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc6e2d3c0 0xc7609040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc6e5dc80 0xc6e5c900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc68629c0 0xc6da4580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xc6862840 0xc6da4200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2298   TASK: 0xd199b000  CPU: 0   COMMAND: "pam_timestamp_c"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2300   TASK: 0xc79b2000  CPU: 0   COMMAND: "mapping-daemon"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc6c4b200 0xc6c4c040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+4    0xc6c4b080 0xc7609e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2315   TASK: 0xc82a6550  CPU: 0   COMMAND: "notification-ar"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc6862240 0xc63beac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc5affe00 0xc63be740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc5affb00 0xc63be3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc5aff800 0xc63be040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc5aff200 0xc5b05900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc5aff680 0xc5b05e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc5125cc0 0xc5143580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc5306c80 0xc530fc80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2317   TASK: 0xc82e3000  CPU: 0   COMMAND: "mixer_applet2"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc5aff080 0xc5b05740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc5ae5cc0 0xc5b053c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc5ae59c0 0xc5b05040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc5ae56c0 0xc5b03c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc5ae50c0 0xc5b03580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc5ae5540 0xc5b03ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc5125840 0xc5143ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc51250c0 0xc5143040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2319   TASK: 0xd1aa0550  CPU: 0   COMMAND: "clock-applet"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc5038e00 0xc5b033c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc5038b00 0xc5b03040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc5038800 0xc5121c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc5038500 0xc5121900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc5125e40 0xc5121200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc5038380 0xc5121740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc5125b40 0xc5121040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xc51256c0 0xc5143740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2422   TASK: 0xc82a6aa0  CPU: 0   COMMAND: "gnome-screensav"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc37619c0 0xc3760040 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc3761e40 0xc37603c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc4bc1c80 0xc3760740 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc4bc1980 0xc3760ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc4bc1800 0xc3760c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc4bc1500 0xc20f6e40 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2582   TASK: 0xc79b2aa0  CPU: 0   COMMAND: "gnome-terminal"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc37610c0 0xc20f6900 PF_LOCAL:SOCK_STREAM   UNIX                                               
+10   0xc3761240 0xc20f6580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+11   0xc37613c0 0xc20f6200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+12   0xc3761540 0xc20f6ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+13   0xc4bc1200 0xc07e9c80 PF_LOCAL:SOCK_STREAM   UNIX                                               
+14   0xc03ed9c0 0xc07e9580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc03ede40 0xc07e9ac0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+18   0xc03ed840 0xc07e93c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2584   TASK: 0xd0e4b550  CPU: 0   COMMAND: "gnome-pty-helpe"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+0    0xc03ed6c0 0xc07e9200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+1    0xc03ed6c0 0xc07e9200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+
+PID: 2585   TASK: 0xc82a6000  CPU: 0   COMMAND: "bash"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 2921   TASK: 0xcd4c9aa0  CPU: 0   COMMAND: "bash"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 3020   TASK: 0xd1ad2000  CPU: 0   COMMAND: "firefox"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 3043   TASK: 0xd0b3eaa0  CPU: 0   COMMAND: "run-mozilla.sh"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+No open sockets
+
+PID: 3048   TASK: 0xd1ad2550  CPU: 0   COMMAND: "firefox-bin"
+FD   SOCKET     SOCK       FAMILY:TYPE            PROTO   SOURCE-PORT           DESTINATION-PORT     
+3    0xc5306200 0xc530f580 PF_LOCAL:SOCK_STREAM   UNIX                                               
+15   0xc5306980 0xc530f3c0 PF_LOCAL:SOCK_STREAM   UNIX                                               
+16   0xce983b00 0xc530f200 PF_LOCAL:SOCK_STREAM   UNIX                                               
+17   0xce983980 0xc530f740 PF_LOCAL:SOCK_STREAM   UNIX    

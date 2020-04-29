@@ -1,0 +1,230 @@
+var _ipFailureFlag = false;
+if(typeof(cmpid)=="undefined") {
+	_ipFailureFlag = true;
+}
+if (typeof(isInPub) == "undefined") isInPub = 0;
+if (typeof(isInDefaultPub) == "undefined") isInDefaultPub = 0;
+if (typeof(ipoll_puburl) == "undefined") ipoll_puburl = 0;
+if (typeof(default_puburl) == "undefined") default_puburl = "http://hs.interpolls.com/pub.html";
+var iframe=null;
+var ip_uid = Math.floor(Math.random()*10000000)+"";
+var targetWindow = self.parent;
+if (typeof(ipoll_breakout)!="undefined" && !ipoll_breakout) targetWindow=self;
+var breakout=false;
+if (self.parent != self && targetWindow != self) {
+	var deniedAccess=true;
+	breakout = true;
+	var domainStr=document.domain.toString();
+	var domainFilter = /^(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	try {
+		if (typeof(self.parent.document.location.href).toString() == "string") deniedAccess=false;
+	} catch (e) { }
+	while (deniedAccess && domainFilter.test(domainStr) ) {
+		try {
+			if (typeof(self.parent.document.location.href).toString() == "string") deniedAccess=false;
+		} catch (e) {
+			var fIndex=(domainStr.indexOf('.')==-1)?domainStr.length:domainStr.indexOf('.')+1;
+			domainStr=domainStr.substring(fIndex,domainStr.length);
+			if (domainFilter.test(domainStr)) document.domain=domainStr;
+		}
+	}
+ 	if (!deniedAccess) { 
+/* not correct.  need investigation
+		var winframes = self.parent.frames;
+		for(var i = 0; i < winframes.length; i++) { 
+			if(winframes[i] == self) iframe = winframes[i];
+		}
+*/
+		if (!iframe) { 
+			try {
+				var iframeElements = self.parent.document.getElementsByTagName("iframe");
+				for(var k = 0; k < iframeElements.length; k++) { 
+					var iframeEle = iframeElements[k];
+					if(iframeEle.contentWindow == self) { iframe=iframeEle; }
+				}
+			} catch (e) { }
+		} 
+	} 
+}
+
+ipoll_c = (typeof(ipoll_c)!="undefined"?ipoll_c:0);
+ipoll_bumper = (typeof(ipoll_bumper)!="undefined"?ipoll_bumper:"");
+ipoll_preTarget = (typeof(ipoll_preTarget)!="undefined"?ipoll_preTarget:"");
+ipoll_link2 = (typeof(ipoll_link2)!="undefined"?ipoll_link2:"");
+ipoll_link_y = (typeof(ipoll_link_y)!="undefined"?ipoll_link_y:"");
+ipoll_sp = (typeof(ipoll_sp)!="undefined"?ipoll_sp:0);
+ipoll_es = (typeof(ipoll_es)!="undefined"?ipoll_es:"");
+ipoll_es2 = (typeof(ipoll_es2)!="undefined"?ipoll_es2:"");
+if (typeof(ipoll_link_g) == "undefined") ipoll_link_g = ""; 
+if (ipoll_link_g.length <= 15) ipoll_link_g = "";
+
+if ( !_ipFailureFlag && deniedAccess && !isInPub) {
+	if (!ipoll_puburl) {
+		breakout=false;
+		targetWindow=self;
+	} else {
+		ipoll_puburl=unescape(ipoll_puburl);
+		var redirParameters="?cmpid="+escape(cmpid)
+						+(ipoll_c?"&ipoll_c="+ipoll_c:"")
+						+(ipoll_sp?"&ipoll_sp="+ipoll_sp:"")
+						+(ipoll_puburl?"&ipoll_puburl="+escape(ipoll_puburl):"")
+						+(ipoll_bumper?"&ipoll_bumper="+escape(ipoll_bumper):"")
+						+(ipoll_es?"&ipoll_es="+escape(ipoll_es):"")
+						+(ipoll_es2?"&ipoll_es2="+escape(ipoll_es2):"")
+						+(ipoll_preTarget?"&ipoll_preTarget="+escape(ipoll_preTarget):"")
+						+(ipoll_link2?"&ipoll_link2="+escape(ipoll_link2):"")
+						+(ipoll_link_y?"&ipoll_link_y="+escape(ipoll_link_y):"") ;
+		document.location.href = ipoll_puburl+redirParameters;
+		_ipFailureFlag=true;
+	}
+}
+if ( !_ipFailureFlag ) {
+	if (!iframe || !breakout) targetWindow=self;
+	if (targetWindow!=self) {if (!self.parent.ipollGObj) self.parent.ipollGObj={};} else {if (!self.ipollGObj) self.ipollGObj={};}
+	var _ipGObj=null;
+	if (targetWindow!=self) {_ipGObj = self.parent.ipollGObj;} else {_ipGObj = self.ipollGObj;}
+	if (!_ipGObj.browser) {
+		_ipGObj.browser = {};
+		_chkB = _ipGObj.browser;
+		_chkB.agt=navigator.userAgent.toLowerCase(); 
+		_chkB.is_major=parseInt(navigator.appVersion);
+		_chkB.is_minor=parseFloat(navigator.appVersion); 
+		_chkB.is_win = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
+		_chkB.is_mac=(_chkB.agt.indexOf("mac")!=-1); 
+		_chkB.is_opera = (_chkB.agt.indexOf("Opera") != -1) ? true : false;
+		_chkB.is_safari=(_chkB.agt.indexOf("safari")!=-1 || _chkB.agt.indexOf("WebKit")!=-1); 
+		_chkB.is_ie=((_chkB.agt.indexOf("msie") != -1) && !_chkB.is_opera); 
+		_chkB.is_ie3=(_chkB.is_ie && (_chkB.is_major < 4)); 
+		_chkB.is_ie4=(_chkB.is_ie && (_chkB.is_major == 4) && (_chkB.agt.indexOf("msie 4") != -1) ); 
+		_chkB.is_ie5=(_chkB.is_ie && (_chkB.is_major == 4) && (_chkB.agt.indexOf("msie 5.0") != -1) ); 
+		_chkB.is_ie5up=(_chkB.is_ie && !_chkB.is_ie3 && !_chkB.is_ie4); 
+		_chkB.is_ie5_5up=(_chkB.is_ie5up && !_chkB.is_ie5);
+	}
+	if (!_ipGObj.flash) {
+		_ipGObj.flash = {};
+		_chkF = _ipGObj.flash;
+		_chkB = _ipGObj.browser;
+		_chkF.ControlVersion = function () {
+			var version = -1;
+			var axo;
+			var e;
+			try {
+				axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");
+				version = axo.GetVariable("$version");
+			} catch (e) {}
+			return version;
+		}
+		_chkF.GetSwfVer = function () {
+			var flashVer = -1;
+			if (navigator.plugins != null && navigator.plugins.length > 0) {
+				if (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]) {
+					var swVer2 = navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "";
+					var flashDescription = navigator.plugins["Shockwave Flash" + swVer2].description;			
+					var descArray = flashDescription.split(" ");
+					var tempArrayMajor = descArray[2].split(".");
+					var versionMajor = tempArrayMajor[0];
+					var flashVer = versionMajor + "";
+				}
+			}
+			else if ( _chkB.is_ie && _chkB.is_win && !_chkB.is_opera ) {
+				flashVer = this.ControlVersion();
+			}
+			return flashVer;
+		}
+		_chkF.DetectFlashVer = function (reqMajorVer) {
+			versionStr = this.GetSwfVer();
+			if (versionStr == -1 ) {
+				return false;
+			} else if (versionStr != 0) {
+				if(_chkB.is_ie && _chkB.is_win && !_chkB.is_opera) {
+					tempArray = versionStr.split(" ");
+					tempString = tempArray[1];
+					versionArray = tempString.split(",");
+				} else {
+					versionArray = versionStr.split(".");
+				}
+				var versionMajor = versionArray[0];
+		
+				if (versionMajor >= parseFloat(reqMajorVer)) {
+					return true;
+				}
+				return false;
+			}
+		}
+		_chkF.FlashCanPlay = _chkF.DetectFlashVer(8);
+		_chkB.is_valid =(_chkF.FlashCanPlay && (_chkB.is_major >= 5 || _chkB.is_ie5up || _chkB.is_safari)); 
+	}
+	if (!_ipGObj[cmpid]) {
+		_ipGObj[cmpid]={"queue":new Array()};
+	}
+	var adPanel=_ipGObj[cmpid];
+	var adInstanceName="i"+ip_uid;
+	adPanel.queue.push(adInstanceName);
+	adPanel[adInstanceName]={};
+	var adInstance=adPanel[adInstanceName];
+	if (!_ipGObj.util) {
+		_ipGObj.util = {};
+	}
+	ipollUtil = _ipGObj.util;
+	if (targetWindow!=self) { ipollUtil.targetWindow = self.parent;} else {ipollUtil.targetWindow = self;}
+	ipollUtil.checkUrl = function (urlStr) { var a; typeof(urlStr)=="string"?a=urlStr.toLowerCase():a=""; if (a != "" && (a.substring(0,7) == "http://" || a.substring(0,8) == "https://" || a.substring(0,9) == "http%3a//" || a.substring(0,10) == "https%3a//")) { switch (a.charAt(a.length-1)) { case "=": case "/": case "?": case "*": case ",": return urlStr; } switch (a.substr(a.length-3,3)) { case "%3f": case "%2c": return urlStr; } } return ""; }
+	ipollUtil.swDom="http://sw.interpolls.com/";
+	ipollUtil.hsDom="http://hs.interpolls.com/";
+	ipollUtil.spUrl=ipollUtil.hsDom+"spacer.gif";
+	ipollUtil.crUrl=ipollUtil.hsDom+"creative/";
+	ipollUtil.getObj = function (name) { if (this.targetWindow.document.getElementById) { return this.targetWindow.document.getElementById(name); } else { return this.targetWindow.document.all[name]; } return false; }
+	ipollUtil.ipoll_injectHTML = function (htmlString, targetElem) { var tObj=this.getObj(targetElem); if (tObj) { if (this.targetWindow.document.createRange) { var rng=this.targetWindow.document.createRange();  rng.selectNode(this.targetWindow.document.body);  tObj.parentNode.insertBefore(rng.createContextualFragment(htmlString),tObj.nextSibling); } else { tObj.insertAdjacentHTML('afterEnd',htmlString); } return; } }
+	ipollUtil.findPosX = function (obj) { var thisX = 0; if (obj.offsetParent) { while (obj.offsetParent) { thisX += obj.offsetLeft; obj = obj.offsetParent; } } else if (obj.x) { thisX += obj.x; } return (thisX + this.macAdjX()); }
+	ipollUtil.findPosY = function (obj) { var thisY = 0; if (obj.offsetParent) { while (obj.offsetParent) { thisY += obj.offsetTop; obj = obj.offsetParent; } }  else if (obj.y) { thisY += obj.y; } return (thisY + this.macAdjY()); }
+	ipollUtil.macAdjX = function () { var adjX = 0; if (_ipGObj.browser.is_mac) { if (_ipGObj.browser.is_ie5up) { adjX = parseInt(this.targetWindow.document.body.currentStyle.marginLeft); adjX = isNaN(adjX) ? 0 : adjX; } else if (_ipGObj.browser.is_safari && !isNaN(this.targetWindow.document.body.offsetLeft) && this.targetWindow.document.body.offsetLeft < 12) { adjX = this.targetWindow.document.body.offsetLeft; } } return adjX; }
+	ipollUtil.macAdjY = function () { var adjY = 0; if (_ipGObj.browser.is_mac) { if (_ipGObj.browser.is_ie5up) { adjY = parseInt(this.targetWindow.document.body.currentStyle.marginTop); adjY = isNaN(adjY) ? 0 : adjY; } else if (_ipGObj.browser.is_safari && !isNaN(this.targetWindow.document.body.offsetTop) && this.targetWindow.document.body.offsetTop < 12) { adjY = this.targetWindow.document.body.offsetTop; } } return adjY; }
+	ipollUtil.loadTrk = function(imgUrl) { var imgObj = new Image(); imgObj.src = imgUrl+Math.floor(Math.random()*10000000000000); return; }
+	ipollUtil.setZeroZObj = function () { if (this.zeroZObj) {  for (i = this.zeroZObj.length - 1; i >= 0;i--) { var nextParent = this.zeroZObj[i]; if (nextParent) {  nextParent.style.zIndex = "0"; }  }  this.zeroZObj = null; }  } 
+	ipollUtil.getZeroZObj = function (adDivId) {  var parentNumZ = 0, parentNumO = 0; var nextParent = this.getObj(adDivId).parentNode; if (nextParent)  {  this.zeroZObj = new Array(); while (nextParent && nextParent.tagName.toLowerCase() != "body") {   var displayValue, currentZValue; if (_ipGObj.browser.is_ie) {   displayValue = nextParent.currentStyle.display; currentZValue = nextParent.currentStyle.zIndex } else { displayValue = this.targetWindow.document.defaultView.getComputedStyle(nextParent,null).getPropertyValue("display"); currentZValue = this.targetWindow.document.defaultView.getComputedStyle(nextParent,null).getPropertyValue("z-index"); } if (((displayValue.toLowerCase() == "block") || (displayValue.toLowerCase() == "table-cell")) && ((currentZValue==0) || (currentZValue=="normal"))) {   this.zeroZObj[parentNumZ] = nextParent; parentNumZ++; }   nextParent=nextParent.parentNode; }  if (this.zeroZObj.length > 0) {  for (i = this.zeroZObj.length - 1; i >= 0;i--) {  var nextParent = this.zeroZObj[i]; if (nextParent) {  nextParent.style.zindex = "99999"; }  }  }  }  }
+	ipollUtil.doAttach = function (adDivIdTo, adDivIdThis, adObj) { var a = this.getObj(adDivIdTo); var b = this.getObj(adDivIdThis); if (a && b) { b.style.top = (this.findPosY(a)+adObj.expPositions[0])+"px"; b.style.left = (this.findPosX(a)+adObj.expPositions[1])+"px"; } return; } 
+	ipollUtil.doAttachObj = function (adDivIdTo, adDivIdThis, adjTop, adjLeft) { var a = this.getObj(adDivIdTo); var b = this.getObj(adDivIdThis); var c = Number(adjTop); c=(isNaN(c)?0:c); var d = Number(adjLeft); d=(isNaN(d)?0:d); if (a && b) { b.style.top = (this.findPosY(a)+c)+"px"; b.style.left = (this.findPosX(a)+d)+"px"; } return; }
+	ipollUtil.removeUnit = function (unitId) { try { this.getObj(unitId).parentNode.removeChild(this.getObj(unitId)); } catch (e) {} }
+// to be removed
+	ipollUtil.fExpTrk = function(adObj, artId, configId, panelId, evtId) { if (!adObj.fExp) return; adObj.fExp = false; _ipGObj.util.loadTrk(_ipGObj.util.hsDom+"evt.poll?a="+artId+"&c="+configId+"&p="+panelId+"&e="+evtId+"&t=9&i=0&rnd="); return; } 
+	ipollUtil.aExpTrk = function(adObj, artId, configId, panelId, evtIdF, evtId) { this.fExpTrk(adObj, artId, configId, panelId, evtIdF); _ipGObj.util.fExpTrk(_ipGObj.util.hsDom+"evt.poll?a="+artId+"&c="+configId+"&p="+panelId+"&e="+evtIdF+"&t=9&i=0&rnd="); _ipGObj.util.loadTrk(_ipGObj.util.hsDom+"evt.poll?a="+artId+"&c="+configId+"&p="+panelId+"&e="+evtId+"&t=9&i=0&rnd="); return; } 
+//////////////////
+	ipollUtil.evtTrk = function(adObj, artId, configId, panelId, evtId, evtIdOnce) { _ipGObj.util.loadTrk(_ipGObj.util.hsDom+"evt.poll?a="+artId+"&c="+configId+"&p="+panelId+"&e="+evtId+"&t=9&i=0&rnd="); if (evtIdOnce && !adObj.trkLoaded[evtIdOnce]) { _ipGObj.util.loadTrk(_ipGObj.util.hsDom+"evt.poll?a="+artId+"&c="+configId+"&p="+panelId+"&e="+evtIdOnce+"&t=9&i=0&rnd="); adObj.trkLoaded[evtIdOnce]=true; } return; }
+	ipollUtil.swImpTrk = function(adObj, artId, configId, panelId, panelIdOnce) { _ipGObj.util.loadTrk(_ipGObj.util.swDom+"imprimage.poll?a="+artId+"&c="+configId+"&p="+panelId+"&t=9&i=0&rnd="); if (panelIdOnce && !adObj.trkLoaded[panelIdOnce]) { _ipGObj.util.loadTrk(_ipGObj.util.swDom+"imprimage.poll?a="+artId+"&c="+configId+"&p="+panelIdOnce+"&t=9&i=0&rnd="); adObj.trkLoaded[panelIdOnce]=true; } return; }
+	ipollUtil.findFlashObj = function(inName) { if (this.targetWindow.document[inName]) { return this.targetWindow.document[inName]; } if (navigator.appName.indexOf("Microsoft Internet")==-1) { if (this.targetWindow.embeds && this.targetWindow.embeds[inName]) return this.targetWindow.embeds[inName]; } else { return this.getObj(inName); } }
+	ipollUtil.displayUnit = function(adObj) { if (adObj.breakout) { this.ipoll_injectHTML(adObj.outStr,adObj.scrId); } else { document.writeln(adObj.outStr); } var iframe=adObj.iframe; if (adObj.breakout && iframe) { iframe.width = 0; iframe.height = 0; iframe.style.width = "0px"; iframe.style.height = "0px"; iframe.style.visibility = "hidden"; } return; }
+	adInstance.c = (typeof(ipoll_c)!="undefined"?ipoll_c:0);
+	adInstance.bumper = (typeof(ipoll_bumper)!="undefined"?ipollUtil.checkUrl(ipoll_bumper):"");
+	adInstance.preTarget = (typeof(ipoll_preTarget)!="undefined"?ipollUtil.checkUrl(ipoll_preTarget):"");
+	adInstance.link2 = (typeof(ipoll_link2)!="undefined"?ipollUtil.checkUrl(ipoll_link2):"");
+	adInstance.link_y = (typeof(ipoll_link_y)!="undefined"?ipollUtil.checkUrl(ipoll_link_y):"");
+	adInstance.link_g = (typeof(ipoll_link_g)!="undefined"?ipollUtil.checkUrl(ipoll_link_g):"");
+	adInstance.sp = (typeof(ipoll_sp)!="undefined"?ipoll_sp:0);
+	adInstance.es = (typeof(ipoll_es)!="undefined"?ipollUtil.checkUrl(ipoll_es):"");
+	adInstance.es2 = (typeof(ipoll_es2)!="undefined"?ipollUtil.checkUrl(ipoll_es2):"");
+// to be removed
+	adInstance.fExp = true;
+//////////////////
+	adInstance.trkLoaded = [];
+	if (typeof(ipoll_breakout)!="undefined") breakout=ipoll_breakout;
+	adInstance.breakout = breakout;
+	if (iframe && breakout) {
+		var ipollUnitChunk=null;
+		if (targetWindow!=self) {ipollUnitChunk = self.parent.document.createElement("SCRIPT");} else {ipollUnitChunk = self.document.createElement("SCRIPT");}
+		ipollUnitChunk.setAttribute("type","text/javascript");
+		ipollUnitChunk.setAttribute("src","http://hs.interpolls.com/cache/"+cmpid+"/inter_"+ipoll_c+".poll");
+		ipollUnitChunk.setAttribute("id","ipollUnit_"+adInstanceName);
+		if (_ipGObj.browser.is_ie) { 
+			self.attachEvent("onunload", new Function ("if (parent.window.ipollGObj) parent.window.ipollGObj.util.removeUnit(\"envIpoll"+adInstanceName+"\")"));
+		} else { 
+			self.addEventListener("unload", new Function ("if (parent.window.ipollGObj) { parent.window.ipollGObj.util.removeUnit(\"expIpoll"+adInstanceName+"\"); parent.window.ipollGObj.util.removeUnit(\"envIpoll"+adInstanceName+"\");}"), true); 
+		}
+		if (cmpid=="nasdaq/execinsights/336") {
+			window.setTimeout("iframe.parentNode.insertBefore(ipollUnitChunk,iframe.nextSibling);", 2000);
+		} else {
+			iframe.parentNode.insertBefore(ipollUnitChunk,iframe.nextSibling);
+		}
+		adInstance.iframe = iframe;
+	} else {
+		document.writeln("<s"+"cript id='ipollUnit_"+adInstanceName+"' language='jav"+"ascript' src='http://hs.interpolls.com/cache/"+cmpid+"/inter_"+ipoll_c+".poll'></s"+"cript>");
+	}
+}

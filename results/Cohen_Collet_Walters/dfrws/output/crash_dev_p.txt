@@ -1,0 +1,13 @@
+PCI_DEV  BU:SL.FN CLASS: VENDOR-DEVICE
+d1a9e400 00:00.0  Host bridge: Intel 440BX - 82443BX Host
+d1a9e000 00:01.0  PCI bridge: Intel 440BX - 82443BX AGP
+d1a96c00 00:07.0  ISA bridge: Intel 82371AB PIIX4 ISA
+d1a96800 00:07.1  IDE interface: Intel 82371AB PIIX4 IDE
+d1a96400 00:07.2  USB Controller: Intel 82371AB PIIX4 USB
+d1a96000 00:07.3  Bridge: Intel 82371AB PIIX4 ACPI
+d1a95c00 00:0f.0  VGA compatible controller: [PCI_VENDOR 15ad] [PCI_DEVICE 405]
+d1a95800 00:10.0  SCSI storage controller: NCR [PCI_DEVICE 30]
+d1a95400 00:11.0  PCI bridge: [PCI_VENDOR 15ad] [PCI_DEVICE 790]
+d1a95000 02:00.0  Ethernet controller: AMD 79C970
+d1a91c00 02:01.0  Multimedia audio controller: Ensoniq ES1371
+d1a91800 02:02.0  USB Controller: [PCI_VENDOR 15ad] [PCI_DEVICE 770]

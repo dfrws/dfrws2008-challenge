@@ -1,0 +1,479 @@
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1411
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42136:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:18:48
+inode_id : 664
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42136:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S664
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1435
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42137:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:21:08
+inode_id : 666
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42137:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S666
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1387
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42984:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:32:16
+inode_id : 250
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/42984:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S250
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1407
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43813:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:34:53
+inode_id : 390
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43813:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S390
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1449
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43818:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:34:58
+inode_id : 400
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43818:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S400
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1429
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43822:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:36:00
+inode_id : 408
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43822:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S408
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1393
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43824:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:36:23
+inode_id : 412
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43824:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S412
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1393
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43826:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:37:03
+inode_id : 416
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43826:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S416
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1395
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43829:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:37:37
+inode_id : 422
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43829:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S422
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1433
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43831:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:37:57
+inode_id : 426
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43831:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S426
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1429
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43832:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:37:58
+inode_id : 428
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43832:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S428
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1468
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43833:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:40:56
+inode_id : 430
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/43833:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S430
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1397
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/48700:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:03:23
+inode_id : 622
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/48700:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S622
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1389
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/49464:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:44:01
+inode_id : 510
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/49464:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S510
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1406
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/49484:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:45:45
+inode_id : 550
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/49484:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S550
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1389
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51154:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:56:48
+inode_id : 604
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51154:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S604
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1393
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51156:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:59:13
+inode_id : 608
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51156:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S608
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1405
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51162:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:00:22
+inode_id : 620
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/51162:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S620
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1433
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/56204:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:25:31
+inode_id : 670
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/56204:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S670
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 195
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/56205:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 05:29:29
+inode_id : 672
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/56205:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S672
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1408
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60529:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:48:36
+inode_id : 572
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60529:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S572
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1405
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60533:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:50:57
+inode_id : 580
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60533:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S580
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1447
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60534:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:51:01
+inode_id : 582
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60534:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S582
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1431
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60535:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:52:01
+inode_id : 584
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60535:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S584
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1424
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60536:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:52:50
+inode_id : 586
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60536:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S586
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1399
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60537:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:54:05
+inode_id : 588
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60537:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S588
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1389
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60538:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:54:28
+inode_id : 590
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60538:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S590
+ctime : 0000-00-00 00:00:00
+-------------
+status : alloc
+uid : None
+links : 4
+dtime : 0000-00-00 00:00:00
+size : 1421
+filename : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60539:80/forward
+name : forward
+gid : None
+link : None
+mode : r/r
+mtime : 2007-12-17 04:54:59
+inode_id : 592
+path : /network/streams/2007-12-17/192.168.151.130-219.93.175.67/60539:80/
+atime : 0000-00-00 00:00:00
+inode : Inetwork|S592
+ctime : 0000-00-00 00:00:00
+-------------Welcome to the Flag shell. Type help for help
+Flag Shell: />Loaded case 'dfrws'
+Flag Shell: />current working directory /network/streams/2007-12-17/192.168.151.130-219.93.175.67/
+Flag Shell: /network/streams/2007-12-17/192.168.151.130-219.93.175.67/>Flag Shell: /network/streams/2007-12-17/192.168.151.130-219.93.175.67/>Flag Shell: /network/streams/2007-12-17/192.168.151.130-219.93.175.67/>Bibi Then - Have a nice day.

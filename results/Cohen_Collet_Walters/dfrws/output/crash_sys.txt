@@ -1,0 +1,18 @@
+  SYSTEM MAP: ../2.6.18-8.1.15.el5/System.map-2.6.18-8.1.15.el5
+DEBUG KERNEL: ../2.6.18-8.1.15.el5/vmlinux (2.6.18-8.1.15.el5)
+    DUMPFILE: challenge.mem
+        CPUS: 1
+        DATE: Sun Dec 16 23:33:42 2007
+      UPTIME: 00:56:51
+LOAD AVERAGE: 0.16, 0.09, 0.07
+       TASKS: 98
+    NODENAME: goldfinger
+     RELEASE: 2.6.18-8.1.15.el5
+     VERSION: #1 SMP Mon Oct 22 08:32:04 EDT 2007
+     MACHINE: i686  (1981 Mhz)
+      MEMORY: 284 MB
+         PID: 0
+     COMMAND: "swapper"
+        TASK: c0660bc0  [THREAD_INFO: c06d3000]
+         CPU: 0
+     SWAPPING 0xffffffff

@@ -1,0 +1,575 @@
+//Gecko Detection
+
+
+function IsGekko(){
+	return(navigator.appName == "Netscape")?true:false
+}
+function GetTheVersion(gt){
+	var gua = navigator.userAgent;
+	if(gt == "Mozilla"){
+		temp = gua.split("rv:");
+		major_version = parseFloat(temp[1]);
+
+	}
+	else{
+		var marker = gua.lastIndexOf("/");
+		var subMe = gua.substr(marker + 1);
+		var major_version = parseFloat(subMe);
+	}
+	return major_version;	
+}
+function PassVersion(bt,version,req_version){
+	defaultAr = new Array(1.2,.1,7,85.8);
+	this.strippedAppVersion = version;
+	if(req_version){
+		reqAr = req_version.split(",");
+		for(i=0;i<reqAr.length;i++){
+			if(reqAr[i] == "" || reqAr[i] == 0) reqAr[i] = defaultAr[i];
+			reqAr[i] = parseFloat(reqAr[i]);
+		}
+	}else{
+		reqAr = defaultAr;
+	}
+	switch(bt){
+		case "Mozilla":
+			this.browser = "Mozilla";
+			return(version >= reqAr[0])?true:false
+		case "Firefox":
+			this.browser = "Firefox";
+			if(version >= 1 || version == .10) return true;
+			else return false;
+		case "Netscape":
+			this.browser = "Netscape";
+			return(version >= reqAr[2])?true:false;
+		case "Safari":
+			this.browser = "Safari";
+			return(version >= reqAr[3])?true:false;
+		case "default":
+			return false;
+		}
+	return false;
+}
+function WhatGecko(){
+	var use_agent = navigator.userAgent;
+	if(use_agent.indexOf("Netscape") != -1) nua = "Netscape";
+	else if(use_agent.indexOf("Safari") != -1) nua = "Safari";
+	else if(use_agent.indexOf("Firefox") != -1) nua = "Firefox";
+	else if(use_agent.indexOf("Mozilla/5.0") != -1) nua = "Mozilla";
+	else {
+		if(navigator.appName == "Netscape")nua = "Netscape";
+		
+	}
+	return nua;
+}
+function GeckoInterface(page_transition,req_version){
+	this.myGecko = WhatGecko();
+	var theVersion = GetTheVersion(this.myGecko);
+	passBrowser = this.PassVersion(this.myGecko,theVersion,req_version);
+	return passBrowser;
+	//return true;
+}
+function TellMeWhatBrowser(){
+	return(browser_object.myGecko);
+}
+// end geck detection
+//SP2 Detection
+function IsServicePack(){
+	var ua = navigator.userAgent;
+	if(ua.indexOf("SV1") != -1) return true;
+	else return false;
+}
+//end SP2 Detection
+
+	
+var today = new Date();
+var expire = new Date(today.getTime() - 10);
+var oneYear = new Date(today.getTime() + 365 * 24 * 60 * 60 * 1000);
+var oneMonth = new Date(today.getTime() + 30 * 24 * 60 *60 * 1000);
+var oneWeek = new Date(today.getTime() + 7 * 24 * 60 *60 * 1000);
+var twoWeek = new Date(today.getTime() + 14 * 24 * 60 *60 * 1000);
+function deliverPopDisclaimer(mLink){
+	var popDisclaimer=window.open("","disclaimer","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=370,height=250,top=100,left=150,screenX=180,screenY=100");
+	popDisclaimer.document.write ('<html><head><title>Disney.com - Disclaimer</title>');
+	popDisclaimer.document.write ('<SCR'+'IPT TYPE="text/javascript" LANGUAGE="JavaScript">');
+	popDisclaimer.document.write ('sendTimer = setTi'+'meout("sendToClientSide()",1500);closeTimer = setT'+'imeout("window.close()",18000);');
+	popDisclaimer.document.write ('func'+'tion sendToCl'+'ientSide(){window.op'+'en("'+mLink+'"); this.focus();}');
+	popDisclaimer.document.write ('</scr'+'ipt>');
+	popDisclaimer.document.write ('</head><body bgcolor="#FFFFFF" text="#0065CE" link="#0065CE" vlink="#0065CE" alink="#0065CE" leftmargin=0 topmargin=0 marginwidth=0 marginheight=0>');
+	popDisclaimer.document.write ('<table width="370" height="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><img src="http://disney.go.com/sponsors/images/disclaimer_top.gif" width="370" height="27" alt="" border="0"></td></tr><tr><td><table width="330" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td><br><FONT FACE="Verdana,sans-serif" SIZE="2" COLOR="#0065CE"><b>The web site you are about to link to is not controlled by Disney Online and different terms of use and privacy policy will apply. By proceeding you agree and understand that Disney Online is not responsible for the site you are about to access.<br><br>');
+	popDisclaimer.document.write ('If your page does not load within a few seconds, please <a href="'+mLink+'" target="_blank">click here</a> to open it.</b></FONT><br><br></td></tr></table>');
+	popDisclaimer.document.write ('</td></tr><tr bgcolor="#0000CC"><td align="center" height="20"><a href="javascript:window.close();"><FONT FACE="Verdana,sans-serif" SIZE="1" COLOR="#FFFF00"><b>Close this window</b></font></a></td></tr></table>');
+	popDisclaimer.document.write ('</body></html>');
+	popDisclaimer.document.close();
+}
+function UpgradeFlash(arg,ie_land,set_cookie){
+	if(isBranded)the_host = "disney";
+	else the_host = "global";
+	if(!arg) var default_page = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+	else var default_page = arg;
+	if(!ie_land) var default_land = "http://"+the_host+".go.com/detect/setup/ie/flash_landing.html";
+	else var default_land = ie_land;
+	if(this.hasActiveX){
+		window.location = default_land;	
+	}
+	else deliverPopDisclaimer(default_page);
+	if(set_cookie)SetCookieUtil("return_path",set_cookie,oneWeek);
+	
+}
+function UpgradeShockwave(arg,ie_land,set_cookie){
+	if(isBranded)thatHost = "disney";
+	else thatHost = "global";
+	if(set_cookie)SetCookieUtil("return_path",set_cookie,oneWeek);
+	if(!arg) var default_page = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=Disney&UI=plain&ReturnURL=www.disney.com&ReturnName=Disney";
+	else var default_page = arg;
+	if(!ie_land) var default_land = "http://"+thatHost+".go.com/detect/setup/ie/shockwave.html";
+	else var default_land = ie_land;
+	if(this.hasActiveX)window.location = default_land;
+	else deliverPopDisclaimer(default_page);
+	
+}
+var nonbranded = "http://disney.go.com/detect/nonbranded.html";
+function SetCookieUtil (name,value,expires,path,domain,secure) {
+	document.cookie = name + "=" + escape (value) +	((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "; path=/") + ((domain) ? "; domain=" + domain : "; domain=.go.com") +	((secure) ? "; secure" : "");
+}
+function PullVersionNumber(arg){
+	var toReturn = arg.split(" ");
+	for(var i=0;i<toReturn.length;i++){
+		var num = toReturn[i];
+		var num = parseFloat(num);
+		if(num >= 1){
+			return num;
+		}
+	
+	}
+	
+}
+function FindVersionNumber(){
+	var ret;
+	var version = navigator.appVersion;
+	var versionAr = version.split(";");
+	for(i=0;i<versionAr.length;i++){
+		if(versionAr[i].indexOf("MSIE") != -1){
+			ret = PullVersionNumber(versionAr[i]);
+		}
+	}
+	return ret;
+}
+
+function GetActiveX(){
+	hasActiveX=(this.d_appName.indexOf("Microsoft") != -1 && this.d_platForm.indexOf("Win") != -1)&&navigator.userAgent.indexOf("Opera") == -1?true:false;
+	return hasActiveX;
+
+}
+function HasFlash(){
+	if(this.strippedAppVersion <= 4.9){
+		flash6Installed = false;
+	}
+	
+	if(this.GetActiveX()){
+		document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+		document.write('Dim flash2Installed,flash3Installed,flash4Installed,flash5Installed,flash6Installed,flash7Installed \n');
+		document.write('on error resume next \n');
+		document.write('flash2Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.2"))) \n');
+		document.write('flash3Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.3"))) \n');
+		document.write('flash4Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4"))) \n');
+		document.write('flash5Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5"))) \n');
+		document.write('flash6Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6"))) \n');
+		document.write('flash7Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.7"))) \n');
+		document.write('flash8Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.8"))) \n');
+		document.write('flash9Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.9"))) \n');	
+		document.write('</SCRIPT\> \n'); // break up end tag so it doesn't end our script
+	return(flash6Installed)?true:false;
+	}
+	else return false;
+	
+}
+function GetFlashVersion(){
+var activex_flash;
+var na_flash;
+
+if(this.GetActiveX()) activex_flash = HasFlash();
+
+
+
+if (navigator.plugins) {
+	for (var i=0; i < navigator.plugins.length; i++) {
+		if (navigator.plugins[i].name.toLowerCase().indexOf("shockwave flash") >= 0) {
+			na_flash = navigator.plugins[i].description.substring(navigator.plugins[i].description.toLowerCase().lastIndexOf("flash ") + 6, navigator.plugins[i].description.length);
+			}
+		}
+}
+if(activex_flash){
+	return activex_flash;
+}
+if(na_flash){
+	na_flashHold = na_flash.split("r");
+	na_flashHold2 = na_flashHold[0].split(".")
+	na_flashHold2[1] = na_flashHold2[1].substring(0,na_flashHold2[1].length - 2)
+	na_flash = na_flashHold2[0] + ",0,0,0";
+
+    return na_flash
+    }
+return false
+}
+
+function SuperObj(val){
+	this.d_appName = navigator.appName;
+	this.UpgradeFlash = UpgradeFlash;
+	this.UpgradeShockwave = UpgradeShockwave;
+	this.d_appVersion = navigator.appVersion;
+	this.d_platForm = navigator.platform;
+	d_appName = this.d_appName;
+	d_appVersion = this.d_appVersion;
+	d_platForm = this.d_platForm;
+	// addition 12-01-2004
+	this.hasServicePack = false
+	this.passGecko = true;
+	this.passIE = true;
+	this.strippedAppVersion = -1;
+	// end addition
+	this.GetActiveX = GetActiveX;
+	this.hasActiveX = this.GetActiveX();
+	if(this.d_appName.indexOf("Micro") != -1) this.strippedAppVersion = FindVersionNumber();
+	if(this.d_appName.indexOf("Micro") != -1){
+		if(this.strippedAppVersion <= 4.9){
+			this.passIE = false;
+		}		
+	}
+	//addition
+	this.GetFlashVersion = GetFlashVersion;
+	this.GeckoInterface = GeckoInterface;
+	this.PassVersion = PassVersion;
+	this.hasFlash = this.GetFlashVersion(); 
+	this.browser = "";
+	if(this.d_appName == "Netscape"){
+		this.passGecko = this.GeckoInterface(val);
+	}else if(this.d_appName.indexOf("Micro") != -1){
+		this.browser = "Internet Explorer";
+	}
+	this.HasFlash = HasFlash;
+	this.strippedAppVersionDisplay = this.strippedAppVersion.toString();
+	if(this.strippedAppVersionDisplay.indexOf(".") == -1)this.strippedAppVersionDisplay = this.strippedAppVersionDisplay + ".0";
+
+
+}
+function CreateInterface(loc,val,gecko_val,gecko_require){
+	if(!loc){
+		defaultLP = "http://disney.go.com/home/html/index.html";
+		
+	}
+	else{
+		defaultLP = loc;
+		
+	}
+	browser_object = new SuperObj(gecko_val,gecko_require);
+}
+// From HTML Page
+//Javascript Detect
+var myHost = window.location.host
+if(myHost.toLowerCase().indexOf("disney.go.com") != -1)var isBranded = true;
+else isBranded = false;
+
+winSearch = window.location.search;
+if(winSearch.indexOf("flash=false") != -1){
+	flash_override = true;
+}
+else {
+	flash_override = false;
+}
+if(winSearch.indexOf("shockwave=true") != -1)setShockwave = true;
+else setShockwave = false;
+CreateInterface("",true);
+if(winSearch.indexOf("manualoverride=true") != -1)manualoverride = true;
+else manualoverride = false;
+//End JavaScript Detect
+//Disclaimers
+function DPDFF(){
+	deliverPopDisclaimer('http://www.mozilla.org/products/firefox/');
+}
+function DPDIE(){
+	deliverPopDisclaimer('http://www.microsoft.com/windows/ie/default.mspx');
+}
+function DPDNS(){
+	deliverPopDisclaimer('http://channels.netscape.com/wrap/linker.jsp?ref=http://channels.netscape.com/ns/browsers/download.jsp');
+}
+
+//Dynamic Writing
+logoAr = new Array("flash_logo_2","shockwave_logo_2","ie_logo_2","firefox_logo_2","netscape_logo_2");
+logoLinkAr = new Array("javascript:UpgradeFlash()","javascript:UpgradeShockwave()","javascript:DPDIE()","javascript:DPDFF()","javascript:DPDNS()");
+//key
+//0=flash_logo
+//1=shockwave_logo
+//2=ie_logo
+//3=firefox_logo
+//4=netscape_logo
+function MakeLogoPlaceHolder(arg){
+	var div_hold = "<div><a href = '"+logoLinkAr[arg]+"'><img src='images/"+logoAr[arg]+".gif' border='0'></a></div>";
+	return div_hold;
+}
+function PlaceLogos(arg){
+	argi = arg.split(",");
+
+	for(i=0;i<argi.length;i++){
+		document.write(MakeLogoPlaceHolder(parseInt(argi[i])));
+	}
+}
+function placeMickeyImage(){
+	mydiv = document.createElement("div");
+	master = document.getElementById("master_container");
+	mydiv.setAttribute("id","mydiv");
+	myimg = document.createElement("img");
+	myimg.setAttribute("id","myimg");
+	myimg.setAttribute("src","images/mickey_up.gif");
+	myimg.setAttribute("alt","My Logo");
+	myimg.setAttribute("title","See My Logo");
+	mydiv.appendChild(myimg);
+
+	with(mydiv.style){
+
+		position = "relative";
+		left = "-25px";
+		top = "-285px";
+	}
+	master.appendChild(mydiv);
+}
+function insertMickeyImage() {
+	if(isBranded)thatHost = "disney";
+	else thatHost = "global";
+	if(thatHost == 'disney' && flash_override == true) {
+		placeMickeyImage();
+	}
+}
+function LogoNeeds(){
+	if(setShockwave)manualoverride = true;
+	if((browser_object.passGecko == false || browser_object.passIE == false)){
+		return "3,4,2";
+	}
+	else{ 
+		if((!browser_object.hasFlash || flash_override) && (manualoverride != true)) {
+			return "0";
+		}
+		else if(setShockwave == true) return "1";
+		else return false;
+		};
+	return "";
+}
+function ConfigureLogos(){
+	if(display){
+		document.write('<td width="167" valign="top">');
+		PlaceLogos(LogoNeeds());
+		document.write('</td>');
+	}
+}
+function WriteSpecs(){
+	foo = "";
+	display = false;
+	allClearCopy = "You do not require any updates at this time.";
+	if(navigator.appName == "Netscape"){
+		if(browser_object.passGecko == false && manualoverride != true){
+			display = true;
+			if(browser_object.browser == "Netscape")display_copy = "<font face='arial' size = '2'>Your current browser is Netscape 6.0 or less.<br>Our site requires Netscape 7.0 or above.</font>";
+			else if(browser_object.browser == "Mozilla")display_copy = "Your current browser is Mozilla 1.1 or less.<br>Our site requires require Mozilla 1.2 or above.";
+			else display_copy = "Your browser is not supported at this time."
+			
+		}else{
+			display = false;
+		}
+	}else if(browser_object.passIE == false){
+		display = true;
+		display_copy = "Your current browser is Internet Explorer 4.x or older.<br>Our site requires Internet Explorer 5.0 or above.";
+	}
+	if(!display){
+		if((!browser_object.hasFlash || flash_override) && setShockwave != true){
+			display = true;
+			display_copy = 'You do not have the most current version of Flash <sup><FONT SIZE="1">TM</FONT></sup>';
+		}
+		else if(setShockwave == true){
+			display = true;
+			display_copy = 'You do not have the most up-to-date version of Shockwave <sup><FONT SIZE="1">TM</FONT></sup>';
+		}	
+	}
+	if(display) document.write(display_copy);
+	else document.write(allClearCopy);
+
+
+}
+function WriteRecCopy(){
+	if(isBranded)the_host = "disney";
+	else the_host="global";
+	softwarecenter = "http://transfer.go.com/cgi/transfer.dll?srvc=dis&goto=http://"+the_host+".go.com/help/software_center/index.html&name=hp_html_toSoftCent"
+	browserstandards = "http://transfer.go.com/cgi/transfer.dll?srvc=dis&goto=http://"+the_host+".go.com/guestservices/upgrade/index.html&name=hp_html_upgrade"
+	if(display){
+		copyAr = new Array();
+		copyAr[0] ='<p class = "global">'
+		copyAr[1]='<font color="#000000">The page you were attempting to view requires that you upgrade the software listed.</font>';
+		copyAr[2]='';
+		//copyAr[2]='This will ensure that you get the most out of your online experience.';
+		copyAr[3]='</p>';
+		copyAr[4]='<p class = "global"><font color="#000000">Choose the appropriate button(s) to the right or read about the new </font><a href = "'+browserstandards+'"><font color="#0000ff">browser standards</font></a><font color="#000000"> and what upgrading can do for you.</font>';
+		copyAr[5]='</p>'
+	}
+	else{
+		copyAr = new Array();
+		copyAr[0]='<p class="global"><font color="#ff0000">Good News! Our tests show that you already have the appropriate browser and plug-ins to enjoy the features and fun of the Walt Disney Internet Group family of sites. </font>';
+		copyAr[1]='<p class="global">Just a note: If you do find that you have problems viewing our home page, you might want to check your browser version and plug-in on your own. If your browser is older than Internet Explorer 5 or Netscape 7, or you do not have the latest version of Flash, you will need to upgrade in order to enjoy our sites.</p>';
+		copyAr[2]='';
+		//copyAr[3]='<p><font face="Times" color="#000000"><b>Check out our  </b></font><a href = "'+softwarecenter+'"><font color="#0000ff"><b>Software Center</b></font></a><font face="Times" color="#000000"><b> for more details.</b></font>';
+	}
+	
+	for(i=0;i<copyAr.length;i++){
+		document.write(copyAr[i]);
+	}
+}
+function WriteRecStructure(){
+	if(!display)the_width = '429';
+	else the_width = '262';
+	rs = '<td width="'+the_width+'" valign="top">';
+	return rs;
+	
+}
+function RecTableSize(){
+	if(display){
+		if(navigator.appName.indexOf("Microsoft") != -1 && navigator.platform.indexOf("Win") != -1){
+			var the_size = '42';
+		}else{
+			var the_size = '64';
+		}
+	}
+	else {
+		if(navigator.appName.indexOf("Microsoft") != -1 && navigator.platform.indexOf("Win") != -1){
+			var the_size = '42';
+		}else{
+			var the_size = '53';
+		}
+	}
+	var mysize = '<tr><td><img src="images/clear.gif" width="1" height ='+the_size+'>';
+	return (mysize);
+}
+function WriteQuickLinksActual(){
+	if(isBranded){
+		transfer = "http://transfer.go.com/cgi/transfer.dll?srvc=dis&goto=";
+		link1 = transfer + "http://disney.go.com/corporate/&name=hp_html_qlinks_corpInfo";
+		link2 = transfer + "http://go-disneystore.com/dcomhtmlquicklink&name=hp_html_qlinks_disDirect";
+		link3 = transfer + "http://disney.go.com/disneycareers/&name=hp_html_qlinks_disCareers";
+		link4 = transfer + "http://disney.go.com/vault/archives/today.html&name=hp_html_qlinks_disArchives";
+		link5 = transfer + "http://legends.disney.go.com/legends/index&name=hp_html_qlinks_disLegends";
+		link6 = transfer + "http://disney.go.com/features/insider/index.html&name=hp_html_qlinks_insider";
+		id1 = "Corporate Info";
+		id2 = "Disney Direct";
+		id3 = "Disney Careers";
+		id4 = "Disney Archives";
+		id5 = "Disney Legends";
+		id6 = "Disney Insider";
+	}else{
+		link1 = "http://movies.go.com";
+		link2 = "http://www.abc.go.com";
+		link3 = "http://familyfun.go.com";
+		link4 = "http://www.espn.go.com";
+		link5 = "http://go.com";
+		link6 = "http://corporate.disney.go.com/index.html";
+		id1 = "Movies.com";
+		id2 = "ABC.com";
+		id3 = "Family Fun";
+		id4 = "ESPN";
+		id5 = "Go.com";
+		id6 = "Corprate Info";
+	}
+
+	
+	linkTable = new Array();
+	linkTable[0]='<tr>';
+	linkTable[1]='<td width="50%" align="center"><a href = "'+link1+'" class = "quicklinks"><b>'+id1+'</b></td>';
+	linkTable[2]='<td width="50%" align="center"><a href = "'+link5+'" class = "quicklinks"><b>'+id5+'</b></td>';
+	linkTable[3]='</tr>';
+	linkTable[4]='<tr>';
+	linkTable[5]='<td width="50%" align="center"><a href = "'+link2+'" class = "quicklinks"><b>'+id2+'</b></td>';
+	linkTable[6]='<td width="50%" align="center"><a href = "'+link4+'" class = "quicklinks"><b>'+id4+'</b></td>';
+	linkTable[7]='</tr>';
+	linkTable[8]='<tr>';
+	linkTable[9]='<td width="50%" align="center"><a href = "'+link3+'" class = "quicklinks"><b>'+id3+'</b></td>';
+	linkTable[10]='<td width="50%" align="center"><a href = "'+link6+'" class = "quicklinks"><b>'+id6+'</b></td>';
+	linkTable[11]='</tr>';
+	linkTable[12]='<tr>';
+	//linkTable[13]='<td width="50%" align="center"><a href = "'+link6+'" class = "quicklinks"><b>'+id6+'</b></td>';
+	//linkTable[14]='<td width="50%" align="center"><a href = "'+link8+'" class = "quicklinks"><b>'+id8+'</b></td>';
+	linkTable[13]='</tr>';
+	linkTable[14]='<tr>';
+	//linkTable[17]='<td width="50%" align="center"><img src="images/clear.gif" name="clear1" width="1" height="52"></td>';
+	//linkTable[18]='<td width="50%" align="center"><img src="images/clear.gif" name="clear2"width="1" height="52"></td>';
+	linkTable[15]='</tr>';
+
+	for(i=0;i<linkTable.length;i++)document.write(linkTable[i]);
+	
+}
+//end dynamic JavaScript
+//JavaScript Structure
+function WriteChrome(){
+	chromeAr = new Array();
+	chromeAr[0]='<table width="770" cellspacing="0" cellpadding="0" border="0" align="center">';
+	chromeAr[1]='<tr><td><SCRIPT language="JavaScript" src="http://disney.go.com/globalmedia/chrome/chrome.js"></SCR'+'IPT></td></tr>';
+	chromeAr[2]='</table>';
+	//if(isBranded){
+		for(i=0;i<chromeAr.length;i++)document.write(chromeAr[i]);
+	//}
+
+}
+function ConvertElements(){
+	if(isBranded){
+		ele = "br";
+		main_table_color = "003399";
+		rec_table_color = "FFFFCC";
+		what_logo = "dol_logo";
+		colorCode = "003399";
+		
+	}
+	else{
+		ele = "nb";
+		main_table_color = "6699CC";
+		rec_table_color = "cccccc";
+		what_logo = "wdig_logo";
+		colorCode = "666666";;
+	}
+	main_table = '<table id = "main" width = "770" border="0" cellspacing="0" cellpadding="0" bgcolor="#'+main_table_color+'">';
+	logo = '<td width="454"><img src = "images/'+what_logo+'.gif"></td>';
+	software_detect_top = '<td background = "images/'+ele+'_sd_border_top_2.gif"><img src="images/clear.gif" height="8" width="449"></td>';
+	software_nested_1 = '<td background="images/'+ele+'_sd_border_left_2.gif" width="10"><img src="images/clear.gif" width="10" height="57"></td>';
+	software_nested_2 = '<td background="images/'+ele+'_sd_border_right_2.gif" width="7"><img src="images/clear.gif" width="7" height="57"></td>';
+	software_detect_bottom = '<tr><td><img src="images/'+ele+'_sd_border_bottom_2.gif"></td></tr>';
+	recommendation_table = '<table id="recomendations" cellspacing="0" cellpadding="0" border="0" bgcolor="#'+rec_table_color+'">';
+	rec_table_left = '<td background="images/'+ele+'_rec_border_left.gif" width = "11"><img src="images/clear.gif" width="11"></td>';
+	rec_table_right = '<td background="images/'+ele+'_rec_border_right.gif" width = "9"><img src="images/clear.gif" width="9"></td>';
+	rec_table_bottom = '<tr><td><img src="images/'+ele+'_rec_border_bottom.gif"></td></tr>';
+	quick_link_top = '<td><img src="images/'+ele+'_ql_top.gif" width="310" height="8"></td>';
+	quick_link_left = '<td width="5" background="images/'+ele+'_ql_left.gif"><img src="images/clear.gif" width="5" height="132"></td>';
+	quick_link_grafic_1 = '<td width="50%"><img src="images/'+ele+'_quick_links.gif"></td><td><img src="images/'+ele+'_quick_spacer.gif"></td>';
+	quick_link_right = '<td width="6" align="left" background="images/'+ele+'_ql_right.gif"><img src="images/clear.gif" width="6" height="132"></td>';
+	quick_link_bottom = '<td><img src="images/'+ele+'_ql_bottom.gif" width="310" height="9"></td>';
+	quick_links_actual_table = '<table width = "100%" border="0" bgcolor="#'+colorCode+'" cellspacing="0" cellpadding="0">';
+	quick_link_outline_table = '<td width="301" valign="top" bgcolor="#'+colorCode+'">'
+}
+function DW(arg){
+	document.write(arg);
+}
+//Footer Code
+function ScriptFooter(){
+	// This sets the footer font color to black if no color is defined.
+	if(!legalFooterColor){var legalFooterColor = "#000000";}
+	
+	//This portion of the legal footer is solely for the use of BVPM and BVHE.
+	//This is to determine the Copyright info to be displayed on the page.
+	var copyRight = ""
+	var copyRightType = "";
+	var ftTransfer = "http://transfer.go.com/cgi/transfer.dll?srvc=dis&goto=";
+	if(legalFooterColor.indexOf("&") != -1){
+		dvMarker = legalFooterColor.indexOf("&");
+		copyRightType = legalFooterColor.substring(dvMarker+1, legalFooterColor.length);
+		legalFooterColor = legalFooterColor.substring(0, dvMarker);
+	}
+	if(isBranded)copyRight = "&copy; DEI. All rights reserved."; 
+	else copyRight = "&copy; Walt Disney Internet Group. All rights reserved.";
+	//Spit out the legal footer...
+	document.write('<br><TABLE border="0" cellspacing="0" cellpadding="0" align="center" background=""><TR><TD align="center"><FONT face="verdana" size="2" color="'+legalFooterColor+'"><A href="https://register.go.com/go/memberservices/home" target="_top"><FONT color="'+legalFooterColor+'">Member Services</FONT></A>&nbsp;|&nbsp;<A href="https://register.go.com/go/chooseAge" target="_top"><FONT color="'+legalFooterColor+'">Register</FONT></A></TD></TR></TABLE>');
+	document.write('<br><table border="0" cellspacing="0" cellpadding="0" align="center" background=""><tr><td align="center"><FONT face="verdana" size="2" color="'+legalFooterColor+'"><A href="'+ftTransfer+'http://global.go.com/corporate/legal/wdig_privacy.html&name=g_legalFooter_privacypolicy" target="_top"><FONT color="'+legalFooterColor+'"><B>UPDATED Privacy Policy</B></FONT></A>&nbsp;|&nbsp;<A href="'+ftTransfer+'http://global.go.com/corporate/legal/safety_tips.html&name=g_legalFooter_internetsafety" target="_top"><FONT color="'+legalFooterColor+'">Internet Safety</FONT></A>&nbsp;|&nbsp;<A href="'+ftTransfer+'http://global.go.com/corporate/legal/terms.html&name=g_legalFooter_termsofuse" target="_top"><FONT color="'+legalFooterColor+'">Terms of use</FONT></A></FONT><BR><FONT face="verdana" size="1" color="'+legalFooterColor+'">'+copyRight+'</FONT></td></tr></table><br>');
+}
+//Creates branded or non branded elements;
+ConvertElements();

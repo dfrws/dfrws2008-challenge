@@ -1,0 +1,121 @@
+function displayLanguage(lang,pagenum,totalnum){
+
+lowerLang = lang.toLowerCase();
+
+if (totalnum == 3){
+
+	if (pagenum == 1){
+	document.write('<br><table border="0" cellpadding="3" cellspacing="0" width="100%"><tr><td valign="top" align="center" bgcolor="#c0d0e0">')
+	document.write("|&nbsp;&nbsp;Page 1&nbsp;&nbsp;|")
+	document.write("&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+"_2>Page 2</a>&nbsp;&nbsp;")
+	document.write("|&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+"_3>Page 3</a>&nbsp;&nbsp;|")
+	document.write('</td></tr></table>')
+	} else if (pagenum == 2){
+	document.write('<br><table border="0" cellpadding="3" cellspacing="0" width="100%"><tr><td valign="top" align="center" bgcolor="#c0d0e0">')
+	document.write("|&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+">Page 1</a>&nbsp;&nbsp;|")
+	document.write("&nbsp;&nbsp;Page 2&nbsp;&nbsp;")
+	document.write("|&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+"_3>Page 3</a>&nbsp;&nbsp;|")
+	document.write('</td></tr></table>')
+	} else if (pagenum == 3){
+	document.write('<br><table border="0" cellpadding="3" cellspacing="0" width="100%"><tr><td valign="top" align="center" bgcolor="#c0d0e0">')
+	document.write("|&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+">Page 1</a>&nbsp;&nbsp;|")
+	document.write("&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+"_2>Page 2</a>&nbsp;&nbsp;")
+	document.write("|&nbsp;&nbsp;Page 3&nbsp;&nbsp;|")
+	document.write('</td></tr></table>')
+	}
+
+} else if(totalnum == 2){
+
+	if (pagenum == 1){
+	document.write('<br><table border="0" cellpadding="3" cellspacing="0" width="100%"><tr><td valign="top" align="center" bgcolor="#c0d0e0">')
+	document.write("|&nbsp;&nbsp;Page 1&nbsp;&nbsp;|")
+	document.write("&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+"_2>Page 2</a>&nbsp;&nbsp;|")
+	document.write('</td></tr></table>')
+	} else if (pagenum == 2){
+	document.write('<br><table border="0" cellpadding="3" cellspacing="0" width="100%"><tr><td valign="top" align="center" bgcolor="#c0d0e0">')
+	document.write("|&nbsp;&nbsp;<a href=conduct_manufacturers.html?"+lang+">Page 1</a>&nbsp;&nbsp;|")
+	document.write("&nbsp;&nbsp;Page 2&nbsp;&nbsp;|")
+	document.write('</td></tr></table>')
+	}
+
+}
+
+document.write('<table border="0" cellpadding="3" cellspacing="0" width="100%" bgcolor="#ffffff"><tr><td valign="top">')
+document.writeln("<br><img src='http://corporate.disney.go.com/media/corporate/compliance/languages/lang_"+lowerLang+"_"+pagenum+".gif' width='498' alt="+lang+" border='0' name='languageImage'>")
+document.write('</td></tr></table>')
+
+pdfNote("http://corporate.disney.go.com/corporate/compliance/pdf/"+lowerLang+".pdf",true,0);
+
+
+}
+//----------------------------------------
+str = location.search.substring(1, location.search.length);
+if (str == ""){
+str = "English"
+}
+hitboxArray = str.split("_");
+hitboxStr = hitboxArray[0];
+//----------------------------------------
+var theLanguages = new Array(56)
+theLanguages[0] = "Afrikaans"
+theLanguages[1] = "Albanian"
+theLanguages[2] = "Arabic"
+theLanguages[3] = "Bengali"
+theLanguages[4] = "Bulgarian"
+theLanguages[5] = "Chinese-Simplified"
+theLanguages[6] = "Chinese-Traditional"
+theLanguages[7] = "Croatian"
+theLanguages[8] = "Czech"
+theLanguages[9] = "Danish"
+theLanguages[10] = "Dutch"
+theLanguages[11] = "English"
+theLanguages[12] = "Finnish"
+theLanguages[13] = "Flemmish"
+theLanguages[14] = "French"
+theLanguages[15] = "French-Creole"
+theLanguages[16] = "German"
+theLanguages[17] = "Greek"
+theLanguages[18] = "Hebrew"
+theLanguages[19] = "Hindi"
+theLanguages[20] = "Hungarian"
+theLanguages[21] = "Indonesian"
+theLanguages[22] = "Italian"
+theLanguages[23] = "Japanese"
+theLanguages[24] = "Kannada"
+theLanguages[25] = "Khmer"
+theLanguages[26] = "Korean"
+theLanguages[27] = "Lithuanian"
+theLanguages[28] = "Malaysian"
+theLanguages[29] = "Maltese"
+theLanguages[30] = "Marathi"
+theLanguages[31] = "Norwegian"
+theLanguages[32] = "Polish"
+theLanguages[33] = "Portuguese-Brazil"
+theLanguages[34] = "Portuguese-Europe"
+theLanguages[35] = "Romanian"
+theLanguages[36] = "Russian"
+theLanguages[37] = "Serbian"
+theLanguages[38] = "Sinhalese"
+theLanguages[39] = "Siswati"
+theLanguages[40] = "Slovak"
+theLanguages[41] = "Slovene"
+theLanguages[42] = "Spanish-Creole"
+theLanguages[43] = "Spanish-Europe"
+theLanguages[44] = "Spanish-Latin-America"
+theLanguages[45] = "Swedish"
+theLanguages[46] = "Tagalog"
+theLanguages[47] = "Tamil"
+theLanguages[48] = "Thai"
+theLanguages[49] = "Turkish"
+theLanguages[50] = "Turkmen"
+theLanguages[51] = "Urdu"
+theLanguages[52] = "Uzbek-Cyrillic"
+theLanguages[53] = "Uzbek-Latin"
+theLanguages[54] = "Vietnamese"
+theLanguages[55] = "Zulu"
+
+function switchLanguage(){
+
+document.location = "conduct_manufacturers.html?"+document.languageForm.languageSelect.options[document.languageForm.languageSelect.selectedIndex].value
+
+}

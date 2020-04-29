@@ -1,0 +1,110 @@
+"""Page Boundary Analysis Tool
+
+This tool performs basic analysis of a memory dump file. By searching for
+ASCII text at 4K boundaries in the file. We hope to uncover interesting files
+that were loaded or cached in memory at the time of the memory dump
+collection. This script identifies all boundaries that contain more than 50%
+ASCII text within the first "chunk" bytes of each "page".
+
+"""
+
+__author__ = "Rodney Jokerst"
+__version__ = "1.1"
+__date__ = "June 20, 2008"
+__copyright__ = "JHUAPL"
+__license__ = "JHUAPL"
+
+# Copyright 2008 The Johns Hopkins University/Applied Physics Laboratory
+
+# This software was developed at The Johns Hopkins University/Applied Physics
+# Laboratory ("JHU/APL") that is the author thereof under the "work made for
+# hire" provisions of the copyright law.  Permission is hereby granted, free
+# of charge, to any person obtaining a copy of this software and associated
+# documentation (the "Software"), to use the Software without restriction,
+# including without limitation the rights to copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to permit
+# others to do so, subject to the following conditions:
+
+# 1.  This LICENSE AND DISCLAIMER, including the copyright notice, shall be
+# included in all copies of the Software, including copies of substantial
+# portions of the Software; 
+# 2.  JHU/APL assumes no obligation to provide support of any kind with
+# regard to the Software.  This includes no obligation to provide assistance
+# in using the Software nor to provide updated versions of the Software; and
+# 3.  THE SOFTWARE AND ITS DOCUMENTATION ARE PROVIDED AS IS AND WITHOUT ANY
+# EXPRESS OR IMPLIED WARRANTIES WHATSOEVER.  ALL WARRANTIES INCLUDING, BUT
+# NOT LIMITED TO, PERFORMANCE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+# PURPOSE, AND NONINFRINGEMENT ARE HEREBY DISCLAIMED.  USERS ASSUME THE
+# ENTIRE RISK AND LIABILITY OF USING THE SOFTWARE.  USERS ARE ADVISED TO TEST
+# THE SOFTWARE THOROUGHLY BEFORE RELYING ON IT.  IN NO EVENT SHALL THE JOHNS
+# HOPKINS UNIVERSITY BE LIABLE FOR ANY DAMAGES WHATSOEVER, INCLUDING, WITHOUT
+# LIMITATION, ANY LOST PROFITS, LOST SAVINGS OR OTHER INCIDENTAL OR
+# CONSEQUENTIAL DAMAGES, ARISING OUT OF THE USE OR INABILITY TO USE THE
+# SOFTWARE.
+
+import string
+import sys
+import os
+from optparse import OptionParser
+
+parser = OptionParser()
+parser.add_option("-m", "--memory", help="memory image file", dest="image")
+parser.add_option("-p", "--page", help="page size in bytes", dest="page")
+parser.add_option("-c", "--chunk", help="chunk size in bytes", dest="chunk")
+parser.set_defaults(page="4096")
+parser.set_defaults(chunk="64")
+
+(options, args) = parser.parse_args()
+
+# Print help if we get no command-line arguements
+if (len(sys.argv) <= 1):
+    parser.print_help()
+
+if (options.image):
+  image = options.image
+else:
+  sys.exit("Memory image file required")
+
+if (options.chunk):
+  chunk = int(options.chunk)
+
+if (options.chunk):
+  page = int(options.page)
+
+# Offset in file to start from
+counter = 0
+
+f = open(image)
+
+# Maximum offset in file (we are now generating this dynamically)
+# Basically, seek to the end of the file and look at the current byte
+# position.
+f.seek(0, os.SEEK_END)
+max = f.tell()
+
+try:
+  while counter < max:
+    #print "Examining page " + str(counter / page) + " at " + str(counter)
+    f.seek(counter)
+    data = f.read(chunk)
+    found = ""
+    for i in range(0, chunk):
+      # Filter out non-ASCII stuff
+      if ord(data[i]) < 32:
+	continue
+      elif ord(data[i]) > 126:
+	continue
+      else:
+	found = found + data[i]
+    # If we found at least chunk / 2 ascii characters
+    if len(found) >= (chunk / 2):
+      #print "Found:\t" + found + "\ton page\t" + str(counter / page)
+      match = ["#", "/", "[", "<"]
+      for m in match:
+	if found[0] == m:
+	  print "Found:\t" + found + "\ton page\t" + str(counter / page)
+	  #continue
+
+    counter = counter + page
+finally:
+  f.close()

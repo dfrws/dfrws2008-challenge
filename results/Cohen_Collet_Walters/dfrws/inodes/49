@@ -1,0 +1,32 @@
+
+[inpCreate a new Directory]
+0=retrieved_files
+1=DFRWS
+
+[Dir Hist New Right Panel]
+0=/home/stevev
+1=/mnt
+2=/mnt/hgfs
+3=/mnt/hgfs/Admin_share
+4=/media
+5=/media/disk
+6=/media/disk/DFRWS
+
+[cmdline]
+0=cd /mnt/hgfs
+1=cd /media
+
+[Dir Hist New Left Panel]
+0=/home/stevev/.Trash
+1=/home/stevev/.config
+2=/home/stevev/.eggcups
+3=/home/stevev/.evolution
+4=/home/stevev/.gconf
+5=/home/stevev/.gconfd
+6=/home/stevev/.gstreamer-0.10
+7=/home/stevev/.gnome2_private
+8=/home/stevev/.gnome2
+9=/home/stevev/.gnome/gnome-vfs
+10=/home/stevev/.gnome
+11=/home/stevev/temp
+12=/home/stevev

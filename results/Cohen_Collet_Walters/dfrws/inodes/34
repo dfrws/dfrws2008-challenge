@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="interface" mtime="1197865446" type="string">
+                <stringvalue>eth0 [192.168.151.130]</stringvalue>
+        </entry>
+</gconf>

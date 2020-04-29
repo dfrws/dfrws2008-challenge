@@ -1,0 +1,57 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+html,body,input,select,button{font-size:100%;}
+body.body, body.default {background: #036;padding: 0px;margin: 0 0 0 10px;}
+.clear {clear:both}
+#header {z-index:5;text-align:left;font-size:.69em;width:766px;background: #003366;}
+#header img{border: 0;}
+#headerad {z-index:3;position:absolute;width:766px;text-align:right;top:3px;}
+#logo {position:absolute;float:left;z-index:1;margin:10px 0 0 4px;}
+#navServices ul {position:relative;list-style:none;margin:0;padding:68px 5px 5px 0px;border-bottom:1px solid #6A87A7;background:#003366;color:#ffffff;text-align:right;}
+#navServices {padding:0px;}
+#navServices li {display:inline;font-size:1em}
+#navServices a:link,#navServices a:visited,#navServices a:hover,#navServices a:active {margin:0;padding:0 5px;background:#003366;color:#ffffff;text-decoration:none;font-size:1em;}
+#navServices a:hover {text-decoration: underline;}
+#skipNav {display:none;}
+#skip {clear:both;}
+#mainNav {background: #003366;z-index:4;position:relative;height:5.15em;padding:0;margin:0;width:766px;}
+#mainNav #mainNavContent {padding-left:12px;float:left;height:5.15em;width:inherit}
+
+#mainNav #mainNavContent div {float:left;padding:0;margin:0;}
+#mainNav div br{float:none;clear:both}
+#mainNav div a {display:block;float:left;font-size:1.1em;line-height:2em;padding:0 9px 0 10px;background:transparent;color:#fff;text-decoration:none;font-weight:900;}
+#mainNav ul {visibility:hidden;position:absolute;list-style:none;padding:0;margin:0;background:#ccd6e0;width:14.5em;}
+#mainNav ul li {padding:0;margin:0;display:inline;list-style:none;background:#ccd6e0;font-size:1em;}
+#mainNav li a {margin:0;font-size:1em;line-height:1.8em;border-bottom:1px solid #40668c;border-left:1px solid #40668c;border-right:1px solid #40668c;font-weight:300;color:#003;padding:0 8px;display:block;background:#ccd6e0;width:14.5em;}
+
+#mainNav li a:hover {background:#7f99b2;color:#ffffff;}
+#mainNav .navOver {background:#40668c;}
+#mainNav .navOver ul {z-index:10;visibility:visible;}
+#mainNav #currentNav {padding:0;margin:0;background:#fff;position:static;}
+#mainNav #currentNav a {background:#fff;color:#036;border-width:0px;}
+#mainNav #currentNav ul {width:600px;position:absolute;left:12px;visibility:visible;z-index:1;white-space:nowrap;background:transparent;}
+#mainNav #currentNav ul li {padding:0;margin:0;background:#fff;display:inline;line-height:3em;width:auto;font-size:1em;}
+#mainNav #currentNav ul li a {border:0;padding:0;line-height:3em;color:#036;padding:0 10px 0 0;display:inline;background:#fff;width:auto;}
+#mainNav #currentNav li a:hover{background:#fff;color:#036;text-decoration:underline;}
+#mainNav #currentNav li.mainSubNav {line-height:3em;color:#FD6505;float:left;display:block;padding:0 4px 0 0;}
+#mainNav .smark{font-size:.6em;line-height:.6em;vertical-align: super; text-decoration:none;}
+
+#mainNavmessage {font-size:100%;position:absolute;float:none;display:inline;margin:0;padding:0;text-align:right;height:33px;line-height:3em;background:#fff;color:#000;top:2.2em;left:0;width:766px;}
+#mainNavmessage span {display:block;padding:0 12px 0 0;}
+#mainNavmessage .guaranteeLnk{color:#c00403;float:none;font-size:1em;font-weight:bold;line-height:3em;}
+#mainNavmessage .guaranteeLnk a{color:#c00403;display:inline;float:none;font-size:1em;font-weight:normal;padding-right:2px;text-decoration:underline;}
+
+#header .personalbox {position:absolute;left:366px;margin:0px 0px 0px 0px;padding:5px 0px 0px 0px;background: #003366;color:#fff;font-weight:300;width:400px;float:right;z-index:10;overflow:none;text-align:right;}
+#header .head{margin:0;padding:0;font-size:1.1em;font-weight:bold;color:#fff;}
+#header h2{margin:0;padding:0;font-size:1.1em;font-weight:bold;color:#fff;}
+
+.personalbox a:link{font-weight:300;text-decoration:underline;color:#FFF;}
+.personalbox a:hover{font-weight:300;text-decoration:underline;color:#FFF;}
+.personalbox .mem a{font-weight:300;text-decoration:underline;padding-left:10px;padding-top:3px;color:#FFF;}
+
+#footer {position:relative;width:766px;clear:both;padding:9px 0 5px 0;background: #003366;color:#A5B2C3;font-size:.57em;text-align:right;}
+#footer ul {margin:0;padding:0 7px 0 0;list-style:none;}
+#footer li {display:inline;font-size:1em}
+#footer a {background:#003366;color:#ABBCCD;text-decoration: underline;}
+#footer li a {padding:0 5px;}
+#footer span {display:inline;padding:0 .2em;}
+#footer p {line-height:1.1em;margin:0 10px 0 0;padding:4px 0 0 0;font-size:1em;}

@@ -1,0 +1,387 @@
+
+var b_stopBit = 0; // Setting to enable Date Increments
+var b_overide = 0; //Overide for Survey Popup
+
+s_userAgent = window.navigator.userAgent
+KON = (s_userAgent.indexOf("KHTML")>-1) ? 1 : 0;
+isMac = (navigator.userAgent.indexOf("Mac")>-1) ? 1 : 0;
+isIE = (navigator.userAgent.indexOf("MSIE")>-1) ? 1 : 0;
+isMacIE = (isMac&&isIE) ? 1 : 0;
+navTimer = null;
+currentNav = 0;
+var b_loaded = 0;
+/* cannonball functions */
+/* sync cannonball nav and cannonball form */
+function cbSetUpnav(){
+	a_nav = document.cbNav.nav
+	if(!a_nav.length)o_nav = document.cbNav.nav;
+	else for(i=0;i -1)	a_dateinput = s_dateinput.split("/")
+	return a_dateinput;
+}
+
+/* maintain state between cannonball forms */
+function maintainState(o_input){
+	if (!b_loaded) return false;
+	a_bit = o_input.id.split("_");
+	s_bit = a_bit[1];
+	for(i=0;i-1;j--){
+						if(o_formelement.options[j].text==o_input.options[o_input.selectedIndex].text){
+							o_formelement.options[j].selected = true;
+							break;
+						}
+					}
+				}else if(o_formelement.type==o_input.type)o_formelement.value=o_input.value;
+			}else{
+				a_input = eval("document."+document.cbNav.nav[i].value+"."+o_input.name);
+				if(a_input) for(j=0;j'+m_names[eval(o_todays_date.getMonth() + 1)]+'-'+o_todays_date.getFullYear()+' ';
+	  o_todays_date.setMonth(o_todays_date.getMonth() + 1);
+	 }
+	document.write(s_form_options);
+}
+/* request ages of children */
+function childAges(o_select,s_div){
+	o_div = document.getElementById(s_div)
+	if(o_select.selectedIndex!=0){
+		if(s_div=="cbFOchildages") document.getElementById("cbFOpromo").style.display = "none";
+		if(s_div=="cbFHchildages") document.getElementById("cbFHpromo").style.display = "none";
+		a_children = o_div.getElementsByTagName("div")
+		o_div.style.display = "block";
+//		for(i=0;i0){
+		o_dl = o_input.parentNode.parentNode
+		a_dd = o_dl.getElementsByTagName("dd")
+		for(i=0;i-1){
+			s_groople = "http://www.groople.com/travelocity/hotels/default.aspx?"
+			s_groople+= "Checkin="+o_form.leavingDate.value;
+			s_groople+= "&Checkout="+o_form.returningDate.value;
+			switch(o_form.cityCountryCode.options[o_form.cityCountryCode.selectedIndex].value.toLowerCase()){
+				case "us":
+				case "ca":
+					s_groople+= "&City="+escape(o_form.city.value);
+					if(o_form.state.options[o_form.state.selectedIndex].value!="") s_groople+=",%20"+o_form.state.options[o_form.state.selectedIndex].value;
+				break;
+				default:
+					s_groople+= "&City="+escape(o_form.city.value)+",%20"+o_form.cityCountryCode.options[o_form.cityCountryCode.selectedIndex].value.substr(0,2);			
+			}
+			s_groople+= "&Rooms=5";
+			window.location = s_groople;
+		}else{
+			var __toDate = document.getElementById("HO_todate");
+			var __fromDate = document.getElementById("HO_fromdate");
+			b_form = ((__toDate.value=="mm/dd/yyyy"||__toDate.value=="")&&(__fromDate.value=="mm/dd/yyyy"||__fromDate.value==""))?checkform(o_form,1,2,3,9):checkform(o_form,1,2,3,8,9);
+		}		
+	}
+	return b_form;
+}
+
+function carPUDO(o_select){
+	switch(o_select.options[o_select.selectedIndex].value){
+	case "pu_air":
+		document.getElementById("fco_airport").style.display = "block";
+		document.getElementById("fco_nearaddress").style.display = "none";
+		document.getElementById("fco_nearplace").style.display = "none";
+	break;
+	case "pu_addr":
+		document.getElementById("fco_airport").style.display = "none";
+		document.getElementById("fco_nearaddress").style.display = "block";
+		document.getElementById("fco_nearplace").style.display = "none";	
+	break;
+	case "pu_poi":
+		document.getElementById("fco_airport").style.display = "none";
+		document.getElementById("fco_nearaddress").style.display = "none";
+		document.getElementById("fco_nearplace").style.display = "block";	
+	break;
+	default:
+		window.location=o_select.options[o_select.selectedIndex].value;
+	}
+}
+function checkCar(o_form){
+	o_select = document.getElementById("FCO_pickupoption") 
+	switch(o_select.options[o_select.selectedIndex].value){
+	case "pu_poi":
+		b_checkCar = checkform(o_form,2,3,6);
+	break;
+	case "pu_addr":
+		b_checkCar = checkform(o_form,6)
+	break;
+	default:
+		b_checkCar = checkform(o_form,1,2,3,6);
+	}
+    s_popFlag='1';
+	loadPopOrNot(b_checkCar,s_popFlag,o_form);	
+	return b_checkCar;	
+}
+
+function chkForMatch(){
+  if((document.getElementById("CO_to").value.toUpperCase() == document.getElementById("CO_do").value.toUpperCase()) && document.getElementById("FCO_dropoffoption").value =='do_air'){
+   document.getElementById("CO_do").value ='';
+   document.getElementById("FCO_dropoffoption").options[document.getElementById("FCO_dropoffoption").selectedIndex].value ='';
+   return true;
+  }
+  return true;
+}
+
+function adjDate(o_form) {
+ if (b_stopBit == 0) {   
+  // Set Variables
+  var a_selectedForm;
+  var o_todays_date=new Date;  // Create new Date Object
+  var a_currentYear=o_todays_date.getFullYear(); // Get the current Year
+  if(o_form){
+    a_selectedForm = o_form.name;
+  } else {
+    a_selectedForm = getCBform(); // Get what form is in focus
+  }
+  var a_formPrefix = a_selectedForm.substring(4); // Obtain Prefix to use for element IDs
+  var a_fromVal = document.getElementById(a_formPrefix+"_fromdate").value; // Form Value : From Date
+  var a_fromMonth = document.getElementById(a_formPrefix+"_frommonth").selectedIndex; // Form Value : From Month
+  var cmonth = o_todays_date.getMonth();
+  /*Pre-check for months in new year*/
+  var fmonth;
+  if(typeof(a_fromVal) != 'undefined') {
+      var monthOnly = a_fromVal.substr(0,2);
+	  fmonth = parseInt(monthOnly);
+  } else {
+     fmonth = cmonth;
+  }
+  if(typeof(a_fromMonth) != 'undefined') {
+	  fmonth = parseInt(a_fromMonth);
+  } else {
+      fmonth = cmonth;
+  }
+  //If the selected month is in the past it must occur in a new year
+  if(fmonth  o_days[a_fromMonth]) {
+   document.getElementById(a_formPrefix+"_fromdate").options[eval(o_days[a_fromMonth] - 1)].selected=true; // Correct Date
+   var a_fromVal = document.getElementById(a_formPrefix+"_fromdate").value; // Reset the from Date variable
+  } 
+  
+  var o_selectedDate=new Date(a_currentYear,a_fromMonth,a_fromVal); // Create a Date Obj from dates selected
+  var o_toDate = o_selectedDate.setDate(o_selectedDate.getDate() + a_dateDiff); // Increment the Date
+ 
+  // Set the form fields
+  document.getElementById(a_formPrefix+"_tomonth").options[o_selectedDate.getMonth()].selected=true;
+  document.getElementById(a_formPrefix+"_todate").options[(o_selectedDate.getDate() - 1)].selected=true;
+  
+  // Make sure all the Cannonball forms keep dates
+  maintainState(document.getElementById(a_formPrefix+"_tomonth"));
+  maintainState(document.getElementById(a_formPrefix+"_todate"));
+  maintainState(document.getElementById(a_formPrefix+"_fromdate"));
+  maintainState(document.getElementById(a_formPrefix+"_frommonth"));
+  
+  //Unset Variables
+  var a_fromMonth;
+  var a_fromVal;
+  var a_currentYear;
+  var selectedDate;
+ }
+}
+
+function SetCookie(cookieName,cookieValue,nDays) {
+ var today = new Date();
+ var expire = new Date();
+ if (nDays==null || nDays==0) nDays=1;
+ expire.setTime(today.getTime() + 24*60*60*1000*nDays);
+ document.cookie = cookieName+"="+escape(cookieValue)
+                 + ";expires="+expire.toGMTString();
+}
+
+function GetCookie(Name) {
+  var search = Name + "="
+  var returnvalue = "";
+  if (document.cookie.length > 0) {
+    offset = document.cookie.indexOf(search)
+    // if cookie exists
+    if (offset != -1) { 
+      offset += search.length
+      // set index of beginning of value
+      end = document.cookie.indexOf(";", offset);
+      // set index of end of cookie value
+      if (end == -1) end = document.cookie.length;
+      returnvalue=unescape(document.cookie.substring(offset, end))
+      }
+   }
+  return returnvalue;
+}
+
+function formCtrl(o_form){
+ s_formName = o_form.name;
+ var b_submit = false;
+ var s_popFlag='0';
+ switch (s_formName){  
+  case 'formCO': //Car Only
+     o_select = document.getElementById("FCO_pickupoption") 
+	 switch(o_select.options[o_select.selectedIndex].value){
+	  case "pu_poi": //Car by Point of Interest
+		 b_submit = checkform(o_form,2,3,6);
+	  break;
+	  case "pu_addr": //Car by Address
+		b_submit = checkform(o_form,6)
+	  break;
+	  default:
+		b_submit = checkform(o_form,1,2,3,6);
+	 }
+	 s_popFlag='1';
+  break;
+  case 'formair': //Flight Only
+	b_submit = checkform(document.formair,1,2,3,4,5,8);
+  	if(!b_submit&&document.getElementById("FHbutton"))document.getElementById("FHbutton").disabled=false;
+    s_popFlag='1';
+  break;
+  case 'formFO': //Flight Only
+  case 'formFRT': //Flight Round Trip
+     b_submit = checkform(o_form,1,2,3,4,5,6);
+	 s_popFlag='0';
+  break;
+  case 'formFMD': //Flights with Multiple City
+     b_submit = checkform(o_form,1,2,3,4,5,6);
+	 s_popFlag='0';  
+  break;
+  case 'formFH': //Flight & Hotel
+     b_submit = checkform(o_form,1,2,3,4,8,9);
+	 s_popFlag='1';
+  break;
+  case 'formHOgbl': //Hotel other Destinations
+  case 'formHOus': //Hotel US Canada
+     b_submit = checkform(o_form,1,2,3,6);
+	 s_popFlag='1';
+  break;
+  case 'formFOW': //Flight One Way
+     b_submit = checkform(o_form,1,2,3,4,5);
+     s_popFlag='0';
+  break;
+  case 'formHO': //Hotel Only
+     b_submit = cb_hosubmit(o_form);
+	 s_popFlag='1';
+  break;
+  case 'formact': //Activities
+     b_submit = checkform(o_form,8);
+	 s_popFlag='0';
+  break;   
+ }
+
+ loadPopOrNot(b_submit,s_popFlag,o_form);
+ return b_submit; 
+}
+
+function getElementByValue(ElementCollection, Value)
+{
+    var i, Element;
+     for (i = 0 ; i 
+var once_per_session='0'; //Pop every time = 0, or Verify = 1
+var popunder="/popWindow";
+var winfeatures="left=150,top=200,width=500,height=250,scrollbars=0,resizable=0,toolbar=0,location=0,menubar=0,status=1,directories=0";
+
+function loadPopOrNot () {
+  var a_arguments = new Array;
+  a_arguments = loadPopOrNot.arguments;
+  b_submit = a_arguments[0];
+  s_popFlag = a_arguments[1];
+  o_form = a_arguments[2];
+  if ((b_submit) && (s_popFlag == '1')) {
+    if(once_per_session==0){
+       loadpopunder(o_form);
+      } else {
+	   if(!GetCookie('popunder')){
+	     SetCookie('popunder','yes','1');
+	     loadpopunder(o_form);
+       }         
+	  }
+  }
+}
+
+function loadpopunder(o_form){
+ var s_theURL = location.href;
+ // Check for the Site59 tags to disable pops
+ var i_s59Svc1 = s_theURL.indexOf('S59BT'); 
+ var i_s59Svc2 = s_theURL.indexOf('S59LG');
+ var i_gomezSvc = s_theURL.indexOf('ROBOT-GOMEZ');
+ var i_aarpSvc = s_theURL.toUpperCase().indexOf('AARP');
+ var i_tcyca = s_theURL.toUpperCase().indexOf('TRAVELOCITY.CA');
+ var i_aolsvc = s_theURL.toUpperCase().indexOf('AOLSVC');
+ var i_tcymx = s_theURL.toUpperCase().indexOf('MX');
+ var s_theAdtoShow;
+ var s_days;var s_dest;var s_orig;
+ var s_theDomain = document.location.hostname;
+ var s_selectedForm = o_form.name; // Get what form is in focus
+ if ((s_selectedForm == 'formDV') || (s_selectedForm == 'formEV')) {
+ //  
+ } else if (s_selectedForm == 'formFOW') {
+  var a_formPrefix = s_selectedForm.substring(4); // Obtain Prefix to use for element IDs
+  var a_fromDate = document.getElementById(a_formPrefix+"_fromdate").value; // Form Value : From Date
+  var a_fromMonth = document.getElementById(a_formPrefix+"_frommonth").selectedIndex; // Form Value : From Month
+  var b_bestFareFinder = getElementByValue(o_form,"calendar"); //calendar value is used on FOW 
+  b_bestFareFinder = (b_bestFareFinder) ?  b_bestFareFinder.checked : false;
+  b_bestFareFinder = (b_bestFareFinder) ? true : false; 
+  var i_dayRange = 16; // Days between Departure and today
+  var o_dateDiff=new Date;
+  var a_currentYear=o_dateDiff.getFullYear(); 	
+  var o_fromDate=new Date(a_currentYear,a_fromMonth,a_fromDate); // Generate a date Obj from the selection
+  var o_currDate= new Date;
+  o_dateDiff.setTime(o_fromDate.getTime() - o_currDate.getTime());
+  var timeDiff = o_dateDiff.getTime();
+  var s_days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+ } else if (s_selectedForm == 'formair' || s_selectedForm == 'formFH' || s_selectedForm == 'formHO') {
+  var s_prefix = (s_selectedForm == 'formair')? 'air' : (s_selectedForm == 'formFH')? 'FH' : (s_selectedForm == 'formHO')? 'HO' : 'air';
+  var a_formPrefix = s_selectedForm.substring(4); // Obtain Prefix to use for element IDs
+  var a_fromDate = document.getElementById(s_prefix+'_fromdate').value.split('/')[1];
+  var a_fromMonth = document.getElementById(s_prefix+'_fromdate').value.split('/')[0] - 1;
+  var b_bestFareFinder = getElementByValue(o_form,"flexibleDates");
+  b_bestFareFinder = (b_bestFareFinder) ?  b_bestFareFinder.checked : false;
+  b_bestFareFinder = (b_bestFareFinder) ? true : false;
+  var i_dayRange = 16; // Days between Departure and today
+  var b_inDateRng;
+  var o_dateDiff=new Date;
+  var a_currentYear=o_dateDiff.getFullYear();	
+  var o_fromDate=new Date(a_currentYear,a_fromMonth,a_fromDate); // Generate a date Obj from the selection
+  var o_currDate= new Date;
+  o_dateDiff.setTime(o_fromDate.getTime() - o_currDate.getTime());
+  var timeDiff = o_dateDiff.getTime();
+  var s_days = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); 
+ } else {
+  var s_prefix = (s_selectedForm == 'formCO')? 'CO':'';
+  var a_formPrefix = s_selectedForm.substring(4); // Obtain Prefix to use for element IDs
+  var a_fromDate = document.getElementById(a_formPrefix+"_fromdate").value; // Form Value : From Date
+  var a_fromMonth = document.getElementById(a_formPrefix+"_frommonth").selectedIndex; // Form Value : From Month
+  var b_bestFareFinder = getElementByValue(o_form,"BestFareFinder");
+  b_bestFareFinder = (b_bestFareFinder) ?  b_bestFareFinder.checked : false;
+  b_bestFareFinder = (b_bestFareFinder) ? true : false;
+  var i_dayRange = 16; // Days between Departure and today
+  var o_dateDiff=new Date;
+  var a_currentYear=o_dateDiff.getFullYear(); 	
+  var o_fromDate=new Date(a_currentYear,a_fromMonth,a_fromDate); // Generate a date Obj from the selection
+  var o_currDate= new Date;
+  o_dateDiff.setTime(o_fromDate.getTime() - o_currDate.getTime());
+  var timeDiff = o_dateDiff.getTime();
+  var s_days = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); 
+ }
+  s_orig = (document.getElementById(s_prefix+"_from"))?document.getElementById(s_prefix+"_from").value:'';
+  s_dest = (document.getElementById(s_prefix+"_to"))?document.getElementById(s_prefix+"_to").value:'';
+  // Check the Range and Submitted Values
+  if((s_days 0&&i-1;i--){
+		var a_nb2=a_args[i].split("|");var o_block = document.getElementById(a_nb2[0]);var o_img = document.getElementById(a_nb2[1]);
+		switch(a_nb2[2]){
+			case "flip":
+				switch(o_img.src.indexOf("show")){
+					case -1:o_img.src = o_img.src.replace("hide","show");o_block.style.display="none";
+					break;
+					default:o_img.src = o_img.src.replace("show","hide");o_block.style.display=a_nb2[3];
+				}
+			break;
+			default:o_img.src=(a_nb2[2]!="none")?o_img.src.replace("show","hide"):o_img.src.replace("hide","show");o_block.style.display=a_nb2[2];
+		}
+	}
+}
+
+function chkAll(s_parent,o_chkbox){
+	o_chk = document.getElementById(s_parent);
+	a_chk = o_chk.getElementsByTagName("input");
+	if (o_chkbox != a_chk[0]) a_chk[0].checked = false;
+	else for (i=1; i 0;i--){var __date = new Date(_iyear,_imonth,i);if(_imonth==__date.getMonth())break;}
+	return __date.getDate();
+}
+
+function validSelectDate(sMonth,sDate){
+	var dVSD = new Date();
+	var aDateVSD = [dVSD.getMonth(),dVSD.getFullYear()];
+	var oMonth = document.getElementById(sMonth);
+	var oDate = document.getElementById(sDate);
+	if(oMonth.selectedIndex
